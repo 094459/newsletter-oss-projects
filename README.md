@@ -66,6 +66,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 
 [foundation-model-benchmarking-tool](https://aws-oss.beachgeek.co.uk/3mj) is a Foundation model (FM) benchmarking tool. Run any model on Amazon SageMaker and benchmark for performance across instance type and serving stack options. A key challenge with FMs is the ability to benchmark their performance in terms of inference latency, throughput and cost so as to determine which model running with what combination of the hardware and serving stack provides the best price-performance combination for a given workload.(#187)
 
+**gh-relfind**
+
+[gh-relfind](https://aws-oss.beachgeek.co.uk/3tf) is a project from AWS Community Builder Colin Duggan, that provides a simple Go CLI tool that uses Claude to parse package changes from GitHub repos release history. Significant change information is often contained in the release text field (body tag in the JSON response from ListReleases). Adding a semantic search makes it easier to extract and summarise actual change details. The project was built to get a better understanding of how to integrate with Claude through AWS Bedrock. (#195)
+
 **gen-ai-on-eks**
 
 [gen-ai-on-eks](https://aws-oss.beachgeek.co.uk/3d2) this repository aims to showcase how to finetune a FM model in Amazon EKS cluster using, JupyterHub to provision notebooks and craft both serving and training scripts, RayOperator to manage Ray Clusters and Karpenter to manage Node Scaling. (#177)
@@ -121,6 +125,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 
 [s3-connector-for-pytorch](https://aws-oss.beachgeek.co.uk/3gw) the Amazon S3 Connector for PyTorch delivers high throughput for PyTorch training jobs that access or store data in Amazon S3. Using the S3 Connector for PyTorch automatically optimises performance when downloading training data from and writing checkpoints to Amazon S3, eliminating the need to write your own code to list S3 buckets and manage concurrent requests. Amazon S3 Connector for PyTorch provides implementations of PyTorch's dataset primitives that you can use to load training data from Amazon S3. It supports both map-style datasets for random data access patterns and iterable-style datasets for streaming sequential data access patterns. The S3 Connector for PyTorch also includes a checkpointing interface to save and load checkpoints directly to Amazon S3, without first saving to local storage. (#181)
 
+**safeaws-cli**
+
+[safeaws-cli](https://aws-oss.beachgeek.co.uk/3te) is a project from AWS Community Builder Gabriel Koo that provides an AWS CLI wrapper that helps you avoid common mistakes and pitfalls with Amazon Bedrock's Large Language Models, checking your command arguments against the command docs. safeaws-cli empowers you to execute AWS commands confidently by leveraging Amazon Bedrock's AI language models to analyze CLI commands, fetch help text, and identify potential issues or concerns before execution. By providing a safety net that mitigates pitfalls, safeaws-cli allows users to explore AWS securely, fostering a more informed approach to working with the CLI.(#195)
+
 **smart-assistant-agent**
 
 [smart-assistant-agent](https://aws-oss.beachgeek.co.uk/3rd) is a project from AWS Community Builder Darya Petrashka that provides a solution to building an AWS Bedrock agent acting as a Telegram chat assistant. Check out the README for example videos of what this can do, as well as very detailed deployment instructions. (#193)
@@ -156,6 +164,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 [language-server-runtimes](https://aws-oss.beachgeek.co.uk/3qe) is a JSON-RPC based protocol for interactions between servers and clients (typically embedded in development tools). The README covers details around specification support and features supported, that will help you tailor this to your needs.(#192)
 
 ### Compute - Containers, EC2, Serverless
+
+**amazon-eks-running-webassembly**
+
+[amazon-eks-running-webassembly](https://aws-oss.beachgeek.co.uk/3th) This repository contains code for building custom Amazon EKS AMIs using HashiCorp Packer. The AMIs include necessary binaries and configurations to enable you to run WebAssembly workloads in an EKS cluster and are based on Amazon Linux 2023. The runtimes used in the AMIs are Spin and WasmEdge. The respective containerd-shims are used for both runtimes. Deploying the cluster is done using Hashicorp Terraform. After the cluster is created, RuntimeClasses and example workloads are deployed to the cluster. If you are exploring Wasm, then this is for you. (#195)
 
 **amplify-hosting-astro**
 
@@ -206,6 +218,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 **amazon-bedrock-synthetic-manufacturing-data-generator**
 
 [amazon-bedrock-synthetic-manufacturing-data-generator](https://aws-oss.beachgeek.co.uk/3ln) is a industry aligned synthetic data generation solution. Manufacturing processes generate large amounts of sensor data that can be used for analytics and machine learning models. However, this data may contain sensitive or proprietary information that cannot be shared openly. Synthetic data allows the distribution of realistic example datasets that preserve the statistical properties and relationships in the real data, without exposing confidential information. This enables more open research and benchmarking on representative data. Additionally, synthetic data can augment real datasets to provide more training examples for machine learning algorithms to generalize better. Data augmentation with synthetic manufacturing data can help improve model accuracy and robustness. Overall, synthetic data enables sharing, research, and expanded applications of AI in manufacturing while protecting data privacy and security.(#186)
+
+**amazon-sqs-python-extended-client-lib**
+
+[amazon-sqs-python-extended-client-lib](https://aws-oss.beachgeek.co.uk/3ti) this repo (Amazon SQS Extended Client) allows clients to manage Amazon SQS message payloads that exceed the 256 KB message size limit, up to a size of 2 GB. In the event of publishing such large messages, the client accomplishes this feat by storing the actual payload in a S3 bucket and by storing the reference of the stored object in the SQS queue. Similarly, the extended-client is also used for retrieving and dereferencing these references of message objects stored in S3.  Check out the docs for more details on how this works and some sample code to get you going. (#195)
 
 **automated-data-validation-framework**
 
@@ -268,7 +284,15 @@ This repo contains a list of projects featured in the AWS open source newsletter
 
 [tokenizing-db-data-tool](https://aws-oss.beachgeek.co.uk/3lp) provides a handy solution to help you address challenges around masking and keeping safe private or sensitive data (PII), as you need to move data from production to non production systems for activities like testing, debugging, load and integration tests, and more. (#186)
 
+**tsynamo**
+
+[tsynamo](https://aws-oss.beachgeek.co.uk/3td) is a project from that Olli Warro that simplifies the DynamoDB API so that you don't have to write commands with raw expressions and hassle with the attribute names and values. Moreover, Tsynamo makes sure you use correct types in your DynamoDB expressions, and the queries are nicer to write with autocompletion. Olli was inspired by another project ([Kysely](https://aws-oss.beachgeek.co.uk/3tm)), and so built this project so that he could do similar using Amazon DynamoDB. (#195)
+
 ### Developer Tools & DevOps
+
+**amazon-sqs-python-extended-client-lib**
+
+[amazon-sqs-python-extended-client-lib](https://aws-oss.beachgeek.co.uk/3ti) this repo (Amazon SQS Extended Client) allows clients to manage Amazon SQS message payloads that exceed the 256 KB message size limit, up to a size of 2 GB. In the event of publishing such large messages, the client accomplishes this feat by storing the actual payload in a S3 bucket and by storing the reference of the stored object in the SQS queue. Similarly, the extended-client is also used for retrieving and dereferencing these references of message objects stored in S3.  Check out the docs for more details on how this works and some sample code to get you going. (#195)
 
 **amplify-hosting-astro**
 
@@ -370,6 +394,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 
 [eks-saas-gitops](https://aws-oss.beachgeek.co.uk/3k1) This repository offers a sample pattern to manage multi-tenancy in a Kubernetes cluster using GitOps with Flux. The provided CloudFormation template automates the deployment of necessary AWS resources and sets up an environment ready for GitOps practices. (#184)
 
+**gh-relfind**
+
+[gh-relfind](https://aws-oss.beachgeek.co.uk/3tf) is a project from AWS Community Builder Colin Duggan, that provides a simple Go CLI tool that uses Claude to parse package changes from GitHub repos release history. Significant change information is often contained in the release text field (body tag in the JSON response from ListReleases). Adding a semantic search makes it easier to extract and summarise actual change details. The project was built to get a better understanding of how to integrate with Claude through AWS Bedrock. (#195)
+
 **language-server-runtimes**
 
 [language-server-runtimes](https://aws-oss.beachgeek.co.uk/3qe) is a JSON-RPC based protocol for interactions between servers and clients (typically embedded in development tools). The README covers details around specification support and features supported, that will help you tailor this to your needs.(#192)
@@ -417,9 +445,17 @@ This repo contains a list of projects featured in the AWS open source newsletter
 
 [s3-fast-list](https://aws-oss.beachgeek.co.uk/3k6) is a rust based tool that concurrently list Amazon S3 bucket with ListObjectsV2 API. Check out the README for use cases as to when s3-fast-list is going to help you out (against existing options you have) (#184)
 
+**safeaws-cli**
+
+[safeaws-cli](https://aws-oss.beachgeek.co.uk/3te) is a project from AWS Community Builder Gabriel Koo that provides an AWS CLI wrapper that helps you avoid common mistakes and pitfalls with Amazon Bedrock's Large Language Models, checking your command arguments against the command docs. safeaws-cli empowers you to execute AWS commands confidently by leveraging Amazon Bedrock's AI language models to analyze CLI commands, fetch help text, and identify potential issues or concerns before execution. By providing a safety net that mitigates pitfalls, safeaws-cli allows users to explore AWS securely, fostering a more informed approach to working with the CLI.(#195)
+
 **service-screener-v2**
 
 [service-screener-v2](https://aws-oss.beachgeek.co.uk/3ol) Service Screener is a tool for AWS customers to analyse their AWS accounts against best practices for architecture. It provides an easy-to-use report with recommendations across various areas like cost optimisation and security, highlighting quick fixes that are cost-effective and downtime-free. Service Screener checks environments against the Well-Architected framework and other standards, such as the Foundational Technical Review and Startup Security Baseline, offering a comprehensive, stylish report that's cost-free and easy to understand, often running within minutes. Check out the README for lots of examples and explainer videos. (#190)
+
+**sigv4a-signing-examples**
+
+[sigv4a-signing-examples](https://aws-oss.beachgeek.co.uk/1jl) provides a useful set of examples that show examples of sigv4 implementations. Josh Hart, maintainer of this repo, has put together a companion repo that has a set of sigv4 examples in different frameworks and using the sdk or from scratch. Josh is also looking for community contributions in other frameworks, so if you are working on a framework and want to combine efforts, drop Josh a note.(#195)
 
 **stree**
 
@@ -429,6 +465,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **tokenizing-db-data-tool**
 
 [tokenizing-db-data-tool](https://aws-oss.beachgeek.co.uk/3lp) provides a handy solution to help you address challenges around masking and keeping safe private or sensitive data (PII), as you need to move data from production to non production systems for activities like testing, debugging, load and integration tests, and more. (#186)
+
+**tsynamo**
+
+[tsynamo](https://aws-oss.beachgeek.co.uk/3td) is a project from that Olli Warro that simplifies the DynamoDB API so that you don't have to write commands with raw expressions and hassle with the attribute names and values. Moreover, Tsynamo makes sure you use correct types in your DynamoDB expressions, and the queries are nicer to write with autocompletion. Olli was inspired by another project ([Kysely](https://aws-oss.beachgeek.co.uk/3tm)), and so built this project so that he could do similar using Amazon DynamoDB. (#195)
 
 **vscode-on-ec2-for-prototyping**
 
@@ -633,6 +673,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [s3-presignedurl-staticips-endpoint-with-cdk](https://aws-oss.beachgeek.co.uk/3k5) this solution simplifies access to Amazon S3 by creating secure, custom presigned URLs for object downloads through a single endpoint with a unique domain and static IPs. The use case involves users following an IP and domain Allowlist firewall policy, limiting API access to specific domains and IPs. The architecture employs key AWS services, including AWS Global Accelerator, Amazon API Gateway, AWS Lambda, Application Load Balancer(ALB), VPC Endpoint, and Amazon S3. This design centralizes the API for generating presigned URLs and the S3 endpoint under a single domain, linked to an AWS Global Accelerator with two static IPs. Consequently, users can effortlessly request presigned URLs and download S3 objects through a unified domain endpoint with static IPs. This architecture is especially beneficial for customers with strict policies or compliance requirements, such as those in the public, medical, and finance sectors. (#184)
 
+**sigv4a-signing-examples**
+
+[sigv4a-signing-examples](https://aws-oss.beachgeek.co.uk/1jl) provides a useful set of examples that show examples of sigv4 implementations. Josh Hart, maintainer of this repo, has put together a companion repo that has a set of sigv4 examples in different frameworks and using the sdk or from scratch. Josh is also looking for community contributions in other frameworks, so if you are working on a framework and want to combine efforts, drop Josh a note.(#195)
+
 **sso-sync-to-amazon-rds**
 
 [sso-sync-to-amazon-rds](https://aws-oss.beachgeek.co.uk/3e2) This project sets up AWS Lambda functions, Amazon EventBridge rule, Amazon VPC Endpoint for AWS IAM Identity Center (successor to AWS Single Sign-On), the related Security Groups and permissions necessary to automatically provision database users to the Amazon Relational Database Service (Amazon RDS) cluster using AWS Cloud Development Kit (AWS CDK). When a new user is created in IAM Identity Center and the user belongs to the group specified in a IAM_IDC_GROUP_NAME variable, EventBridge rule will trigger the Lambda function. The Lambda function will create a new user in a specified Amazon RDS cluster. The user will then be able to login to the database using their SSO username and IAM credentials. Adding a user to the configured group will trigger the Lambda function as well. (#178)
@@ -768,6 +812,9 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [mlspace](https://aws-oss.beachgeek.co.uk/3r8) provides code that will help you deploy [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) into your AWS account. [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) is an open source no-hassle tool for data science, machine learning and deep learning, and has pre-made environments for pytorch, tensorflow and everything else you might need. (#193)
 
+**pagemosaic-cms**
+
+[pagemosaic-cms](https://aws-oss.beachgeek.co.uk/3tb) is an open-source platform optimized for AWS to efficiently host static websites. It simplifies the process of creating, managing, and publishing content online with an emphasis on cost-effectiveness and efficient use of AWS resources. You can check out the project home page for more details [here](https://aws-oss.beachgeek.co.uk/3tk).(#195)
 
 **ragna**
 
@@ -777,11 +824,20 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [smart-assistant-agent](https://aws-oss.beachgeek.co.uk/3rd) is a project from AWS Community Builder Darya Petrashka that provides a solution to building an AWS Bedrock agent acting as a Telegram chat assistant. Check out the README for example videos of what this can do, as well as very detailed deployment instructions. (#193)
 
+**symfony-bref-starter**
+
+[symfony-bref-starter](https://aws-oss.beachgeek.co.uk/3ta) is a starter kit for symfony projects using bref / serverless to allow easy deployments. bref is a fantastic and well tested way of running PHP applications via serverless, handling easy deployments and environments on AWS. Check out the README for some very cool stats around bref usage. The repo provides good examples and everything you need to get started.(#195)
+
+
 **weaviate-on-eks**
 
 [weaviate-on-eks](https://aws-oss.beachgeek.co.uk/3d4) this repository includes sample code that can be used to deploy and configure an instance of the [Weaviate](https://aws-oss.beachgeek.co.uk/3d5) distributed vector database on EKS. (#177)
 
 # Demos and Samples
+
+**amazon-eks-running-webassembly**
+
+[amazon-eks-running-webassembly](https://aws-oss.beachgeek.co.uk/3th) This repository contains code for building custom Amazon EKS AMIs using HashiCorp Packer. The AMIs include necessary binaries and configurations to enable you to run WebAssembly workloads in an EKS cluster and are based on Amazon Linux 2023. The runtimes used in the AMIs are Spin and WasmEdge. The respective containerd-shims are used for both runtimes. Deploying the cluster is done using Hashicorp Terraform. After the cluster is created, RuntimeClasses and example workloads are deployed to the cluster. If you are exploring Wasm, then this is for you. (#195)
 
 **aws-agentic-document-assistant**
 
@@ -811,9 +867,21 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [cost-news-slack-bot](https://aws-oss.beachgeek.co.uk/3or) is a tool written in Python that read an RSS feed and selectively publish articles, based on keywords, to Slack via Webhook.  In the example, the tool checks the AWS 'What's New' RSS feed every minute for announcements related to cost optimisation. Perfect for customising and using it for your own use cases. (#190)
 
+**domain-specific-genai-chatbot-with-serverless**
+
+[domain-specific-genai-chatbot-with-serverless](https://aws-oss.beachgeek.co.uk/3t9) This sample demonstrates how to build a domain specific chatbot using serverless and Bedrock. The chatbot employs Retrieval-Augments Generation (RAG) and chat history to provide context for the LLM to answer. (#195)
+
+**generate-s3-accelerate-presigned-url**
+
+[generate-s3-accelerate-presigned-url](https://aws-oss.beachgeek.co.uk/3tg) this sample project demonstrates how to generate an Amazon S3 pre-signed URL with S3 Transfer Acceleration, using Amazon API Gateway REST API and AWS Lambda function. The Lambda function, composed in Java 21, is responsible for generating a presigned URL to allow customers to upload a single file into S3, with S3 Transfer Acceleration enabled, to speed up content transfers to Amazon S3 securely, over long distances. The API is protected by IAM authentication, to protect against non-authenticated users.(#195)
+
 **gen-ai-on-eks**
 
 [gen-ai-on-eks](https://aws-oss.beachgeek.co.uk/3d2) this repository aims to showcase how to finetune a FM model in Amazon EKS cluster using, JupyterHub to provision notebooks and craft both serving and training scripts, RayOperator to manage Ray Clusters and Karpenter to manage Node Scaling. (#177)
+
+**genai-sports-commentary**
+
+[genai-sports-commentary](https://aws-oss.beachgeek.co.uk/3tj) is a repo that appeals to my inner spots fan, and looks at how you can apply generative AI and large language models, to create highly personalized contents for sport fans. In our example, we'll use a foundation model to generate play by play commentary based on American Football game data synthetically created (in reality, the data could be directly sourced from the stadiums, or cloud). We'll instruct the model to generate variety of commentary using different prompts. For instance, create prompts to the model to generate commentary in particular commentary writing style, or a particular language that the fans would prefer.(#195)
 
 **get-the-news-rss-atom-feed-summary**
 
