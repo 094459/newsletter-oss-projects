@@ -7,6 +7,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 
 ### AI & ML
 
+**amazon-bedrock-client-for-mac**
+
+[amazon-bedrock-client-for-mac](https://aws-oss.beachgeek.co.uk/3um) this repo provides the code for the Amazon Bedrock Client for Mac is a macOS demo application built with SwiftUI. It serves as a client interface for AWS Bedrock, allowing users to interact with AWS Bedrock models.(#196)
+
 **amazon-bedrock-serverless-prompt-chaining**
 
 [amazon-bedrock-serverless-prompt-chaining](https://aws-oss.beachgeek.co.uk/3jy) this repository provides examples of using AWS Step Functions and Amazon Bedrock to build complex, serverless, and highly scalable generative AI applications with prompt chaining. (#184)
@@ -25,6 +29,11 @@ This repo contains a list of projects featured in the AWS open source newsletter
 **aws-piday2024**
 
 [aws-piday2024 ](https://aws-oss.beachgeek.co.uk/3r3)my colleague Suman Debnath has put together this AWS Pi Day 2024 repository, where you can explore various applications and examples using Amazon Bedrock, fine-tuning, and Retrieval-Augmented Generation (RAG). (#193)
+
+**bedrock-access-gateway**
+
+[bedrock-access-gateway](https://aws-oss.beachgeek.co.uk/3us) provides an OpenAI-compatible RESTful APIs for Amazon Bedrock. Amazon Bedrock offers a wide range of foundation models (such as Claude 3 Opus/Sonnet/Haiku, Llama 2/3, Mistral/Mixtral, etc.) and a broad set of capabilities for you to build generative AI applications. Check the Amazon Bedrock landing page for additional information. Sometimes, you might have applications developed using OpenAI APIs or SDKs, and you want to experiment with Amazon Bedrock without modifying your codebase. Or you may simply wish to evaluate the capabilities of these foundation models in tools like AutoGen etc. Well, this repository allows you to access Amazon Bedrock models seamlessly through OpenAI APIs and SDKs, enabling you to test these models without code changes.(#196)
+
 
 **bedrock-genai-workshop**
 
@@ -155,6 +164,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 
 [aws-cdk-python-for-amazon-mwaa](https://aws-oss.beachgeek.co.uk/3lq) this repo provides python code and uses AWS CDK to help you automate the deployment and configuration of Managed Workflows for Apache Airflow (MWAA). I have shared my own repos to help you do this, but you can never have enough of a good thing, so check out this repo and see if it is useful.(#186)
 
+**domino**
+
+[domino](https://aws-oss.beachgeek.co.uk/3uj) is a new open source workflow management platform that provides a very nice GUI and drag and drop experience for creating workflows. Now regular readers of this newsletter will know I am a big fan of the Node Red open source project, and I got very strong Node Red vibes about the GUI, which is a good thing. Under the covers, we have another favourite project of mine, Apache Airflow. (#196)
+
 **dynamomq**
 
 [dynamomq](https://aws-oss.beachgeek.co.uk/3j1) is a project from Yuichi Watanabe that provides a message queuing library that leverages the features of DynamoDB to achieve high scalability, reliability, and cost efficiency. Notably, its ability to dynamically edit message order and attributes enables flexible adaptation to application requirements. Compared to existing solutions, DynamoMQ offers ease of management for developers while providing the reliability of fully managed services like Amazon SQS. It also encompasses key functionalities expected from a message queue, such as concurrent processing with multiple goroutines, Dead Letter Queues, and ensuring FIFO (First In, First Out) order. (#183)
@@ -189,6 +202,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 
 [aws-signer-oci-artifacts](https://aws-oss.beachgeek.co.uk/3km) this project is used to demonstrate how OCI artefacts can be signed and verified in a development pipeline. Zhuo-Wei Lee, Alontay Ellis, and Rajarshi Das have put together a blog post to help you get started, so if this project interests you, make sure you dive into [Signing and Validating OCI Artifacts with AWS Signer](https://aws-oss.beachgeek.co.uk/3kn).(#185)
 
+**codecatalyst-runner-cli**
+
+[codecatalyst-runner-cli](https://aws-oss.beachgeek.co.uk/3up) This repository contains a command line tool that will allow you to run Amazon CodeCatalyst workflows locally. The README provides the instructions for quickly installing and getting started, so if  you have been using Amazon CodeCatalyst and looking for this, look no more.(#196)
+
 **ec2RuntimeMonitor**
 
 [ec2RuntimeMonitor](https://aws-oss.beachgeek.co.uk/3ra) EC2 runtime monitor is a serverless solution to get a notification when an EC2 instance is running for a time exceeding a user defined threshold. The README covers use cases why you might find this useful, but principally cost optimisation as well as reducing your carbon footprint are two key reasons why this might be a useful tool to keep your toolkit. (#193)
@@ -209,6 +226,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 
 [llrt](https://aws-oss.beachgeek.co.uk/3mm) - Low Latency Runtime (LLRT) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications. LLRT offers up to over 10x faster startup and up to 2x overall lower cost compared to other JavaScript runtimes running on AWS Lambda. It's is built in Rust, utilising QuickJS as JavaScript engine, ensuring efficient memory usage and swift startup. (#188)
 
+**serverless-lambda-cron-cdk**
+
+[serverless-lambda-cron-cdk](https://aws-oss.beachgeek.co.uk/3uf) This repository provides a starter kit for setting up cron jobs using AWS Lambda. It includes the necessary AWS Cloud Development Kit (CDK) deployment code, a CI/CD pipeline, as well as the source code for the Lambda function. The kit is designed to be easily configurable and deployable, allowing for quick setup and iteration. It's ideal for developers looking to automate tasks on a schedule using AWS Lambda. (#196)
+
 ### Data, Big Data and Databases
 
 **active-active-cache**
@@ -227,6 +248,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 
 [automated-data-validation-framework](https://aws-oss.beachgeek.co.uk/3mi) When you are undertaking data migration projects, a significant time is spent in doing the data validation and lot of manual efforts being spent. This repo provides a framework developed that helps to simplifying this problem by automating full data validation with some simple config files, and running the framework on EMR. It will create summary and detail data validation report in S3 and show up on Athena tables. You will need to do some initial work to setup this framework and create config files which has table names to compare. (#187)
 
+**aws-aurora-db-vertical-autoscaler**
+
+[aws-aurora-db-vertical-autoscaler](https://aws-oss.beachgeek.co.uk/3uu) is a project that I heard about from Dmitry Shurupov (thanks for reaching out!) that helps you implement vertical autoscaling for Aurora for Postgres using Lambda functions. Oleg Mironov put together a blog post to go into more details, including a nice detailed flow diagram of how this code works.(#196)
+
 **aws-az-mapper**
 
 [aws-az-mapper](https://aws-oss.beachgeek.co.uk/3om) is a new tool from Jeremy Barnes that maps an AWS Account and it's regions physical availability zones to their logical availability zone. This project is new to me (although was released a while ago) and what got my interest was this blog post, [Tool - AWS Availability Zone Mapper](https://aws-oss.beachgeek.co.uk/3on) where Jeremy walks you through how you can use this tool, to help with our cost optimisation strategies. (#190)
@@ -234,6 +259,14 @@ This repo contains a list of projects featured in the AWS open source newsletter
 **aws-data-solutions-framework**
 
 [aws-data-solutions-framework](https://github.com/awslabs/aws-data-solutions-framework) is a framework for implementation and delivery of data solutions with built-in AWS best practices. AWS Data Solutions Framework (DSF) is an abstraction atop AWS services based on AWS Cloud Development Kit (CDK) L3 constructs, packaged as a library. You can leverage AWS DSF to implement your data platform in weeks rather than in months. AWS DSF is available in TypeScript and Python. Use the framework to build your data solutions instead of building cloud infrastructure from scratch. Compose data solutions using integrated building blocks via Infrastructure as Code (IaC), that allow you to benefit from smart defaults and built-in AWS best practices. You can also customize or extend according to your requirements. Check out the dedicated documentation page, complete with examples to get you started. (#178)
+
+**aws-emr-advisor**
+
+[aws-emr-advisor](https://aws-oss.beachgeek.co.uk/3ut) started as fork of Qubole SparkLens, this tool can be used to analyse Spark Event Logs to generate insights and costs recommendations using different deployment options for Amazon EMR. The tool generates an HTML report that can be stored locally or on Amazon S3 bucket for a quick review.(#196)
+
+**cruise-control-for-msk**
+
+[cruise-control-for-msk](https://aws-oss.beachgeek.co.uk/3uq) is a repo that provides AWS CloudFormation templates that simplifies the deployment and management of Cruise Control and Prometheus for monitoring and rebalancing Amazon MSK clusters. Amazon MSK is a fully managed service that makes it easy to build and run applications that use Apache Kafka to process streaming data. With this new CloudFormation template, you can now integrate Cruise Control and Prometheus to gain deeper insights into your Amazon MSK cluster's performance and optimise resource utilisation. By automating the deployment and configuration of Cruise Control and Prometheus, you can improve operational efficiency, reduce the time and effort required for manual setup and maintenance, and allow you to focus on higher-value tasks. Check out the README for more details.(#196)
 
 **da-top-monitoring**
 
@@ -250,6 +283,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 **guidance-for-natural-language-queries-of-relational-databases-on-aws**
 
 [guidance-for-natural-language-queries-of-relational-databases-on-aws](https://aws-oss.beachgeek.co.uk/337) this AWS Solution contains a demonstration of Generative AI, specifically, the use of Natural Language Query (NLQ) to ask questions of an Amazon RDS for PostgreSQL database. This solution offers three architectural options for Foundation Models: 1. Amazon SageMaker JumpStart, 2. Amazon Bedrock, and 3. OpenAI API. The demonstration's web-based application, running on Amazon ECS on AWS Fargate, uses a combination of LangChain, Streamlit, Chroma, and HuggingFace SentenceTransformers. The application accepts natural language questions from end-users and returns natural language answers, along with the associated SQL query and Pandas DataFrame-compatible result set.(#190)
+
+**opensearch-for-gophers**
+
+[opensearch-for-gophers](https://aws-oss.beachgeek.co.uk/3un) This project contains an example that showcases different features from the official Go Client for OpenSearch that you can use as a reference about how to get started with OpenSearch in your Go apps. It is not intended to provide the full spectrum of what the client is capable of—but it certainly puts you on the right track. You can run this code with an OpenSearch instance running locally, to which you can leverage the Docker Compose code available in the project. Alternatively, you can also run this code with Amazon OpenSearch that can be easily created using the Terraform code also available in the project. Nice README that provides useful examples to get you going.(#196)
 
 **pinecone-db-construct**
 
@@ -289,6 +326,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 [tsynamo](https://aws-oss.beachgeek.co.uk/3td) is a project from that Olli Warro that simplifies the DynamoDB API so that you don't have to write commands with raw expressions and hassle with the attribute names and values. Moreover, Tsynamo makes sure you use correct types in your DynamoDB expressions, and the queries are nicer to write with autocompletion. Olli was inspired by another project ([Kysely](https://aws-oss.beachgeek.co.uk/3tm)), and so built this project so that he could do similar using Amazon DynamoDB. (#195)
 
 ### Developer Tools & DevOps
+
+**amazon-bedrock-client-for-mac**
+
+[amazon-bedrock-client-for-mac](https://aws-oss.beachgeek.co.uk/3um) this repo provides the code for the Amazon Bedrock Client for Mac is a macOS demo application built with SwiftUI. It serves as a client interface for AWS Bedrock, allowing users to interact with AWS Bedrock models.(#196)
 
 **amazon-sqs-python-extended-client-lib**
 
@@ -373,6 +414,10 @@ This repo contains a list of projects featured in the AWS open source newsletter
 **codecatalyst-blueprints**
 
 [codecatalyst-blueprints](https://aws-oss.beachgeek.co.uk/3kr) This repository contains common blueprint components, the base blueprint constructs and several public blueprints. Blueprints are code generators used to create and maintain projects in Amazon CodeCatalyst. (#185)
+
+**codecatalyst-runner-cli**
+
+[codecatalyst-runner-cli](https://aws-oss.beachgeek.co.uk/3up) This repository contains a command line tool that will allow you to run Amazon CodeCatalyst workflows locally. The README provides the instructions for quickly installing and getting started, so if  you have been using Amazon CodeCatalyst and looking for this, look no more.(#196)
 
 **cumuli-aws-console-chat**
 
@@ -649,6 +694,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [cedar-go](https://aws-oss.beachgeek.co.uk/3qf) provides the Go implementation of the Cedar policy language. Check out the README for a quick example of how to use Cedar within your Go applications, and am looking forward to seeing how Go developers start to incorporate this into their applications.(#192)
 
+**CloudConsoleCartographer**
+
+[CloudConsoleCartographer](https://aws-oss.beachgeek.co.uk/3uk) is a project that was released at Black Hat Asia on April 18, 2024, Cloud Console Cartographer is a framework for condensing groupings of cloud events (e.g. CloudTrail logs) and mapping them to the original user input actions in the management console UI for simplified analysis and explainability. It helps you detect signals from the noise more efficiently, which is always important when you are dealing with security incidents. (#196)
+
 **CloudGrappler**
 
 [CloudGrappler](https://aws-oss.beachgeek.co.uk/3qb) is a purpose-built tool designed for effortless querying of high-fidelity and single-event detections related to well-known threat actors in AWS. Andi Ahmeti has put together a blog post, [Introducing CloudGrappler: A Powerful Open-Source Threat Detection Tool for Cloud Environments](https://aws-oss.beachgeek.co.uk/3qc), that provides an overview of how this works with examples.(#192)
@@ -722,6 +771,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 By inputting an S3 bucket/prefix and utilizing various flags to customize your request, you can obtain a colorized or non-colorized directory tree right in your terminal. Whether it's for verifying the file structure, sharing the structure with your team, or any other purpose, stree offers an easy and convenient way to explore your S3 buckets. (#189)
 
 # AWS Services
+
+**amazon-gamelift-agent**
+
+[amazon-gamelift-agent](https://aws-oss.beachgeek.co.uk/3ur) is a Java application that is used to launch game server processes on Amazon GameLift fleets. This application registers a compute resource for an existing Amazon GameLift fleet using the RegisterCompute API. The application also calls the GetComputeAuthToken API to fetch an authorisation token for the compute resource, using it to make a web socket connection to the Amazon GameLift service.(#196)
 
 **appfabric-data-analytics**
 
@@ -927,6 +980,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **song-identification-on-aws**
 
 [song-identification-on-aws](https://aws-oss.beachgeek.co.uk/3qj) This repo contains sample code that demonstrates how you can "fingerprint" your songs, and then detect the presence of your songs in either stored audio files like MP3s, or within streaming media. The underlying idea is to convert audio data into a spectrogram, and then isolate important markers within the spectrogram that will allow us to identify music. Roughly 10000 to 25000 fingerprints will be created for an average length song. Each fingerprint is stored as a large integer. See the blog post for more details about how the system works. (#192)
+
+**svdxt-sagemaker-huggingface**
+
+[svdxt-sagemaker-huggingface](https://aws-oss.beachgeek.co.uk/3uo) is the latest demo repo from regular contributor Gary Stafford, that showcases some of the cool stuff Gary has been writing about in the generative AI space. This time he takes a look at the emerging field of generating videos through Stability AI's Stable Video Diffusion XT (SVT-XT). This foundation model is a diffusion model that takes in a still image as a conditioning frame and generates a video from it.(#196)
 
 **video-understanding-solution**
 
