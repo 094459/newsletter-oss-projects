@@ -1,7 +1,8 @@
 # AWS open source newsletter projects
 
-This repo contains a list of projects featured in the AWS open source newsletter.Includes projects from #178 to #183 of the newsletter (retrospective projects will be added over time)
+This repo contains a list of projects featured in the AWS open source newsletter. The (#) identifies which edition of the newsletter you can find the original mention.
 
+If you want your projects featured, please get in touch with ricsue at amazon dot com.
 
 # By technology/use case
 
