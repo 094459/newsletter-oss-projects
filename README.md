@@ -12,6 +12,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [agent-evaluation](https://aws-oss.beachgeek.co.uk/3vw)  is a generative AI-powered framework for testing virtual agents. Agent Evaluation implements an LLM agent (evaluator) that will orchestrate conversations with your own agent (target) and evaluate the responses during the conversation. The repo has links to detailed docs that provide example configurations and a reference guide to get you started. (#197)
 
+**alarm-context-tool**
+
+[alarm-context-tool](https://aws-oss.beachgeek.co.uk/40g) enhances AWS CloudWatch Alarms by providing additional context to aid in troubleshooting and analysis. By leveraging AWS services such as Lambda, CloudWatch, X-Ray, and Amazon Bedrock, this solution aggregates and analyses metrics, logs, and traces to generate meaningful insights. Using generative AI capabilities from Amazon Bedrock, it summarises findings, identifies potential root causes, and offers relevant documentation links to help operators resolve issues more efficiently. The implementation is designed for easy deployment and integration into existing observability pipelines, significantly reducing response times and improving root cause analysis. (#201)
+
 **amazon-bedrock-client-for-mac**
 
 [amazon-bedrock-client-for-mac](https://aws-oss.beachgeek.co.uk/3um) this repo provides the code for the Amazon Bedrock Client for Mac is a macOS demo application built with SwiftUI. It serves as a client interface for AWS Bedrock, allowing users to interact with AWS Bedrock models.(#196)
@@ -66,6 +70,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 **chronos-forecasting**
 
 [chronos-forecasting](https://aws-oss.beachgeek.co.uk/3rh) is a family of pre-trained time series forecasting models based on language model architectures. A time series is transformed into a sequence of tokens via scaling and quantisation, and a language model is trained on these tokens using the cross-entropy loss. Once trained, probabilistic forecasts are obtained by sampling multiple future trajectories given the historical context. Chronos models have been trained on a large corpus of publicly available time series data, as well as synthetic data generated using Gaussian processes. (#194)
+
+**cloudysetup**
+
+[cloudysetup](https://aws-oss.beachgeek.co.uk/40e) is a CLI tool designed to streamline AWS resource management using AWS Cloud Control API. It leverages Amazon Bedrock fully managed service with Anthropic - Claude V2 Gen AI model to create, read, update, list, and delete AWS resources by generating configurations compatible with AWS Cloud Control API.(#201)
 
 **distill-cli**
 
@@ -125,6 +133,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [partysmith](https://aws-oss.beachgeek.co.uk/3l4) is an awesome project from AWS Community Builder Stephen Sennett, that provides an unofficial way to transform your AWS PartyRock apps into deployable full-stack SvelteKit applications. Users can enter the URL of a publicly published PartyRock app, select the desired settings, and PartySmith will forge an application into a ZIP archive which will be downloaded to your machine, and ready for use. How cool is that! (Very in case you were wondering). Find out more by reading the supporting blog post, [PartySmith - Bring PartyRock apps to your place](https://aws-oss.beachgeek.co.uk/3l5). (#185)
 
+**project-lakechain**
+
+[project-lakechain](https://aws-oss.beachgeek.co.uk/401) is an experimental framework based on the AWS Cloud Development Kit (CDK) that makes it easy to express and deploy scalable document processing pipelines on AWS using infrastructure-as-code. It emphasis is on modularity of pipelines, and provides 40+ ready to use components for prototyping complex document pipelines that can scale out of the box to millions of documents. This project has been designed to help AWS customers build and scale different types of document processing pipelines, ranging a wide array of use-cases including metadata extraction, document conversion, NLP analysis, text summarisation, translations, audio transcriptions, computer vision, Retrieval Augmented Generation pipelines, and much more! It is in Alpha stage at the moment, so if you catch any oddities, be sure to flag an issue.(#201)
+
 **promptus**
 
 [promptus](https://aws-oss.beachgeek.co.uk/3mu) Prompt engineering is key for generating high-quality AI content. But crafting effective prompts can be time-consuming and difficult. That's why I built Promptus. Promptus allows you to easily create, iterate, and organise prompts for generative AI models. With Promptus, you can:
@@ -135,6 +147,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 * See a history of your prompt and easily go back to any previous prompt execution
 
 (#188)
+
+**python-bedrock-converse-generate-docs**
+
+[python-bedrock-converse-generate-docs](https://aws-oss.beachgeek.co.uk/409) is a project from AWS Community Builder Alan Blockley that generates documentation for a given source code file using the Anthropic Bedrock Runtime API. The generated documentation is formatted in Markdown and stored in the specified output directory. Alan also put a blog together, [It’s not a chat bot: Writing Documentation](https://aws-oss.beachgeek.co.uk/40a), that shows you how it works and how to get started. The other cool thing about this project is that it is using the [Converse API](https://aws-oss.beachgeek.co.uk/40b) which you should check out if you have not already seen/used it. (#201)
 
 **rag-with-amazon-bedrock-and-pgvector**
 
@@ -220,6 +236,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [amazon-eks-running-webassembly](https://aws-oss.beachgeek.co.uk/3th) This repository contains code for building custom Amazon EKS AMIs using HashiCorp Packer. The AMIs include necessary binaries and configurations to enable you to run WebAssembly workloads in an EKS cluster and are based on Amazon Linux 2023. The runtimes used in the AMIs are Spin and WasmEdge. The respective containerd-shims are used for both runtimes. Deploying the cluster is done using Hashicorp Terraform. After the cluster is created, RuntimeClasses and example workloads are deployed to the cluster. If you are exploring Wasm, then this is for you. (#195)
 
+**amazon-mwaa-docker-images**
+
+[amazon-mwaa-docker-images](https://aws-oss.beachgeek.co.uk/3zu) this repo was new to me, so making sure that everyone knows that this repo contains the standard container images used for the Managed Worksflows for Apache Airflow (#201)
+
 **amplify-hosting-astro**
 
 [amplify-hosting-astro](https://aws-oss.beachgeek.co.uk/3r7) is a repo from AWS Amplify's Matt Auerbach that provides a walk through on how to build a simple blog using Astro's starter blog template, and deploy it using AWS Amplify Hosting. (#193)
@@ -302,9 +322,17 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [amazon-bedrock-synthetic-manufacturing-data-generator](https://aws-oss.beachgeek.co.uk/3ln) is a industry aligned synthetic data generation solution. Manufacturing processes generate large amounts of sensor data that can be used for analytics and machine learning models. However, this data may contain sensitive or proprietary information that cannot be shared openly. Synthetic data allows the distribution of realistic example datasets that preserve the statistical properties and relationships in the real data, without exposing confidential information. This enables more open research and benchmarking on representative data. Additionally, synthetic data can augment real datasets to provide more training examples for machine learning algorithms to generalize better. Data augmentation with synthetic manufacturing data can help improve model accuracy and robustness. Overall, synthetic data enables sharing, research, and expanded applications of AI in manufacturing while protecting data privacy and security.(#186)
 
+**amazon-mwaa-docker-images**
+
+[amazon-mwaa-docker-images](https://aws-oss.beachgeek.co.uk/3zu) this repo was new to me, so making sure that everyone knows that this repo contains the standard container images used for the Managed Worksflows for Apache Airflow (#201)
+
 **amazon-sqs-python-extended-client-lib**
 
 [amazon-sqs-python-extended-client-lib](https://aws-oss.beachgeek.co.uk/3ti) this repo (Amazon SQS Extended Client) allows clients to manage Amazon SQS message payloads that exceed the 256 KB message size limit, up to a size of 2 GB. In the event of publishing such large messages, the client accomplishes this feat by storing the actual payload in a S3 bucket and by storing the reference of the stored object in the SQS queue. Similarly, the extended-client is also used for retrieving and dereferencing these references of message objects stored in S3.  Check out the docs for more details on how this works and some sample code to get you going. (#195)
+
+**apache-xtable-on-aws-samples**
+
+[apache-xtable-on-aws-samples](https://aws-oss.beachgeek.co.uk/3ze) provides sample code to build an Apache Airflow Operator that uses Apache XTable to make a single physical dataset readable in different formats by translating its metadata and avoiding reprocessing of actual data files. The repo will help you build and compile your custom jar file, which you can then use within your Airflow DAG. Check out the supporting blog post from Matthias Rudolph and Stephen Said, [Run Apache XTable on Amazon MWAA to translate open table formats](https://aws-oss.beachgeek.co.uk/3zf).(#201)
 
 **automated-datastore-discovery-with-aws-glue**
 
@@ -362,6 +390,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [guidance-for-natural-language-queries-of-relational-databases-on-aws](https://aws-oss.beachgeek.co.uk/337) this AWS Solution contains a demonstration of Generative AI, specifically, the use of Natural Language Query (NLQ) to ask questions of an Amazon RDS for PostgreSQL database. This solution offers three architectural options for Foundation Models: 1. Amazon SageMaker JumpStart, 2. Amazon Bedrock, and 3. OpenAI API. The demonstration's web-based application, running on Amazon ECS on AWS Fargate, uses a combination of LangChain, Streamlit, Chroma, and HuggingFace SentenceTransformers. The application accepts natural language questions from end-users and returns natural language answers, along with the associated SQL query and Pandas DataFrame-compatible result set.(#190)
 
+**kafka-client-metrics-to-cloudwatch-with-kip-714**
+
+[kafka-client-metrics-to-cloudwatch-with-kip-714](https://aws-oss.beachgeek.co.uk/407) provides reference code from my colleague Ricardo Ferreria, that shows how to push metrics from your Apache Kafka clients to Amazon CloudWatch using the KIP-714: Client Metrics and Observability. To use this feature, you must use a Kafka cluster with the version 3.7.0 or higher. It also requires the Kraft mode enabled, which is the new mode to run Kafka brokers without requiring Zookeeper. (#201)
+
 **opensearch-for-gophers**
 
 [opensearch-for-gophers](https://aws-oss.beachgeek.co.uk/3un) This project contains an example that showcases different features from the official Go Client for OpenSearch that you can use as a reference about how to get started with OpenSearch in your Go apps. It is not intended to provide the full spectrum of what the client is capable of—but it certainly puts you on the right track. You can run this code with an OpenSearch instance running locally, to which you can leverage the Docker Compose code available in the project. Alternatively, you can also run this code with Amazon OpenSearch that can be easily created using the Terraform code also available in the project. Nice README that provides useful examples to get you going.(#196)
@@ -417,6 +449,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **.NET Aspire**
 
 [aspire](https://aws-oss.beachgeek.co.uk/3x1) Provides extension methods and resources definition for a .NET Aspire AppHost to configure the AWS SDK for .NET and AWS application resources. If you are not familiar with Aspire,  it is an opinionated, cloud ready stack for building observable, production ready, distributed applications in .NET. You can now use this with AWS resources, so check out the repo and the documentation that provides code examples and more.(#198)
+
+**alarm-context-tool**
+
+[alarm-context-tool](https://aws-oss.beachgeek.co.uk/40g) enhances AWS CloudWatch Alarms by providing additional context to aid in troubleshooting and analysis. By leveraging AWS services such as Lambda, CloudWatch, X-Ray, and Amazon Bedrock, this solution aggregates and analyses metrics, logs, and traces to generate meaningful insights. Using generative AI capabilities from Amazon Bedrock, it summarises findings, identifies potential root causes, and offers relevant documentation links to help operators resolve issues more efficiently. The implementation is designed for easy deployment and integration into existing observability pipelines, significantly reducing response times and improving root cause analysis. (#201)
 
 **amazon-bedrock-client-for-mac**
 
@@ -494,6 +530,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [beta9](https://aws-oss.beachgeek.co.uk/3xu) is a self-hosted serverless framework that you can run in your AWS account. Think of AWS Lambda, but with GPUs and a Python-first developer experience. You can run workloads that instantly scale up to thousands of GPU containers running in parallel. The instances scale down automatically after each workload. You can also do things like deploy web endpoints, run task queues, and mount storage volumes for accessing large datasets. If you already have an EKS cluster, you can install Beta9 with a Helm chart. We think this would be a great way to save money on EC2 GPU resources while also getting a magical Python-first developer experience. If you have feedback or feature ideas, the maintainers would like to hear them.  (#199)
 
+**csr-builder-for-kms**
+
+[csr-builder-for-kms](https://aws-oss.beachgeek.co.uk/40h) provides a Python library for creating and signing X.509 certificate signing requests (CSRs) with KMS Keys. (#201)
+
 **cdk-notifier**
 
 [cdk-notifier](https://aws-oss.beachgeek.co.uk/3it) is a lightweight CLI tool to parse a CDK log file and post changes to pull request requests. Can be used to get more confidence on approving pull requests because reviewer will be aware of changes done to your environments. I am not sure whether this is an old tool, but I have only just found out about it thanks to the blog post from AWS Community Builder, Johannes Konings. He put together [Use cdk-notifier to compare changes in pull requests](https://aws-oss.beachgeek.co.uk/3iu) that explains in more details how this works and walks you through using it. (#183)
@@ -525,6 +565,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **cloudwatch-macros**
 
 [cloudwatch-macros](https://aws-oss.beachgeek.co.uk/3gs) is the latest open source creation from AWS Hero Efi Merdler-Kravitz, focused on improving the CloudFormation and AWS SAM developer experience. This project features a collection of (basic at the moment) CloudFormation macros, written in Rust, offering seamless deployment through SAM. Check out [Efi's post on LinkedIn](https://aws-oss.beachgeek.co.uk/3gt) for more details and additional useful resources. (#181)
+
+**cloudysetup**
+
+[cloudysetup](https://aws-oss.beachgeek.co.uk/40e) is a CLI tool designed to streamline AWS resource management using AWS Cloud Control API. It leverages Amazon Bedrock fully managed service with Anthropic - Claude V2 Gen AI model to create, read, update, list, and delete AWS resources by generating configurations compatible with AWS Cloud Control API.(#201)
 
 **codecatalyst-blueprints**
 
@@ -561,6 +605,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **gh-relfind**
 
 [gh-relfind](https://aws-oss.beachgeek.co.uk/3tf) is a project from AWS Community Builder Colin Duggan, that provides a simple Go CLI tool that uses Claude to parse package changes from GitHub repos release history. Significant change information is often contained in the release text field (body tag in the JSON response from ListReleases). Adding a semantic search makes it easier to extract and summarise actual change details. The project was built to get a better understanding of how to integrate with Claude through AWS Bedrock. (#195)
+
+**lambda_helpers_metrics**
+
+[lambda_helpers_metrics](https://aws-oss.beachgeek.co.uk/40c) is a metrics helper library for AWS Lambda functions that provides the way to put metrics to the CloudWatch using the Embedded Metric Format ([EMF](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html)). Check out the supporting post, [AWS Lambda Rust EMF metrics helper](https://aws-oss.beachgeek.co.uk/40d). (#201)
 
 **language-server-runtimes**
 
@@ -600,6 +648,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 * See a history of your prompt and easily go back to any previous prompt execution
 
 (#188)
+
+**python-bedrock-converse-generate-docs**
+
+[python-bedrock-converse-generate-docs](https://aws-oss.beachgeek.co.uk/409) is a project from AWS Community Builder Alan Blockley that generates documentation for a given source code file using the Anthropic Bedrock Runtime API. The generated documentation is formatted in Markdown and stored in the specified output directory. Alan also put a blog together, [It’s not a chat bot: Writing Documentation](https://aws-oss.beachgeek.co.uk/40a), that shows you how it works and how to get started. The other cool thing about this project is that it is using the [Converse API](https://aws-oss.beachgeek.co.uk/40b) which you should check out if you have not already seen/used it. (#201)
 
 **repository-migration-helper**
 
@@ -664,6 +716,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 ### Governance & Risk
 
+**alarm-context-tool**
+
+[alarm-context-tool](https://aws-oss.beachgeek.co.uk/40g) enhances AWS CloudWatch Alarms by providing additional context to aid in troubleshooting and analysis. By leveraging AWS services such as Lambda, CloudWatch, X-Ray, and Amazon Bedrock, this solution aggregates and analyses metrics, logs, and traces to generate meaningful insights. Using generative AI capabilities from Amazon Bedrock, it summarises findings, identifies potential root causes, and offers relevant documentation links to help operators resolve issues more efficiently. The implementation is designed for easy deployment and integration into existing observability pipelines, significantly reducing response times and improving root cause analysis. (#201)
+
 **appfabric-data-analytics**
 
 [appfabric-data-analytics](https://aws-oss.beachgeek.co.uk/3k3) this project enables you to maintain logs from various SaaS applications and provides the ability to search and display log data. This solution leverages AWS AppFabric to create a data repository that you can query with Amazon Athena. While customers can obtain normalized and enriched SaaS audit log data (OCSF) from AppFabric, many prefer not only to forward these logs to a security tool. Some have the requirement to preserve logs for post-incident analysis, while others need to utilize the logs for tracking SaaS subscription and license usage. Additionally, some customers aim to analyze user activity to discover patterns. This project establishes a data pipeline that empowers customers to construct dashboards on top of it. (#184)
@@ -715,6 +771,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **CloudGrappler**
 
 [CloudGrappler](https://aws-oss.beachgeek.co.uk/3qb) is a purpose-built tool designed for effortless querying of high-fidelity and single-event detections related to well-known threat actors in AWS. Andi Ahmeti has put together a blog post, [Introducing CloudGrappler: A Powerful Open-Source Threat Detection Tool for Cloud Environments](https://aws-oss.beachgeek.co.uk/3qc), that provides an overview of how this works with examples.(#192)
+
+**cloudysetup**
+
+[cloudysetup](https://aws-oss.beachgeek.co.uk/40e) is a CLI tool designed to streamline AWS resource management using AWS Cloud Control API. It leverages Amazon Bedrock fully managed service with Anthropic - Claude V2 Gen AI model to create, read, update, list, and delete AWS resources by generating configurations compatible with AWS Cloud Control API.(#201)
 
 **containers-cost-allocation-dashboard**
 
@@ -874,6 +934,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **CloudGrappler**
 
 [CloudGrappler](https://aws-oss.beachgeek.co.uk/3qb) is a purpose-built tool designed for effortless querying of high-fidelity and single-event detections related to well-known threat actors in AWS. Andi Ahmeti has put together a blog post, [Introducing CloudGrappler: A Powerful Open-Source Threat Detection Tool for Cloud Environments](https://aws-oss.beachgeek.co.uk/3qc), that provides an overview of how this works with examples.(#192)
+
+**csr-builder-for-kms**
+
+[csr-builder-for-kms](https://aws-oss.beachgeek.co.uk/40h) provides a Python library for creating and signing X.509 certificate signing requests (CSRs) with KMS Keys. (#201)
 
 **duplicate-rule-detection-tool**
 
@@ -1147,6 +1211,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [domain-specific-genai-chatbot-with-serverless](https://aws-oss.beachgeek.co.uk/3t9) This sample demonstrates how to build a domain specific chatbot using serverless and Bedrock. The chatbot employs Retrieval-Augments Generation (RAG) and chat history to provide context for the LLM to answer. (#195)
 
+**genai-asl-avatar-generator**
+
+[genai-asl-avatar-generator](https://aws-oss.beachgeek.co.uk/405) this repo provides code that demonstrates the power of a number of AWS services working in concert to enable seamless translation from speech/text to American Sign Language (ASL) avatar animations.  Check out the supporting blog post, [Generative AI-powered American Sign Language Avatars](https://aws-oss.beachgeek.co.uk/406), where Suresh Poopandi walks through the project and code and how it all hangs together. (#201)
+
 **gen-ai-cve-patching**
 
 [gen-ai-cve-patching](https://aws-oss.beachgeek.co.uk/3vy) This repository introduces an innovative automated remediation pipeline, designed to effectively address vulnerabilities detected by AWS ECR Inspector. By leveraging Generative AI through Amazon Bedrock's in-context learning, this solution significantly enhances the security posture of application development workflows. The architecture integrates with CI/CD processes, offering a comprehensive and automated approach to vulnerability management. The architecture diagram provided illustrates the solution's key components and their interactions, ensuring a holistic vulnerability remediation strategy.(#197)
@@ -1154,6 +1222,20 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **generative-ai-newsletter-app**
 
 [generative-ai-newsletter-app](https://aws-oss.beachgeek.co.uk/3vx) is a ready-to-use serverless solution designed to allow users to create rich newsletters automatically with content summaries that are AI-generated. The application offers users the ability to influence the generative AI prompts to customise how content is summarised such as the tone, intended audience, and more. Users can stylise the HTML newsletter, define how frequently newsletters are created and share the newsletters with others.(#197)
+
+**generative-bi-using-rag**
+
+[generative-bi-using-rag](https://aws-oss.beachgeek.co.uk/40f) is a comprehensive framework designed to enable Generative BI capabilities on customised data sources (RDS/Redshift) hosted on AWS. It offers the following key features:
+
+* Text-to-SQL functionality for querying customised data sources using natural language.
+* User-friendly interface for adding, editing, and managing data sources, tables, and column descriptions.
+* Performance enhancement through the integration of historical question-answer ranking and entity recognition.
+* Customise business information, including entity information, formulas, SQL samples, and analysis ideas for complex business problems. 
+* Add agent task splitting function to handle complex attribution analysis problems.
+* Intuitive question-answering UI that provides insights into the underlying Text-to-SQL mechanism.
+* Simple agent design interface for handling complex queries through a conversational approach.
+
+(#201)
 
 **generate-s3-accelerate-presigned-url**
 
