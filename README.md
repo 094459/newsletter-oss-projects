@@ -125,6 +125,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [mlspace](https://aws-oss.beachgeek.co.uk/3r8) provides code that will help you deploy [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) into your AWS account. [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) is an open source no-hassle tool for data science, machine learning and deep learning, and has pre-made environments for pytorch, tensorflow and everything else you might need. (#193)
 
+**multi-agent-orchestrator**
+
+[multi-agent-orchestrator](https://aws-oss.beachgeek.co.uk/41q) is a new open source project that provides a flexible and powerful framework for managing multiple AI agents and handling complex conversations. It intelligently routes queries and maintains context across interactions. The system offers pre-built components for quick deployment, while also allowing easy integration of custom agents and conversation messages storage solutions. This adaptability makes it suitable for a wide range of applications, from simple chatbots to sophisticated AI systems, accommodating diverse requirements and scaling efficiently. (#202)
+
 **multi-table-benchmark**
 
 [multi-table-benchmark](https://aws-oss.beachgeek.co.uk/3vv) this repo is the DBInfer Benchmark (DBB), a set of benchmarks for measuring machine learning solutions over data stored as multiple tables. The repo provides detailed instructions on the different steps needed to set up your testing, as well as a Jupyter notebook tutorial to walk you through the key concepts.(#197)
@@ -426,6 +430,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [remote-debugging-with-emr](https://aws-oss.beachgeek.co.uk/3ne) is a Python-based CDK stack that deploys an EC2 bastion host and EMR Serverless and EMR on EKS environments configured for remote debugging. (#188)
 
+**salmon**
+
+[salmon](https://aws-oss.beachgeek.co.uk/41o) is a new open source solution from Soname Solutions that provides an alerting solution for your AWS based data pipelines, which has been designed with ease of use in mind. The solution focus' on AWS services such as Glue, Step Functions, EMR, and others. Check out the repo for details on how it works, as well as some examples to get you going. (#202)
+
 **sparklepop**
 
 [sparklepop](https://aws-oss.beachgeek.co.uk/3z2) is a simple Python package from Daniel B designed to check the free disk space of an AWS RDS instance. It leverages AWS CloudWatch to retrieve the necessary metrics. This package is intended for users who need a straightforward way to monitor disk space without setting up complex alerts. (#200)
@@ -443,6 +451,14 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **user-behavior-insights**
 
 [user-behavior-insights](https://aws-oss.beachgeek.co.uk/3yx) This repository contains the OpenSearch plugin for the User Behavior Insights (UBI) capability. This plugin facilitates persisting client-side events (e.g. item clicks, scroll depth) and OpenSearch queries for the purpose of analyzing the data to improve search relevance and user experience.(#200)
+
+**valkey-python-demo**
+
+[valkey-python-demo](https://aws-oss.beachgeek.co.uk/41k) provides some sample code that shows you how you can connect to a Valkey server using three different types of client. Existing Redis clients, the Valkey client, and the all new GLIDE client too. I put together a quick blog post on how I put this code together, so check it out - [Using Amazon Q Developer to update Valkey client code](https://aws-oss.beachgeek.co.uk/41m) (#202)
+
+**valkey-finch**
+
+[valkey-finch](https://aws-oss.beachgeek.co.uk/41n) is a quick recipe on how to run Valkey in a container using Finch. It did not work out of the box for me, and I had to figure out how to get it working. Now you can save yourself the trouble and check out this configuration. I also put a short blog on this, so check out [Getting started with Valkey and Finch](https://aws-oss.beachgeek.co.uk/40u) (#202)
 
 ### Developer Tools & DevOps
 
@@ -465,6 +481,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **amplify-hosting-astro**
 
 [amplify-hosting-astro](https://aws-oss.beachgeek.co.uk/3r7) is a repo from AWS Amplify's Matt Auerbach that provides a walk through on how to build a simple blog using Astro's starter blog template, and deploy it using AWS Amplify Hosting. (#193)
+
+**awsid**
+
+[awsid](https://aws-oss.beachgeek.co.uk/41p) is the latest novel project from Aidan Steele, author of many curiosities in the past, and this time (using his own words) he has created a tool that is "an incredibly niche tool, that might be of interest to half a dozen people. It turns AWS unique IDs into ARNs. I used generative AI to generate the UI." Check it out and see if you are part of that niche! (also make sure you check out the README about what he can potentially see) (#202)
 
 **aws-iatk**
 
@@ -716,6 +736,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 ### Governance & Risk
 
+**aft-account-suspend-close-solution**
+
+[aft-account-suspend-close-solution](https://aws-oss.beachgeek.co.uk/41h) provides a sample solution that leverages AWS Control Tower Account Factory Terraform (AFT) to streamline the account closure and suspension process. The solution aims to provide a reliable, efficient, and fast way to manage the decommissioning of AWS accounts from organisations.(#202)
+
 **alarm-context-tool**
 
 [alarm-context-tool](https://aws-oss.beachgeek.co.uk/40g) enhances AWS CloudWatch Alarms by providing additional context to aid in troubleshooting and analysis. By leveraging AWS services such as Lambda, CloudWatch, X-Ray, and Amazon Bedrock, this solution aggregates and analyses metrics, logs, and traces to generate meaningful insights. Using generative AI capabilities from Amazon Bedrock, it summarises findings, identifies potential root causes, and offers relevant documentation links to help operators resolve issues more efficiently. The implementation is designed for easy deployment and integration into existing observability pipelines, significantly reducing response times and improving root cause analysis. (#201)
@@ -795,6 +819,14 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **ec2RuntimeMonitor**
 
 [ec2RuntimeMonitor](https://aws-oss.beachgeek.co.uk/3ra) EC2 runtime monitor is a serverless solution to get a notification when an EC2 instance is running for a time exceeding a user defined threshold. The README covers use cases why you might find this useful, but principally cost optimisation as well as reducing your carbon footprint are two key reasons why this might be a useful tool to keep your toolkit. (#193)
+
+**integrate-control-tower-with-ipam**
+
+[integrate-control-tower-with-ipam](https://aws-oss.beachgeek.co.uk/41f) This project implements a solution which integrates Amazon IP Address Management (IPAM) within AWS Control Tower through the use of Lifecycle Events. It presents the architecture view and shows how this solution extends your AWS Control Tower environment with Amazon IPAM to allow teams to access IPAM pools for their workload accounts.(#202)
+
+**orgs-prescriptive-guidance**
+
+[orgs-prescriptive-guidance](https://aws-oss.beachgeek.co.uk/41g) This repository contains a collection of AWS CloudFormation templates to create up an AWS Organizations structure. So if you are looking to implement this, or are curious and want to dig into the code to find out more, check out this repo. (#202)
 
 **powerpipe**
 
@@ -895,6 +927,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [aws-secret-inject](https://aws-oss.beachgeek.co.uk/3pg) this handy command line tool from Quincy Mitchell allows you to inject AWS Secrets or SSM Parameters into your configuration files (.env, or whatever you like to call your configuration files these days). The README contains examples of how you can use this. Very handy indeed. (#191)
 
+**aws-secretsmanager-agent**
+
+[aws-secretsmanager-agent](https://aws-oss.beachgeek.co.uk/41i) is a local HTTP service that you can install and use in your compute environments to read secrets from Secrets Manager and cache them in memory. The Secrets Manager Agent can retrieve and cache secrets in memory so that your applications can consume secrets directly from the cache. That means you can fetch the secrets your application needs from the localhost instead of making calls to Secrets Manager. The Secrets Manager Agent can only make read requests to Secrets Manager - it can't modify secrets. The Secrets Manager Agent uses the AWS credentials you provide in your environment to make calls to Secrets Manager. The Secrets Manager Agent offers protection against Server Side Request Forgery (SSRF) to help improve secret security. You can configure the Secrets Manager Agent by setting the maximum number of connections, the time to live (TTL), the localhost HTTP port, and the cache size.(#202)
+
 **avp-toy-store-sample**
 
 [avp-toy-store-sample](https://aws-oss.beachgeek.co.uk/3jw) is a great sample project if you want to explore Cedar, and how this fits in with Amazon Verified Permissions. This sample web application demonstrates authentication and policy-based authorization for different user types to an imaginary toy store. The toy store takes orders online and then send them to customers through multiple warehouses. This application is used by warehouses to help sending orders to customers. The application uses Amazon Cognito for authentication and uses Amazon Verified Permissions for policy-based authorization. Additionally, the application uses API-Gateway as the front-door to the application, and Lambda to process requests. (#184)
@@ -963,6 +999,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **s3-presignedurl-staticips-endpoint-with-cdk**
 
 [s3-presignedurl-staticips-endpoint-with-cdk](https://aws-oss.beachgeek.co.uk/3k5) this solution simplifies access to Amazon S3 by creating secure, custom presigned URLs for object downloads through a single endpoint with a unique domain and static IPs. The use case involves users following an IP and domain Allowlist firewall policy, limiting API access to specific domains and IPs. The architecture employs key AWS services, including AWS Global Accelerator, Amazon API Gateway, AWS Lambda, Application Load Balancer(ALB), VPC Endpoint, and Amazon S3. This design centralizes the API for generating presigned URLs and the S3 endpoint under a single domain, linked to an AWS Global Accelerator with two static IPs. Consequently, users can effortlessly request presigned URLs and download S3 objects through a unified domain endpoint with static IPs. This architecture is especially beneficial for customers with strict policies or compliance requirements, such as those in the public, medical, and finance sectors. (#184)
+
+**security-hub-compliance-analyzer**
+
+[security-hub-compliance-analyzer](https://aws-oss.beachgeek.co.uk/41s) this repo provides a compliance analysis tool which enables organisations to more quickly articulate their compliance posture and also generate supporting evidence artefacts. Security Hub Compliance Analyzer (SHCA) generates artefacts in support of Department of Defense Risk Management Framework (RMF) Information System accreditation. Utilising Amazon Web Services provided documentation, mapping NIST800-53-Rev-5 Controls to AWS Security Hub Security Control IDs, SHCA requests the current environment compliance from Security Hub and generates a zip file stored in Amazon S3 containing discrete artefacts in CSV, JSON, OCSF providing SecOps with artefacts to import into the RMF tool.(#202)
 
 **sigv4a-signing-examples**
 
@@ -1258,6 +1298,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [golang-url-shortener](https://aws-oss.beachgeek.co.uk/3j3) is a project that you can build from Furkan Gulsen that deploys a URL shortener service, built with Go and Hexagonal Architecture, leverages a serverless approach for efficient scalability and performance. It uses a variety of AWS services to provide a robust, maintainable, and highly available URL shortening service. Are URL Shortners the new todo app? Not sure but I really like the quality of the documentation of this project, and like I did last year with implementing a serverless web analytics solution, I am going to check this project out and see if it would be a good replacement for the tool I currently use, YOURLS. Check out the discussion on reddit [here](https://www.reddit.com/r/aws/comments/18nnfix/url_shortener_hexagonal_serverless_architecture/).(#183)
 
+**hackernews-converse-api-demo**
+
+[hackernews-converse-api-demo](https://aws-oss.beachgeek.co.uk/41j) this repo provides some sample code on how you can use the Amazon Bedrock Converse API, using an example of summarising comments from a Hacker News thread. It is a simple example, but shows you how easy it is to incorporate generative AI in your own applications. You can check out the supporting blog post too, [Save time reading Hacker News comments using Converse API](https://aws-oss.beachgeek.co.uk/41l) (#202)
+
 **maplibregljs-amazon-location-service-route-calculators-starter**
 
 [maplibregljs-amazon-location-service-route-calculators-starter](https://aws-oss.beachgeek.co.uk/3p9) is a new repo from AWS Hero Yasunori Kirimoto that provides an example of how you can start routing with MapLibre GL JS and Amazon Location Service. He has also put together a blog post to help get you start, [Building a Route Search Function with Amazon Location SDK and API Key Function ](https://aws-oss.beachgeek.co.uk/3pa) (#191)
@@ -1309,6 +1353,14 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **svdxt-sagemaker-huggingface**
 
 [svdxt-sagemaker-huggingface](https://aws-oss.beachgeek.co.uk/3uo) is the latest demo repo from regular contributor Gary Stafford, that showcases some of the cool stuff Gary has been writing about in the generative AI space. This time he takes a look at the emerging field of generating videos through Stability AI's Stable Video Diffusion XT (SVT-XT). This foundation model is a diffusion model that takes in a still image as a conditioning frame and generates a video from it.(#196)
+
+**valkey-python-demo**
+
+[valkey-python-demo](https://aws-oss.beachgeek.co.uk/41k) provides some sample code that shows you how you can connect to a Valkey server using three different types of client. Existing Redis clients, the Valkey client, and the all new GLIDE client too. I put together a quick blog post on how I put this code together, so check it out - [Using Amazon Q Developer to update Valkey client code](https://aws-oss.beachgeek.co.uk/41m) (#202)
+
+**valkey-finch**
+
+[valkey-finch](https://aws-oss.beachgeek.co.uk/41n) is a quick recipe on how to run Valkey in a container using Finch. It did not work out of the box for me, and I had to figure out how to get it working. Now you can save yourself the trouble and check out this configuration. I also put a short blog on this, so check out [Getting started with Valkey and Finch](https://aws-oss.beachgeek.co.uk/40u) (#202)
 
 **video-understanding-solution**
 
