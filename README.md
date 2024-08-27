@@ -32,6 +32,14 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [awesome-codewhisperer](https://aws-oss.beachgeek.co.uk/3cw) this repo from Christian Bonzelet is a great collection of resources for those of you who are experimenting with Generative AI coding assistants such as Amazon CodeWhisperer. This resource should keep you busy, and help you master Amazon CodeWhisperer in no time.  (#177)
 
+**aws-chatbot-fargate-python**
+
+[aws-chatbot-fargate-python](https://aws-oss.beachgeek.co.uk/43f) is a new repo from AWS Hero Ran Isenberg that deploys a Streamlit Chatbot in an AWS Fargate-based ESC cluster web application using AWS CDK (Cloud Development Kit). The infrastructure includes an ECS cluster, Fargate service, Application Load Balancer, VPC, and WAF and includes security best practices with CDK-nag verification. The chatbot is based on an implementation by Streamlit and the initial prompt is that the chatbot is me, Ran the builder, a serverless hero and attempts to answer as me. The Chatbot uses custom domain (you can remove it or change it to your own domain) and assume an OpenAI token exists in the account in the form of a secrets manager secret for making API calls to OpenAI.(#203)
+
+**aws-genai-rfpassistant**
+
+[aws-genai-rfpassistant](https://aws-oss.beachgeek.co.uk/43a) this repository contains the code and infrastructure as code for a Generative AI-powered Request for Proposal (RFP) Assistant leveraging Amazon Bedrock and AWS Cloud Development Kit (CDK). This could be very hand if responding to RFP's is something that you do and you want to look at ways of optimising your approach. The documentation in the repo is very comprehensive. I have not tried this one out for myself, but I have been involved in both writing and reviewing RFPs in the past, so understand the pain that led to the creation of this project.(#203)
+
 **aws-inference-benchmark**
 [aws-inference-benchmark ](https://aws-oss.beachgeek.co.uk/3cy)this project from Rustem Feyzkhanov contains code for running deep learning inference benchmarks on different AWS instances and service types. Check out his post, [Making LLMs Scalable: Cloud Inference with AWS Fargate and Copilot](https://aws-oss.beachgeek.co.uk/3d0) where Rustem shows you in more details how you can use this repo. (#177)
 
@@ -43,21 +51,33 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [bedrock-access-gateway](https://aws-oss.beachgeek.co.uk/3us) provides an OpenAI-compatible RESTful APIs for Amazon Bedrock. Amazon Bedrock offers a wide range of foundation models (such as Claude 3 Opus/Sonnet/Haiku, Llama 2/3, Mistral/Mixtral, etc.) and a broad set of capabilities for you to build generative AI applications. Check the Amazon Bedrock landing page for additional information. Sometimes, you might have applications developed using OpenAI APIs or SDKs, and you want to experiment with Amazon Bedrock without modifying your codebase. Or you may simply wish to evaluate the capabilities of these foundation models in tools like AutoGen etc. Well, this repository allows you to access Amazon Bedrock models seamlessly through OpenAI APIs and SDKs, enabling you to test these models without code changes.(#196)
 
+**bedrock-embed-web**
+
+[bedrock-embed-web](https://aws-oss.beachgeek.co.uk/43i) is a new project from my colleague Olivier Leplus that makes it easier than ever to embed Amazon Bedrock foundation models within a chat interface in your web applications. (#203)
+
 **bedrock-genai-workshop**
 
 [bedrock-genai-workshop](https://aws-oss.beachgeek.co.uk/3lt) if you are looking to get hands on with generative AI, then check out this workshop that is aimed at developers and solution builders, introduces how to leverage foundation models (FMs) through Amazon Bedrock. Amazon Bedrock is a fully managed service that provides access to FMs from third-party providers and Amazon; available via an API. With Bedrock, you can choose from a variety of models to find the one that’s best suited for your use case. Within this series of labs, you'll explore some of the most common usage patterns, and Labs include: 1/ Text Generation, 2/ Text Summarization, 3/ Questions Answering, 4/ Chatbot , and 5/ Agent (#186)
+
+**bedrock-litellm**
+
+[bedrock-litellm](https://aws-oss.beachgeek.co.uk/43m) is an awesome project that provides a way of proxying requests in the OpenAI format, so that they will work with Amazon Bedrock. OpenAI is often one of the default options for integrating various generative AI tools and libraries, and now you have a way of being able to point those to use foundational models managed by Amazon Bedrock. It uses [litellm](https://www.litellm.ai/) to do this, and is deployed in a Kubernetes cluster.(#203)
 
 **bedrock-multi-tenant-saas**
 
 [bedrock-multi-tenant-saas](https://aws-oss.beachgeek.co.uk/3jx) In this repository, we show you how to build an internal SaaS service to access foundation models with Amazon Bedrock in a multi-tenant architecture. An internal software as a service (SaaS) for foundation models can address governance requirements while providing a simple and consistent interface for the end users. (#184)
 
+**bedrock-vscode-playground**
+
+[bedrock-vscode-playground](https://aws-oss.beachgeek.co.uk/3nb) is a Visual Studio Code (VS Code) extension which allows developers to easily explore and experiment with large language models (LLMs) available in Amazon Bedrock. Check out the README for details of what you can do with it and how you can configure it to work with your specific setup.(#188)
+
 **bedrust**
 
 [bedrust](https://aws-oss.beachgeek.co.uk/3n1) is a demo repo from my colleague Darko Mesaros that shows you how you can use Amazon Bedrock in your Rust code, and allows you to currently choose between Claude V2, Llama2 70B, and Cohere Command.(#188)
 
-**bedrock-vscode-playground**
+**build-an-agentic-llm-assistant**
 
-[bedrock-vscode-playground](https://aws-oss.beachgeek.co.uk/3nb) is a Visual Studio Code (VS Code) extension which allows developers to easily explore and experiment with large language models (LLMs) available in Amazon Bedrock. Check out the README for details of what you can do with it and how you can configure it to work with your specific setup.(#188)
+[build-an-agentic-llm-assistant](https://aws-oss.beachgeek.co.uk/43e) this repo provides code that you can follow along as part of the "Build an agentic LLM assistant on AWS" workshop. This hands-on workshop, aimed at developers and solution builders, trains you on how to build a real-life serverless LLM application using foundation models (FMs) through Amazon Bedrock and advanced design patterns such as: Reason and Act (ReAct) Agent, text-to-SQL, and Retrieval Augemented Generation (RAG). It complements the Amazon Bedrock Workshop by helping you transition from practicing standalone design patterns in notebooks to building an end-to-end llm serverless application. Check out the README for additional links to the workshop text, as well as more details on how this repo works.(#203)
 
 **building-reactjs-gen-ai-apps-with-amazon-bedrock-javascript-sdk**
 
@@ -195,6 +215,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **smart-assistant-agent**
 
 [smart-assistant-agent](https://aws-oss.beachgeek.co.uk/3rd) is a project from AWS Community Builder Darya Petrashka that provides a solution to building an AWS Bedrock agent acting as a Telegram chat assistant. Check out the README for example videos of what this can do, as well as very detailed deployment instructions. (#193)
+
+**streamlit-bedrock-claude-sample**
+
+[streamlit-bedrock-claude-sample](https://aws-oss.beachgeek.co.uk/437) - I have featured Gary Stafford's open source projects and blog posts regularly in this newsletter. Gary has built a number of simple Streamlit applications to make it easy access the latest models and features of Amazon Web Services (AWS) Amazon Bedrock as part of several talks, workshops, and demonstrations he has done.  As part these, he has put together a simple Streamlit application that uses the Amazon Bedrock boto3 Python SDK to call the latest Anthropic Claude 3 family of multimodal foundation models. The application accepts a system and user prompt and generates a text-based response. The Streamlit app can be easily modified to incorporate new Bedrock features or as a starting point for your own applications. (#203)
 
 **video-understanding-solution**
 
@@ -353,6 +377,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **aws-az-mapper**
 
 [aws-az-mapper](https://aws-oss.beachgeek.co.uk/3om) is a new tool from Jeremy Barnes that maps an AWS Account and it's regions physical availability zones to their logical availability zone. This project is new to me (although was released a while ago) and what got my interest was this blog post, [Tool - AWS Availability Zone Mapper](https://aws-oss.beachgeek.co.uk/3on) where Jeremy walks you through how you can use this tool, to help with our cost optimisation strategies. (#190)
+
+**aws-config-rule-rds-logging-enabled-remediation**
+
+[aws-config-rule-rds-logging-enabled-remediation](https://aws-oss.beachgeek.co.uk/43l) provides code that will help you checks if respective logs of Amazon Relational Database Service (Amazon RDS) are enabled using AWS Config rule 'rds-logging-enabled'. The rule is NON_COMPLIANT if any log types are not enabled. AWS Systems Manager Automation document used as remediation action to enable the logs export to CloudWatch for the RDS instances that are marked NON_COMPLIANT.(#203)
 
 **aws-data-solutions-framework**
 
@@ -514,6 +542,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [aws-advanced-python-wrapper](https://aws-oss.beachgeek.co.uk/3xc) is complementary to and extends the functionality of an existing Python database driver to help an application take advantage of the features of clustered databases on AWS. It wraps the open-source Psycopg and the MySQL Connector/Python drivers and supports Python versions 3.8 or newer. You can install the aws-advanced-python-wrapper package using the pip command along with either the psycpg or mysql-connector-python open-source packages. The wrapper driver relies on monitoring database cluster status and being aware of the cluster topology to determine the new writer. This approach reduces switchover and failover times from tens of seconds to single digit seconds compared to the open-source drivers. Check the README for more details and example code on how to use this. (#199)
 
+**aws-cloudformation-starterkit**
+
+[aws-cloudformation-starterkit](https://aws-oss.beachgeek.co.uk/434) is a new project from AWS Community Builder Danny Steenman that should accelerate AWS infrastructure deployment for CloudFormation users. It's designed for both beginners and seasoned pros, featuring quick CI/CD setup, multi-environment support, and automated security checks. Very nice repo, clear and detailed documentation, so make sure you check this project out.(#203)
+
 **aws-rotate-key**
 
 [aws-rotate-key](https://aws-oss.beachgeek.co.uk/3sd) is a project from AWS Community Builder  Stefan Sundin, that helps you implement security good practices around periodically regenerating your API keys. This command line tool simplifies the rotation of those access keys as defined in your local ~/.aws/credentials file. Check out the README for plenty of helpful info and examples of how you might use this. (#194)
@@ -538,13 +570,17 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [awsviz](https://aws-oss.beachgeek.co.uk/3z1) is a super nice little tool from Bour Mohamed Abdelhadi, that helps you quickly visualy your IAM policies. You can check out the hosted version of [awsviz](https://aws-oss.beachgeek.co.uk/3z3) and there are some sample policies to show you what you can expect. Check out the[ use cases doc](https://aws-oss.beachgeek.co.uk/3z4) to see why you might want to try this tool out. (#200)
 
-**bedrust**
+**bedrock-embed-web**
 
-[bedrust](https://aws-oss.beachgeek.co.uk/3n1) is a demo repo from my colleague Darko Mesaros that shows you how you can use Amazon Bedrock in your Rust code, and allows you to currently choose between Claude V2, Llama2 70B, and Cohere Command.(#188)
+[bedrock-embed-web](https://aws-oss.beachgeek.co.uk/43i) is a new project from my colleague Olivier Leplus that makes it easier than ever to embed Amazon Bedrock foundation models within a chat interface in your web applications. (#203)
 
 **bedrock-vscode-playground**
 
 [bedrock-vscode-playground](https://aws-oss.beachgeek.co.uk/3nb) is a Visual Studio Code (VS Code) extension which allows developers to easily explore and experiment with large language models (LLMs) available in Amazon Bedrock. Check out the README for details of what you can do with it and how you can configure it to work with your specific setup.(#188)
+
+**bedrust**
+
+[bedrust](https://aws-oss.beachgeek.co.uk/3n1) is a demo repo from my colleague Darko Mesaros that shows you how you can use Amazon Bedrock in your Rust code, and allows you to currently choose between Claude V2, Llama2 70B, and Cohere Command.(#188)
 
 **beta9**
 
@@ -553,6 +589,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **csr-builder-for-kms**
 
 [csr-builder-for-kms](https://aws-oss.beachgeek.co.uk/40h) provides a Python library for creating and signing X.509 certificate signing requests (CSRs) with KMS Keys. (#201)
+
+**cdk-express-pipeline**
+
+[cdk-express-pipeline](https://aws-oss.beachgeek.co.uk/43g) is the latest project from AWS Hero Rehan van der Merwe (who's project I use to track usage metrics of this newsletter!) which provides an alternative to those of you who want to use some of the features of AWS CDK Pipelines, but perhaps need it less opinionated. CDK Express Pipelines is a library built on the AWS CDK, allowing you to define pipelines in a CDK-native method. It leverages the CDK CLI to compute and deploy the correct dependency graph between Waves, Stages, and Stacks using the .addDependency method, making it build-system agnostic and an alternative to AWS CDK Pipelines. Check out the clear documentation which will help you get started in no time.(#203)
 
 **cdk-notifier**
 
@@ -734,6 +774,11 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [wide-logger](https://aws-oss.beachgeek.co.uk/3pi) is a canonical wide logger that is built to gather key, value pairs and then flush them all to the console in a single log message. This does not replace your existing detailed debug logging, it is an addition. All logs emitted by the Wide Logger will be prefixed by WIDE so you can quickly and easily find them or use filtered subscriptions to record these in a single place for easy searching and correlation. (#191)
 
+**zero-downtime-deployment-tofu**
+
+[zero-downtime-deployment-tofu](https://aws-oss.beachgeek.co.uk/438) is a repo from AWS Community Build Jorge Tovar that contains code examples using OpenTofu that shows how you can achieve zero downtime using a number of different approaches. Check out the supporting blog post for more details, [Zero Downtime Deployment in AWS with Tofu/Terraform and SAM](https://aws-oss.beachgeek.co.uk/439). This is this weeks essential repo to check out, and a good opportunity to learn about and become familiar with the different techniques and options you have. (#203)
+
+
 ### Governance & Risk
 
 **aft-account-suspend-close-solution**
@@ -756,9 +801,17 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [aws-account-tag-association-imported-portfolios](https://aws-oss.beachgeek.co.uk/3o4) This repo provides a solution that is designed to automate associating account level tags to shared and local portfolios in the AWS environment which in turn inherits the tags to launched resources. AWS ServiceCatalog TagOption feature is used for this association.(#189)
 
+**aws-cloudformation-starterkit**
+
+[aws-cloudformation-starterkit](https://aws-oss.beachgeek.co.uk/434) is a new project from AWS Community Builder Danny Steenman that should accelerate AWS infrastructure deployment for CloudFormation users. It's designed for both beginners and seasoned pros, featuring quick CI/CD setup, multi-environment support, and automated security checks. Very nice repo, clear and detailed documentation, so make sure you check this project out.(#203)
+
 **aws-control-tower-controls-cdk**
 
 [aws-control-tower-controls-cdk](https://aws-oss.beachgeek.co.uk/3e3) This pattern describes how to use AWS CloudFormation and AWS Cloud Development Kit (AWS CDK) to implement and administer preventive, detective, and proactive AWS Control Tower controls as infrastructure as code (IaC). A control (also known as a guardrail) is a high-level rule that provides ongoing governance for your overall AWS Control Tower environment. For example, you can use controls to require logging for your AWS accounts and then configure automatic notifications if specific security-related events occur. Check out the REAMDE for more details on what you can do with this. (#178)
+
+**aws-config-rule-rds-logging-enabled-remediation**
+
+[aws-config-rule-rds-logging-enabled-remediation](https://aws-oss.beachgeek.co.uk/43l) provides code that will help you checks if respective logs of Amazon Relational Database Service (Amazon RDS) are enabled using AWS Config rule 'rds-logging-enabled'. The rule is NON_COMPLIANT if any log types are not enabled. AWS Systems Manager Automation document used as remediation action to enable the logs export to CloudWatch for the RDS instances that are marked NON_COMPLIANT.(#203)
 
 **aws-external-package-security**
 
@@ -823,6 +876,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **integrate-control-tower-with-ipam**
 
 [integrate-control-tower-with-ipam](https://aws-oss.beachgeek.co.uk/41f) This project implements a solution which integrates Amazon IP Address Management (IPAM) within AWS Control Tower through the use of Lifecycle Events. It presents the architecture view and shows how this solution extends your AWS Control Tower environment with Amazon IPAM to allow teams to access IPAM pools for their workload accounts.(#202)
+
+**my-steampipe-arsenal**
+
+[my-steampipe-arsenal](https://aws-oss.beachgeek.co.uk/436) Sometimes GitHub Gists or snippets are super useful, and Gabriel Soltz shares one such useful snippet in his repo of Steampipe queries that allows you to check for inactive Route53 alias'. Check out some of the other ones he shares too. (#203)
 
 **orgs-prescriptive-guidance**
 
@@ -907,9 +964,17 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 ### Security
 
+**apeman**
+
+[apeman](https://aws-oss.beachgeek.co.uk/43n) is a new tool that helps security people to map and visualise AWS identity attack paths. The README provides detailed instructions on how to get up and running, but I also found the blog post, [ Project Apeman : A Comprehensive Guide To Graph-Based AWS Security Analysis](https://aws-oss.beachgeek.co.uk/43o) very helpful.(#203)
+
 **aws-lint-iam-policies**
 
 [aws-lint-iam-policies](https://aws-oss.beachgeek.co.uk/3pe)  runs IAM policy linting checks against either a single AWS account or all accounts of an AWS Organization. Reports on policies that violate security best practices or contain errors. Supports both identity-based and resource-based policies. Optionally dumps all policies analysed. The actual linting is performed by the AWS IAM Access Analyzer policy validation feature, which is mostly known for showing recommendations when manually editing IAM policies on the AWS Console UI. The repo provides additional blog posts to help you get started, as well as more details on how this works with supporting resources (#191)
+
+**aws-mine**
+
+[aws-mine](https://aws-oss.beachgeek.co.uk/43k) is a project from Steven Smiley that should interest security folk. It provides a [honey](https://uk.norton.com/blog/iot/what-is-a-honeypot) token system for AWS, that allows you to create AWS access keys that can be placed in various places to tempt bad guys. If used, you will be notified within ~4 minutes. You can then investigate that asset to determine if it may have been compromised. (#203)
 
 **aws-nitro-enclaves-eif-build-action**
 
@@ -1000,6 +1065,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [s3-presignedurl-staticips-endpoint-with-cdk](https://aws-oss.beachgeek.co.uk/3k5) this solution simplifies access to Amazon S3 by creating secure, custom presigned URLs for object downloads through a single endpoint with a unique domain and static IPs. The use case involves users following an IP and domain Allowlist firewall policy, limiting API access to specific domains and IPs. The architecture employs key AWS services, including AWS Global Accelerator, Amazon API Gateway, AWS Lambda, Application Load Balancer(ALB), VPC Endpoint, and Amazon S3. This design centralizes the API for generating presigned URLs and the S3 endpoint under a single domain, linked to an AWS Global Accelerator with two static IPs. Consequently, users can effortlessly request presigned URLs and download S3 objects through a unified domain endpoint with static IPs. This architecture is especially beneficial for customers with strict policies or compliance requirements, such as those in the public, medical, and finance sectors. (#184)
 
+**sample-code-for-a-secure-vault-using-aws-nitro-enclaves**
+
+[sample-code-for-a-secure-vault-using-aws-nitro-enclaves](https://aws-oss.beachgeek.co.uk/43c) - This repository contains a sample secure vault solution built using AWS Nitro Enclaves, a feature available exclusively through the AWS Nitro System hypervisor on supported Amazon EC2 instances. A vault solution is useful when you need to ensure sensitive data (such as Protected Health Information (PHI)/Personally Identifiable Information (PII)) is properly secured at rest and can only be decrypted through approved channels. Check out more details about how cool Nitro Enclaves are by reading the supporting documentation for this project, [About the AWS Nitro Enclaves Vault](https://aws-oss.beachgeek.co.uk/43b).(#203)
+
 **security-hub-compliance-analyzer**
 
 [security-hub-compliance-analyzer](https://aws-oss.beachgeek.co.uk/41s) this repo provides a compliance analysis tool which enables organisations to more quickly articulate their compliance posture and also generate supporting evidence artefacts. Security Hub Compliance Analyzer (SHCA) generates artefacts in support of Department of Defense Risk Management Framework (RMF) Information System accreditation. Utilising Amazon Web Services provided documentation, mapping NIST800-53-Rev-5 Controls to AWS Security Hub Security Control IDs, SHCA requests the current environment compliance from Security Hub and generates a zip file stored in Amazon S3 containing discrete artefacts in CSV, JSON, OCSF providing SecOps with artefacts to import into the RMF tool.(#202)
@@ -1011,6 +1080,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **sso-sync-to-amazon-rds**
 
 [sso-sync-to-amazon-rds](https://aws-oss.beachgeek.co.uk/3e2) This project sets up AWS Lambda functions, Amazon EventBridge rule, Amazon VPC Endpoint for AWS IAM Identity Center (successor to AWS Single Sign-On), the related Security Groups and permissions necessary to automatically provision database users to the Amazon Relational Database Service (Amazon RDS) cluster using AWS Cloud Development Kit (AWS CDK). When a new user is created in IAM Identity Center and the user belongs to the group specified in a IAM_IDC_GROUP_NAME variable, EventBridge rule will trigger the Lambda function. The Lambda function will create a new user in a specified Amazon RDS cluster. The user will then be able to login to the database using their SSO username and IAM credentials. Adding a user to the configured group will trigger the Lambda function as well. (#178)
+
+**validate-aws-policies**
+
+[validate-aws-policies](https://aws-oss.beachgeek.co.uk/42r) is a Python command line tool from  Alejandro Velez to validate aws policies using boto3 and Access Analyzer API. You can check out his supporting blog post (including demo video) [Continuous Delivery applied to Authorization with IAM Identity Center and AWS IAM Access Analyzer – Part 1](https://aws-oss.beachgeek.co.uk/42s) that shows you how you can incorporate this tool as part of your CI/CD pipeline.(#203)
 
 ### Storage
 
@@ -1154,6 +1227,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [sagemaker-mlflow](https://aws-oss.beachgeek.co.uk/3ya)  This plugin generates Signature V4 headers in each outgoing request to the Amazon SageMaker with MLflow capability, determines the URL of capability to connect to tracking servers, and registers models to the SageMaker Model Registry. It generates a token with the SigV4 Algorithm that the service will use to conduct Authentication and Authorization using AWS IAM.(#200)
 
+**sample-code-for-a-secure-vault-using-aws-nitro-enclaves**
+
+[sample-code-for-a-secure-vault-using-aws-nitro-enclaves](https://aws-oss.beachgeek.co.uk/43c) - This repository contains a sample secure vault solution built using AWS Nitro Enclaves, a feature available exclusively through the AWS Nitro System hypervisor on supported Amazon EC2 instances. A vault solution is useful when you need to ensure sensitive data (such as Protected Health Information (PHI)/Personally Identifiable Information (PII)) is properly secured at rest and can only be decrypted through approved channels. Check out more details about how cool Nitro Enclaves are by reading the supporting documentation for this project, [About the AWS Nitro Enclaves Vault](https://aws-oss.beachgeek.co.uk/43b).(#203)
+
 **terraform-aws-ecr-watch**
 
 [terraform-aws-ecr-watch](https://aws-oss.beachgeek.co.uk/3f2) is a project out of the folks from Porsche, when they are not busy designing super fast cars, their engineers are busy creating useful open source tools for folks to use. This project is a Terraform module to configure an AWS ECR Usage Dashboard based on AWS CloudWatch log insight queries with data fetched from AWS CloudTrail. (#180)
@@ -1164,9 +1241,21 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 # Open Source projects on AWS
 
+**apeman**
+
+[apeman](https://aws-oss.beachgeek.co.uk/43n) is a new tool that helps security people to map and visualise AWS identity attack paths. The README provides detailed instructions on how to get up and running, but I also found the blog post, [ Project Apeman : A Comprehensive Guide To Graph-Based AWS Security Analysis](https://aws-oss.beachgeek.co.uk/43o) very helpful.(#203)
+
+**bedrock-litellm**
+
+[bedrock-litellm](https://aws-oss.beachgeek.co.uk/43m) is an awesome project that provides a way of proxying requests in the OpenAI format, so that they will work with Amazon Bedrock. OpenAI is often one of the default options for integrating various generative AI tools and libraries, and now you have a way of being able to point those to use foundational models managed by Amazon Bedrock. It uses [litellm](https://www.litellm.ai/) to do this, and is deployed in a Kubernetes cluster.(#203)
+
 **cumuli-aws-console-chat**
 
 [cumuli-aws-console-chat](https://aws-oss.beachgeek.co.uk/3j2)  is an open source Chrome extension that provides similar functionality to Amazon Q. The Cumuli Chrome extension adds a side panel with LLM chat to all AWS pages, and lets you add screenshots of the console to your queries to get context-aware responses. It's similar to Amazon Q but uses GPT-4 Turbo with vision. Check out the repo that includes a demo video of it in action.(#183)
+
+**deploy-langfuse-on-ecs-with-fargate**
+
+[deploy-langfuse-on-ecs-with-fargate](https://aws-oss.beachgeek.co.uk/43j) This repository contains the AWS CDK Python code for deploying the Langfuse application using Amazon Elastic Container Registry (ECR) and Amazon Elastic Container Service (ECS). If you are not familiar with Langfuse, it is is an open-source LLM engineering platform that helps teams collaboratively debug, analyze, and iterate on their LLM applications.(#203)
 
 **mlspace**
 
@@ -1184,6 +1273,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [smart-assistant-agent](https://aws-oss.beachgeek.co.uk/3rd) is a project from AWS Community Builder Darya Petrashka that provides a solution to building an AWS Bedrock agent acting as a Telegram chat assistant. Check out the README for example videos of what this can do, as well as very detailed deployment instructions. (#193)
 
+**streamlit-bedrock-claude-sample**
+
+[streamlit-bedrock-claude-sample](https://aws-oss.beachgeek.co.uk/437) - I have featured Gary Stafford's open source projects and blog posts regularly in this newsletter. Gary has built a number of simple Streamlit applications to make it easy access the latest models and features of Amazon Web Services (AWS) Amazon Bedrock as part of several talks, workshops, and demonstrations he has done.  As part these, he has put together a simple Streamlit application that uses the Amazon Bedrock boto3 Python SDK to call the latest Anthropic Claude 3 family of multimodal foundation models. The application accepts a system and user prompt and generates a text-based response. The Streamlit app can be easily modified to incorporate new Bedrock features or as a starting point for your own applications. (#203)
+
 **symfony-bref-starter**
 
 [symfony-bref-starter](https://aws-oss.beachgeek.co.uk/3ta) is a starter kit for symfony projects using bref / serverless to allow easy deployments. bref is a fantastic and well tested way of running PHP applications via serverless, handling easy deployments and environments on AWS. Check out the README for some very cool stats around bref usage. The repo provides good examples and everything you need to get started.(#195)
@@ -1192,6 +1285,11 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **weaviate-on-eks**
 
 [weaviate-on-eks](https://aws-oss.beachgeek.co.uk/3d4) this repository includes sample code that can be used to deploy and configure an instance of the [Weaviate](https://aws-oss.beachgeek.co.uk/3d5) distributed vector database on EKS. (#177)
+
+**zero-downtime-deployment-tofu**
+
+[zero-downtime-deployment-tofu](https://aws-oss.beachgeek.co.uk/438) is a repo from AWS Community Build Jorge Tovar that contains code examples using OpenTofu that shows how you can achieve zero downtime using a number of different approaches. Check out the supporting blog post for more details, [Zero Downtime Deployment in AWS with Tofu/Terraform and SAM](https://aws-oss.beachgeek.co.uk/439). This is this weeks essential repo to check out, and a good opportunity to learn about and become familiar with the different techniques and options you have. (#203)
+
 
 # Demos and Samples
 
@@ -1211,6 +1309,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [amazon-eks-running-webassembly](https://aws-oss.beachgeek.co.uk/3th) This repository contains code for building custom Amazon EKS AMIs using HashiCorp Packer. The AMIs include necessary binaries and configurations to enable you to run WebAssembly workloads in an EKS cluster and are based on Amazon Linux 2023. The runtimes used in the AMIs are Spin and WasmEdge. The respective containerd-shims are used for both runtimes. Deploying the cluster is done using Hashicorp Terraform. After the cluster is created, RuntimeClasses and example workloads are deployed to the cluster. If you are exploring Wasm, then this is for you. (#195)
 
+**aws-chatbot-fargate-python**
+
+[aws-chatbot-fargate-python](https://aws-oss.beachgeek.co.uk/43f) is a new repo from AWS Hero Ran Isenberg that deploys a Streamlit Chatbot in an AWS Fargate-based ESC cluster web application using AWS CDK (Cloud Development Kit). The infrastructure includes an ECS cluster, Fargate service, Application Load Balancer, VPC, and WAF and includes security best practices with CDK-nag verification. The chatbot is based on an implementation by Streamlit and the initial prompt is that the chatbot is me, Ran the builder, a serverless hero and attempts to answer as me. The Chatbot uses custom domain (you can remove it or change it to your own domain) and assume an OpenAI token exists in the account in the form of a secrets manager secret for making API calls to OpenAI.(#203)
+
 **aws-agentic-document-assistant**
 
 [aws-agentic-document-assistant](https://aws-oss.beachgeek.co.uk/3gu) The Agentic Documents Assistant is an LLM assistant that provides users with easy access to information and insights stored across their business documents, through natural conversations and question answering. It supports answering factual questions by retrieving information directly from documents using semantic search with the popular RAG design pattern. Additionally, it answers analytical questions by translating user questions into SQL queries and running them against a database of entities extracted from the documents with a batch process. It is also able to answer complex multi-step questions by combining different tools and data sources using an LLM agent design pattern.(#181)
@@ -1218,6 +1320,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **aws-clean-rooms-lab**
 
 [aws-clean-rooms-lab ](https://aws-oss.beachgeek.co.uk/3j5)is a workshop from AWS Security Hero Richard Fan that  will walk you through the setup of AWS Clean Rooms so you can try its different features. Richard wrote about this repo in his write up [Start building my AWS Clean Rooms lab](https://aws-oss.beachgeek.co.uk/3j6), which you should read to help you get started. This is a work in progress, but there is still a lot of stuff to get stuck into so worth checking out if AWS Clean Rooms is something that you are exploring. (#183)
+
+**aws-genai-rfpassistant**
+
+[aws-genai-rfpassistant](https://aws-oss.beachgeek.co.uk/43a) this repository contains the code and infrastructure as code for a Generative AI-powered Request for Proposal (RFP) Assistant leveraging Amazon Bedrock and AWS Cloud Development Kit (CDK). This could be very hand if responding to RFP's is something that you do and you want to look at ways of optimising your approach. The documentation in the repo is very comprehensive. I have not tried this one out for myself, but I have been involved in both writing and reviewing RFPs in the past, so understand the pain that led to the creation of this project. (#203)
 
 **aws-piday2024**
 
@@ -1235,6 +1341,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [big-data-summarization-using-griptape-bedrock-redshift](https://aws-oss.beachgeek.co.uk/3gv) I have looked at Griptape in other blog posts, so it was nice to see this repo that provides sample code and instructions for a Big data summarisation example using this popular open-source library, together with Amazon Bedrock and Amazon Redshift. In this sample,  TitanXL LLM is used to summarise but Anthropic's Claude v2 is also used to drive the application. This application sample demonstrates how data can be pulled from Amazon Redshift and then passed to the summarisation model. The driving model is isolated from the actual data and uses the tools provided to it to orchestrate the application. (#181)
 
+**build-an-agentic-llm-assistant**
+
+[build-an-agentic-llm-assistant](https://aws-oss.beachgeek.co.uk/43e) this repo provides code that you can follow along as part of the "Build an agentic LLM assistant on AWS" workshop. This hands-on workshop, aimed at developers and solution builders, trains you on how to build a real-life serverless LLM application using foundation models (FMs) through Amazon Bedrock and advanced design patterns such as: Reason and Act (ReAct) Agent, text-to-SQL, and Retrieval Augemented Generation (RAG). It complements the Amazon Bedrock Workshop by helping you transition from practicing standalone design patterns in notebooks to building an end-to-end llm serverless application. Check out the README for additional links to the workshop text, as well as more details on how this repo works.(#203)
+
 **build-neptune-graphapp-cdk**
 
 [build-neptune-graphapp-cdk](https://aws-oss.beachgeek.co.uk/3z9) this repo provides a quick example on how to build a graph application with Amazon Neptune and AWS Amplify. (#200)
@@ -1242,6 +1352,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **cost-news-slack-bot**
 
 [cost-news-slack-bot](https://aws-oss.beachgeek.co.uk/3or) is a tool written in Python that read an RSS feed and selectively publish articles, based on keywords, to Slack via Webhook.  In the example, the tool checks the AWS 'What's New' RSS feed every minute for announcements related to cost optimisation. Perfect for customising and using it for your own use cases. (#190)
+
+**deploy-langfuse-on-ecs-with-fargate**
+
+[deploy-langfuse-on-ecs-with-fargate](https://aws-oss.beachgeek.co.uk/43j) This repository contains the AWS CDK Python code for deploying the Langfuse application using Amazon Elastic Container Registry (ECR) and Amazon Elastic Container Service (ECS). If you are not familiar with Langfuse, it is is an open-source LLM engineering platform that helps teams collaboratively debug, analyze, and iterate on their LLM applications.(#203)
 
 **distill-cli**
 
@@ -1302,6 +1416,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [hackernews-converse-api-demo](https://aws-oss.beachgeek.co.uk/41j) this repo provides some sample code on how you can use the Amazon Bedrock Converse API, using an example of summarising comments from a Hacker News thread. It is a simple example, but shows you how easy it is to incorporate generative AI in your own applications. You can check out the supporting blog post too, [Save time reading Hacker News comments using Converse API](https://aws-oss.beachgeek.co.uk/41l) (#202)
 
+**improve-employee-productivity-using-genai**
+
+[improve-employee-productivity-using-genai](https://aws-oss.beachgeek.co.uk/43h) is an innovative code sample designed to elevate the efficiency and effectiveness of writing tasks through the integration of AI technologies. Tailored for AWS users, this assistant example utilises Amazon Bedrock and generative AI models to automate the creation of initial templates, that can also be customised for your own needs. Users can input both text and images, benefiting from the multimodal capabilities of cutting-edge AI like the Claude 3 family, which supports dynamic interaction with multiple data types. The README is very comprehensive and covers not only how to set up and configure this project, but also has lots of great short videos of it in action. (#203)
+
 **maplibregljs-amazon-location-service-route-calculators-starter**
 
 [maplibregljs-amazon-location-service-route-calculators-starter](https://aws-oss.beachgeek.co.uk/3p9) is a new repo from AWS Hero Yasunori Kirimoto that provides an example of how you can start routing with MapLibre GL JS and Amazon Location Service. He has also put together a blog post to help get you start, [Building a Route Search Function with Amazon Location SDK and API Key Function ](https://aws-oss.beachgeek.co.uk/3pa) (#191)
@@ -1334,6 +1452,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [reinvent-session-concierge](https://aws-oss.beachgeek.co.uk/3gq) is potentially a very useful tool for those of you heading out to re:Invent, and wanting to make sure that you make the most of your time there by attending the sessions of most interest to you. This project uses Amazon Bedrock Titan text embeddings stored in a PostgreSQL database to enable generative AI queries across the re:Invent session data. It combines both semantic search and traditional queries. I am going to be trying it out later today to help me plan my online viewing. (#181)
 
+**sample-code-for-a-secure-vault-using-aws-nitro-enclaves**
+
+[sample-code-for-a-secure-vault-using-aws-nitro-enclaves](https://aws-oss.beachgeek.co.uk/43c) - This repository contains a sample secure vault solution built using AWS Nitro Enclaves, a feature available exclusively through the AWS Nitro System hypervisor on supported Amazon EC2 instances. A vault solution is useful when you need to ensure sensitive data (such as Protected Health Information (PHI)/Personally Identifiable Information (PII)) is properly secured at rest and can only be decrypted through approved channels. Check out more details about how cool Nitro Enclaves are by reading the supporting documentation for this project, [About the AWS Nitro Enclaves Vault](https://aws-oss.beachgeek.co.uk/43b).(#203)
+
 **serverless-genai-food-analyzer-app**
 
 [serverless-genai-food-analyzer-app](https://aws-oss.beachgeek.co.uk/3x6) provides code for a personalised GenAI nutritional web application for your shopping and cooking recipes built with serverless architecture and generative AI capabilities. It was first created as the winner of the AWS Hackathon France 2024 and then introduced as a booth exhibit at the AWS Summit Paris 2024. You use your cell phone to scan a bar code of a product to get the explanations of the ingredients and nutritional information of a grocery product personalised with your allergies and diet. You can also take a picture of food products and discover three personalised recipes based on their food preferences. The app is designed to have minimal code, be extensible, scalable, and cost-efficient. It uses Lazy Loading to reduce cost and ensure the best user experience. (#198)
@@ -1349,6 +1471,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **song-identification-on-aws**
 
 [song-identification-on-aws](https://aws-oss.beachgeek.co.uk/3qj) This repo contains sample code that demonstrates how you can "fingerprint" your songs, and then detect the presence of your songs in either stored audio files like MP3s, or within streaming media. The underlying idea is to convert audio data into a spectrogram, and then isolate important markers within the spectrogram that will allow us to identify music. Roughly 10000 to 25000 fingerprints will be created for an average length song. Each fingerprint is stored as a large integer. See the blog post for more details about how the system works. (#192)
+
+**streamlit-bedrock-claude-sample**
+
+[streamlit-bedrock-claude-sample](https://aws-oss.beachgeek.co.uk/437) - I have featured Gary Stafford's open source projects and blog posts regularly in this newsletter. Gary has built a number of simple Streamlit applications to make it easy access the latest models and features of Amazon Web Services (AWS) Amazon Bedrock as part of several talks, workshops, and demonstrations he has done.  As part these, he has put together a simple Streamlit application that uses the Amazon Bedrock boto3 Python SDK to call the latest Anthropic Claude 3 family of multimodal foundation models. The application accepts a system and user prompt and generates a text-based response. The Streamlit app can be easily modified to incorporate new Bedrock features or as a starting point for your own applications. (#203)
 
 **svdxt-sagemaker-huggingface**
 
@@ -1366,6 +1492,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [video-understanding-solution](https://aws-oss.beachgeek.co.uk/3sj) This is a deployable solution to help save your time in understanding videos without having to watch every video. You can upload videos and this solution can generate AI-powered summary and entities extraction for each video. It also supports Q&A about the video like "What is funny about the video?", "How does Jeff Bezos look like there?", and "What shirt did he wear?". You can also search for videos using semantic search e.g. "Amazon's culture and history". This solution extracts information from visual scenes, audio, visible texts, and detected celebrities or faces in the video. It leverages an LLM which can understand visual and describe the video frames. You can upload videos to your Amazon Simple Storage Service (S3) bucket bucket by using AWS console, CLI, SDK, or other means (e.g. via AWS Transfer Family). This solution will automatically trigger processes including call to Amazon Transcribe for voice transcription, call to Amazon Rekognition to extract the objects visible, and call to Amazon Bedrock with Claude 3 model to extract scenes and visually visible text. The LLM used can perform VQA (visual question answering) from images (video frames), which is used to extract the scene and text. This combined information is used to generate the summary and entities extraction as powered by generative AI with Amazon Bedrock. The UI chatbot also uses Amazon Bedrock for the Q&A chatbot. The summaries, entities, and combined extracted information are stored in S3 bucket, available to be used for further custom analytics. (#194)
 
+**webapp-form-builder**
+
+[webapp-form-builder ](https://aws-oss.beachgeek.co.uk/43d) - this repo was built to accelerate the development of web forms on the frontend using the AWS Cloudscape Design System. Cloudscape is an open source design system to create web applications. It was built for and is used by Amazon Web Services (AWS) products and services. This solution provides you with a sample application that utilises components of the Cloudscape Design System that are commonly used in web-forms where users are required to input data.  Check out the more expansive README for more details of how this works and how to get started.(#203)
+
 **whats-new-summary-notifier**
 
 [whats-new-summary-notifier](https://aws-oss.beachgeek.co.uk/3x4) is a demo repo that lets you build a generative AI application that summarises the content of AWS What's New and other web articles in multiple languages, and delivers the summary to Slack or Microsoft Teams. (#198)
@@ -1373,6 +1503,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **youtube-video-summarizer-with-bedrock**
 
 [youtube-video-summarizer-with-bedrock](https://aws-oss.beachgeek.co.uk/3j7) is a example project from Zied Ben Tahar that uses large language models to create a YouTube video summariser, allowing you to sift through You Tube videos and get an high level summary of them, allowing you to make better decisions as to whether you want to spend more time watching the video.  Zied has also put together a supporting blog post, [AI powered video summariser with Amazon Bedrock](https://aws-oss.beachgeek.co.uk/3j8) that provides everything you need to get this project up and running for yourself. (#183)
+
+**zero-downtime-deployment-tofu**
+
+[zero-downtime-deployment-tofu](https://aws-oss.beachgeek.co.uk/438) is a repo from AWS Community Build Jorge Tovar that contains code examples using OpenTofu that shows how you can achieve zero downtime using a number of different approaches. Check out the supporting blog post for more details, [Zero Downtime Deployment in AWS with Tofu/Terraform and SAM](https://aws-oss.beachgeek.co.uk/439). This is this weeks essential repo to check out, and a good opportunity to learn about and become familiar with the different techniques and options you have. (#203)
 
 # Industry use cases
 
