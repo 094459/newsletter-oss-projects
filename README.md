@@ -95,6 +95,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [cloudysetup](https://aws-oss.beachgeek.co.uk/40e) is a CLI tool designed to streamline AWS resource management using AWS Cloud Control API. It leverages Amazon Bedrock fully managed service with Anthropic - Claude V2 Gen AI model to create, read, update, list, and delete AWS resources by generating configurations compatible with AWS Cloud Control API.(#201)
 
+**content-based-item-recommender**
+
+[content-based-item-recommender](https://aws-oss.beachgeek.co.uk/44r) provides some example code the helps you deploy a content-based recommender system. It is called "content-based" as it bases the recommendation based on the matching between the input's content and the items' content from your database. This uses prompt to large-language models (LLM) and vector search to perform the recommendation. (#204)
+
 **distill-cli**
 
 [distill-cli](https://aws-oss.beachgeek.co.uk/3yz) is a new project from Amazon CTO Dr Werner Vogels, which uses Amazon Transcribe and Amazon Bedrock to create summaries of your audio recordings (e.g., meetings, podcasts, etc.) directly from the command line. Distill CLI takes a dependency on Amazon Transcribe, and as such, supports the following media formats: AMR, FLAC, M4A, MP3, MP4, Ogg, WebM, WAV. It is great to feature this latest project, with the previous one being featured in [#197](https://community.aws/content/2gPNtsdSfQRIpmbUrNyPrjUg54D/aws-open-source-newsletter-197). To go with this repo, there is a post too, [Introducing Distill CLI: An efficient, Rust-powered tool for media summarization](https://aws-oss.beachgeek.co.uk/3yy) where Werner shares his experience building this tool in Rust, and provides some closing thoughts too. (#200)
@@ -152,6 +156,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **multi-table-benchmark**
 
 [multi-table-benchmark](https://aws-oss.beachgeek.co.uk/3vv) this repo is the DBInfer Benchmark (DBB), a set of benchmarks for measuring machine learning solutions over data stored as multiple tables. The repo provides detailed instructions on the different steps needed to set up your testing, as well as a Jupyter notebook tutorial to walk you through the key concepts.(#197)
+
+**news-clustering-and-summarization**
+
+[news-clustering-and-summarization](https://aws-oss.beachgeek.co.uk/44l) this repository contains code for a near real-time news clustering and summarisation solution using AWS services like Lambda, Step Functions, Kinesis, and Bedrock. It demonstrates how to efficiently process, embed, cluster, and summarise large volumes of news articles to provide timely insights for financial services and other industries. This solution aims to launch a news Event feature that clusters related news stories into summaries, providing customers with near real-time updates on unfolding events. This augmented news consumption experience will enable users to easily follow evolving stories while maximising relevance and reducing the firehose of information for articles covering the same event. By tailoring news clusters around key events, this application can improve customer satisfaction and engagement. Detailed docs will help you get up and running in no time. (#204)
 
 **partysmith**
 
@@ -227,6 +235,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **whats-new-summary-notifier**
 
 [whats-new-summary-notifier](https://aws-oss.beachgeek.co.uk/3x4) is a demo repo that lets you build a generative AI application that summarises the content of AWS What's New and other web articles in multiple languages, and delivers the summary to Slack or Microsoft Teams. (#198)
+
+**ziya**
+
+[ziya](https://aws-oss.beachgeek.co.uk/44k) is a code assist tool for Amazon Bedrock models that can read your entire codebase and answer questions. The tool currently operates in Read only mode, but doing more that this is on the road map.(#204)
 
 ### Application integration and middleware
 
@@ -397,6 +409,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **build-neptune-graphapp-cdk**
 
 [build-neptune-graphapp-cdk](https://aws-oss.beachgeek.co.uk/3z9) this repo provides a quick example on how to build a graph application with Amazon Neptune and AWS Amplify. (#200)
+
+**cloudwatch-to-opensearch**
+
+[cloudwatch-to-opensearch](https://aws-oss.beachgeek.co.uk/44v) provides sample code that shows you how to ingest Amazon CloudWatch logs into Amazon OpenSearch Serverless. While CloudWatch Logs excels at collecting and storing log data, OpenSearch Serverless provides more powerful search, analytics, and visualisation capabilities on that log data. This project implements a serverless pipeline to get the best of both services - using CloudWatch Logs for log aggregation, and OpenSearch Serverless for log analysis.(#204)
 
 **config-rds-ca-expiry**
 
@@ -666,6 +682,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [gh-relfind](https://aws-oss.beachgeek.co.uk/3tf) is a project from AWS Community Builder Colin Duggan, that provides a simple Go CLI tool that uses Claude to parse package changes from GitHub repos release history. Significant change information is often contained in the release text field (body tag in the JSON response from ListReleases). Adding a semantic search makes it easier to extract and summarise actual change details. The project was built to get a better understanding of how to integrate with Claude through AWS Bedrock. (#195)
 
+**git-remote-s3**
+
+[git-remote-s3](https://aws-oss.beachgeek.co.uk/44s) is a neat tool that provides you with the ability to use Amazon S3 as a [Git Large File Storage (LFS)](https://git-lfs.com/) remote provider. It provides an implementation of a git remote helper to use S3 as a serverless Git server. The README provides good examples of how to set this up and example git commands that allow you to use this setup. This is pretty neat, and something I am going to try out for myself in future projects. (#204)
+
 **lambda_helpers_metrics**
 
 [lambda_helpers_metrics](https://aws-oss.beachgeek.co.uk/40c) is a metrics helper library for AWS Lambda functions that provides the way to put metrics to the CloudWatch using the Embedded Metric Format ([EMF](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html)). Check out the supporting post, [AWS Lambda Rust EMF metrics helper](https://aws-oss.beachgeek.co.uk/40d). (#201)
@@ -778,6 +798,9 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [zero-downtime-deployment-tofu](https://aws-oss.beachgeek.co.uk/438) is a repo from AWS Community Build Jorge Tovar that contains code examples using OpenTofu that shows how you can achieve zero downtime using a number of different approaches. Check out the supporting blog post for more details, [Zero Downtime Deployment in AWS with Tofu/Terraform and SAM](https://aws-oss.beachgeek.co.uk/439). This is this weeks essential repo to check out, and a good opportunity to learn about and become familiar with the different techniques and options you have. (#203)
 
+**ziya**
+
+[ziya](https://aws-oss.beachgeek.co.uk/44k) is a code assist tool for Amazon Bedrock models that can read your entire codebase and answer questions. The tool currently operates in Read only mode, but doing more that this is on the road map.(#204)
 
 ### Governance & Risk
 
@@ -873,6 +896,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [ec2RuntimeMonitor](https://aws-oss.beachgeek.co.uk/3ra) EC2 runtime monitor is a serverless solution to get a notification when an EC2 instance is running for a time exceeding a user defined threshold. The README covers use cases why you might find this useful, but principally cost optimisation as well as reducing your carbon footprint are two key reasons why this might be a useful tool to keep your toolkit. (#193)
 
+**ha-aws-cost**
+
+[ha-aws-cost](https://aws-oss.beachgeek.co.uk/44i)  is a project from Diego Marques for folks who use [Home Assistant](https://www.home-assistant.io/) (a very popular open source home automation system), and provides custom component interacts with AWS to get the month to date cost and forecast cost and make it available on Home Assistant. It adds two new entities 1/Month to date cost: The current cost of your AWS account, and 2/Forecasted month costs: The forecasted cost based in your current consumption. Check out Diego's[ post on LinkedIn](https://www.linkedin.com/posts/diego7marques_aws-cost-my-first-home-assistant-integration-activity-7239741496013340672-cCSY/) that provides some more background to this project.(#204)
+
 **integrate-control-tower-with-ipam**
 
 [integrate-control-tower-with-ipam](https://aws-oss.beachgeek.co.uk/41f) This project implements a solution which integrates Amazon IP Address Management (IPAM) within AWS Control Tower through the use of Lifecycle Events. It presents the architecture view and shows how this solution extends your AWS Control Tower environment with Amazon IPAM to allow teams to access IPAM pools for their workload accounts.(#202)
@@ -880,6 +907,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **my-steampipe-arsenal**
 
 [my-steampipe-arsenal](https://aws-oss.beachgeek.co.uk/436) Sometimes GitHub Gists or snippets are super useful, and Gabriel Soltz shares one such useful snippet in his repo of Steampipe queries that allows you to check for inactive Route53 alias'. Check out some of the other ones he shares too. (#203)
+
+**networking-costs-calculator**
+
+[networking-costs-calculator](https://aws-oss.beachgeek.co.uk/44t) provide a useful sample code for a networking costs calculator, helping to estimate the networking costs such as Data Transfer, Transit Gateway Attachments, NAT Gateways etc. The calculator has two main components: a serverless backend part, that uses the AWS Price List Query APIs to get the updated prices for the relevant networking services. These prices are cached in a DynamoDB table, and a ReactJS frontend web application, that is the user interface for estimating the costs for various networking services (hosted with S3 and CloudFront).(#204) 
 
 **orgs-prescriptive-guidance**
 
@@ -929,6 +960,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **eks-shared-subnets**
 
 [eks-shared-subnets](https://aws-oss.beachgeek.co.uk/3k2) this sample code demonstrates how a central networking team in an enterprise can create and share the VPC Subnets from their own AWS Account with other Workload Specific accounts. So that, Application teams can deploy and manage their own EKS clusters and related resources in those Subnets. (#184)
+
+**networking-costs-calculator**
+
+[networking-costs-calculator](https://aws-oss.beachgeek.co.uk/44t) provide a useful sample code for a networking costs calculator, helping to estimate the networking costs such as Data Transfer, Transit Gateway Attachments, NAT Gateways etc. The calculator has two main components: a serverless backend part, that uses the AWS Price List Query APIs to get the updated prices for the relevant networking services. These prices are cached in a DynamoDB table, and a ReactJS frontend web application, that is the user interface for estimating the costs for various networking services (hosted with S3 and CloudFront).(#204) 
 
 **route53-hostedzone-migrator**
 
@@ -1095,6 +1130,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [ebs-bootstrap](https://aws-oss.beachgeek.co.uk/3mg) is a very handy tool from Lasith Koswatta Gamage that solves a very specific problem. Lasith reached out to explain more about the "itch" that needed to be scratched. ebs-bootstrap is a tool that provides a safe and as-code approach for managing block devices on AWS EC2. If you need precise and consistent control over your EBS volumes when attaching them to your EC2 Nitro based instances, you need to check out this project. The README provides some additional example configurations, and there is a blog post in the works which I will share once it has been published. (#187)
 
+**git-remote-s3**
+
+[git-remote-s3](https://aws-oss.beachgeek.co.uk/44s) is a neat tool that provides you with the ability to use Amazon S3 as a [Git Large File Storage (LFS)](https://git-lfs.com/) remote provider. It provides an implementation of a git remote helper to use S3 as a serverless Git server. The README provides good examples of how to set this up and example git commands that allow you to use this setup. This is pretty neat, and something I am going to try out for myself in future projects. (#204)
+
 **s3-diff-uploader**
 
 [s3-diff-uploader](https://aws-oss.beachgeek.co.uk/3z0) is the latest project from open source good guy Damon Cortesi, that came about from some [experimentations](https://www.linkedin.com/posts/dacort_i-wanted-to-experiment-recently-with-incremental-activity-7206314345599832065--95_
@@ -1257,6 +1296,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [deploy-langfuse-on-ecs-with-fargate](https://aws-oss.beachgeek.co.uk/43j) This repository contains the AWS CDK Python code for deploying the Langfuse application using Amazon Elastic Container Registry (ECR) and Amazon Elastic Container Service (ECS). If you are not familiar with Langfuse, it is is an open-source LLM engineering platform that helps teams collaboratively debug, analyze, and iterate on their LLM applications.(#203)
 
+**ha-aws-cost**
+
+[ha-aws-cost](https://aws-oss.beachgeek.co.uk/44i)  is a project from Diego Marques for folks who use [Home Assistant](https://www.home-assistant.io/) (a very popular open source home automation system), and provides custom component interacts with AWS to get the month to date cost and forecast cost and make it available on Home Assistant. It adds two new entities 1/Month to date cost: The current cost of your AWS account, and 2/Forecasted month costs: The forecasted cost based in your current consumption. Check out Diego's[ post on LinkedIn](https://www.linkedin.com/posts/diego7marques_aws-cost-my-first-home-assistant-integration-activity-7239741496013340672-cCSY/) that provides some more background to this project.(#204)
+
 **mlspace**
 
 [mlspace](https://aws-oss.beachgeek.co.uk/3r8) provides code that will help you deploy [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) into your AWS account. [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) is an open source no-hassle tool for data science, machine learning and deep learning, and has pre-made environments for pytorch, tensorflow and everything else you might need. (#193)
@@ -1309,6 +1352,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [amazon-eks-running-webassembly](https://aws-oss.beachgeek.co.uk/3th) This repository contains code for building custom Amazon EKS AMIs using HashiCorp Packer. The AMIs include necessary binaries and configurations to enable you to run WebAssembly workloads in an EKS cluster and are based on Amazon Linux 2023. The runtimes used in the AMIs are Spin and WasmEdge. The respective containerd-shims are used for both runtimes. Deploying the cluster is done using Hashicorp Terraform. After the cluster is created, RuntimeClasses and example workloads are deployed to the cluster. If you are exploring Wasm, then this is for you. (#195)
 
+**amplify-godot-engine-sample**
+
+[amplify-godot-engine-sample](https://aws-oss.beachgeek.co.uk/44u) for the past few years, Godot has been one of the most active and popular open source projects. If you are not familiar with it, it provides a game engine that allows you to build 2D and 3D games (currently half way through a Udemy course, and loving it!).  If you wanted to know how you can use AWS Amplify with Godot, this repo provides some sample code using some of the Godot demo projects. (#204)
+
 **aws-chatbot-fargate-python**
 
 [aws-chatbot-fargate-python](https://aws-oss.beachgeek.co.uk/43f) is a new repo from AWS Hero Ran Isenberg that deploys a Streamlit Chatbot in an AWS Fargate-based ESC cluster web application using AWS CDK (Cloud Development Kit). The infrastructure includes an ECS cluster, Fargate service, Application Load Balancer, VPC, and WAF and includes security best practices with CDK-nag verification. The chatbot is based on an implementation by Streamlit and the initial prompt is that the chatbot is me, Ran the builder, a serverless hero and attempts to answer as me. The Chatbot uses custom domain (you can remove it or change it to your own domain) and assume an OpenAI token exists in the account in the form of a secrets manager secret for making API calls to OpenAI.(#203)
@@ -1324,6 +1371,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **aws-genai-rfpassistant**
 
 [aws-genai-rfpassistant](https://aws-oss.beachgeek.co.uk/43a) this repository contains the code and infrastructure as code for a Generative AI-powered Request for Proposal (RFP) Assistant leveraging Amazon Bedrock and AWS Cloud Development Kit (CDK). This could be very hand if responding to RFP's is something that you do and you want to look at ways of optimising your approach. The documentation in the repo is very comprehensive. I have not tried this one out for myself, but I have been involved in both writing and reviewing RFPs in the past, so understand the pain that led to the creation of this project. (#203)
+
+**aws-eks-udp-telemetry**
+
+[aws-eks-udp-telemetry](https://aws-oss.beachgeek.co.uk/44m) is a project that I have tried to build myself many moons ago. Did you know that many of the amazing (and very realistic) racing games for consoles allow you to export telemetry data? When I found this out many moons ago, I put together some simple code that showed some simple telemetry (speed, tyre temperature). I kind of stopped there with plans to do great things, but as is often the way, the project was left half finished. So I am delighted that this project from AWS Community Builder Amador Criado provides a more complete version, including a blog post ([Ingesting F1 Telemetry UDP real-time data in AWS EKS](https://aws-oss.beachgeek.co.uk/44n)) where he dives into the details of how everything works. (#204)
 
 **aws-piday2024**
 
@@ -1348,6 +1399,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **build-neptune-graphapp-cdk**
 
 [build-neptune-graphapp-cdk](https://aws-oss.beachgeek.co.uk/3z9) this repo provides a quick example on how to build a graph application with Amazon Neptune and AWS Amplify. (#200)
+
+**content-based-item-recommender**
+
+[content-based-item-recommender](https://aws-oss.beachgeek.co.uk/44r) provides some example code the helps you deploy a content-based recommender system. It is called "content-based" as it bases the recommendation based on the matching between the input's content and the items' content from your database. This uses prompt to large-language models (LLM) and vector search to perform the recommendation. (#204)
 
 **cost-news-slack-bot**
 
@@ -1432,6 +1487,11 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [multi-tenant-chatbot-using-rag-with-amazon-bedrock](https://aws-oss.beachgeek.co.uk/3c5) provides a solution for building a multi-tenant chatbot with Retrieval Augmented Generation (RAG). RAG is a common pattern where a general-purpose language model is queried with a user question along with additional contextual information extracted from private documents. To help you understand and deploy the code, check out the supporting blog post from Farooq Ashraf, Jared Dean, and Ravi Yadav, [Build a multi-tenant chatbot with RAG using Amazon Bedrock and Amazon EKS](https://aws-oss.beachgeek.co.uk/3c6) (#177)
 
+**news-clustering-and-summarization**
+
+[news-clustering-and-summarization](https://aws-oss.beachgeek.co.uk/44l) this repository contains code for a near real-time news clustering and summarisation solution using AWS services like Lambda, Step Functions, Kinesis, and Bedrock. It demonstrates how to efficiently process, embed, cluster, and summarise large volumes of news articles to provide timely insights for financial services and other industries. This solution aims to launch a news Event feature that clusters related news stories into summaries, providing customers with near real-time updates on unfolding events. This augmented news consumption experience will enable users to easily follow evolving stories while maximising relevance and reducing the firehose of information for articles covering the same event. By tailoring news clusters around key events, this application can improve customer satisfaction and engagement. Detailed docs will help you get up and running in no time. (#204)
+
+
 **newsletter-manager-template**
 
 [newsletter-manager-template](https://aws-oss.beachgeek.co.uk/3sa) is a project from AWS Community Builder Matteo Depascale that provides backend service orchestrations for newsletter builders. (#194)
@@ -1464,6 +1524,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [serverless-rss-filtered-feed-gen](https://aws-oss.beachgeek.co.uk/3dz) This is a configurable serverless solution that generates filtered rss feeds and makes them public accessible. Defined RSS sources are read at a given interval and new filtered feeds are generated and stored. The architecture uses a minimum number of AWS services to keep it easy to maintain and cost-effective. (#178)
 
+**scaling-with-karpenter**
+
+[scaling-with-karpenter](https://aws-oss.beachgeek.co.uk/44o) is a project from AWS Community Builder Romar Cablao that provides a demo of how Karpenter autoscale your Kubernetes clusters. To help you get started with the code, check out his supporting blog post, [Scaling & Optimizing Kubernetes with Karpenter - An AWS Community Day Talk](https://aws-oss.beachgeek.co.uk/44p).(#204)
+
 **slackrock**
 
 [slackrock](https://aws-oss.beachgeek.co.uk/3yw) is a conversational AI assistant powered by Amazon Bedrock & your favorite cutting-edge frontier models. The project is focused on cost efficiency & simplicity, while supporting a wide variety of AI models with differing strengths & weaknesses to fit the widest array of use cases. Converse with your favourite LLMs without ever leaving Slack! (#200)
@@ -1479,6 +1543,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **svdxt-sagemaker-huggingface**
 
 [svdxt-sagemaker-huggingface](https://aws-oss.beachgeek.co.uk/3uo) is the latest demo repo from regular contributor Gary Stafford, that showcases some of the cool stuff Gary has been writing about in the generative AI space. This time he takes a look at the emerging field of generating videos through Stability AI's Stable Video Diffusion XT (SVT-XT). This foundation model is a diffusion model that takes in a still image as a conditioning frame and generates a video from it.(#196)
+
+**twinmaker-dynamicscenes-crossdock-demo**
+
+[twinmaker-dynamicscenes-crossdock-demo](https://aws-oss.beachgeek.co.uk/44q) provides code to create a demonstration of the AWS IoT TwinMaker dynamic scenes feature using a 'cross-dock' warehouse as an example. Using this demonstration code, the environment allows the simulation of goods on pallets entering the warehouse at the inbound docks, transition through sorting and then on to the outbound dock. (#204)
 
 **valkey-python-demo**
 
