@@ -32,6 +32,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [awesome-codewhisperer](https://aws-oss.beachgeek.co.uk/3cw) this repo from Christian Bonzelet is a great collection of resources for those of you who are experimenting with Generative AI coding assistants such as Amazon CodeWhisperer. This resource should keep you busy, and help you master Amazon CodeWhisperer in no time.  (#177)
 
+**aws-advanced-nodejs-wrapper**
+
+[aws-advanced-nodejs-wrapper](https://aws-oss.beachgeek.co.uk/465) is complementary to an existing NodeJS driver and aims to extend the functionality of the driver to enable applications to take full advantage of the features of clustered databases such as Amazon Aurora.  In other words, the AWS Advanced NodeJS Wrapper does not connect directly to any database, but enables support of AWS and Aurora functionalities on top of an underlying NodeJS driver of the user's choice. Hosting a database cluster in the cloud via Aurora is able to provide users with sets of features and configurations to obtain maximum performance and availability, such as database failover. However, at the moment, most existing drivers do not currently support those functionalities or are not able to entirely take advantage of it. The main idea behind the AWS Advanced NodeJS Wrapper is to add a software layer on top of an existing NodeJS driver that would enable all the enhancements brought by Aurora, without requiring users to change their workflow with their databases and existing NodeJS drivers. (#205)
+
 **aws-chatbot-fargate-python**
 
 [aws-chatbot-fargate-python](https://aws-oss.beachgeek.co.uk/43f) is a new repo from AWS Hero Ran Isenberg that deploys a Streamlit Chatbot in an AWS Fargate-based ESC cluster web application using AWS CDK (Cloud Development Kit). The infrastructure includes an ECS cluster, Fargate service, Application Load Balancer, VPC, and WAF and includes security best practices with CDK-nag verification. The chatbot is based on an implementation by Streamlit and the initial prompt is that the chatbot is me, Ran the builder, a serverless hero and attempts to answer as me. The Chatbot uses custom domain (you can remove it or change it to your own domain) and assume an OpenAI token exists in the account in the form of a secrets manager secret for making API calls to OpenAI.(#203)
@@ -113,6 +117,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 Evaluating large language models (LLM) is challenging due to their broad capabilities and the inadequacy of existing benchmarks in measuring human preferences. To address this, strong LLMs are used as judges to evaluate these models on more open-ended questions. The agreement between LLM judges and human preferences has been verified by introducing two benchmarks: Multi Turn (MT)-bench, a multi-turn question set, and Chatbot Arena, a crowdsourced battle platform. The results reveal that strong LLM judges can match both controlled and crowdsourced human preferences well, achieving over 80% agreement, the same level of agreement between humans This makes LLM-as-a-judge a scalable and explainable way to approximate human preferences, which are otherwise very expensive to obtain. (#197)
 
+**fmbench-orchestrator**
+
+[fmbench-orchestrator](https://aws-oss.beachgeek.co.uk/467) this repo is a tool designed to automate the deployment and management of FMBench for benchmarking on Amazon EC2, Amazon SageMaker and Amazon Bedrock. In case of benchmarking on EC2, we could benchmark on multiple instances simultaneously, and these instances can be of different instance types (so you could run g6e, p4de and a trn1 instances via the same config file), in different AWS regions and also test multiple FMBench config files. This orchestrator automates the creation of Security Groups, Key Pairs, EC2 instances, runs FMBench for a specific config, retrieves the results, and shuts down the instances after completion. Thus it simplifies the benchmarking process (no more manual creation of SageMaker Notebooks, EC2 instances and cleanup, downloading results folder) and ensures a streamlined and scalable workflow. Very detailed README that provides much more details on how this works. (#205)
+
 **fm-leaderboarder**
 
 [fm-leaderboarder](https://aws-oss.beachgeek.co.uk/3sf) provides resources to help you benchmark against the growing number of different models to help you find the best LLM for your own business use case based on your own tasks, prompts, and data. (#194)
@@ -128,6 +136,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **gen-ai-on-eks**
 
 [gen-ai-on-eks](https://aws-oss.beachgeek.co.uk/3d2) this repository aims to showcase how to finetune a FM model in Amazon EKS cluster using, JupyterHub to provision notebooks and craft both serving and training scripts, RayOperator to manage Ray Clusters and Karpenter to manage Node Scaling. (#177)
+
+**graphrag-toolkit**
+
+[graphrag-toolkit](https://aws-oss.beachgeek.co.uk/464) is a Python toolkit for building GraphRAG applications. It provides a framework for automating the construction of a graph from unstructured data, and composing question-answering strategies that query this graph when answering user questions. The toolkit uses low-level LlamaIndex components – data connectors, metadata extractors, and transforms – to implement much of the graph construction process. By default, the toolkit uses Amazon Neptune Analytics or Amazon Neptune Database for its graph store, and Neptune Analytics or Amazon OpenSearch Serverless for its vector store, but it also provides extensibility points for adding alternative graph stores and vector stores. The default backend for LLMs and embedding models is Amazon Bedrock; but, as with the stores, the toolkit can be configured for other LLM and embedding model backends using LlamaIndex abstractions. (#205)
 
 **guidance-for-natural-language-queries-of-relational-databases-on-aws**
 
@@ -340,6 +352,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [how-high-is-my-salary-enclave-app](https://aws-oss.beachgeek.co.uk/3y3) is a rather cool project from AWS Hero Richard Fan that provides a simple app showcases how to protect software supply chain security using GitHub Actions, SLSA, and AWS Nitro Enclaves. (#199)
 
+**kro**
+
+[kro](https://aws-oss.beachgeek.co.uk/468) This project aims to simplify the creation and management of complex custom resources for Kubernetes. Kube Resource Orchestrator (kro) provides a powerful abstraction layer that allows you to define complex multi-resource constructs as reusable components in your applications and systems. You define these using kro's fundamental custom resource, ResourceGroup. This resource serves as a blueprint for creating and managing collections of underlying Kubernetes resources. With kro, you define custom resources as your fundamental building blocks for Kubernetes. These building blocks can include other Kubernetes resources, either native or custom, and can specify the dependencies between them. This lets you define complex custom resources, and include default configurations for their use. The kro controller will determine the dependencies between resources, establish the correct order of operations to create and configure them, and then dynamically create and manage all of the underlying resources for you. kro is Kubernetes native and integrates seamlessly with existing tools to preserve familiar processes and interfaces. (#205)
+
 **llrt**
 
 [llrt](https://aws-oss.beachgeek.co.uk/3mm) - Low Latency Runtime (LLRT) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications. LLRT offers up to over 10x faster startup and up to 2x overall lower cost compared to other JavaScript runtimes running on AWS Lambda. It's is built in Rust, utilising QuickJS as JavaScript engine, ensuring efficient memory usage and swift startup. (#188)
@@ -369,6 +385,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **amazon-sqs-python-extended-client-lib**
 
 [amazon-sqs-python-extended-client-lib](https://aws-oss.beachgeek.co.uk/3ti) this repo (Amazon SQS Extended Client) allows clients to manage Amazon SQS message payloads that exceed the 256 KB message size limit, up to a size of 2 GB. In the event of publishing such large messages, the client accomplishes this feat by storing the actual payload in a S3 bucket and by storing the reference of the stored object in the SQS queue. Similarly, the extended-client is also used for retrieving and dereferencing these references of message objects stored in S3.  Check out the docs for more details on how this works and some sample code to get you going. (#195)
+
+**analytics-accelerator-s3**
+
+[analytics-accelerator-s3](https://aws-oss.beachgeek.co.uk/463) the Analytics Accelerator Library for Amazon S3 is an open source library that accelerates data access from client applications to Amazon S3. With this tool you can 1/ lower processing times and compute costs for data analytics workloads, 2/ implement S3 best practices for performance, 3/utilise optimisations specific to Apache Parquet files, such as pre-fetching metadata located in the footer of the object and predictive column pre-fetching, and 4/improve the price performance for your data analytics applications, such as workloads based on Apache Spark.Project is currently in Alpha, so bear that in mind. More examples and details in the README. (#205)
 
 **apache-xtable-on-aws-samples**
 
@@ -518,6 +538,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [amazon-bedrock-client-for-mac](https://aws-oss.beachgeek.co.uk/3um) this repo provides the code for the Amazon Bedrock Client for Mac is a macOS demo application built with SwiftUI. It serves as a client interface for AWS Bedrock, allowing users to interact with AWS Bedrock models.(#196)
 
+**amazon-q-developer-cli**
+
+[amazon-q-developer-cli](https://aws-oss.beachgeek.co.uk/466) is the repo that houses most of the core code for the Amazon Q Developer desktop app and CLI, adding autocomplete and AI to your existing terminal on macOS & Linux. (#205)
+
 **amazon-sqs-python-extended-client-lib**
 
 [amazon-sqs-python-extended-client-lib](https://aws-oss.beachgeek.co.uk/3ti) this repo (Amazon SQS Extended Client) allows clients to manage Amazon SQS message payloads that exceed the 256 KB message size limit, up to a size of 2 GB. In the event of publishing such large messages, the client accomplishes this feat by storing the actual payload in a S3 bucket and by storing the reference of the stored object in the SQS queue. Similarly, the extended-client is also used for retrieving and dereferencing these references of message objects stored in S3.  Check out the docs for more details on how this works and some sample code to get you going. (#195)
@@ -529,6 +553,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **awsid**
 
 [awsid](https://aws-oss.beachgeek.co.uk/41p) is the latest novel project from Aidan Steele, author of many curiosities in the past, and this time (using his own words) he has created a tool that is "an incredibly niche tool, that might be of interest to half a dozen people. It turns AWS unique IDs into ARNs. I used generative AI to generate the UI." Check it out and see if you are part of that niche! (also make sure you check out the README about what he can potentially see) (#202)
+
+**aws-advanced-nodejs-wrapper**
+
+[aws-advanced-nodejs-wrapper](https://aws-oss.beachgeek.co.uk/465) is complementary to an existing NodeJS driver and aims to extend the functionality of the driver to enable applications to take full advantage of the features of clustered databases such as Amazon Aurora.  In other words, the AWS Advanced NodeJS Wrapper does not connect directly to any database, but enables support of AWS and Aurora functionalities on top of an underlying NodeJS driver of the user's choice. Hosting a database cluster in the cloud via Aurora is able to provide users with sets of features and configurations to obtain maximum performance and availability, such as database failover. However, at the moment, most existing drivers do not currently support those functionalities or are not able to entirely take advantage of it. The main idea behind the AWS Advanced NodeJS Wrapper is to add a software layer on top of an existing NodeJS driver that would enable all the enhancements brought by Aurora, without requiring users to change their workflow with their databases and existing NodeJS drivers. (#205)
 
 **aws-iatk**
 
@@ -677,6 +705,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **eks-saas-gitops**
 
 [eks-saas-gitops](https://aws-oss.beachgeek.co.uk/3k1) This repository offers a sample pattern to manage multi-tenancy in a Kubernetes cluster using GitOps with Flux. The provided CloudFormation template automates the deployment of necessary AWS resources and sets up an environment ready for GitOps practices. (#184)
+
+**eslint-cdk-plugin**
+
+[eslint-cdk-plugin](https://aws-oss.beachgeek.co.uk/45z) provides an ESLint plugin for AWS CDK. ESLint is a static code analysis tool for identifying problematic patterns found in JavaScript code. This provides rules for the AWS CDK to help you write readable, maintainable, and reusable code. There are extensive rules provided ([eslint-rules](https://aws-oss.beachgeek.co.uk/461)) to get you going. Check out the project webpage [here](https://aws-oss.beachgeek.co.uk/460). (#205)
 
 **gh-relfind**
 
@@ -1222,6 +1254,11 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [distill-cli](https://aws-oss.beachgeek.co.uk/3yz) is a new project from Amazon CTO Dr Werner Vogels, which uses Amazon Transcribe and Amazon Bedrock to create summaries of your audio recordings (e.g., meetings, podcasts, etc.) directly from the command line. Distill CLI takes a dependency on Amazon Transcribe, and as such, supports the following media formats: AMR, FLAC, M4A, MP3, MP4, Ogg, WebM, WAV. It is great to feature this latest project, with the previous one being featured in [#197](https://community.aws/content/2gPNtsdSfQRIpmbUrNyPrjUg54D/aws-open-source-newsletter-197). To go with this repo, there is a post too, [Introducing Distill CLI: An efficient, Rust-powered tool for media summarization](https://aws-oss.beachgeek.co.uk/3yy) where Werner shares his experience building this tool in Rust, and provides some closing thoughts too. (#200)
 
+**Drag-and-Drop-Email-Designer**
+
+[Drag-and-Drop-Email-Designer](https://aws-oss.beachgeek.co.uk/469) looks like a neat project that provides a way of designing email templates that you can use with the Send with SES project. Check out the README for some visuals on what this looks like. (#205)
+
+
 **duplicate-rule-detection-tool**
 
 [duplicate-rule-detection-tool](https://aws-oss.beachgeek.co.uk/3oq) is a project to assess the current active AWS Config rules with potential duplicate scope in an AWS account. Our goal is to help customers can make informed decisions on how to streamline their AWS Config rules and reduce complexity. Plenty of examples and detailed breakdown of how this works in the README, so give it a look. (#190)
@@ -1420,6 +1457,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [domain-specific-genai-chatbot-with-serverless](https://aws-oss.beachgeek.co.uk/3t9) This sample demonstrates how to build a domain specific chatbot using serverless and Bedrock. The chatbot employs Retrieval-Augments Generation (RAG) and chat history to provide context for the LLM to answer. (#195)
 
+**fmbench-orchestrator**
+
+[fmbench-orchestrator](https://aws-oss.beachgeek.co.uk/467) this repo is a tool designed to automate the deployment and management of FMBench for benchmarking on Amazon EC2, Amazon SageMaker and Amazon Bedrock. In case of benchmarking on EC2, we could benchmark on multiple instances simultaneously, and these instances can be of different instance types (so you could run g6e, p4de and a trn1 instances via the same config file), in different AWS regions and also test multiple FMBench config files. This orchestrator automates the creation of Security Groups, Key Pairs, EC2 instances, runs FMBench for a specific config, retrieves the results, and shuts down the instances after completion. Thus it simplifies the benchmarking process (no more manual creation of SageMaker Notebooks, EC2 instances and cleanup, downloading results folder) and ensures a streamlined and scalable workflow. Very detailed README that provides much more details on how this works. (#205)
+
 **genai-asl-avatar-generator**
 
 [genai-asl-avatar-generator](https://aws-oss.beachgeek.co.uk/405) this repo provides code that demonstrates the power of a number of AWS services working in concert to enable seamless translation from speech/text to American Sign Language (ASL) avatar animations.  Check out the supporting blog post, [Generative AI-powered American Sign Language Avatars](https://aws-oss.beachgeek.co.uk/406), where Suresh Poopandi walks through the project and code and how it all hangs together. (#201)
@@ -1543,6 +1584,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **svdxt-sagemaker-huggingface**
 
 [svdxt-sagemaker-huggingface](https://aws-oss.beachgeek.co.uk/3uo) is the latest demo repo from regular contributor Gary Stafford, that showcases some of the cool stuff Gary has been writing about in the generative AI space. This time he takes a look at the emerging field of generating videos through Stability AI's Stable Video Diffusion XT (SVT-XT). This foundation model is a diffusion model that takes in a still image as a conditioning frame and generates a video from it.(#196)
+
+**terraform-f1-telemetry-infra**
+
+[terraform-f1-telemetry-infra](https://aws-oss.beachgeek.co.uk/462) this project aims to develop a UDP listener to capture, parse, and visualise this data in real-time using various AWS services, including ECS, Elastic Load Balancing, and Route 53. A number of racing games on leading consoles provide the ability to send telemetry data to a target IP address, which this project will then ingest. Very cool stuff.(#205)
 
 **twinmaker-dynamicscenes-crossdock-demo**
 
