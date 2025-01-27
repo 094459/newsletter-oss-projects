@@ -8,6 +8,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 ### AI & ML
 
+**abc**
+
+[abc](https://aws-oss.beachgeek.co.uk/47t) is an AI bash tool that integrates with Amazon Bedrock as a foundation model provider. This tool will generate shell command(s) from natural language description using which ever LLM (generative AI) you configure, and place on the next shell prompt for editing and execution. Plenty of details in the README on how to configure and run this, so give it a go if you are looking for something that integrates with Amazon Bedrock.(#206)
+
 **agent-evaluation**
 
 [agent-evaluation](https://aws-oss.beachgeek.co.uk/3vw)  is a generative AI-powered framework for testing virtual agents. Agent Evaluation implements an LLM agent (evaluator) that will orchestrate conversations with your own agent (target) and evaluate the responses during the conversation. The repo has links to detailed docs that provide example configurations and a reference guide to get you started. (#197)
@@ -91,6 +95,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [cfn-bedrock-notify](https://aws-oss.beachgeek.co.uk/3sc) is a new tool from my colleague Du'an Lightfoot that is a very creative an interesting way to incorporate large language models to help you troubleshoot failed Cloudformation deployments. How many times have you had a deployment fail, only to reach out to your preferred search tool to help solve the problem. Well with this project deployed, any issues are sent via SNS to Amazon Bedrock using Anthropic Claude v3, and (hopefully) the answer to your problems are returned via the email of the SNS subscriber. (#194)
 
+**chat-cli**
+
+[chat-cli](https://aws-oss.beachgeek.co.uk/47o) is a terminal based program that lets you interact with LLMs available on Amazon Bedrock. You can install and run via source or for ease, Homebrew. The README provides you with more details including how to configure the application. If you want an easy, text base way to interact with the foundational models you run via Amazon Bedrock, check this out.(#206)
+
 **chronos-forecasting**
 
 [chronos-forecasting](https://aws-oss.beachgeek.co.uk/3rh) is a family of pre-trained time series forecasting models based on language model architectures. A time series is transformed into a sequence of tokens via scaling and quantisation, and a language model is trained on these tokens using the cross-entropy loss. Once trained, probabilistic forecasts are obtained by sampling multiple future trajectories given the historical context. Chronos models have been trained on a large corpus of publicly available time series data, as well as synthetic data generated using Gaussian processes. (#194)
@@ -153,6 +161,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [load-test-llm-with-locust](https://aws-oss.beachgeek.co.uk/3qg) provides an example of how to perform load testing on the LLM API to evaluate your production requirements. The code is developed within a SageMaker Notebook and utilises the command line interface to conduct load testing on both the SageMaker and Bedrock LLM API. If you are not familiar with Locust, it is an open source load testing tool, and is a popular framework for load testing HTTP and other protocols. Its developer friendly approach lets you to define your tests in regular Python code. Locust tests can be run from command line or using its web-based UI. Throughput, response times and errors can be viewed in real time and/or exported for later analysis.(#192)
 
+**llm-test-mate**
+
+[llm-test-mate](https://aws-oss.beachgeek.co.uk/47v) is a project from my colleague Danilo Poccia that is a simple testing framework to evaluate and validate LLM-generated content using string similarity, semantic. Check out the README for a list of features currently supported, as well as examples of how to use it. The README really is a thing of beauty, and I wish more projects provided as clear and detailed info as this project.(#206)
+
 **makit-llm-lambda**
 
 [makit-llm-lambda ](https://aws-oss.beachgeek.co.uk/3cx)this repo from Martyn Kilbryde is an example of how you can run a Large Language Model (LLM) inside an AWS Lambda Function.  Whilst the code will help you deploy to AWS Lambda, it can be ran locally inside Docker for testing as well. The function contains the full LLM model and the code to use the model, allowing basic text generation from a HTTP call into it. (#177)
@@ -160,6 +172,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **mlspace**
 
 [mlspace](https://aws-oss.beachgeek.co.uk/3r8) provides code that will help you deploy [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) into your AWS account. [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) is an open source no-hassle tool for data science, machine learning and deep learning, and has pre-made environments for pytorch, tensorflow and everything else you might need. (#193)
+
+**mcp-server-aws**
+
+[mcp-server-aws](https://aws-oss.beachgeek.co.uk/47r) is a project from Rishi Kavikondala that provides a  [Model Context Protocol](https://aws-oss.beachgeek.co.uk/47s) server implementation for AWS operations that currently supports S3 and DynamoDB services. All operations are automatically logged and can be accessed through the audit://aws-operations resource endpoint.(#206)
 
 **multi-agent-orchestrator**
 
@@ -316,6 +332,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [beta9](https://aws-oss.beachgeek.co.uk/3xu) is a self-hosted serverless framework that you can run in your AWS account. Think of AWS Lambda, but with GPUs and a Python-first developer experience. You can run workloads that instantly scale up to thousands of GPU containers running in parallel. The instances scale down automatically after each workload. You can also do things like deploy web endpoints, run task queues, and mount storage volumes for accessing large datasets. If you already have an EKS cluster, you can install Beta9 with a Helm chart. We think this would be a great way to save money on EC2 GPU resources while also getting a magical Python-first developer experience. If you have feedback or feature ideas, the maintainers would like to hear them. 
 
+**cedar-access-control-for-k8s**
+
+[cedar-access-control-for-k8s](https://aws-oss.beachgeek.co.uk/47k) is a very very cool project from Micah Hausler, that extends Cedar to the Kubernetes control plane and allows you to implement fine grain policies in Cedar that allow you to have much greater control and flexibility of authorisation within your Kubernetes environments. If you are using Kubernetes, then reviewing this project is a must. Check out the video in the Videos section at the end for more info, where Micah walks you through how this works in more detail. (#206)
+
 **codecatalyst-runner-cli**
 
 [codecatalyst-runner-cli](https://aws-oss.beachgeek.co.uk/3up) This repository contains a command line tool that will allow you to run Amazon CodeCatalyst workflows locally. The README provides the instructions for quickly installing and getting started, so if  you have been using Amazon CodeCatalyst and looking for this, look no more.(#196)
@@ -339,6 +359,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **ecs-gpu-scaling**
 
 [ecs-gpu-scaling](https://aws-oss.beachgeek.co.uk/3mh) This repository is intended for engineers looking to horizontally scale GPU-based Machine Learning (ML) workloads on Amazon ECS. By default, GPU utilisation metrics are not part of the predefined metrics available with Application Autoscaling. As such, you implement auto scaling based on custom metrics.  For NVIDIA-based GPUs, you use DCGM-Exporter in your container to expose GPU metrics. You can then use metrics such as DCGM_FI_DEV_GPU_UTIL and DCGM_FI_DEV_GPU_TEMP to determine your auto scaling behaviour. The README provides links to all the additional resources you need to get this up and running.(#187)
+
+**ecs-will-it-fit**
+
+[ecs-will-it-fit](https://aws-oss.beachgeek.co.uk/47h) (or wily for short) is a new project from my good friend Ivica Kolenkaš, that provides a very useful tool for those of you using Amazon ECS. It is a CLI tool that helps you answer the question: "Will this ECS service fit on my ECS cluster backed by EC2 instances?". It does so by mimicking1 the selection process that the ECS scheduler performs while selecting suitable container instances for your service. Nice detailed README provides everything you need to know about how to use this cli. This is in alpha stage, so if you give it a go, make sure to pass on your feedback to Ivica. (#206)
 
 **eks-shared-subnets**
 
@@ -369,6 +393,11 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **active-active-cache**
 
 [active-active-cache](https://aws-oss.beachgeek.co.uk/3o5) is a repo that helps you build a solution that implements an active-active cache across 2 AWS regions, using ElastiCache for Redis. This solution is automated with CDK and SAM.(#189)
+
+**activerecord-dsql-adapter**
+
+[activerecord-dsql-adapter](https://aws-oss.beachgeek.co.uk/47u) is a new project from Samuel Cochran
+ that provides the beginnings of an Active Record connection adapter for Amazon's AWS Aurora DSQL database.(#206)
 
 **ai-driven-sql-generation**
 
@@ -450,6 +479,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [db-top-monitoring](https://aws-oss.beachgeek.co.uk/3ph)  is lightweight application to perform realtime monitoring for AWS Database Resources. Based on same simplicity concept of Unix top utility, provide quick and fast view of database performance, just all in one screen.  The README is very details and comprehensive, so if you are doing any sort of work with databases, and need to understand the performance characteristics, this is a project you should explore. (#191)
 
+**dynamodb-parallel-scan**
+
+[dynamodb-parallel-scan](https://aws-oss.beachgeek.co.uk/47l) is a new node library from shelfio that looks to speed up scanning your DynamoDB tables, through parallelism. Vlad Holubiev has put together a blog post, [How to Scan a 23 GB DynamoDB Table in One Minute](https://aws-oss.beachgeek.co.uk/47m) where he shares more details on how this library works, how to get started, as well as some benchmarks he has done.
+
 **glide-for-redis**
 
 [glide-for-redis](https://aws-oss.beachgeek.co.uk/3l2) or General Language Independent Driver for the Enterprise (GLIDE) for Redis (mayeb GLIDER would have been cooler :-) is a new open source client for Redis that works with any Redis distribution that adheres to the Redis Serialization Protocol (RESP) specification. The client is optimised for security, performance, minimal downtime, and observability, and comes pre-configured with best practices learned from over a decade of operating Redis-compatible services used by hundreds of thousands of customers. (#185)
@@ -529,6 +562,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **.NET Aspire**
 
 [aspire](https://aws-oss.beachgeek.co.uk/3x1) Provides extension methods and resources definition for a .NET Aspire AppHost to configure the AWS SDK for .NET and AWS application resources. If you are not familiar with Aspire,  it is an opinionated, cloud ready stack for building observable, production ready, distributed applications in .NET. You can now use this with AWS resources, so check out the repo and the documentation that provides code examples and more.(#198)
+
+**abc**
+
+[abc](https://aws-oss.beachgeek.co.uk/47t) is an AI bash tool that integrates with Amazon Bedrock as a foundation model provider. This tool will generate shell command(s) from natural language description using which ever LLM (generative AI) you configure, and place on the next shell prompt for editing and execution. Plenty of details in the README on how to configure and run this, so give it a go if you are looking for something that integrates with Amazon Bedrock.(#206)
 
 **alarm-context-tool**
 
@@ -630,6 +667,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [beta9](https://aws-oss.beachgeek.co.uk/3xu) is a self-hosted serverless framework that you can run in your AWS account. Think of AWS Lambda, but with GPUs and a Python-first developer experience. You can run workloads that instantly scale up to thousands of GPU containers running in parallel. The instances scale down automatically after each workload. You can also do things like deploy web endpoints, run task queues, and mount storage volumes for accessing large datasets. If you already have an EKS cluster, you can install Beta9 with a Helm chart. We think this would be a great way to save money on EC2 GPU resources while also getting a magical Python-first developer experience. If you have feedback or feature ideas, the maintainers would like to hear them.  (#199)
 
+**bluesky-pds-cdk**
+
+[bluesky-pds-cdk](https://aws-oss.beachgeek.co.uk/47x) if you are looking to deploy a self-hosted a fully containerized, serverless Bluesky Personal Data Server (PDS) on AWS, then this is the repo for you. It provides an opinionated AWS CDK construct that makes deploying this on AWS a breeze. (#206)
+
 **csr-builder-for-kms**
 
 [csr-builder-for-kms](https://aws-oss.beachgeek.co.uk/40h) provides a Python library for creating and signing X.509 certificate signing requests (CSRs) with KMS Keys. (#201)
@@ -641,6 +682,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **cdk-notifier**
 
 [cdk-notifier](https://aws-oss.beachgeek.co.uk/3it) is a lightweight CLI tool to parse a CDK log file and post changes to pull request requests. Can be used to get more confidence on approving pull requests because reviewer will be aware of changes done to your environments. I am not sure whether this is an old tool, but I have only just found out about it thanks to the blog post from AWS Community Builder, Johannes Konings. He put together [Use cdk-notifier to compare changes in pull requests](https://aws-oss.beachgeek.co.uk/3iu) that explains in more details how this works and walks you through using it. (#183)
+
+**cdk-vscode-server**
+
+[cdk-vscode-server](https://aws-oss.beachgeek.co.uk/47j) is a new CDK construct from Manuel Vogel that provides a speed way to provision VSCode servers on AWS. Check out [his LinedIn post here](https://www.linkedin.com/posts/manuel-vogel_aws-cdk-cdkconstruct-ugcPost-7285010738505523201-YbLw/?utm_source=share&utm_medium=member_ios) for more details, as well as the detailed README. I have done this in the past with CloudFormation (check out my [gist here](https://gist.github.com/094459/0dc0eefcffbbc2c843e11e96940c2011)) but will be switching over to this construct from now on. (#206)
 
 **cedar-go**
 
@@ -710,6 +755,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [eslint-cdk-plugin](https://aws-oss.beachgeek.co.uk/45z) provides an ESLint plugin for AWS CDK. ESLint is a static code analysis tool for identifying problematic patterns found in JavaScript code. This provides rules for the AWS CDK to help you write readable, maintainable, and reusable code. There are extensive rules provided ([eslint-rules](https://aws-oss.beachgeek.co.uk/461)) to get you going. Check out the project webpage [here](https://aws-oss.beachgeek.co.uk/460). (#205)
 
+**gh-folder-dl**
+
+[gh-folder-dl](https://aws-oss.beachgeek.co.uk/47i) is a handy tool from my colleague Denis Traub, a Python library and CLI tool for downloading files from GitHub repository folders, with recursive support and smart caching. It tracks downloaded files in a SQLite database to avoid re-downloading unchanged files and maintains the original directory structure. Denis has provided helpful examples of how to use this in the README, so go check it out. (#206)
+
 **gh-relfind**
 
 [gh-relfind](https://aws-oss.beachgeek.co.uk/3tf) is a project from AWS Community Builder Colin Duggan, that provides a simple Go CLI tool that uses Claude to parse package changes from GitHub repos release history. Significant change information is often contained in the release text field (body tag in the JSON response from ListReleases). Adding a semantic search makes it easier to extract and summarise actual change details. The project was built to get a better understanding of how to integrate with Claude through AWS Bedrock. (#195)
@@ -725,6 +774,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **language-server-runtimes**
 
 [language-server-runtimes](https://aws-oss.beachgeek.co.uk/3qe) is a JSON-RPC based protocol for interactions between servers and clients (typically embedded in development tools). The README covers details around specification support and features supported, that will help you tailor this to your needs.(#192)
+
+**llm-test-mate**
+
+[llm-test-mate](https://aws-oss.beachgeek.co.uk/47v) is a project from my colleague Danilo Poccia that is a simple testing framework to evaluate and validate LLM-generated content using string similarity, semantic. Check out the README for a list of features currently supported, as well as examples of how to use it. The README really is a thing of beauty, and I wish more projects provided as clear and detailed info as this project.(#206)
 
 **llrt**
 
@@ -749,6 +802,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **pristup**
 
 [pristup](https://aws-oss.beachgeek.co.uk/3se) is along similar lines to the previous project, except this project from my colleague Dark Mesaros, provides a way to generate temporary AWS Console sign-in URLs. The purpose of this is to enable your users that do not have AWS Console access, temporary access to it without the need for a username and password. As with all of Darko's projects, excellent documentation and examples abound in the README. (#194)
+
+**projen-vitest**
+
+[projen-vitest](https://aws-oss.beachgeek.co.uk/47n) is a new component for Projen from Niko Virtala that helps you switch from Jest to Vitest in your Projen managed projects. Depending on your configuration, it should be more or less a drop-in replacement. Check out and follow [Niko here](https://bsky.app/profile/nikovirtala.io/post/3lejn3leh4k2b) (#206)
 
 **promptus**
 
@@ -968,6 +1025,9 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [service-screener-v2](https://aws-oss.beachgeek.co.uk/3ol) Service Screener is a tool for AWS customers to analyse their AWS accounts against best practices for architecture. It provides an easy-to-use report with recommendations across various areas like cost optimisation and security, highlighting quick fixes that are cost-effective and downtime-free. Service Screener checks environments against the Well-Architected framework and other standards, such as the Foundational Technical Review and Startup Security Baseline, offering a comprehensive, stylish report that's cost-free and easy to understand, often running within minutes. Check out the README for lots of examples and explainer videos. (#190)
 
+**terraform-aws-vulne-soldier**
+
+[terraform-aws-vulne-soldier](https://aws-oss.beachgeek.co.uk/47f) is a new project from Victor Omolayo that provides an AWS EC2 vulnerability remediation tool designed to automate the process of patching nodes managed by AWS Systems Manager. He has put together a blog post, [vulne-soldier: AWS EC2 Vulnerability Remediation Tool](https://aws-oss.beachgeek.co.uk/47g) that provides more detail on the project and background as to why he created it as well as how to get started. (#206)
 
 ### Java, Kotlin, Scala, OpenJDK
 
@@ -1009,11 +1069,13 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [terraform-aws-alternat](https://aws-oss.beachgeek.co.uk/3xx) simplifies how you can deploy high availability implementation of AWS NAT instances, which may help you to reduce your AWS costs if you need to provide internet access within your VPC's. It is worth checking out the README which provides details and comparisons on using this approach vs NAT Gateways. (#199)
 
-
-
 **trading-latency-benchmark**
 
 [trading-latency-benchmark](https://aws-oss.beachgeek.co.uk/3d1) This repository contains a network latency test stack that consists of Java based trading client and Ansible playbooks to coordinate distributed tests. Java based trading client is designed to send limit and cancel orders, allowing you to measure round-trip times of the network communication. (#177)
+
+**vpcshark**
+
+[vpcshark](https://aws-oss.beachgeek.co.uk/47q) is a recent project from AWS Hero Aidan Steele, that provides a Wireshark extcap to make ad hoc mirroring of AWS EC2 traffic easier. Check out the README to find out some more details as to why he open sourced this project.(#206)
 
 ### Observability
 
@@ -1083,6 +1145,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [awsviz](https://aws-oss.beachgeek.co.uk/3z1) is a super nice little tool from Bour Mohamed Abdelhadi, that helps you quickly visualy your IAM policies. You can check out the hosted version of [awsviz](https://aws-oss.beachgeek.co.uk/3z3) and there are some sample policies to show you what you can expect. Check out the[ use cases doc](https://aws-oss.beachgeek.co.uk/3z4) to see why you might want to try this tool out. (#200)
 
+**cedar-access-control-for-k8s**
+
+[cedar-access-control-for-k8s](https://aws-oss.beachgeek.co.uk/47k) is a very very cool project from Micah Hausler, that extends Cedar to the Kubernetes control plane and allows you to implement fine grain policies in Cedar that allow you to have much greater control and flexibility of authorisation within your Kubernetes environments. If you are using Kubernetes, then reviewing this project is a must. Check out the video in the Videos section at the end for more info, where Micah walks you through how this works in more detail. (#206)
+
 **cedar-antlr-grammar**
 
 [cedar-antlr-grammar](https://aws-oss.beachgeek.co.uk/3n0) - ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files. It's widely used to build languages, tools, and frameworks. From a grammar, ANTLR generates a parser that can build and walk parse trees. AWS Hero Ian Mckay has created one for Cedar. (#188)
@@ -1148,9 +1214,17 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [sso-sync-to-amazon-rds](https://aws-oss.beachgeek.co.uk/3e2) This project sets up AWS Lambda functions, Amazon EventBridge rule, Amazon VPC Endpoint for AWS IAM Identity Center (successor to AWS Single Sign-On), the related Security Groups and permissions necessary to automatically provision database users to the Amazon Relational Database Service (Amazon RDS) cluster using AWS Cloud Development Kit (AWS CDK). When a new user is created in IAM Identity Center and the user belongs to the group specified in a IAM_IDC_GROUP_NAME variable, EventBridge rule will trigger the Lambda function. The Lambda function will create a new user in a specified Amazon RDS cluster. The user will then be able to login to the database using their SSO username and IAM credentials. Adding a user to the configured group will trigger the Lambda function as well. (#178)
 
+**terraform-aws-vulne-soldier**
+
+[terraform-aws-vulne-soldier](https://aws-oss.beachgeek.co.uk/47f) is a new project from Victor Omolayo that provides an AWS EC2 vulnerability remediation tool designed to automate the process of patching nodes managed by AWS Systems Manager. He has put together a blog post, [vulne-soldier: AWS EC2 Vulnerability Remediation Tool](https://aws-oss.beachgeek.co.uk/47g) that provides more detail on the project and background as to why he created it as well as how to get started. (#206)
+
 **validate-aws-policies**
 
 [validate-aws-policies](https://aws-oss.beachgeek.co.uk/42r) is a Python command line tool from  Alejandro Velez to validate aws policies using boto3 and Access Analyzer API. You can check out his supporting blog post (including demo video) [Continuous Delivery applied to Authorization with IAM Identity Center and AWS IAM Access Analyzer – Part 1](https://aws-oss.beachgeek.co.uk/42s) that shows you how you can incorporate this tool as part of your CI/CD pipeline.(#203)
+
+**vpcshark**
+
+[vpcshark](https://aws-oss.beachgeek.co.uk/47q) is a recent project from AWS Hero Aidan Steele, that provides a Wireshark extcap to make ad hoc mirroring of AWS EC2 traffic easier. Check out the README to find out some more details as to why he open sourced this project.(#206)
 
 ### Storage
 
@@ -1325,6 +1399,14 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [bedrock-litellm](https://aws-oss.beachgeek.co.uk/43m) is an awesome project that provides a way of proxying requests in the OpenAI format, so that they will work with Amazon Bedrock. OpenAI is often one of the default options for integrating various generative AI tools and libraries, and now you have a way of being able to point those to use foundational models managed by Amazon Bedrock. It uses [litellm](https://www.litellm.ai/) to do this, and is deployed in a Kubernetes cluster.(#203)
 
+**bluesky-pds-cdk**
+
+[bluesky-pds-cdk](https://aws-oss.beachgeek.co.uk/47x) if you are looking to deploy a self-hosted a fully containerized, serverless Bluesky Personal Data Server (PDS) on AWS, then this is the repo for you. It provides an opinionated AWS CDK construct that makes deploying this on AWS a breeze. (#206)
+
+**cdk-vscode-server**
+
+[cdk-vscode-server](https://aws-oss.beachgeek.co.uk/47j) is a new CDK construct from Manuel Vogel that provides a speed way to provision VSCode servers on AWS. Check out [his LinedIn post here](https://www.linkedin.com/posts/manuel-vogel_aws-cdk-cdkconstruct-ugcPost-7285010738505523201-YbLw/?utm_source=share&utm_medium=member_ios) for more details, as well as the detailed README. I have done this in the past with CloudFormation (check out my [gist here](https://gist.github.com/094459/0dc0eefcffbbc2c843e11e96940c2011)) but will be switching over to this construct from now on. (#206)
+
 **cumuli-aws-console-chat**
 
 [cumuli-aws-console-chat](https://aws-oss.beachgeek.co.uk/3j2)  is an open source Chrome extension that provides similar functionality to Amazon Q. The Cumuli Chrome extension adds a side panel with LLM chat to all AWS pages, and lets you add screenshots of the console to your queries to get context-aware responses. It's similar to Amazon Q but uses GPT-4 Turbo with vision. Check out the repo that includes a demo video of it in action.(#183)
@@ -1381,6 +1463,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [amazon-bedrock-audio-summarizer](https://aws-oss.beachgeek.co.uk/3w2) This project provides an automated way to transcribe and summarise audio files using AWS. We use Amazon S3, AWS Lambda, Amazon Transcribe, and Amazon Bedrock (with Claude 3 Sonnet), to create text transcripts and summaries from uploaded audio recordings. (#197)
 
+**amazon-bedrock-serverless-prompt-chaining**
+
+[amazon-bedrock-serverless-prompt-chaining](https://aws-oss.beachgeek.co.uk/47w) is an essential resource for AWS developers keen to discover examples of how to build complex, serverless, and highly scalable generative AI applications with prompt chaining and Amazon Bedrock.(#206)
+
 **amazon-bedrock-slack-gateway**
 
 [amazon-bedrock-slack-gateway](https://aws-oss.beachgeek.co.uk/3z8) lets you use Amazon Bedrock's generative AI to enable Slack channel members to access your organisations data and knowledge sources via conversational question-answering. You can connect to your organisation data via data source connectors and integrate it with Slack Gateway for Amazon Bedrock to enable access to your Slack channel members. It allows your users to converse with Amazon Bedrock using Slack Direct Message (DM) to ask questions and get answers based on company data, get help creating new content such as emails, and performing tasks. You can also invite it to participate in your team channels. In a channel users can ask it questions in a new message, or tag it in a thread at any point. Get it to provide additional data points, resolve a debate, or summarise the conversation and capture next steps.(#200)
@@ -1388,6 +1474,7 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **amazon-eks-running-webassembly**
 
 [amazon-eks-running-webassembly](https://aws-oss.beachgeek.co.uk/3th) This repository contains code for building custom Amazon EKS AMIs using HashiCorp Packer. The AMIs include necessary binaries and configurations to enable you to run WebAssembly workloads in an EKS cluster and are based on Amazon Linux 2023. The runtimes used in the AMIs are Spin and WasmEdge. The respective containerd-shims are used for both runtimes. Deploying the cluster is done using Hashicorp Terraform. After the cluster is created, RuntimeClasses and example workloads are deployed to the cluster. If you are exploring Wasm, then this is for you. (#195)
+
 
 **amplify-godot-engine-sample**
 
@@ -1584,6 +1671,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **svdxt-sagemaker-huggingface**
 
 [svdxt-sagemaker-huggingface](https://aws-oss.beachgeek.co.uk/3uo) is the latest demo repo from regular contributor Gary Stafford, that showcases some of the cool stuff Gary has been writing about in the generative AI space. This time he takes a look at the emerging field of generating videos through Stability AI's Stable Video Diffusion XT (SVT-XT). This foundation model is a diffusion model that takes in a still image as a conditioning frame and generates a video from it.(#196)
+
+**swift-chat**
+
+[swift-chat](https://aws-oss.beachgeek.co.uk/47y)  is a fast and responsive AI chat application developed with React Native and powered by Amazon Bedrock. With its minimalist design philosophy and robust privacy protection, it delivers real-time streaming conversations and AI image generation capabilities across Android, iOS, and macOS platforms. Check out the README for plenty of in depth details including sample screenshots from mobile simulators. Essential for any Swift developer (#206)
 
 **terraform-f1-telemetry-infra**
 
