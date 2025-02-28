@@ -63,6 +63,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [bedrock-embed-web](https://aws-oss.beachgeek.co.uk/43i) is a new project from my colleague Olivier Leplus that makes it easier than ever to embed Amazon Bedrock foundation models within a chat interface in your web applications. (#203)
 
+**bedrock-engineer**
+
+[bedrock-engineer](https://aws-oss.beachgeek.co.uk/497) looks like an amazing project and one I am trying to find some time to play with. bedrock-engineer is Autonomous software development agent apps using Amazon Bedrock, capable of customise to create/edit files, execute commands, search the web, use knowledge base, use multi-agents, generative images and more. The project README has a short video that goes over some of the functionality and its pretty neat. (#207)
+
 **bedrock-genai-workshop**
 
 [bedrock-genai-workshop](https://aws-oss.beachgeek.co.uk/3lt) if you are looking to get hands on with generative AI, then check out this workshop that is aimed at developers and solution builders, introduces how to leverage foundation models (FMs) through Amazon Bedrock. Amazon Bedrock is a fully managed service that provides access to FMs from third-party providers and Amazon; available via an API. With Bedrock, you can choose from a variety of models to find the one that’s best suited for your use case. Within this series of labs, you'll explore some of the most common usage patterns, and Labs include: 1/ Text Generation, 2/ Text Summarization, 3/ Questions Answering, 4/ Chatbot , and 5/ Agent (#186)
@@ -114,6 +118,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 **distill-cli**
 
 [distill-cli](https://aws-oss.beachgeek.co.uk/3yz) is a new project from Amazon CTO Dr Werner Vogels, which uses Amazon Transcribe and Amazon Bedrock to create summaries of your audio recordings (e.g., meetings, podcasts, etc.) directly from the command line. Distill CLI takes a dependency on Amazon Transcribe, and as such, supports the following media formats: AMR, FLAC, M4A, MP3, MP4, Ogg, WebM, WAV. It is great to feature this latest project, with the previous one being featured in [#197](https://community.aws/content/2gPNtsdSfQRIpmbUrNyPrjUg54D/aws-open-source-newsletter-197). To go with this repo, there is a post too, [Introducing Distill CLI: An efficient, Rust-powered tool for media summarization](https://aws-oss.beachgeek.co.uk/3yy) where Werner shares his experience building this tool in Rust, and provides some closing thoughts too. (#200)
+
+**draw-an-app**
+
+[draw-an-app](https://aws-oss.beachgeek.co.uk/49c) is a neat demo application that uses AWS Bedrock's Claude 3 Sonnet model to convert hand-drawn UI sketches into working web applications. It supports two modes of operation: 1/ Real-time webcam capture for immediate sketching and conversion, or 2/ Image upload through a user-friendly Streamlit interface. I have not tried this one yet, but if you do, let me know how you get on.(#207)
 
 **ecs-gpu-scaling**
 
@@ -176,6 +184,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **mcp-server-aws**
 
 [mcp-server-aws](https://aws-oss.beachgeek.co.uk/47r) is a project from Rishi Kavikondala that provides a  [Model Context Protocol](https://aws-oss.beachgeek.co.uk/47s) server implementation for AWS operations that currently supports S3 and DynamoDB services. All operations are automatically logged and can be accessed through the audit://aws-operations resource endpoint.(#206)
+
+**MCP2Lambda**
+
+[MCP2Lambda](https://aws-oss.beachgeek.co.uk/498) is a project from my good friend Danilo Poccia and is a really great example of how Model Control Protocol (MCP) provides Large Language Model (LLM) with additional capabilities and flexibility. In this demo sample, an MCP server acts as a bridge between MCP clients and AWS Lambda functions, allowing generative AI models to access and run Lambda functions as tools. This is useful, for example, to access private resources such as internal applications and databases without the need to provide public network access. This approach allows the model to use other AWS services, private networks, and the public internet.(#207)
 
 **multi-agent-orchestrator**
 
@@ -263,6 +275,11 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **whats-new-summary-notifier**
 
 [whats-new-summary-notifier](https://aws-oss.beachgeek.co.uk/3x4) is a demo repo that lets you build a generative AI application that summarises the content of AWS What's New and other web articles in multiple languages, and delivers the summary to Slack or Microsoft Teams. (#198)
+
+**whisperx-on-aws-lambda**
+
+[whisperx-on-aws-lambda](https://aws-oss.beachgeek.co.uk/49a) is a project from Vincent Claes that shows you how you can run [WhisperX](https://aws-oss.beachgeek.co.uk/49b) (one of the most versatile and feature-rich Whisper variation that provides fast automatic speech recognition) on AWS Lambda - WhisperX goes serverless! (#207)
+
 
 **ziya**
 
@@ -595,6 +612,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [aws-advanced-nodejs-wrapper](https://aws-oss.beachgeek.co.uk/465) is complementary to an existing NodeJS driver and aims to extend the functionality of the driver to enable applications to take full advantage of the features of clustered databases such as Amazon Aurora.  In other words, the AWS Advanced NodeJS Wrapper does not connect directly to any database, but enables support of AWS and Aurora functionalities on top of an underlying NodeJS driver of the user's choice. Hosting a database cluster in the cloud via Aurora is able to provide users with sets of features and configurations to obtain maximum performance and availability, such as database failover. However, at the moment, most existing drivers do not currently support those functionalities or are not able to entirely take advantage of it. The main idea behind the AWS Advanced NodeJS Wrapper is to add a software layer on top of an existing NodeJS driver that would enable all the enhancements brought by Aurora, without requiring users to change their workflow with their databases and existing NodeJS drivers. (#205)
 
+**aws-client-monitor**
+
+[aws-client-monitor](https://aws-oss.beachgeek.co.uk/496) is a new tool from Roman Tsypuk designed to analyse applications interacting with AWS services. It's particularly useful during local development, troubleshooting, or profiling third-party applications. It allows you to do real-time monitoring, capturing and displaying AWS API invocations in real time, and is easy to get started with. It comes with a gorgeous dashboard, so this is on my todo list to try out. (#207)
+
 **aws-iatk**
 
 [aws-iatk](https://aws-oss.beachgeek.co.uk/3fc) AWS Integrated Application Test Kit (IATK), a new open-source test library that makes it easier for developers to create tests for cloud applications with increased speed and accuracy. With AWS IATK, developers can quickly write tests that exercise their code and its AWS integrations against an environment in the cloud, making it easier to catch mistakes early in the development process. IATK includes utilities to generate test events, validate event delivery and structure in Amazon EventBridge Event Bus, and assertions to validate call flow using AWS X-Ray traces. The [AWS IATK](https://aws-oss.beachgeek.co.uk/3g0) is available for Python3.8+. To help you get started, check out the supporting blog post from Dan Fox and Brian Krygsman, [Introducing the AWS Integrated Application Test Kit (IATK)](https://aws-oss.beachgeek.co.uk/3fz). (#180)
@@ -654,6 +675,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **bedrock-embed-web**
 
 [bedrock-embed-web](https://aws-oss.beachgeek.co.uk/43i) is a new project from my colleague Olivier Leplus that makes it easier than ever to embed Amazon Bedrock foundation models within a chat interface in your web applications. (#203)
+
+**bedrock-engineer**
+
+[bedrock-engineer](https://aws-oss.beachgeek.co.uk/497) looks like an amazing project and one I am trying to find some time to play with. bedrock-engineer is Autonomous software development agent apps using Amazon Bedrock, capable of customise to create/edit files, execute commands, search the web, use knowledge base, use multi-agents, generative images and more. The project README has a short video that goes over some of the functionality and its pretty neat. (#207)
 
 **bedrock-vscode-playground**
 
@@ -739,6 +764,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [diagram-as-code](https://aws-oss.beachgeek.co.uk/3ql) is a command line interface (CLI) tool enables drawing infrastructure diagrams for Amazon Web Services through YAML code. It facilitates diagram-as-code without relying on image libraries. The CLI tool promotes code reuse, testing, integration, and automating the diagramming process. It allows managing diagrams with Git by writing human-readable YAML. The README provides an example diagram (and the source that this tool used to generate it). (#192)
 
+**draw-an-app**
+
+[draw-an-app](https://aws-oss.beachgeek.co.uk/49c) is a neat demo application that uses AWS Bedrock's Claude 3 Sonnet model to convert hand-drawn UI sketches into working web applications. It supports two modes of operation: 1/ Real-time webcam capture for immediate sketching and conversion, or 2/ Image upload through a user-friendly Streamlit interface. I have not tried this one yet, but if you do, let me know how you get on.(#207)
+
 **dynamomq**
 
 [dynamomq](https://aws-oss.beachgeek.co.uk/3j1) is a project from Yuichi Watanabe that provides a message queuing library that leverages the features of DynamoDB to achieve high scalability, reliability, and cost efficiency. Notably, its ability to dynamically edit message order and attributes enables flexible adaptation to application requirements. Compared to existing solutions, DynamoMQ offers ease of management for developers while providing the reliability of fully managed services like Amazon SQS. It also encompasses key functionalities expected from a message queue, such as concurrent processing with multiple goroutines, Dead Letter Queues, and ensuring FIFO (First In, First Out) order. (#183)
@@ -790,6 +819,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **localstack-aws-cdk-example**
 
 [localstack-aws-cdk-example](https://aws-oss.beachgeek.co.uk/3dw) This repo aims to showcase the usage of [Localstack](https://aws-oss.beachgeek.co.uk/3dx) and AWS CDK to address specific integration challenges regarding local development where the end target is the AWS platform. If you are unfamiliar with Localstack, it is an open source, fully functional local AWS cloud stack that allows you to develop and test your cloud and Serverless apps offline. (#178)
+
+**MCP2Lambda**
+
+[MCP2Lambda](https://aws-oss.beachgeek.co.uk/498) is a project from my good friend Danilo Poccia and is a really great example of how Model Control Protocol (MCP) provides Large Language Model (LLM) with additional capabilities and flexibility. In this demo sample, an MCP server acts as a bridge between MCP clients and AWS Lambda functions, allowing generative AI models to access and run Lambda functions as tools. This is useful, for example, to access private resources such as internal applications and databases without the need to provide public network access. This approach allows the model to use other AWS services, private networks, and the public internet.(#207)
 
 **outtasync**
 
@@ -850,6 +883,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [sbt-aws](https://aws-oss.beachgeek.co.uk/3x8) SaaS Builder Toolkit for AWS (SBT) is an open-source developer toolkit to implement SaaS best practices and increase developer velocity. It offers a high-level object-oriented abstraction to define SaaS resources on AWS imperatively using the power of modern programming languages. Using SBT’s library of infrastructure constructs, you can easily encapsulate SaaS best practices in your SaaS application, and share it without worrying about boilerplate logic. The README contains all the resources you need to get started with this project, so if you are doing anything in the SaaS space, check it out. (#198)
 
+**StsSamlDriver**
+
+[StsSamlDriver](https://aws-oss.beachgeek.co.uk/49d) is A Python-based SAML authentication handler for AWS STS that allows you to get temporary credentials using SAML to the AWS CLI, or an application written using an AWS SDK without the need to screen scrape or emulate a browser.(#207)
+
 **service-screener-v2**
 
 [service-screener-v2](https://aws-oss.beachgeek.co.uk/3ol) Service Screener is a tool for AWS customers to analyse their AWS accounts against best practices for architecture. It provides an easy-to-use report with recommendations across various areas like cost optimisation and security, highlighting quick fixes that are cost-effective and downtime-free. Service Screener checks environments against the Well-Architected framework and other standards, such as the Foundational Technical Review and Startup Security Baseline, offering a comprehensive, stylish report that's cost-free and easy to understand, often running within minutes. Check out the README for lots of examples and explainer videos. (#190)
@@ -882,6 +919,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **wide-logger**
 
 [wide-logger](https://aws-oss.beachgeek.co.uk/3pi) is a canonical wide logger that is built to gather key, value pairs and then flush them all to the console in a single log message. This does not replace your existing detailed debug logging, it is an addition. All logs emitted by the Wide Logger will be prefixed by WIDE so you can quickly and easily find them or use filtered subscriptions to record these in a single place for easy searching and correlation. (#191)
+
+**vscode-iam-service-principal-snippets**
+
+[vscode-iam-service-principal-snippets](https://aws-oss.beachgeek.co.uk/495) is the latest VSCode plugin from AWS Community Builder Danny Steenman ([his fifth](https://www.linkedin.com/posts/dannysteenman_today-marks-a-small-but-significant-milestone-activity-7292070581011660800-iwbT/)). This VS Code extension provides autocompletion of all AWS services that can be used as Service Principals in your IAM policies. (#207)
 
 **zero-downtime-deployment-tofu**
 
@@ -928,6 +969,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **aws-external-package-security**
 
 [aws-external-package-security](https://aws-oss.beachgeek.co.uk/3g2) provides code to setup a solution that demonstrates how you can deploy AWS Code Services (e.g., AWS CodePipeline, AWS CodeBuild, Amazon CodeGuru Security, AWS CodeArtifact) to orchestrate secure access to external package repositories from an Amazon SageMaker data science environment configured with multi-layer security. The solution can also be expanded upon to account for general developer workflows, where developers use external package dependencies. (#180)
+
+**aws-health-events-insight**
+
+[aws-health-events-insight](https://aws-oss.beachgeek.co.uk/48z) this project provides a very nice solution to centralise, store and then analyse your AWS Health events. Health Events Intelligence Dashboards and Insights (HEIDI) Data Collection Framework enables you to collect data from different accounts, regions and organisations. Check out the README for more details  including how to deploy and configure this solution in your AWS environment.(#207)
 
 **aws-organizations-tag-inventory**
 
@@ -981,6 +1026,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [duplicate-rule-detection-tool](https://aws-oss.beachgeek.co.uk/3oq) is a project to assess the current active AWS Config rules with potential duplicate scope in an AWS account. Our goal is to help customers can make informed decisions on how to streamline their AWS Config rules and reduce complexity. Plenty of examples and detailed breakdown of how this works in the README, so give it a look. (#190)
 
+**ebsight**
+                                                                 
+[ebsight](https://aws-oss.beachgeek.co.uk/490) is a Python-based analysis tool developed by Stephen Jones in response to AWS's new EBS snapshot size reporting feature. This tool leverages the newly introduced FullSnapshotSizeInBytes field to provide comprehensive insights into EBS volume usage, performance metrics, and cost optimisation opportunities. After you have checked the repo out and gone through the README, why not read the supporting blog post, [Unleash the Power of EBSight for Optimal AWS Storage Management](https://aws-oss.beachgeek.co.uk/491) (#207)
+
 **ec2RuntimeMonitor**
 
 [ec2RuntimeMonitor](https://aws-oss.beachgeek.co.uk/3ra) EC2 runtime monitor is a serverless solution to get a notification when an EC2 instance is running for a time exceeding a user defined threshold. The README covers use cases why you might find this useful, but principally cost optimisation as well as reducing your carbon footprint are two key reasons why this might be a useful tool to keep your toolkit. (#193)
@@ -1024,6 +1073,11 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **service-screener-v2**
 
 [service-screener-v2](https://aws-oss.beachgeek.co.uk/3ol) Service Screener is a tool for AWS customers to analyse their AWS accounts against best practices for architecture. It provides an easy-to-use report with recommendations across various areas like cost optimisation and security, highlighting quick fixes that are cost-effective and downtime-free. Service Screener checks environments against the Well-Architected framework and other standards, such as the Foundational Technical Review and Startup Security Baseline, offering a comprehensive, stylish report that's cost-free and easy to understand, often running within minutes. Check out the README for lots of examples and explainer videos. (#190)
+
+**tailpipe**
+
+[tailpipe](https://aws-oss.beachgeek.co.uk/492) is an open source SIEM for instant log insights from our friends at Turbot, powered by DuckDB. It allows you to analyse millions of events in seconds, right from your terminal. Check out the README that includes more info include a nice video demo of this in works. Bob Tordella (who we have featured many times over the years in this newsletter), has put together a blog post too, which is a must read. Go check it out - [Query AWS CloudTrail Logs Locally with SQL](https://aws-oss.beachgeek.co.uk/494) (#207)
+
 
 **terraform-aws-vulne-soldier**
 
@@ -1096,6 +1150,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **apeman**
 
 [apeman](https://aws-oss.beachgeek.co.uk/43n) is a new tool that helps security people to map and visualise AWS identity attack paths. The README provides detailed instructions on how to get up and running, but I also found the blog post, [ Project Apeman : A Comprehensive Guide To Graph-Based AWS Security Analysis](https://aws-oss.beachgeek.co.uk/43o) very helpful.(#203)
+
+**auth-pep-pdp**
+
+[auth-pep-pdp](https://aws-oss.beachgeek.co.uk/48s) is another solution from AWS Hero Jimmy Dahlqvist to add to the already great selection he shares in his repo. It provides code to help you implement PDP (Policy Decision Point) and a PEP (Policy Enforcement Point). We will build an simple API and use Amazon API Gateway and Lambda Authorizer as the PEP. It gets extra credit as its using Cedar for the policies.  To help you get started with this project, you can check out the excellent README as well as the supporting blog post, [PEP and PDP for Secure Authorization with AVP ](https://aws-oss.beachgeek.co.uk/48r).(#207)
 
 **aws-lint-iam-policies**
 
@@ -1214,6 +1272,14 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [sso-sync-to-amazon-rds](https://aws-oss.beachgeek.co.uk/3e2) This project sets up AWS Lambda functions, Amazon EventBridge rule, Amazon VPC Endpoint for AWS IAM Identity Center (successor to AWS Single Sign-On), the related Security Groups and permissions necessary to automatically provision database users to the Amazon Relational Database Service (Amazon RDS) cluster using AWS Cloud Development Kit (AWS CDK). When a new user is created in IAM Identity Center and the user belongs to the group specified in a IAM_IDC_GROUP_NAME variable, EventBridge rule will trigger the Lambda function. The Lambda function will create a new user in a specified Amazon RDS cluster. The user will then be able to login to the database using their SSO username and IAM credentials. Adding a user to the configured group will trigger the Lambda function as well. (#178)
 
+**StsSamlDriver**
+
+[StsSamlDriver](https://aws-oss.beachgeek.co.uk/49d) is A Python-based SAML authentication handler for AWS STS that allows you to get temporary credentials using SAML to the AWS CLI, or an application written using an AWS SDK without the need to screen scrape or emulate a browser.(#207)
+
+**tailpipe**
+
+[tailpipe](https://aws-oss.beachgeek.co.uk/492) is an open source SIEM for instant log insights from our friends at Turbot, powered by DuckDB. It allows you to analyse millions of events in seconds, right from your terminal. Check out the README that includes more info include a nice video demo of this in works. Bob Tordella (who we have featured many times over the years in this newsletter), has put together a blog post too, which is a must read. Go check it out - [Query AWS CloudTrail Logs Locally with SQL](https://aws-oss.beachgeek.co.uk/494) (#207)
+
 **terraform-aws-vulne-soldier**
 
 [terraform-aws-vulne-soldier](https://aws-oss.beachgeek.co.uk/47f) is a new project from Victor Omolayo that provides an AWS EC2 vulnerability remediation tool designed to automate the process of patching nodes managed by AWS Systems Manager. He has put together a blog post, [vulne-soldier: AWS EC2 Vulnerability Remediation Tool](https://aws-oss.beachgeek.co.uk/47g) that provides more detail on the project and background as to why he created it as well as how to get started. (#206)
@@ -1225,6 +1291,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **vpcshark**
 
 [vpcshark](https://aws-oss.beachgeek.co.uk/47q) is a recent project from AWS Hero Aidan Steele, that provides a Wireshark extcap to make ad hoc mirroring of AWS EC2 traffic easier. Check out the README to find out some more details as to why he open sourced this project.(#206)
+
+**vscode-iam-service-principal-snippets**
+
+[vscode-iam-service-principal-snippets](https://aws-oss.beachgeek.co.uk/495) is the latest VSCode plugin from AWS Community Builder Danny Steenman ([his fifth](https://www.linkedin.com/posts/dannysteenman_today-marks-a-small-but-significant-milestone-activity-7292070581011660800-iwbT/)). This VS Code extension provides autocompletion of all AWS services that can be used as Service Principals in your IAM policies. (#207)
 
 ### Storage
 
@@ -1239,6 +1309,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **git-remote-s3**
 
 [git-remote-s3](https://aws-oss.beachgeek.co.uk/44s) is a neat tool that provides you with the ability to use Amazon S3 as a [Git Large File Storage (LFS)](https://git-lfs.com/) remote provider. It provides an implementation of a git remote helper to use S3 as a serverless Git server. The README provides good examples of how to set this up and example git commands that allow you to use this setup. This is pretty neat, and something I am going to try out for myself in future projects. (#204)
+
+**ebsight**
+                                                                 
+[ebsight](https://aws-oss.beachgeek.co.uk/490) is a Python-based analysis tool developed by Stephen Jones in response to AWS's new EBS snapshot size reporting feature. This tool leverages the newly introduced FullSnapshotSizeInBytes field to provide comprehensive insights into EBS volume usage, performance metrics, and cost optimisation opportunities. After you have checked the repo out and gone through the README, why not read the supporting blog post, [Unleash the Power of EBSight for Optimal AWS Storage Management](https://aws-oss.beachgeek.co.uk/491) (#207)
 
 **s3-diff-uploader**
 
@@ -1443,10 +1517,13 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [symfony-bref-starter](https://aws-oss.beachgeek.co.uk/3ta) is a starter kit for symfony projects using bref / serverless to allow easy deployments. bref is a fantastic and well tested way of running PHP applications via serverless, handling easy deployments and environments on AWS. Check out the README for some very cool stats around bref usage. The repo provides good examples and everything you need to get started.(#195)
 
-
 **weaviate-on-eks**
 
 [weaviate-on-eks](https://aws-oss.beachgeek.co.uk/3d4) this repository includes sample code that can be used to deploy and configure an instance of the [Weaviate](https://aws-oss.beachgeek.co.uk/3d5) distributed vector database on EKS. (#177)
+
+**whisperx-on-aws-lambda**
+
+[whisperx-on-aws-lambda](https://aws-oss.beachgeek.co.uk/49a) is a project from Vincent Claes that shows you how you can run [WhisperX](https://aws-oss.beachgeek.co.uk/49b) (one of the most versatile and feature-rich Whisper variation that provides fast automatic speech recognition) on AWS Lambda - WhisperX goes serverless! (#207)
 
 **zero-downtime-deployment-tofu**
 
