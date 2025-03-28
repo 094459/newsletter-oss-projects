@@ -44,12 +44,23 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [aws-chatbot-fargate-python](https://aws-oss.beachgeek.co.uk/43f) is a new repo from AWS Hero Ran Isenberg that deploys a Streamlit Chatbot in an AWS Fargate-based ESC cluster web application using AWS CDK (Cloud Development Kit). The infrastructure includes an ECS cluster, Fargate service, Application Load Balancer, VPC, and WAF and includes security best practices with CDK-nag verification. The chatbot is based on an implementation by Streamlit and the initial prompt is that the chatbot is me, Ran the builder, a serverless hero and attempts to answer as me. The Chatbot uses custom domain (you can remove it or change it to your own domain) and assume an OpenAI token exists in the account in the form of a secrets manager secret for making API calls to OpenAI.(#203)
 
+**aws-cost-explorer-mcp-server**
+
+[aws-cost-explorer-mcp-server](https://aws-oss.beachgeek.co.uk/4ac) builds on the current wave of excitement around Model Context Protocol (MCP) that provides a powerful open-source tool that brings natural language querying to your AWS spending data. Ask questions like "What was my EC2 spend yesterday?" or "Break down my Bedrock usage by model" and get detailed answers through Claude. It helps track cloud costs across services, identifies expensive resources, and provides deep insights into your Amazon Bedrock model usage. (#208)
+
 **aws-genai-rfpassistant**
 
 [aws-genai-rfpassistant](https://aws-oss.beachgeek.co.uk/43a) this repository contains the code and infrastructure as code for a Generative AI-powered Request for Proposal (RFP) Assistant leveraging Amazon Bedrock and AWS Cloud Development Kit (CDK). This could be very hand if responding to RFP's is something that you do and you want to look at ways of optimising your approach. The documentation in the repo is very comprehensive. I have not tried this one out for myself, but I have been involved in both writing and reviewing RFPs in the past, so understand the pain that led to the creation of this project.(#203)
 
 **aws-inference-benchmark**
 [aws-inference-benchmark ](https://aws-oss.beachgeek.co.uk/3cy)this project from Rustem Feyzkhanov contains code for running deep learning inference benchmarks on different AWS instances and service types. Check out his post, [Making LLMs Scalable: Cloud Inference with AWS Fargate and Copilot](https://aws-oss.beachgeek.co.uk/3d0) where Rustem shows you in more details how you can use this repo. (#177)
+
+**aws-mcp**
+
+[aws-mcp](https://aws-oss.beachgeek.co.uk/4ag) is a project from Rafal Wilinski that enables AI assistants like Claude to interact with your AWS environment through MCP. This allows for natural language querying and management of your AWS resources during conversations. 
+
+![example prompt using aws-mcp to find out about costs](https://github.com/RafalWilinski/aws-mcp/blob/main/images/aws-mcp-demo.png?raw=true) (#208)
+
 
 **aws-piday2024**
 
@@ -102,6 +113,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 **chat-cli**
 
 [chat-cli](https://aws-oss.beachgeek.co.uk/47o) is a terminal based program that lets you interact with LLMs available on Amazon Bedrock. You can install and run via source or for ease, Homebrew. The README provides you with more details including how to configure the application. If you want an easy, text base way to interact with the foundational models you run via Amazon Bedrock, check this out.(#206)
+
+**chorus**
+
+[chorus](https://aws-oss.beachgeek.co.uk/4aq) is a new easy-to-use framework for building scalable solutions with LLM-driven multi-agent collaboration. Chorus allows you to develop and test solutions using multi-agent collaboration with zero or minimal coding. Chorus provides a multi-agent playground for easy visualisation and testing. Finally, Chorus helps you deploy your solution to Amazon Bedrock Agents with a single command (coming soon).(#208)
 
 **chronos-forecasting**
 
@@ -181,6 +196,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [mlspace](https://aws-oss.beachgeek.co.uk/3r8) provides code that will help you deploy [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) into your AWS account. [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) is an open source no-hassle tool for data science, machine learning and deep learning, and has pre-made environments for pytorch, tensorflow and everything else you might need. (#193)
 
+**mcp-lambda-layer**
+
+[mcp-lambda-layer](https://aws-oss.beachgeek.co.uk/4ab) is project that uses a Node.js package that provides MCP (Model Context Protocol) server infrastructure for AWS Lambda functions with SSE support. The repo provides example code for tools and prompts which should get you started and simplify how you might provide these to your MCP clients. Check out the README for other important notes.(#208)
+
 **mcp-server-aws**
 
 [mcp-server-aws](https://aws-oss.beachgeek.co.uk/47r) is a project from Rishi Kavikondala that provides a  [Model Context Protocol](https://aws-oss.beachgeek.co.uk/47s) server implementation for AWS operations that currently supports S3 and DynamoDB services. All operations are automatically logged and can be accessed through the audit://aws-operations resource endpoint.(#206)
@@ -200,6 +219,15 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **news-clustering-and-summarization**
 
 [news-clustering-and-summarization](https://aws-oss.beachgeek.co.uk/44l) this repository contains code for a near real-time news clustering and summarisation solution using AWS services like Lambda, Step Functions, Kinesis, and Bedrock. It demonstrates how to efficiently process, embed, cluster, and summarise large volumes of news articles to provide timely insights for financial services and other industries. This solution aims to launch a news Event feature that clusters related news stories into summaries, providing customers with near real-time updates on unfolding events. This augmented news consumption experience will enable users to easily follow evolving stories while maximising relevance and reducing the firehose of information for articles covering the same event. By tailoring news clusters around key events, this application can improve customer satisfaction and engagement. Detailed docs will help you get up and running in no time. (#204)
+
+**observation-extractor**
+
+[observation-extractor](https://aws-oss.beachgeek.co.uk/4at) is a tool for collecting observations from data. Observations are useful bits of data related to questions that you define that is extracted from the data you pass in. Use Observation Extractor to process pdf (and maybe someday other files) into formats like csv (and later parquet) to turn unstructured documents into structured observations that you can query and use directly or through your application. When you output to a format like csv or parquet, observations are the row level records.
+
+Observation Extractor takes an unstructured data file as input (like a pdf) and outputs a list of Observation objects. Each observation includes standard fields that are extracted from the document together with metadata like the document name and page number.
+
+You can populate observations into a datastore and make them available to your human and AI users. They can be queried based on metadata like date and the specific questions they relate too. You can define question sets that represent thought process of a subject-matter-expert coming up to speed on this case to start mapping a document into useful observations.(#208)
+
 
 **partysmith**
 
@@ -255,6 +283,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **sagemaker-mlflow**
 
 [sagemaker-mlflow](https://aws-oss.beachgeek.co.uk/3ya)  This plugin generates Signature V4 headers in each outgoing request to the Amazon SageMaker with MLflow capability, determines the URL of capability to connect to tracking servers, and registers models to the SageMaker Model Registry. It generates a token with the SigV4 Algorithm that the service will use to conduct Authentication and Authorization using AWS IAM.(#200)
+
+**sample-convert-codebase-to-graphrag**
+
+[sample-convert-codebase-to-graphrag](https://aws-oss.beachgeek.co.uk/4ak) is a demo to show how to leverages AI to analyze, index, and query code repositories. It creates a searchable graph representation of code structures, enabling developers to explore and understand complex codebases efficiently. This project combines several AWS services, including Lambda, Neptune, OpenSearch, and Bedrock, to process code repositories, generate metadata, and provide powerful search capabilities. The system is designed to handle large-scale code analysis tasks and offer semantic code search functionality. It uses CDK to simplify how to deploy this in your own AWS environments. (#208)
 
 **serverless-genai-food-analyzer-app**
 
@@ -423,6 +455,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **amazon-bedrock-synthetic-manufacturing-data-generator**
 
 [amazon-bedrock-synthetic-manufacturing-data-generator](https://aws-oss.beachgeek.co.uk/3ln) is a industry aligned synthetic data generation solution. Manufacturing processes generate large amounts of sensor data that can be used for analytics and machine learning models. However, this data may contain sensitive or proprietary information that cannot be shared openly. Synthetic data allows the distribution of realistic example datasets that preserve the statistical properties and relationships in the real data, without exposing confidential information. This enables more open research and benchmarking on representative data. Additionally, synthetic data can augment real datasets to provide more training examples for machine learning algorithms to generalize better. Data augmentation with synthetic manufacturing data can help improve model accuracy and robustness. Overall, synthetic data enables sharing, research, and expanded applications of AI in manufacturing while protecting data privacy and security.(#186)
+
+**amazon-kinesis-video-streams-dcep**
+
+[amazon-kinesis-video-streams-dcep](https://aws-oss.beachgeek.co.uk/4am) is the repo for the Data Channel Establishment Protocol (DCEP) library.  DCEP is a simple protocol for establishing symmetric data channels between WebRTC peers. It uses a two-way handshake and allows sending of user data without waiting for the handshake to complete. The peer that initiates opening a data channel selects a stream identifier for which the corresponding incoming and outgoing streams are unused and sends a DATA_CHANNEL_OPEN message on the outgoing stream. The peer responds with a DATA_CHANNEL_ACK message on its corresponding outgoing stream. Then the data channel is open. DCEP messages are sent on the same stream as the user messages belonging to the data channel. The demultiplexing is based on the SCTP Payload Protocol Identifier (PPID), since DCEP uses a specific PPID.(#208)
 
 **amazon-mwaa-docker-images**
 
@@ -632,6 +668,17 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [aws-external-package-security](https://aws-oss.beachgeek.co.uk/3g2) provides code to setup a solution that demonstrates how you can deploy AWS Code Services (e.g., AWS CodePipeline, AWS CodeBuild, Amazon CodeGuru Security, AWS CodeArtifact) to orchestrate secure access to external package repositories from an Amazon SageMaker data science environment configured with multi-layer security. The solution can also be expanded upon to account for general developer workflows, where developers use external package dependencies. (#180)
 
+
+**aws-lambda-java-profiler**
+
+[aws-lambda-java-profiler](https://aws-oss.beachgeek.co.uk/4a1) is an experimental (currently) release that provides a new capability that helps builders gain deep performance insights into their Lambda functions. The Lambda Profiler enables you to analyse your serverless applications with precision and ease. What can it do I can hear you all saying. It's current capabilities include:
+
+* Generate detailed flame graphs for every function invocation
+* Leverage low overhead sampling async-profiler technology with no safepoint bias
+* Automatically store profiling data in your designated Amazon S3 bucket
+
+Getting started is simple - just attach the Lambda layer to your function. No code changes required. This new capability helps you optimise cost and performance, identify bottlenecks, and deliver better experiences to your customers. It's another example of how we're listening to our builders and delivering the tools they need to innovate faster. (#208)
+
 **aws-lint-iam-policies**
 
 [aws-lint-iam-policies](https://aws-oss.beachgeek.co.uk/3pe)  runs IAM policy linting checks against either a single AWS account or all accounts of an AWS Organization. Reports on policies that violate security best practices or contain errors. Supports both identity-based and resource-based policies. Optionally dumps all policies analysed. The actual linting is performed by the AWS IAM Access Analyzer policy validation feature, which is mostly known for showing recommendations when manually editing IAM policies on the AWS Console UI. The repo provides additional blog posts to help you get started, as well as more details on how this works with supporting resources (#191)
@@ -655,6 +702,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **aws-scps-for-sandbox-and-training-accounts**
 
 [aws-scps-for-sandbox-and-training-accounts](https://aws-oss.beachgeek.co.uk/3pf) is a collection of example Service Control Policies (SCPs) that are useful for sandbox and training AWS accounts. The SCPs deny API calls that change baseline account settings (contacts, billing, tax settings, etc.), have long-term financial effects (purchases and reservations) or operate outside allow-listed AWS regions or services. (#191)
+
+**awsesh**
+
+[awsesh](https://aws-oss.beachgeek.co.uk/4ad) is a command line tool for managing your AWS SSO sessions for those of you who are using AWS IAM Identity Centre (IdC). Whilst the repo provides pre built binaries for Mac, Linux, and Windows, you can also build from source too. There is a brief README with videos showing how this works - it is pretty simple to get up and running. If you are not using a vanity name for your IdC, then just use the prefix you see on the IdC dashboard when configuring this tool.(#208)
 
 **aws-sdk-python-signers**
 
@@ -727,6 +778,14 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **cfn-pipeline**
 
 [cfn-pipeline](https://aws-oss.beachgeek.co.uk/3kv) is a repo from Wolfgang Unger that contains an AWS Codepipeline that will allow automated Cloudformation deployments from within AWS Codepipeline. To help you get started, Wolfgang has put together a detailed blog post that includes videos. Go check it out, [Pipeline for automatic CloudFormation Deployments](https://aws-oss.beachgeek.co.uk/3kw) (#185)
+
+**chaos-machine**
+
+[chaos-machine](https://aws-oss.beachgeek.co.uk/4ao) is a complete chaos engineering workflow that enables customers to run controlled chaos experiments and test hypotheses related to system behaviour. Chaos Machine uses metric and alarm data from both Amazon CloudWatch and Prometheus as inputs to evaluate system behaviour before, during, and after the experiment. The Chaos Machine provides a simple, consistent way to organise and execute chaos experiments, and is appropriate to use for both building and conducting ad-hoc experiments or integrating into more sophisticated automation pipelines. Chaos Machine uses the AWS Fault Injection Service (FIS) to run controlled experiments, and AWS Step Functions and AWS Lambda for orchestration and execution.(#208)
+
+**chorus**
+
+[chorus](https://aws-oss.beachgeek.co.uk/4aq) is a new easy-to-use framework for building scalable solutions with LLM-driven multi-agent collaboration. Chorus allows you to develop and test solutions using multi-agent collaboration with zero or minimal coding. Chorus provides a multi-agent playground for easy visualisation and testing. Finally, Chorus helps you deploy your solution to Amazon Bedrock Agents with a single command (coming soon).(#208)
 
 **cloudcatalog**
 
@@ -879,6 +938,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [safeaws-cli](https://aws-oss.beachgeek.co.uk/3te) is a project from AWS Community Builder Gabriel Koo that provides an AWS CLI wrapper that helps you avoid common mistakes and pitfalls with Amazon Bedrock's Large Language Models, checking your command arguments against the command docs. safeaws-cli empowers you to execute AWS commands confidently by leveraging Amazon Bedrock's AI language models to analyze CLI commands, fetch help text, and identify potential issues or concerns before execution. By providing a safety net that mitigates pitfalls, safeaws-cli allows users to explore AWS securely, fostering a more informed approach to working with the CLI.(#195)
 
+**sample-convert-codebase-to-graphrag**
+
+[sample-convert-codebase-to-graphrag](https://aws-oss.beachgeek.co.uk/4ak) is a demo to show how to leverages AI to analyze, index, and query code repositories. It creates a searchable graph representation of code structures, enabling developers to explore and understand complex codebases efficiently. This project combines several AWS services, including Lambda, Neptune, OpenSearch, and Bedrock, to process code repositories, generate metadata, and provide powerful search capabilities. The system is designed to handle large-scale code analysis tasks and offer semantic code search functionality. It uses CDK to simplify how to deploy this in your own AWS environments. (#208)
+
 **sbt-aws**
 
 [sbt-aws](https://aws-oss.beachgeek.co.uk/3x8) SaaS Builder Toolkit for AWS (SBT) is an open-source developer toolkit to implement SaaS best practices and increase developer velocity. It offers a high-level object-oriented abstraction to define SaaS resources on AWS imperatively using the power of modern programming languages. Using SBT’s library of infrastructure constructs, you can easily encapsulate SaaS best practices in your SaaS application, and share it without worrying about boilerplate logic. The README contains all the resources you need to get started with this project, so if you are doing anything in the SaaS space, check it out. (#198)
@@ -966,6 +1029,11 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [aws-config-rule-rds-logging-enabled-remediation](https://aws-oss.beachgeek.co.uk/43l) provides code that will help you checks if respective logs of Amazon Relational Database Service (Amazon RDS) are enabled using AWS Config rule 'rds-logging-enabled'. The rule is NON_COMPLIANT if any log types are not enabled. AWS Systems Manager Automation document used as remediation action to enable the logs export to CloudWatch for the RDS instances that are marked NON_COMPLIANT.(#203)
 
+**aws-cost-explorer-mcp-server**
+
+[aws-cost-explorer-mcp-server](https://aws-oss.beachgeek.co.uk/4ac) builds on the current wave of excitement around Model Context Protocol (MCP) that provides a powerful open-source tool that brings natural language querying to your AWS spending data. Ask questions like "What was my EC2 spend yesterday?" or "Break down my Bedrock usage by model" and get detailed answers through Claude. It helps track cloud costs across services, identifies expensive resources, and provides deep insights into your Amazon Bedrock model usage. (#208)
+
+
 **aws-external-package-security**
 
 [aws-external-package-security](https://aws-oss.beachgeek.co.uk/3g2) provides code to setup a solution that demonstrates how you can deploy AWS Code Services (e.g., AWS CodePipeline, AWS CodeBuild, Amazon CodeGuru Security, AWS CodeArtifact) to orchestrate secure access to external package repositories from an Amazon SageMaker data science environment configured with multi-layer security. The solution can also be expanded upon to account for general developer workflows, where developers use external package dependencies. (#180)
@@ -997,6 +1065,14 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **awskillswitch**
 
 [awskillswitch](https://aws-oss.beachgeek.co.uk/3gr) is an open sourced tool from Jeffrey Lyon that is worth checking out. AWS Kill Switch is a Lambda function (and proof of concept client) that an organisation can implement in a dedicated "Security" account to give their security engineers the ability to delete IAM roles or apply a highly restrictive service control policy (SCP) on any account in their organisation. Make sure you check out the README for full details, but this looks like it might be one of those tools that are useful to have in the back pocket in times of need. (#181)
+
+**awsesh**
+
+[awsesh](https://aws-oss.beachgeek.co.uk/4ad) is a command line tool for managing your AWS SSO sessions for those of you who are using AWS IAM Identity Centre (IdC). Whilst the repo provides pre built binaries for Mac, Linux, and Windows, you can also build from source too. There is a brief README with videos showing how this works - it is pretty simple to get up and running. If you are not using a vanity name for your IdC, then just use the prefix you see on the IdC dashboard when configuring this tool.(#208)
+
+**chaos-machine**
+
+[chaos-machine](https://aws-oss.beachgeek.co.uk/4ao) is a complete chaos engineering workflow that enables customers to run controlled chaos experiments and test hypotheses related to system behaviour. Chaos Machine uses metric and alarm data from both Amazon CloudWatch and Prometheus as inputs to evaluate system behaviour before, during, and after the experiment. The Chaos Machine provides a simple, consistent way to organise and execute chaos experiments, and is appropriate to use for both building and conducting ad-hoc experiments or integrating into more sophisticated automation pipelines. Chaos Machine uses the AWS Fault Injection Service (FIS) to run controlled experiments, and AWS Step Functions and AWS Lambda for orchestration and execution.(#208)
 
 **cloudcatalog**
 
@@ -1049,6 +1125,14 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **networking-costs-calculator**
 
 [networking-costs-calculator](https://aws-oss.beachgeek.co.uk/44t) provide a useful sample code for a networking costs calculator, helping to estimate the networking costs such as Data Transfer, Transit Gateway Attachments, NAT Gateways etc. The calculator has two main components: a serverless backend part, that uses the AWS Price List Query APIs to get the updated prices for the relevant networking services. These prices are cached in a DynamoDB table, and a ReactJS frontend web application, that is the user interface for estimating the costs for various networking services (hosted with S3 and CloudFront).(#204) 
+
+**observation-extractor**
+
+[observation-extractor](https://aws-oss.beachgeek.co.uk/4at) is a tool for collecting observations from data. Observations are useful bits of data related to questions that you define that is extracted from the data you pass in. Use Observation Extractor to process pdf (and maybe someday other files) into formats like csv (and later parquet) to turn unstructured documents into structured observations that you can query and use directly or through your application. When you output to a format like csv or parquet, observations are the row level records.
+
+Observation Extractor takes an unstructured data file as input (like a pdf) and outputs a list of Observation objects. Each observation includes standard fields that are extracted from the document together with metadata like the document name and page number.
+
+You can populate observations into a datastore and make them available to your human and AI users. They can be queried based on metadata like date and the specific questions they relate too. You can define question sets that represent thought process of a subject-matter-expert coming up to speed on this case to start mapping a document into useful observations.(#208)
 
 **orgs-prescriptive-guidance**
 
@@ -1199,6 +1283,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [awskillswitch](https://aws-oss.beachgeek.co.uk/3gr) is an open sourced tool from Jeffrey Lyon that is worth checking out. AWS Kill Switch is a Lambda function (and proof of concept client) that an organisation can implement in a dedicated "Security" account to give their security engineers the ability to delete IAM roles or apply a highly restrictive service control policy (SCP) on any account in their organisation. Make sure you check out the README for full details, but this looks like it might be one of those tools that are useful to have in the back pocket in times of need. (#181)
 
+**awsesh**
+
+[awsesh](https://aws-oss.beachgeek.co.uk/4ad) is a command line tool for managing your AWS SSO sessions for those of you who are using AWS IAM Identity Centre (IdC). Whilst the repo provides pre built binaries for Mac, Linux, and Windows, you can also build from source too. There is a brief README with videos showing how this works - it is pretty simple to get up and running. If you are not using a vanity name for your IdC, then just use the prefix you see on the IdC dashboard when configuring this tool.(#208)
+
 **awsviz**
 
 [awsviz](https://aws-oss.beachgeek.co.uk/3z1) is a super nice little tool from Bour Mohamed Abdelhadi, that helps you quickly visualy your IAM policies. You can check out the hosted version of [awsviz](https://aws-oss.beachgeek.co.uk/3z3) and there are some sample policies to show you what you can expect. Check out the[ use cases doc](https://aws-oss.beachgeek.co.uk/3z4) to see why you might want to try this tool out. (#200)
@@ -1214,6 +1302,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **cedar-go**
 
 [cedar-go](https://aws-oss.beachgeek.co.uk/3qf) provides the Go implementation of the Cedar policy language. Check out the README for a quick example of how to use Cedar within your Go applications, and am looking forward to seeing how Go developers start to incorporate this into their applications.(#192)
+
+**chaos-machine**
+
+[chaos-machine](https://aws-oss.beachgeek.co.uk/4ao) is a complete chaos engineering workflow that enables customers to run controlled chaos experiments and test hypotheses related to system behaviour. Chaos Machine uses metric and alarm data from both Amazon CloudWatch and Prometheus as inputs to evaluate system behaviour before, during, and after the experiment. The Chaos Machine provides a simple, consistent way to organise and execute chaos experiments, and is appropriate to use for both building and conducting ad-hoc experiments or integrating into more sophisticated automation pipelines. Chaos Machine uses the AWS Fault Injection Service (FIS) to run controlled experiments, and AWS Step Functions and AWS Lambda for orchestration and execution.(#208)
 
 **config-rds-ca-expiry**
 
@@ -1306,13 +1398,23 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [ebs-bootstrap](https://aws-oss.beachgeek.co.uk/3mg) is a very handy tool from Lasith Koswatta Gamage that solves a very specific problem. Lasith reached out to explain more about the "itch" that needed to be scratched. ebs-bootstrap is a tool that provides a safe and as-code approach for managing block devices on AWS EC2. If you need precise and consistent control over your EBS volumes when attaching them to your EC2 Nitro based instances, you need to check out this project. The README provides some additional example configurations, and there is a blog post in the works which I will share once it has been published. (#187)
 
+**ebsight**
+                                                                 
+[ebsight](https://aws-oss.beachgeek.co.uk/490) is a Python-based analysis tool developed by Stephen Jones in response to AWS's new EBS snapshot size reporting feature. This tool leverages the newly introduced FullSnapshotSizeInBytes field to provide comprehensive insights into EBS volume usage, performance metrics, and cost optimisation opportunities. After you have checked the repo out and gone through the README, why not read the supporting blog post, [Unleash the Power of EBSight for Optimal AWS Storage Management](https://aws-oss.beachgeek.co.uk/491) (#207)
+
+
+**fsx-to-s3-int**
+
+[fsx-to-s3-int](https://aws-oss.beachgeek.co.uk/4a9) is a new tool from Steve Jones that helps AWS users analyse their FSx for NetApp ONTAP (FSxN) volume usage patterns to estimate potential cost savings when migrating to Amazon S3 Intelligent-Tiering. It collects and analyses metrics such as storage usage, access patterns, and operations to provide insights for data migration planning. Steve has put together a blog post that helps you get started, so go check out [Unlocking Cloud Savings: Your Guide to FSx and S3 Intelligent-Tiering with Python Magic!](https://aws-oss.beachgeek.co.uk/4aa) (#208)
+
+
 **git-remote-s3**
 
 [git-remote-s3](https://aws-oss.beachgeek.co.uk/44s) is a neat tool that provides you with the ability to use Amazon S3 as a [Git Large File Storage (LFS)](https://git-lfs.com/) remote provider. It provides an implementation of a git remote helper to use S3 as a serverless Git server. The README provides good examples of how to set this up and example git commands that allow you to use this setup. This is pretty neat, and something I am going to try out for myself in future projects. (#204)
 
-**ebsight**
-                                                                 
-[ebsight](https://aws-oss.beachgeek.co.uk/490) is a Python-based analysis tool developed by Stephen Jones in response to AWS's new EBS snapshot size reporting feature. This tool leverages the newly introduced FullSnapshotSizeInBytes field to provide comprehensive insights into EBS volume usage, performance metrics, and cost optimisation opportunities. After you have checked the repo out and gone through the README, why not read the supporting blog post, [Unleash the Power of EBSight for Optimal AWS Storage Management](https://aws-oss.beachgeek.co.uk/491) (#207)
+**s3-delta-download**
+ 
+[ s3-delta-download](https://aws-oss.beachgeek.co.uk/4af) is a new tool for interacting with your Amazon S3 buckets, that will help anyone who is encountering current limitations of the 's3 sync', specifically that it does not yet support using a non-directory key prefix. This means that it will only download those files it does not already have, skipping files that are not already in your local directory. The README provide a nice example of how this works, and also covers installation dependencies you need (it requires .NET SDK or later).(#208)
 
 **s3-diff-uploader**
 
@@ -1497,6 +1599,11 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [mlspace](https://aws-oss.beachgeek.co.uk/3r8) provides code that will help you deploy [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) into your AWS account. [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) is an open source no-hassle tool for data science, machine learning and deep learning, and has pre-made environments for pytorch, tensorflow and everything else you might need. (#193)
 
+**node-red-contrib-aws-bedrock**
+
+[node-red-contrib-aws-bedrock](https://aws-oss.beachgeek.co.uk/4ae) is a project from my colleague Kelsea Blackweel that create a new node type within node-red (my favourite open source project ever!) that allows you to integrate Amazon Bedrock into your flows. (#208)
+
+
 **pagemosaic-cms**
 
 [pagemosaic-cms](https://aws-oss.beachgeek.co.uk/3tb) is an open-source platform optimized for AWS to efficiently host static websites. It simplifies the process of creating, managing, and publishing content online with an emphasis on cost-effectiveness and efficient use of AWS resources. You can check out the project home page for more details [here](https://aws-oss.beachgeek.co.uk/3tk).(#195)
@@ -1532,6 +1639,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 # Demos and Samples
 
+**2025-bootiful-aws-ai**
+
+[2025-bootiful-aws-ai](https://aws-oss.beachgeek.co.uk/4aj) is just what you need if you are looking to explore the wonderful world of MCP in Java. James and Josh have put together this simple demo that uses the recently GAd Spring Boot AI libraries to make creating MCP clients and servers a breeze.(#208)
+
 **ai-driven-sql-generation**
 
 [ai-driven-sql-generation](https://aws-oss.beachgeek.co.uk/3w0) this sample code from AWS Community Builder Hardik Singh Behl uses Amazon Bedrock with Spring AI to convert natural language queries to SQL queries, using Anthropic's Claude 3 Haiku model.(#197)
@@ -1547,6 +1658,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **amazon-bedrock-slack-gateway**
 
 [amazon-bedrock-slack-gateway](https://aws-oss.beachgeek.co.uk/3z8) lets you use Amazon Bedrock's generative AI to enable Slack channel members to access your organisations data and knowledge sources via conversational question-answering. You can connect to your organisation data via data source connectors and integrate it with Slack Gateway for Amazon Bedrock to enable access to your Slack channel members. It allows your users to converse with Amazon Bedrock using Slack Direct Message (DM) to ask questions and get answers based on company data, get help creating new content such as emails, and performing tasks. You can also invite it to participate in your team channels. In a channel users can ask it questions in a new message, or tag it in a thread at any point. Get it to provide additional data points, resolve a debate, or summarise the conversation and capture next steps.(#200)
+
+**amazon-eks-chaos**
+
+[amazon-eks-chaos](https://aws-oss.beachgeek.co.uk/4ar) this repo shows the steps involved to implement running chaos experiments on micro services in Amazon EKS using AWS Fault Injection Simulator with ChaosMesh and LitmusChaos. You can read about this in the supporting blog post,[ Chaos engineering on Amazon EKS using AWS Fault Injection Simulator](https://aws-oss.beachgeek.co.uk/4as).(#208)
 
 **amazon-eks-running-webassembly**
 
@@ -1593,6 +1708,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [big-data-summarization-using-griptape-bedrock-redshift](https://aws-oss.beachgeek.co.uk/3gv) I have looked at Griptape in other blog posts, so it was nice to see this repo that provides sample code and instructions for a Big data summarisation example using this popular open-source library, together with Amazon Bedrock and Amazon Redshift. In this sample,  TitanXL LLM is used to summarise but Anthropic's Claude v2 is also used to drive the application. This application sample demonstrates how data can be pulled from Amazon Redshift and then passed to the summarisation model. The driving model is isolated from the actual data and uses the tools provided to it to orchestrate the application. (#181)
 
+**Bedrock-MEAI-Sample**
+
+[Bedrock-MEAI-Sample](https://aws-oss.beachgeek.co.uk/4ai) is just what you need if you are looking to integrate Amazon Bedrock with .NET MAUI, providing sample code that demonstrates how to create a chat client in a .NET MAUI mobile app.(#208)
+
 **build-an-agentic-llm-assistant**
 
 [build-an-agentic-llm-assistant](https://aws-oss.beachgeek.co.uk/43e) this repo provides code that you can follow along as part of the "Build an agentic LLM assistant on AWS" workshop. This hands-on workshop, aimed at developers and solution builders, trains you on how to build a real-life serverless LLM application using foundation models (FMs) through Amazon Bedrock and advanced design patterns such as: Reason and Act (ReAct) Agent, text-to-SQL, and Retrieval Augemented Generation (RAG). It complements the Amazon Bedrock Workshop by helping you transition from practicing standalone design patterns in notebooks to building an end-to-end llm serverless application. Check out the README for additional links to the workshop text, as well as more details on how this repo works.(#203)
@@ -1620,6 +1739,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **domain-specific-genai-chatbot-with-serverless**
 
 [domain-specific-genai-chatbot-with-serverless](https://aws-oss.beachgeek.co.uk/3t9) This sample demonstrates how to build a domain specific chatbot using serverless and Bedrock. The chatbot employs Retrieval-Augments Generation (RAG) and chat history to provide context for the LLM to answer. (#195)
+
+**eks_demo**
+
+[eks_demo](https://aws-oss.beachgeek.co.uk/4ah) is a nice demo repo from former colleague Seth Elliot that provides a ready to go set of AWS resources via Terraform, that deploys an Amazon EKS cluster with a sample guestbook application using a number of supporting AWS services (check out the repo for more info). It is intended as an easy to understand environment for you to study and learn. (#208)
 
 **fmbench-orchestrator**
 
@@ -1721,6 +1844,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [sample-code-for-a-secure-vault-using-aws-nitro-enclaves](https://aws-oss.beachgeek.co.uk/43c) - This repository contains a sample secure vault solution built using AWS Nitro Enclaves, a feature available exclusively through the AWS Nitro System hypervisor on supported Amazon EC2 instances. A vault solution is useful when you need to ensure sensitive data (such as Protected Health Information (PHI)/Personally Identifiable Information (PII)) is properly secured at rest and can only be decrypted through approved channels. Check out more details about how cool Nitro Enclaves are by reading the supporting documentation for this project, [About the AWS Nitro Enclaves Vault](https://aws-oss.beachgeek.co.uk/43b).(#203)
 
+**sample-aws-dax-go-v2**
+
+[sample-aws-dax-go-v2](https://aws-oss.beachgeek.co.uk/4an)  is the official AWS DAX SDK for the Go programming language. In addition to this, [sample-aws-dax-go-v2-sample](https://aws-oss.beachgeek.co.uk/4al)is some sample code / application showing how to use DynamoDB Accelerator (DAX) Go Language SDK Client.(#208)
+
 **serverless-genai-food-analyzer-app**
 
 [serverless-genai-food-analyzer-app](https://aws-oss.beachgeek.co.uk/3x6) provides code for a personalised GenAI nutritional web application for your shopping and cooking recipes built with serverless architecture and generative AI capabilities. It was first created as the winner of the AWS Hackathon France 2024 and then introduced as a booth exhibit at the AWS Summit Paris 2024. You use your cell phone to scan a bar code of a product to get the explanations of the ingredients and nutritional information of a grocery product personalised with your allergies and diet. You can also take a picture of food products and discover three personalised recipes based on their food preferences. The app is designed to have minimal code, be extensible, scalable, and cost-efficient. It uses Lazy Loading to reduce cost and ensure the best user experience. (#198)
@@ -1780,6 +1907,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **whats-new-summary-notifier**
 
 [whats-new-summary-notifier](https://aws-oss.beachgeek.co.uk/3x4) is a demo repo that lets you build a generative AI application that summarises the content of AWS What's New and other web articles in multiple languages, and delivers the summary to Slack or Microsoft Teams. (#198)
+
+**wio-from-diagram-to-code-with-amazon-q-developer**
+
+[wio-from-diagram-to-code-with-amazon-q-developer](https://aws-oss.beachgeek.co.uk/4a8) this project from AWS Community Builder Olivier Lemaitre that demonstrates how you can generate diagrams from an application code, but also how to generate code from diagrams using Amazon Q Developer in the Visual Studio Code IDE. (#208)
 
 **youtube-video-summarizer-with-bedrock**
 
