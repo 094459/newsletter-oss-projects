@@ -16,6 +16,11 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [agent-evaluation](https://aws-oss.beachgeek.co.uk/3vw)  is a generative AI-powered framework for testing virtual agents. Agent Evaluation implements an LLM agent (evaluator) that will orchestrate conversations with your own agent (target) and evaluate the responses during the conversation. The repo has links to detailed docs that provide example configurations and a reference guide to get you started. (#197)
 
+**ai-on-eks**
+
+[ai-on-eks](https://aws-oss.beachgeek.co.uk/4bw) is your go to repo if you are interested in getting AI up and running on Amazon EKS. It provides a gateway to help you scale AI and ML workloads on Amazon EKS. It provides a rich collection of Terraform Blueprints featuring current good practices for deploying robust solutions with advanced logging and observability. You can explore practical patterns for running AI/ML workloads on EKS, leveraging the power of the Ray ecosystem for distributed computing. Utilise advanced serving solutions like NVIDIA Triton Server, vLLM for efficient and scalable model inference, and TensorRT-LLM for optimising deep learning models. (#209)
+
+
 **alarm-context-tool**
 
 [alarm-context-tool](https://aws-oss.beachgeek.co.uk/40g) enhances AWS CloudWatch Alarms by providing additional context to aid in troubleshooting and analysis. By leveraging AWS services such as Lambda, CloudWatch, X-Ray, and Amazon Bedrock, this solution aggregates and analyses metrics, logs, and traces to generate meaningful insights. Using generative AI capabilities from Amazon Bedrock, it summarises findings, identifies potential root causes, and offers relevant documentation links to help operators resolve issues more efficiently. The implementation is designed for easy deployment and integration into existing observability pipelines, significantly reducing response times and improving root cause analysis. (#201)
@@ -184,6 +189,11 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [load-test-llm-with-locust](https://aws-oss.beachgeek.co.uk/3qg) provides an example of how to perform load testing on the LLM API to evaluate your production requirements. The code is developed within a SageMaker Notebook and utilises the command line interface to conduct load testing on both the SageMaker and Bedrock LLM API. If you are not familiar with Locust, it is an open source load testing tool, and is a popular framework for load testing HTTP and other protocols. Its developer friendly approach lets you to define your tests in regular Python code. Locust tests can be run from command line or using its web-based UI. Throughput, response times and errors can be viewed in real time and/or exported for later analysis.(#192)
 
+**Log-Analyzer-with-MCP**
+
+[Log-Analyzer-with-MCP](https://aws-oss.beachgeek.co.uk/4bu) - this repo provides a Model Context Protocol (MCP) server that provides AI assistants access to AWS CloudWatch Logs for analysis, searching, and correlation. The README provides everything you need to get started, as well as providing links that dive deeper into how this works. (#209)
+
+
 **llm-test-mate**
 
 [llm-test-mate](https://aws-oss.beachgeek.co.uk/47v) is a project from my colleague Danilo Poccia that is a simple testing framework to evaluate and validate LLM-generated content using string similarity, semantic. Check out the README for a list of features currently supported, as well as examples of how to use it. The README really is a thing of beauty, and I wish more projects provided as clear and detailed info as this project.(#206)
@@ -196,6 +206,11 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [mlspace](https://aws-oss.beachgeek.co.uk/3r8) provides code that will help you deploy [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) into your AWS account. [MLSpace](https://aws-oss.beachgeek.co.uk/3r9) is an open source no-hassle tool for data science, machine learning and deep learning, and has pre-made environments for pytorch, tensorflow and everything else you might need. (#193)
 
+**mcp**
+
+[mcp](https://aws-oss.beachgeek.co.uk/4bi) is a comprehensive repo that provides a suite of specialised Model Context Protocol (MCP) servers that help you get the most out of AWS, wherever you use MCP. This list is growing, so check out the list (currently contains MCP servers that will help you with AWS documentation, AWS Cost Analysis, using AWS CDK, and more) - (#209)
+
+
 **mcp-lambda-layer**
 
 [mcp-lambda-layer](https://aws-oss.beachgeek.co.uk/4ab) is project that uses a Node.js package that provides MCP (Model Context Protocol) server infrastructure for AWS Lambda functions with SSE support. The repo provides example code for tools and prompts which should get you started and simplify how you might provide these to your MCP clients. Check out the README for other important notes.(#208)
@@ -207,6 +222,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **MCP2Lambda**
 
 [MCP2Lambda](https://aws-oss.beachgeek.co.uk/498) is a project from my good friend Danilo Poccia and is a really great example of how Model Control Protocol (MCP) provides Large Language Model (LLM) with additional capabilities and flexibility. In this demo sample, an MCP server acts as a bridge between MCP clients and AWS Lambda functions, allowing generative AI models to access and run Lambda functions as tools. This is useful, for example, to access private resources such as internal applications and databases without the need to provide public network access. This approach allows the model to use other AWS services, private networks, and the public internet.(#207)
+
+**middy-mcp**
+
+[middy-mcp](https://aws-oss.beachgeek.co.uk/4bk) provides [Middy](https://github.com/middyjs/middy) [middleware](https://middy.js.org/)  (a Node.js middleware engine for AWS Lambda that helps you organise your Lambda code, remove code duplication, and focus on business logic) for Model Context Protocol (MCP) server integration with AWS Lambda functions. It provides a convenient way to handle MCP requests and responses within your Lambda functions using the Middy middleware framework. It supports requests sent to AWS Lambda from API Gateway (both REST API / v1 and HTTP API / v2) using the Proxy integration, as well as requests sent form an ALB. Check out the README for some code examples of how you might use this. (#209)
 
 **multi-agent-orchestrator**
 
@@ -288,6 +307,14 @@ You can populate observations into a datastore and make them available to your h
 
 [sample-convert-codebase-to-graphrag](https://aws-oss.beachgeek.co.uk/4ak) is a demo to show how to leverages AI to analyze, index, and query code repositories. It creates a searchable graph representation of code structures, enabling developers to explore and understand complex codebases efficiently. This project combines several AWS services, including Lambda, Neptune, OpenSearch, and Bedrock, to process code repositories, generate metadata, and provide powerful search capabilities. The system is designed to handle large-scale code analysis tasks and offer semantic code search functionality. It uses CDK to simplify how to deploy this in your own AWS environments. (#208)
 
+**sample-devgenius-aws-solution-builder**
+
+[sample-devgenius-aws-solution-builder](https://aws-oss.beachgeek.co.uk/4bx) is a super interesting project that you can deploy and provides an AI-powered application that transforms project ideas into complete, ready-to-deploy AWS solutions. It leverages Amazon Bedrock and Claude AI models to provide architecture diagrams, cost estimates, infrastructure as code, and comprehensive technical documentation. In "Conversational Solution Architecture Building" mode,  DevGenius enables customers to design solution architectures in a conversational manner. Users can create architecture diagrams (in draw.io format) and refine them interactively. Once the design is finalised, they can generate end-to-end code automation using CDK or CloudFormation templates, and deploy it in their AWS account with a single click. Additionally, customers can receive cost estimates for running the architecture in production, along with detailed documentation for the solution. In the "Build Solution Architecture from Whiteboard Drawings" mode, those of you who already have their architecture in image form (e.g., whiteboard drawings), DevGenius allows you to upload the image. Once uploaded, DevGenius analyses the architecture and provides a detailed explanation. You can then refine the design conversationally and, once finalised, generate end-to-end code automation using CDK or CloudFormation. Cost estimates and comprehensive documentation are also available.(#209)
+
+**sample-ollama-server**
+
+[sample-ollama-server](https://aws-oss.beachgeek.co.uk/4bv) is a project that folks who are interested in or already using ollama need to check out. This repo provides a AWS CloudFormation template to provision NVIDIA GPU EC2 instances with Ollama and Open WebUI, and include access to Amazon Bedrock foundation models (FMs). The solution can be deployed as a website for LLM interaction through Open WebUI, or as application development environment with Amazon DCV server.(#209)
+
 **serverless-genai-food-analyzer-app**
 
 [serverless-genai-food-analyzer-app](https://aws-oss.beachgeek.co.uk/3x6) provides code for a personalised GenAI nutritional web application for your shopping and cooking recipes built with serverless architecture and generative AI capabilities. It was first created as the winner of the AWS Hackathon France 2024 and then introduced as a booth exhibit at the AWS Summit Paris 2024. You use your cell phone to scan a bar code of a product to get the explanations of the ingredients and nutritional information of a grocery product personalised with your allergies and diet. You can also take a picture of food products and discover three personalised recipes based on their food preferences. The app is designed to have minimal code, be extensible, scalable, and cost-efficient. It uses Lazy Loading to reduce cost and ensure the best user experience. (#198)
@@ -348,6 +375,10 @@ You can populate observations into a datastore and make them available to your h
 [language-server-runtimes](https://aws-oss.beachgeek.co.uk/3qe) is a JSON-RPC based protocol for interactions between servers and clients (typically embedded in development tools). The README covers details around specification support and features supported, that will help you tailor this to your needs.(#192)
 
 ### Compute - Containers, EC2, Serverless
+
+**ai-on-eks**
+
+[ai-on-eks](https://aws-oss.beachgeek.co.uk/4bw) is your go to repo if you are interested in getting AI up and running on Amazon EKS. It provides a gateway to help you scale AI and ML workloads on Amazon EKS. It provides a rich collection of Terraform Blueprints featuring current good practices for deploying robust solutions with advanced logging and observability. You can explore practical patterns for running AI/ML workloads on EKS, leveraging the power of the Ray ecosystem for distributed computing. Utilise advanced serving solutions like NVIDIA Triton Server, vLLM for efficient and scalable model inference, and TensorRT-LLM for optimising deep learning models. (#209)
 
 **amazon-eks-running-webassembly**
 
@@ -879,9 +910,21 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [localstack-aws-cdk-example](https://aws-oss.beachgeek.co.uk/3dw) This repo aims to showcase the usage of [Localstack](https://aws-oss.beachgeek.co.uk/3dx) and AWS CDK to address specific integration challenges regarding local development where the end target is the AWS platform. If you are unfamiliar with Localstack, it is an open source, fully functional local AWS cloud stack that allows you to develop and test your cloud and Serverless apps offline. (#178)
 
+**Log-Analyzer-with-MCP**
+
+[Log-Analyzer-with-MCP](https://aws-oss.beachgeek.co.uk/4bu) - this repo provides a Model Context Protocol (MCP) server that provides AI assistants access to AWS CloudWatch Logs for analysis, searching, and correlation. The README provides everything you need to get started, as well as providing links that dive deeper into how this works. (#209)
+
+**mcp**
+
+[mcp](https://aws-oss.beachgeek.co.uk/4bi) is a comprehensive repo that provides a suite of specialised Model Context Protocol (MCP) servers that help you get the most out of AWS, wherever you use MCP. This list is growing, so check out the list (currently contains MCP servers that will help you with AWS documentation, AWS Cost Analysis, using AWS CDK, and more). (#209)
+
 **MCP2Lambda**
 
 [MCP2Lambda](https://aws-oss.beachgeek.co.uk/498) is a project from my good friend Danilo Poccia and is a really great example of how Model Control Protocol (MCP) provides Large Language Model (LLM) with additional capabilities and flexibility. In this demo sample, an MCP server acts as a bridge between MCP clients and AWS Lambda functions, allowing generative AI models to access and run Lambda functions as tools. This is useful, for example, to access private resources such as internal applications and databases without the need to provide public network access. This approach allows the model to use other AWS services, private networks, and the public internet.(#207)
+
+**middy-mcp**
+
+[middy-mcp](https://aws-oss.beachgeek.co.uk/4bk) provides [Middy](https://github.com/middyjs/middy) [middleware](https://middy.js.org/)  (a Node.js middleware engine for AWS Lambda that helps you organise your Lambda code, remove code duplication, and focus on business logic) for Model Context Protocol (MCP) server integration with AWS Lambda functions. It provides a convenient way to handle MCP requests and responses within your Lambda functions using the Middy middleware framework. It supports requests sent to AWS Lambda from API Gateway (both REST API / v1 and HTTP API / v2) using the Proxy integration, as well as requests sent form an ALB. Check out the README for some code examples of how you might use this. (#209)
 
 **outtasync**
 
@@ -942,13 +985,17 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [sample-convert-codebase-to-graphrag](https://aws-oss.beachgeek.co.uk/4ak) is a demo to show how to leverages AI to analyze, index, and query code repositories. It creates a searchable graph representation of code structures, enabling developers to explore and understand complex codebases efficiently. This project combines several AWS services, including Lambda, Neptune, OpenSearch, and Bedrock, to process code repositories, generate metadata, and provide powerful search capabilities. The system is designed to handle large-scale code analysis tasks and offer semantic code search functionality. It uses CDK to simplify how to deploy this in your own AWS environments. (#208)
 
+**sample-devgenius-aws-solution-builder**
+
+[sample-devgenius-aws-solution-builder](https://aws-oss.beachgeek.co.uk/4bx) is a super interesting project that you can deploy and provides an AI-powered application that transforms project ideas into complete, ready-to-deploy AWS solutions. It leverages Amazon Bedrock and Claude AI models to provide architecture diagrams, cost estimates, infrastructure as code, and comprehensive technical documentation. In "Conversational Solution Architecture Building" mode,  DevGenius enables customers to design solution architectures in a conversational manner. Users can create architecture diagrams (in draw.io format) and refine them interactively. Once the design is finalised, they can generate end-to-end code automation using CDK or CloudFormation templates, and deploy it in their AWS account with a single click. Additionally, customers can receive cost estimates for running the architecture in production, along with detailed documentation for the solution. In the "Build Solution Architecture from Whiteboard Drawings" mode, those of you who already have their architecture in image form (e.g., whiteboard drawings), DevGenius allows you to upload the image. Once uploaded, DevGenius analyses the architecture and provides a detailed explanation. You can then refine the design conversationally and, once finalised, generate end-to-end code automation using CDK or CloudFormation. Cost estimates and comprehensive documentation are also available.(#209)
+
+**sample-ollama-server**
+
+[sample-ollama-server](https://aws-oss.beachgeek.co.uk/4bv) is a project that folks who are interested in or already using ollama need to check out. This repo provides a AWS CloudFormation template to provision NVIDIA GPU EC2 instances with Ollama and Open WebUI, and include access to Amazon Bedrock foundation models (FMs). The solution can be deployed as a website for LLM interaction through Open WebUI, or as application development environment with Amazon DCV server.(#209)
+
 **sbt-aws**
 
 [sbt-aws](https://aws-oss.beachgeek.co.uk/3x8) SaaS Builder Toolkit for AWS (SBT) is an open-source developer toolkit to implement SaaS best practices and increase developer velocity. It offers a high-level object-oriented abstraction to define SaaS resources on AWS imperatively using the power of modern programming languages. Using SBT’s library of infrastructure constructs, you can easily encapsulate SaaS best practices in your SaaS application, and share it without worrying about boilerplate logic. The README contains all the resources you need to get started with this project, so if you are doing anything in the SaaS space, check it out. (#198)
-
-**StsSamlDriver**
-
-[StsSamlDriver](https://aws-oss.beachgeek.co.uk/49d) is A Python-based SAML authentication handler for AWS STS that allows you to get temporary credentials using SAML to the AWS CLI, or an application written using an AWS SDK without the need to screen scrape or emulate a browser.(#207)
 
 **service-screener-v2**
 
@@ -958,6 +1005,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [sigv4a-signing-examples](https://aws-oss.beachgeek.co.uk/1jl) provides a useful set of examples that show examples of sigv4 implementations. Josh Hart, maintainer of this repo, has put together a companion repo that has a set of sigv4 examples in different frameworks and using the sdk or from scratch. Josh is also looking for community contributions in other frameworks, so if you are working on a framework and want to combine efforts, drop Josh a note.(#195)
 
+**sfn-profiler**
+
+[sfn-profiler ](https://aws-oss.beachgeek.co.uk/4bn)is a nice project from James Sanders that provides a package of utilities for profiling AWS Step Function executions. This utility provides relevant performance metrics and information about particular Step Function executions and their child workflows (called 'contributor' workflows) in your local web browser. It displays information such as the largest contributors to the overall duration as well as a gantt chart representation of the workflow execution. Check out the README for more details, this really is an essential tool if you spend any time at all developing AWS Step Functions. (#209)
+
 **sparklepop**
 
 [sparklepop](https://aws-oss.beachgeek.co.uk/3z2) is a simple Python package from Daniel B designed to check the free disk space of an AWS RDS instance. It leverages AWS CloudWatch to retrieve the necessary metrics. This package is intended for users who need a straightforward way to monitor disk space without setting up complex alerts. (#200)
@@ -966,6 +1017,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [stree](https://aws-oss.beachgeek.co.uk/3o1) this project from Takafumi Miyanaga is a CLI tool designed to visualize the directory tree structure of an S3 bucket.
 By inputting an S3 bucket/prefix and utilizing various flags to customize your request, you can obtain a colorized or non-colorized directory tree right in your terminal. Whether it's for verifying the file structure, sharing the structure with your team, or any other purpose, stree offers an easy and convenient way to explore your S3 buckets. (#189)
+
+**StsSamlDriver**
+
+[StsSamlDriver](https://aws-oss.beachgeek.co.uk/49d) is A Python-based SAML authentication handler for AWS STS that allows you to get temporary credentials using SAML to the AWS CLI, or an application written using an AWS SDK without the need to screen scrape or emulate a browser.(#207)
 
 **tokenizing-db-data-tool**
 
@@ -1319,9 +1374,17 @@ You can populate observations into a datastore and make them available to your h
 
 [CloudGrappler](https://aws-oss.beachgeek.co.uk/3qb) is a purpose-built tool designed for effortless querying of high-fidelity and single-event detections related to well-known threat actors in AWS. Andi Ahmeti has put together a blog post, [Introducing CloudGrappler: A Powerful Open-Source Threat Detection Tool for Cloud Environments](https://aws-oss.beachgeek.co.uk/3qc), that provides an overview of how this works with examples.(#192)
 
+**cloud-snitch**
+
+[cloud-snitch](https://aws-oss.beachgeek.co.uk/4bo) - is an essential learning tool for anyone using AWS that helps you better understand  your AWS account activity. Inspired by the MacOS tool "Little Snitch", this will visually show you your AWS activity, allow you to share and collaborate with others, summarise your AWS activity through a number of different lenses and help you uncover suspicious behaviour. You have to check out the README to get a look at some of the screenshots of this tool in use, looks super interesting.(#209)
+
 **csr-builder-for-kms**
 
 [csr-builder-for-kms](https://aws-oss.beachgeek.co.uk/40h) provides a Python library for creating and signing X.509 certificate signing requests (CSRs) with KMS Keys. (#201)
+
+**dAWShund**
+
+[dAWShund](https://aws-oss.beachgeek.co.uk/4bj) is a suite of tools to enumerate, evaluate and visualise the access conditions between different resources in your AWS environments. Perhaps the most critical component of an AWS infrastructure is the policy document describing the actions allowed or denied to a resource. This can get overwhelming sometimes, so tools like this will provide you with the help you need to keep on top of it. Check out the README for details on usage. (#209)
 
 **duplicate-rule-detection-tool**
 
@@ -1331,6 +1394,13 @@ You can populate observations into a datastore and make them available to your h
 
 [gen-ai-cve-patching](https://aws-oss.beachgeek.co.uk/3vy) This repository introduces an innovative automated remediation pipeline, designed to effectively address vulnerabilities detected by AWS ECR Inspector. By leveraging Generative AI through Amazon Bedrock's in-context learning, this solution significantly enhances the security posture of application development workflows. The architecture integrates with CI/CD processes, offering a comprehensive and automated approach to vulnerability management. The architecture diagram provided illustrates the solution's key components and their interactions, ensuring a holistic vulnerability remediation strategy.(#197)
 
+**kye**
+
+[kye](https://aws-oss.beachgeek.co.uk/4br), also known as "Know Your Enemy", is a tool that analyses IAM Role trust policies and S3 bucket policies in your AWS account to identify third-party vendors with access to your resources. It compares the AWS account IDs found in these policies against a reference list of known AWS accounts from fwd:cloudsec to identify the vendors behind these accounts. Simple to install, the README provides example configurations and instructions on how to get started. (#209)
+
+**OpenSecOps-Org**
+
+[OpenSecOps-Org](https://aws-oss.beachgeek.co.uk/4bq) is the repo that holds the various sub projects that are part of [opensecops.org](https://www.opensecops.org/), that provide open source tools and solutions that help you seamlessly integrate into your operations, providing robust security frameworks and operational excellence. I have not actually looked at this in detail, but just skimming it looks very comprehensive. Split across Foundation that helps you setup your AWS against industry standard good practices, and Soar that looks more at continuous monitoring, automated incident handling and remediation of security issues.(#209)
 
 **powerpipe**
 
@@ -1388,6 +1458,10 @@ You can populate observations into a datastore and make them available to your h
 
 [vscode-iam-service-principal-snippets](https://aws-oss.beachgeek.co.uk/495) is the latest VSCode plugin from AWS Community Builder Danny Steenman ([his fifth](https://www.linkedin.com/posts/dannysteenman_today-marks-a-small-but-significant-milestone-activity-7292070581011660800-iwbT/)). This VS Code extension provides autocompletion of all AWS services that can be used as Service Principals in your IAM policies. (#207)
 
+**ww-project-eks-goat**
+
+[www-project-eks-goat](https://aws-oss.beachgeek.co.uk/4bp) this repo provides an immersive workshop on AWS ECR & EKS Security designed to take participants through real-world scenarios of attacking and defending Kubernetes clusters hosted on AWS EKS. This workshop provides a comprehensive approach, from understanding the anatomy of attacks on EKS clusters using AWS ECR to deploying robust defense mechanisms. Participants will learn how to backdoor AWS ECR image & exploit misconfigurations and vulnerabilities within AWS EKS, followed by the implementation of best security practices to safeguard the environment.This workshop is tailored for security professionals, cloud engineers, and DevOps teams looking to enhance their understanding of offensive and defensive Kubernetes security strategies. (#209)
+
 ### Storage
 
 **amazon-s3-glacier-archive-data-delete**
@@ -1424,6 +1498,11 @@ You can populate observations into a datastore and make them available to your h
 **s3-fast-list**
 
 [s3-fast-list](https://aws-oss.beachgeek.co.uk/3k6) is a rust based tool that concurrently list Amazon S3 bucket with ListObjectsV2 API. Check out the README for use cases as to when s3-fast-list is going to help you out (against existing options you have) (#184)
+
+**s3-migrate**
+
+[s3-migrate](https://aws-oss.beachgeek.co.uk/4bh) is a project that came onto my radar thanks to a message from Luciano Mammino, and provides a command line tool to help you move all your objects between s3-compatible storage systems. It can migrate objects from one S3-compatible storage bucket to another, resuming interrupted transfers using a SQLite state file. This project is (currently) experimental so use with care, and is intended for a one-off migration, not to keep two buckets in sync. Check out the README for more details on how to configure and use this tool. (#209) 
+
 
 **s3-prefix-level-kms-keys**
 
@@ -1611,6 +1690,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **ragna**
 
 [ragna](https://aws-oss.beachgeek.co.uk/3f3) this is a repo I put together to show you how you can add Amazon Bedrock models from Anthropic and Meta within the Ragna tool. I blogged last week about this [#179](https://dev.to/aws/unboxing-ragna-getting-hands-on-and-making-it-to-work-with-amazon-bedrock-7k3) but I have put together this repo that shows the actual code as I had received quite a few DMs, and as a bonus, I have also added the recently announced Llama2 13B model from Meta. To help with this, a new blog post, [Adding Amazon Bedrock Llama2 as an assistant in Ragna](https://dev.to/aws/adding-amazon-bedrock-llama2-as-an-assistant-in-ragna-pdl) will help you get this all up and running. There is also lots of useful info in the project README. (#180)
+
+**sample-ollama-server**
+
+[sample-ollama-server](https://aws-oss.beachgeek.co.uk/4bv) is a project that folks who are interested in or already using ollama need to check out. This repo provides a AWS CloudFormation template to provision NVIDIA GPU EC2 instances with Ollama and Open WebUI, and include access to Amazon Bedrock foundation models (FMs). The solution can be deployed as a website for LLM interaction through Open WebUI, or as application development environment with Amazon DCV server.(#209)
 
 **smart-assistant-agent**
 
@@ -1803,6 +1886,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [improve-employee-productivity-using-genai](https://aws-oss.beachgeek.co.uk/43h) is an innovative code sample designed to elevate the efficiency and effectiveness of writing tasks through the integration of AI technologies. Tailored for AWS users, this assistant example utilises Amazon Bedrock and generative AI models to automate the creation of initial templates, that can also be customised for your own needs. Users can input both text and images, benefiting from the multimodal capabilities of cutting-edge AI like the Claude 3 family, which supports dynamic interaction with multiple data types. The README is very comprehensive and covers not only how to set up and configure this project, but also has lots of great short videos of it in action. (#203)
 
+**Lambda-MCP-Server**
+
+[Lambda-MCP-Server](https://aws-oss.beachgeek.co.uk/4bl) - this project from my colleague Mike Chambers demonstrates a powerful and developer-friendly way to create serverless MCP (Model Context Protocol) tools using AWS Lambda. It showcases how to build a stateless, serverless MCP server with minimal boilerplate and an excellent developer experience. The included client demonstrates integration with Amazon Bedrock, using the Bedrock Converse API and Amazon Nova Pro to build an intelligent agent.(#209)
+
 **maplibregljs-amazon-location-service-route-calculators-starter**
 
 [maplibregljs-amazon-location-service-route-calculators-starter](https://aws-oss.beachgeek.co.uk/3p9) is a new repo from AWS Hero Yasunori Kirimoto that provides an example of how you can start routing with MapLibre GL JS and Amazon Location Service. He has also put together a blog post to help get you start, [Building a Route Search Function with Amazon Location SDK and API Key Function ](https://aws-oss.beachgeek.co.uk/3pa) (#191)
@@ -1840,13 +1927,21 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [reinvent-session-concierge](https://aws-oss.beachgeek.co.uk/3gq) is potentially a very useful tool for those of you heading out to re:Invent, and wanting to make sure that you make the most of your time there by attending the sessions of most interest to you. This project uses Amazon Bedrock Titan text embeddings stored in a PostgreSQL database to enable generative AI queries across the re:Invent session data. It combines both semantic search and traditional queries. I am going to be trying it out later today to help me plan my online viewing. (#181)
 
-**sample-code-for-a-secure-vault-using-aws-nitro-enclaves**
+**sample-agents-with-nova-act-and-mcp**
 
-[sample-code-for-a-secure-vault-using-aws-nitro-enclaves](https://aws-oss.beachgeek.co.uk/43c) - This repository contains a sample secure vault solution built using AWS Nitro Enclaves, a feature available exclusively through the AWS Nitro System hypervisor on supported Amazon EC2 instances. A vault solution is useful when you need to ensure sensitive data (such as Protected Health Information (PHI)/Personally Identifiable Information (PII)) is properly secured at rest and can only be decrypted through approved channels. Check out more details about how cool Nitro Enclaves are by reading the supporting documentation for this project, [About the AWS Nitro Enclaves Vault](https://aws-oss.beachgeek.co.uk/43b).(#203)
+[sample-agents-with-nova-act-and-mcp](https://aws-oss.beachgeek.co.uk/4bm) - This repository demonstrates how to build intelligent web automation agents using Amazon Nova Act integrated with MCP (Model Context Protocol). MCP provides a standardised way to connect AI models to different data sources and tools - think of it like a "USB-C port for AI applications." The repo provides requirements for running these demos as well as an overview of the different example use cases.(#209)
 
 **sample-aws-dax-go-v2**
 
 [sample-aws-dax-go-v2](https://aws-oss.beachgeek.co.uk/4an)  is the official AWS DAX SDK for the Go programming language. In addition to this, [sample-aws-dax-go-v2-sample](https://aws-oss.beachgeek.co.uk/4al)is some sample code / application showing how to use DynamoDB Accelerator (DAX) Go Language SDK Client.(#208)
+
+**sample-code-for-a-secure-vault-using-aws-nitro-enclaves**
+
+[sample-code-for-a-secure-vault-using-aws-nitro-enclaves](https://aws-oss.beachgeek.co.uk/43c) - This repository contains a sample secure vault solution built using AWS Nitro Enclaves, a feature available exclusively through the AWS Nitro System hypervisor on supported Amazon EC2 instances. A vault solution is useful when you need to ensure sensitive data (such as Protected Health Information (PHI)/Personally Identifiable Information (PII)) is properly secured at rest and can only be decrypted through approved channels. Check out more details about how cool Nitro Enclaves are by reading the supporting documentation for this project, [About the AWS Nitro Enclaves Vault](https://aws-oss.beachgeek.co.uk/43b).(#203)
+
+**Sample-Model-Context-Protocol-Demos**
+
+[Sample-Model-Context-Protocol-Demos](https://aws-oss.beachgeek.co.uk/4bt) - this repo provides a list of examples of how to use Model Context Protocol (MCP) with AWS. Keep an eye on this repo as it will grow as MCP is the new hotness at the moment.(#209)
 
 **serverless-genai-food-analyzer-app**
 
