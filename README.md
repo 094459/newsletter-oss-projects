@@ -71,6 +71,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [aws-piday2024 ](https://aws-oss.beachgeek.co.uk/3r3)my colleague Suman Debnath has put together this AWS Pi Day 2024 repository, where you can explore various applications and examples using Amazon Bedrock, fine-tuning, and Retrieval-Augmented Generation (RAG). (#193)
 
+**aws-serverless-mcp-server**
+
+[aws-serverless-mcp-server](https://aws-oss.beachgeek.co.uk/4df) enhances the serverless development experience by providing AI coding assistants with comprehensive knowledge of serverless patterns, best practices, and AWS services. Using AWS Serverless Application Model Command Line Interface (AWS SAM CLI) integration, you can handle events and deploy infrastructure while implementing proven architectural patterns. This integration streamlines function lifecycles, service integrations, and operational requirements throughout your application development process. The server also provides contextual guidance for infrastructure as code decisions, AWS Lambda specific best practices, and event schemas for AWS Lambda event source mappings. (#210)
+
 **bedrock-access-gateway**
 
 [bedrock-access-gateway](https://aws-oss.beachgeek.co.uk/3us) provides an OpenAI-compatible RESTful APIs for Amazon Bedrock. Amazon Bedrock offers a wide range of foundation models (such as Claude 3 Opus/Sonnet/Haiku, Llama 2/3, Mistral/Mixtral, etc.) and a broad set of capabilities for you to build generative AI applications. Check the Amazon Bedrock landing page for additional information. Sometimes, you might have applications developed using OpenAI APIs or SDKs, and you want to experiment with Amazon Bedrock without modifying your codebase. Or you may simply wish to evaluate the capabilities of these foundation models in tools like AutoGen etc. Well, this repository allows you to access Amazon Bedrock models seamlessly through OpenAI APIs and SDKs, enabling you to test these models without code changes.(#196)
@@ -135,6 +139,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [content-based-item-recommender](https://aws-oss.beachgeek.co.uk/44r) provides some example code the helps you deploy a content-based recommender system. It is called "content-based" as it bases the recommendation based on the matching between the input's content and the items' content from your database. This uses prompt to large-language models (LLM) and vector search to perform the recommendation. (#204)
 
+**deploy-crewai-agents-terraform**
+
+[deploy-crewai-agents-terraform](https://aws-oss.beachgeek.co.uk/4d6) is a project designed to help you perform security audits and generate reports for your AWS infrastructure using a multi-agent AI system, leveraging the powerful and flexible framework provided by CrewAI. The AWS Security Auditor Crew architecture combines CrewAI's multi-agent framework with AWS services to provide comprehensive security auditing capabilities. The system can be deployed locally or to AWS using Terraform, with Amazon Bedrock powering the AI agents. (#210)
+
 **distill-cli**
 
 [distill-cli](https://aws-oss.beachgeek.co.uk/3yz) is a new project from Amazon CTO Dr Werner Vogels, which uses Amazon Transcribe and Amazon Bedrock to create summaries of your audio recordings (e.g., meetings, podcasts, etc.) directly from the command line. Distill CLI takes a dependency on Amazon Transcribe, and as such, supports the following media formats: AMR, FLAC, M4A, MP3, MP4, Ogg, WebM, WAV. It is great to feature this latest project, with the previous one being featured in [#197](https://community.aws/content/2gPNtsdSfQRIpmbUrNyPrjUg54D/aws-open-source-newsletter-197). To go with this repo, there is a post too, [Introducing Distill CLI: An efficient, Rust-powered tool for media summarization](https://aws-oss.beachgeek.co.uk/3yy) where Werner shares his experience building this tool in Rust, and provides some closing thoughts too. (#200)
@@ -146,6 +154,14 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 **ecs-gpu-scaling**
 
 [ecs-gpu-scaling](https://aws-oss.beachgeek.co.uk/3mh) This repository is intended for engineers looking to horizontally scale GPU-based Machine Learning (ML) workloads on Amazon ECS. By default, GPU utilisation metrics are not part of the predefined metrics available with Application Autoscaling. As such, you implement auto scaling based on custom metrics.  For NVIDIA-based GPUs, you use DCGM-Exporter in your container to expose GPU metrics. You can then use metrics such as DCGM_FI_DEV_GPU_UTIL and DCGM_FI_DEV_GPU_TEMP to determine your auto scaling behaviour. The README provides links to all the additional resources you need to get this up and running.(#187)
+
+**ecs-mcp-server**
+
+[ecs-mcp-server](https://aws-oss.beachgeek.co.uk/4db) containerises and deploys applications to Amazon ECS within minutes by configuring all relevant AWS resources, including load balancers, networking, auto-scaling, monitoring, Amazon ECS task definitions, and services. Using natural language instructions, you can manage cluster operations, implement auto-scaling strategies, and use real-time troubleshooting capabilities to identify and resolve deployment issues quickly. (#210)
+
+**eks-mcp-server**
+
+[eks-mcp-server](https://aws-oss.beachgeek.co.uk/4dd) provides similar capabilities to the **ecs-mcp-server** project, providing AI assistants with up-to-date, contextual information about your specific EKS environment. It offers access to the latest EKS features, knowledge base, and cluster state information. This gives AI code assistants more accurate, tailored guidance throughout the application lifecycle, from initial setup to production deployment. (#210)
 
 **evaluating-large-language-models-using-llm-as-a-judge**
 
@@ -227,6 +243,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [middy-mcp](https://aws-oss.beachgeek.co.uk/4bk) provides [Middy](https://github.com/middyjs/middy) [middleware](https://middy.js.org/)  (a Node.js middleware engine for AWS Lambda that helps you organise your Lambda code, remove code duplication, and focus on business logic) for Model Context Protocol (MCP) server integration with AWS Lambda functions. It provides a convenient way to handle MCP requests and responses within your Lambda functions using the Middy middleware framework. It supports requests sent to AWS Lambda from API Gateway (both REST API / v1 and HTTP API / v2) using the Proxy integration, as well as requests sent form an ALB. Check out the README for some code examples of how you might use this. (#209)
 
+**mkdocs-mcp**
+
+[mkdocs-mcp](https://aws-oss.beachgeek.co.uk/4d2) is another project from **AWS Hero Michael Walmsley** that provides search functionality for any MkDocs powered site. This server relies on the existing MkDocs search implementation using the Lunr.Js search engine. (#210)
+
 **multi-agent-orchestrator**
 
 [multi-agent-orchestrator](https://aws-oss.beachgeek.co.uk/41q) is a new open source project that provides a flexible and powerful framework for managing multiple AI agents and handling complex conversations. It intelligently routes queries and maintains context across interactions. The system offers pre-built components for quick deployment, while also allowing easy integration of custom agents and conversation messages storage solutions. This adaptability makes it suitable for a wide range of applications, from simple chatbots to sophisticated AI systems, accommodating diverse requirements and scaling efficiently. (#202)
@@ -251,6 +271,10 @@ You can populate observations into a datastore and make them available to your h
 **partysmith**
 
 [partysmith](https://aws-oss.beachgeek.co.uk/3l4) is an awesome project from AWS Community Builder Stephen Sennett, that provides an unofficial way to transform your AWS PartyRock apps into deployable full-stack SvelteKit applications. Users can enter the URL of a publicly published PartyRock app, select the desired settings, and PartySmith will forge an application into a ZIP archive which will be downloaded to your machine, and ready for use. How cool is that! (Very in case you were wondering). Find out more by reading the supporting blog post, [PartySmith - Bring PartyRock apps to your place](https://aws-oss.beachgeek.co.uk/3l5). (#185)
+
+**powertools-mcp**
+
+[powertools-mcp](https://aws-oss.beachgeek.co.uk/4cz) is a very nice project from **AWS Hero  Michael Walmsley** that provides search functionality for AWS Lambda Powertools documentation across multiple runtimes. This project implements an MCP server that enables Large Language Models (LLMs) to search through AWS Lambda Powertools documentation. It uses lunr.js for efficient local search capabilities and provides results that can be summarised and presented to users.  Good documentation, with examples on how to get started with MCP clients like Claude Desktop (but should work with Amazon Q CLI too) (#210)
 
 **project-lakechain**
 
@@ -671,6 +695,10 @@ You can populate observations into a datastore and make them available to your h
 
 [amplify-hosting-astro](https://aws-oss.beachgeek.co.uk/3r7) is a repo from AWS Amplify's Matt Auerbach that provides a walk through on how to build a simple blog using Astro's starter blog template, and deploy it using AWS Amplify Hosting. (#193)
 
+**arctic**
+
+[arctic](https://aws-oss.beachgeek.co.uk/4bz) is an open-source multi platform tool developed by the Corretto Team to automate interactive UI tests. Arctic supports existing tests and is agnostic to how those tests are written. Arctic can be used to validate any type of UI test, as it does not require any special support from the application side. Arctic relies on the operating system to capture all the required events during recording time and then reproduce them during replay time. This allows Arctic to operate with older tests that were not written with automation in mind without the need to modify them. Arctic runs on Linux, macOS (aarch64 and x86_64), and Windows (x86_64). (#210)
+
 **awsid**
 
 [awsid](https://aws-oss.beachgeek.co.uk/41p) is the latest novel project from Aidan Steele, author of many curiosities in the past, and this time (using his own words) he has created a tool that is "an incredibly niche tool, that might be of interest to half a dozen people. It turns AWS unique IDs into ARNs. I used generative AI to generate the UI." Check it out and see if you are part of that niche! (also make sure you check out the README about what he can potentially see) (#202)
@@ -679,13 +707,9 @@ You can populate observations into a datastore and make them available to your h
 
 [aws-advanced-nodejs-wrapper](https://aws-oss.beachgeek.co.uk/465) is complementary to an existing NodeJS driver and aims to extend the functionality of the driver to enable applications to take full advantage of the features of clustered databases such as Amazon Aurora.  In other words, the AWS Advanced NodeJS Wrapper does not connect directly to any database, but enables support of AWS and Aurora functionalities on top of an underlying NodeJS driver of the user's choice. Hosting a database cluster in the cloud via Aurora is able to provide users with sets of features and configurations to obtain maximum performance and availability, such as database failover. However, at the moment, most existing drivers do not currently support those functionalities or are not able to entirely take advantage of it. The main idea behind the AWS Advanced NodeJS Wrapper is to add a software layer on top of an existing NodeJS driver that would enable all the enhancements brought by Aurora, without requiring users to change their workflow with their databases and existing NodeJS drivers. (#205)
 
-**aws-client-monitor**
+**aws-advanced-python-wrapper**
 
-[aws-client-monitor](https://aws-oss.beachgeek.co.uk/496) is a new tool from Roman Tsypuk designed to analyse applications interacting with AWS services. It's particularly useful during local development, troubleshooting, or profiling third-party applications. It allows you to do real-time monitoring, capturing and displaying AWS API invocations in real time, and is easy to get started with. It comes with a gorgeous dashboard, so this is on my todo list to try out. (#207)
-
-**aws-iatk**
-
-[aws-iatk](https://aws-oss.beachgeek.co.uk/3fc) AWS Integrated Application Test Kit (IATK), a new open-source test library that makes it easier for developers to create tests for cloud applications with increased speed and accuracy. With AWS IATK, developers can quickly write tests that exercise their code and its AWS integrations against an environment in the cloud, making it easier to catch mistakes early in the development process. IATK includes utilities to generate test events, validate event delivery and structure in Amazon EventBridge Event Bus, and assertions to validate call flow using AWS X-Ray traces. The [AWS IATK](https://aws-oss.beachgeek.co.uk/3g0) is available for Python3.8+. To help you get started, check out the supporting blog post from Dan Fox and Brian Krygsman, [Introducing the AWS Integrated Application Test Kit (IATK)](https://aws-oss.beachgeek.co.uk/3fz). (#180)
+[aws-advanced-python-wrapper](https://aws-oss.beachgeek.co.uk/3xc) is complementary to and extends the functionality of an existing Python database driver to help an application take advantage of the features of clustered databases on AWS. It wraps the open-source Psycopg and the MySQL Connector/Python drivers and supports Python versions 3.8 or newer. You can install the aws-advanced-python-wrapper package using the pip command along with either the psycpg or mysql-connector-python open-source packages. The wrapper driver relies on monitoring database cluster status and being aware of the cluster topology to determine the new writer. This approach reduces switchover and failover times from tens of seconds to single digit seconds compared to the open-source drivers. Check the README for more details and example code on how to use this. (#199)
 
 **aws-cdk-imagebuilder-sample**
 
@@ -695,10 +719,17 @@ You can populate observations into a datastore and make them available to your h
 
 [aws-cdk-stack-builder-tool](https://aws-oss.beachgeek.co.uk/3g3) or AWS CDK Builder, is a browser-based tool designed to streamline bootstrapping of Infrastructure as Code (IaC) projects using the AWS Cloud Development Kit (CDK). Equipped with a dynamic visual designer and instant TypeScript code generation capabilities, the CDK Builder simplifies the construction and deployment of CDK projects. It stands as a resource for all CDK users, providing a platform to explore a broad array of CDK constructs. Very cool indeed, and you can deploy on AWS Cloud9, so that this project on my weekend to do list. (#180)
 
+**aws-client-monitor**
+
+[aws-client-monitor](https://aws-oss.beachgeek.co.uk/496) is a new tool from Roman Tsypuk designed to analyse applications interacting with AWS services. It's particularly useful during local development, troubleshooting, or profiling third-party applications. It allows you to do real-time monitoring, capturing and displaying AWS API invocations in real time, and is easy to get started with. It comes with a gorgeous dashboard, so this is on my todo list to try out. (#207)
+
+**aws-cloudformation-starterkit**
+
+[aws-cloudformation-starterkit](https://aws-oss.beachgeek.co.uk/434) is a new project from AWS Community Builder Danny Steenman that should accelerate AWS infrastructure deployment for CloudFormation users. It's designed for both beginners and seasoned pros, featuring quick CI/CD setup, multi-environment support, and automated security checks. Very nice repo, clear and detailed documentation, so make sure you check this project out.(#203)
+
 **aws-external-package-security**
 
 [aws-external-package-security](https://aws-oss.beachgeek.co.uk/3g2) provides code to setup a solution that demonstrates how you can deploy AWS Code Services (e.g., AWS CodePipeline, AWS CodeBuild, Amazon CodeGuru Security, AWS CodeArtifact) to orchestrate secure access to external package repositories from an Amazon SageMaker data science environment configured with multi-layer security. The solution can also be expanded upon to account for general developer workflows, where developers use external package dependencies. (#180)
-
 
 **aws-lambda-java-profiler**
 
@@ -714,17 +745,13 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [aws-lint-iam-policies](https://aws-oss.beachgeek.co.uk/3pe)  runs IAM policy linting checks against either a single AWS account or all accounts of an AWS Organization. Reports on policies that violate security best practices or contain errors. Supports both identity-based and resource-based policies. Optionally dumps all policies analysed. The actual linting is performed by the AWS IAM Access Analyzer policy validation feature, which is mostly known for showing recommendations when manually editing IAM policies on the AWS Console UI. The repo provides additional blog posts to help you get started, as well as more details on how this works with supporting resources (#191)
 
+**aws-iatk**
+
+[aws-iatk](https://aws-oss.beachgeek.co.uk/3fc) AWS Integrated Application Test Kit (IATK), a new open-source test library that makes it easier for developers to create tests for cloud applications with increased speed and accuracy. With AWS IATK, developers can quickly write tests that exercise their code and its AWS integrations against an environment in the cloud, making it easier to catch mistakes early in the development process. IATK includes utilities to generate test events, validate event delivery and structure in Amazon EventBridge Event Bus, and assertions to validate call flow using AWS X-Ray traces. The [AWS IATK](https://aws-oss.beachgeek.co.uk/3g0) is available for Python3.8+. To help you get started, check out the supporting blog post from Dan Fox and Brian Krygsman, [Introducing the AWS Integrated Application Test Kit (IATK)](https://aws-oss.beachgeek.co.uk/3fz). (#180)
+
 **aws-pdk**
 
 [aws-pdk](https://aws-oss.beachgeek.co.uk/3jb) the AWS Project Development Kit (AWS PDK) is an open-source tool to help bootstrap and maintain cloud projects. It provides building blocks for common patterns together with development tools to manage and build your projects. The AWS PDK lets you define your projects programatically via the expressive power of type safe constructs available in one of 3 languages (typescript, python or java). Under the covers, AWS PDK is built on top of Projen. The AWS Bites Podcast provides an overview of the AWS Project Development Kit (PDK), and the hosts discuss what PDK is, how it can help generate boilerplate code and infrastructure, keep configuration consistent across projects, and some pros and cons of using a tool like this versus doing it manually. (#184)
-
-**aws-advanced-python-wrapper**
-
-[aws-advanced-python-wrapper](https://aws-oss.beachgeek.co.uk/3xc) is complementary to and extends the functionality of an existing Python database driver to help an application take advantage of the features of clustered databases on AWS. It wraps the open-source Psycopg and the MySQL Connector/Python drivers and supports Python versions 3.8 or newer. You can install the aws-advanced-python-wrapper package using the pip command along with either the psycpg or mysql-connector-python open-source packages. The wrapper driver relies on monitoring database cluster status and being aware of the cluster topology to determine the new writer. This approach reduces switchover and failover times from tens of seconds to single digit seconds compared to the open-source drivers. Check the README for more details and example code on how to use this. (#199)
-
-**aws-cloudformation-starterkit**
-
-[aws-cloudformation-starterkit](https://aws-oss.beachgeek.co.uk/434) is a new project from AWS Community Builder Danny Steenman that should accelerate AWS infrastructure deployment for CloudFormation users. It's designed for both beginners and seasoned pros, featuring quick CI/CD setup, multi-environment support, and automated security checks. Very nice repo, clear and detailed documentation, so make sure you check this project out.(#203)
 
 **aws-rotate-key**
 
@@ -733,6 +760,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 **aws-scps-for-sandbox-and-training-accounts**
 
 [aws-scps-for-sandbox-and-training-accounts](https://aws-oss.beachgeek.co.uk/3pf) is a collection of example Service Control Policies (SCPs) that are useful for sandbox and training AWS accounts. The SCPs deny API calls that change baseline account settings (contacts, billing, tax settings, etc.), have long-term financial effects (purchases and reservations) or operate outside allow-listed AWS regions or services. (#191)
+
+**aws-sdk-python**
+
+[aws-sdk-python](https://aws-oss.beachgeek.co.uk/4da) is a repo that contains **experimental async clients for the AWS SDK for Python**. These new clients will allow you to interact with select AWS services that can best utilise Python's async functionality. Unlike Boto3, these clients are distributed per-service, leaving you the option to pick what fits your needs. Please note that this new project is in early development and will be seeing rapid iteration over the coming months. This may mean instability in both public interfaces and general behaviours. Until the project releases version 1.0.0, breaking changes may occur between minor versions of the SDK. We'd strongly advise strict pinning to a version of the SDK for any non-experimental use cases.(#210)
 
 **awsesh**
 
@@ -926,6 +957,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [middy-mcp](https://aws-oss.beachgeek.co.uk/4bk) provides [Middy](https://github.com/middyjs/middy) [middleware](https://middy.js.org/)  (a Node.js middleware engine for AWS Lambda that helps you organise your Lambda code, remove code duplication, and focus on business logic) for Model Context Protocol (MCP) server integration with AWS Lambda functions. It provides a convenient way to handle MCP requests and responses within your Lambda functions using the Middy middleware framework. It supports requests sent to AWS Lambda from API Gateway (both REST API / v1 and HTTP API / v2) using the Proxy integration, as well as requests sent form an ALB. Check out the README for some code examples of how you might use this. (#209)
 
+**mkdocs-mcp**
+
+[mkdocs-mcp](https://aws-oss.beachgeek.co.uk/4d2) is another project from **AWS Hero Michael Walmsley** that provides search functionality for any MkDocs powered site. This server relies on the existing MkDocs search implementation using the Lunr.Js search engine. (#210)
+
 **outtasync**
 
 [outtasync](https://aws-oss.beachgeek.co.uk/3y0) helps users quickly identify the CloudFormation stacks that have gone out of sync with the state represented by their counterpart stack files. This can occur when someone updates a stack but fails to commit the latest stack file to the codebase. Alternatively, it may happen when a stack is updated on one deployment environment but not on others. Great documentation with examples and a video that provides everything you need to know. (#199)
@@ -933,6 +968,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 **pagemosaic-website-starter**
 
 [pagemosaic-website-starter](https://aws-oss.beachgeek.co.uk/3gp) is an open source tool from Alex Pust that helps you to host static websites on AWS, using AWS CDK under the covers from the looks of things. To deploy your website, simply transfer your website files to the /platform/web-app directory. Following this, execute the command pnpm deploy-platform to initiate the deployment process. Nice use of You Tube videos in the README to help you get started. (#181)
+
+**powertools-mcp**
+
+[powertools-mcp](https://aws-oss.beachgeek.co.uk/4cz) is a very nice project from **AWS Hero  Michael Walmsley** that provides search functionality for AWS Lambda Powertools documentation across multiple runtimes. This project implements an MCP server that enables Large Language Models (LLMs) to search through AWS Lambda Powertools documentation. It uses lunr.js for efficient local search capabilities and provides results that can be summarised and presented to users.  Good documentation, with examples on how to get started with MCP clients like Claude Desktop (but should work with Amazon Q CLI too) (#210)
 
 **pristup**
 
@@ -1093,6 +1132,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [aws-external-package-security](https://aws-oss.beachgeek.co.uk/3g2) provides code to setup a solution that demonstrates how you can deploy AWS Code Services (e.g., AWS CodePipeline, AWS CodeBuild, Amazon CodeGuru Security, AWS CodeArtifact) to orchestrate secure access to external package repositories from an Amazon SageMaker data science environment configured with multi-layer security. The solution can also be expanded upon to account for general developer workflows, where developers use external package dependencies. (#180)
 
+**aws-finops-dashboard**
+
+[aws-finops-dashboard](https://aws-oss.beachgeek.co.uk/4d3) is a terminal-based AWS cost and resource dashboard from **Ravi Kiran Vallamkonda** built with Python and the Rich library. It provides multi-account cost summaries by time period, service, and cost allocation tags; budget limits vs. actuals; EC2 instance status; six‑month cost trend charts; and “FinOps audit” reports (e.g. untagged or idle resources). It can export data to CSV/JSON/PDF.(#210)
+
 **aws-health-events-insight**
 
 [aws-health-events-insight](https://aws-oss.beachgeek.co.uk/48z) this project provides a very nice solution to centralise, store and then analyse your AWS Health events. Health Events Intelligence Dashboards and Insights (HEIDI) Data Collection Framework enables you to collect data from different accounts, regions and organisations. Check out the README for more details  including how to deploy and configure this solution in your AWS environment.(#207)
@@ -1189,6 +1232,10 @@ Observation Extractor takes an unstructured data file as input (like a pdf) and 
 
 You can populate observations into a datastore and make them available to your human and AI users. They can be queried based on metadata like date and the specific questions they relate too. You can define question sets that represent thought process of a subject-matter-expert coming up to speed on this case to start mapping a document into useful observations.(#208)
 
+**openops**
+
+[openops](https://aws-oss.beachgeek.co.uk/4d4)  is a No-Code FinOps automation platform that helps organisations reduce cloud costs and streamline financial operations. It provides customisable workflows to automate key FinOps processes like allocation, unit economics, anomaly management, workload optimisation, safe de-provisioning and much, much more. It is not limited to AWS, and you can use it across your broader technical stack.(#210)
+
 **orgs-prescriptive-guidance**
 
 [orgs-prescriptive-guidance](https://aws-oss.beachgeek.co.uk/41g) This repository contains a collection of AWS CloudFormation templates to create up an AWS Organizations structure. So if you are looking to implement this, or are curious and want to dig into the code to find out more, check out this repo. (#202)
@@ -1208,6 +1255,10 @@ You can populate observations into a datastore and make them available to your h
 **s3-restore-and-copy-progress-monitoring**
 
 [s3-restore-and-copy-progress-monitoring](https://aws-oss.beachgeek.co.uk/3o3) this is a very comprehensive and polished repo that provides an example of how you can restore data that you have stored in S3, providing you a single visualised dashboard to monitor the restore and copy progress within a defined scope.(#189)
+
+**sample-service-quotas-replicator-for-aws**
+
+[sample-service-quotas-replicator-for-aws](https://aws-oss.beachgeek.co.uk/4d5) is a code repo that contains sample code for the AWS Quota Replicator (AQR) tool, which demonstrates how to build a solution for comparing and managing service quotas across AWS accounts and regions. This tool was proudly built with the assistance of AWS Q Developer by **Kirankumar Chandrashekar** and **Gopinath Jagadesan**.   This tool hopes to simplify one of the most challenging aspects of AWS multi-account management: service quotas. The AWS Service Quotas Replicator helps you: 1/ Compare quotas across accounts/regions with visual indicators, 2/ Request quota increases with just a few clicks, 3/ Track request status in real-time, and 4/ Identify critical quota gaps before they impact your workloads. (#210)
 
 **service-screener-v2**
 
@@ -1422,6 +1473,10 @@ You can populate observations into a datastore and make them available to your h
 
 [sample-code-for-a-secure-vault-using-aws-nitro-enclaves](https://aws-oss.beachgeek.co.uk/43c) - This repository contains a sample secure vault solution built using AWS Nitro Enclaves, a feature available exclusively through the AWS Nitro System hypervisor on supported Amazon EC2 instances. A vault solution is useful when you need to ensure sensitive data (such as Protected Health Information (PHI)/Personally Identifiable Information (PII)) is properly secured at rest and can only be decrypted through approved channels. Check out more details about how cool Nitro Enclaves are by reading the supporting documentation for this project, [About the AWS Nitro Enclaves Vault](https://aws-oss.beachgeek.co.uk/43b).(#203)
 
+**security-hardened-amis-for-eks**
+
+[security-hardened-amis-for-eks](https://aws-oss.beachgeek.co.uk/4d1) provides a fully automated solution to create security-hardened Amazon EKS AMIs that comply with either CIS Level 1 or Level 2 standards. This solution will help you if you are looking for guidance on how to generate a CIS-hardened AMI for EKS, as well as if you are encountering issues with workloads running on your own custom, CIS-hardened AMIs. (#210)
+
 **security-hub-compliance-analyzer**
 
 [security-hub-compliance-analyzer](https://aws-oss.beachgeek.co.uk/41s) this repo provides a compliance analysis tool which enables organisations to more quickly articulate their compliance posture and also generate supporting evidence artefacts. Security Hub Compliance Analyzer (SHCA) generates artefacts in support of Department of Defense Risk Management Framework (RMF) Information System accreditation. Utilising Amazon Web Services provided documentation, mapping NIST800-53-Rev-5 Controls to AWS Security Hub Security Control IDs, SHCA requests the current environment compliance from Security Hub and generates a zip file stored in Amazon S3 containing discrete artefacts in CSV, JSON, OCSF providing SecOps with artefacts to import into the RMF tool.(#202)
@@ -1445,6 +1500,10 @@ You can populate observations into a datastore and make them available to your h
 **terraform-aws-vulne-soldier**
 
 [terraform-aws-vulne-soldier](https://aws-oss.beachgeek.co.uk/47f) is a new project from Victor Omolayo that provides an AWS EC2 vulnerability remediation tool designed to automate the process of patching nodes managed by AWS Systems Manager. He has put together a blog post, [vulne-soldier: AWS EC2 Vulnerability Remediation Tool](https://aws-oss.beachgeek.co.uk/47g) that provides more detail on the project and background as to why he created it as well as how to get started. (#206)
+
+**threat-designer**
+
+[threat-designer](https://aws-oss.beachgeek.co.uk/4d7)  is a GenerativeAI application designed to automate and streamline the threat modelling process for secure system design. Harnessing the power of large language models (LLMs), it analyzes system architectures, identifies potential security threats, and generates detailed threat models. By automating this complex and time-intensive task, Threat Designer empowers developers and security professionals to seamlessly incorporate security considerations from the earliest stages of development, enhancing both efficiency and system resilience. Check out the README as it has more detail, including sample screen shots of what you can expect. (#210)
 
 **validate-aws-policies**
 
@@ -1476,6 +1535,9 @@ You can populate observations into a datastore and make them available to your h
                                                                  
 [ebsight](https://aws-oss.beachgeek.co.uk/490) is a Python-based analysis tool developed by Stephen Jones in response to AWS's new EBS snapshot size reporting feature. This tool leverages the newly introduced FullSnapshotSizeInBytes field to provide comprehensive insights into EBS volume usage, performance metrics, and cost optimisation opportunities. After you have checked the repo out and gone through the README, why not read the supporting blog post, [Unleash the Power of EBSight for Optimal AWS Storage Management](https://aws-oss.beachgeek.co.uk/491) (#207)
 
+**eks-auto-mode-ebs-migration-tool**
+
+[eks-auto-mode-ebs-migration-tool](https://aws-oss.beachgeek.co.uk/4d9) is a tool you can use to migrate a Persistent Volume Claim from a standard EBS CSI StorageClass (ebs.csi.aws.com) to the Amazon EKS Auto EBS CSI StorageClass (ebs.csi.eks.amazonaws.com) or vice-versa. Check out the README for some important details about using this tool.(#210)
 
 **fsx-to-s3-int**
 
@@ -1810,6 +1872,11 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **cost-news-slack-bot**
 
 [cost-news-slack-bot](https://aws-oss.beachgeek.co.uk/3or) is a tool written in Python that read an RSS feed and selectively publish articles, based on keywords, to Slack via Webhook.  In the example, the tool checks the AWS 'What's New' RSS feed every minute for announcements related to cost optimisation. Perfect for customising and using it for your own use cases. (#190)
+
+**deploy-crewai-agents-terraform**
+
+[deploy-crewai-agents-terraform](https://aws-oss.beachgeek.co.uk/4d6) is a project designed to help you perform security audits and generate reports for your AWS infrastructure using a multi-agent AI system, leveraging the powerful and flexible framework provided by CrewAI. The AWS Security Auditor Crew architecture combines CrewAI's multi-agent framework with AWS services to provide comprehensive security auditing capabilities. The system can be deployed locally or to AWS using Terraform, with Amazon Bedrock powering the AI agents. (#210)
+
 
 **deploy-langfuse-on-ecs-with-fargate**
 
