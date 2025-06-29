@@ -33,9 +33,17 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [amazon-bedrock-serverless-prompt-chaining](https://aws-oss.beachgeek.co.uk/3jy) this repository provides examples of using AWS Step Functions and Amazon Bedrock to build complex, serverless, and highly scalable generative AI applications with prompt chaining. (#184)
 
+**amazon-q-developer-cli-webui**
+
+[amazon-q-developer-cli-webui](https://aws-oss.beachgeek.co.uk/4f5) is a very nice project from **AWS Community Builder Gabriel Koo** that allows you to run Amazon Q CLI via a web ui. He put together a post that explains the itch he was trying to scratch, and I have to say that this is on my weekend list of projects to try out. Go read the post, [Why I Built a Web UI for Amazon Q Developer CLI (And How I Vibe-Coded It)](https://dev.to/aws-builders/why-i-built-a-web-ui-for-amazon-q-developer-cli-and-how-i-vibe-coded-it-54d6).(#211)
+
 **amazon-sagemaker-pipeline-deploy-manage-100x-models-python-cdk**
 
 [amazon-sagemaker-pipeline-deploy-manage-100x-models-python-cdk](https://aws-oss.beachgeek.co.uk/3lu) This GitHub repository showcases the implementation of a comprehensive end-to-end MLOps pipeline using Amazon SageMaker pipelines to deploy and manage 100x machine learning models. The pipeline covers data pre-processing, model training/re-training, hyper-parameter tuning, data quality check, model quality check, model registry, and model deployment. Automation of the MLOps pipeline is achieved through Continuous Integration and Continuous Deployment (CI/CD). Machine learning model for this sample code is SageMaker built-in XGBoost algorithm.(#186)
+
+**amazon-q-vibes-memory-banking**
+
+[amazon-q-vibes-memory-banking](https://aws-oss.beachgeek.co.uk/4fd) is from **AWS Serverless Community Builder Nicola Cremaschini** who shares his approach to using AI Coding Assistants like Amazon Q Developer, to provide more consistent outcomes. The Q-Vibes framework helps maintain context across AI assistant sessions through 5 lightweight files, enabling quick prototype development without losing momentum between sessions. (#211)
 
 **awesome-codewhisperer**
 
@@ -347,6 +355,10 @@ You can populate observations into a datastore and make them available to your h
 
 [smart-assistant-agent](https://aws-oss.beachgeek.co.uk/3rd) is a project from AWS Community Builder Darya Petrashka that provides a solution to building an AWS Bedrock agent acting as a Telegram chat assistant. Check out the README for example videos of what this can do, as well as very detailed deployment instructions. (#193)
 
+**strands-ts**
+
+[strands-ts](https://aws-oss.beachgeek.co.uk/4ed) is an experimental SDK for Strands for TypeScript developers from AWS Serverless Community Builder **Ryan Cormack**.  It is an AI generated migration of the Python SDK to TypeScript, using the same architecture and design principles. It is not a direct translation but rather a reimagining of the SDK in TypeScript, leveraging its features and idioms.(#211)
+
 **streamlit-bedrock-claude-sample**
 
 [streamlit-bedrock-claude-sample](https://aws-oss.beachgeek.co.uk/437) - I have featured Gary Stafford's open source projects and blog posts regularly in this newsletter. Gary has built a number of simple Streamlit applications to make it easy access the latest models and features of Amazon Web Services (AWS) Amazon Bedrock as part of several talks, workshops, and demonstrations he has done.  As part these, he has put together a simple Streamlit application that uses the Amazon Bedrock boto3 Python SDK to call the latest Anthropic Claude 3 family of multimodal foundation models. The application accepts a system and user prompt and generates a text-based response. The Streamlit app can be easily modified to incorporate new Bedrock features or as a starting point for your own applications. (#203)
@@ -475,6 +487,10 @@ You can populate observations into a datastore and make them available to your h
 **fargate-on-demand**
 
 [fargate-on-demand](https://aws-oss.beachgeek.co.uk/3mv) this repo provides the code that shows you how you can cost optimise your container applications and then control scale down (or up) as needed. Yoanna Krasteva has put together a blog post that provides you with why and how you can configure this in the post, [Cost saving with AWS Fargate On-Demand](https://aws-oss.beachgeek.co.uk/3mw).(#188)
+
+**finch-mcp-server**
+
+[finch-mcp-server](https://aws-oss.beachgeek.co.uk/4ep) is the source code for the Finch MCP Server,  that enables generative AI models to build and push container images through finch cli leveraged MCP tools. It currently can build container images using Finch, push those images onto container registries (like Amazon ECR) creating them if needed, and manage all your Finch configuration files. The json configuration files that you will need for your MCP Clients [can be found here](https://awslabs.github.io/mcp/servers/finch-mcp-server/), together with additional info on dependencies and how this works. (#211)
 
 **how-high-is-my-salary-enclave-app**
 
@@ -687,6 +703,14 @@ You can populate observations into a datastore and make them available to your h
 
 [amazon-q-developer-cli](https://aws-oss.beachgeek.co.uk/466) is the repo that houses most of the core code for the Amazon Q Developer desktop app and CLI, adding autocomplete and AI to your existing terminal on macOS & Linux. (#205)
 
+**amazon-q-developer-cli-webui**
+
+[amazon-q-developer-cli-webui](https://aws-oss.beachgeek.co.uk/4f5) is a very nice project from **AWS Community Builder Gabriel Koo** that allows you to run Amazon Q CLI via a web ui. He put together a post that explains the itch he was trying to scratch, and I have to say that this is on my weekend list of projects to try out. Go read the post, [Why I Built a Web UI for Amazon Q Developer CLI (And How I Vibe-Coded It)](https://dev.to/aws-builders/why-i-built-a-web-ui-for-amazon-q-developer-cli-and-how-i-vibe-coded-it-54d6).(#211)
+
+**amazon-q-vibes-memory-banking**
+
+[amazon-q-vibes-memory-banking](https://aws-oss.beachgeek.co.uk/4fd) is from **AWS Serverless Community Builder Nicola Cremaschini** who shares his approach to using AI Coding Assistants like Amazon Q Developer, to provide more consistent outcomes. The Q-Vibes framework helps maintain context across AI assistant sessions through 5 lightweight files, enabling quick prototype development without losing momentum between sessions. (#211)
+
 **amazon-sqs-python-extended-client-lib**
 
 [amazon-sqs-python-extended-client-lib](https://aws-oss.beachgeek.co.uk/3ti) this repo (Amazon SQS Extended Client) allows clients to manage Amazon SQS message payloads that exceed the 256 KB message size limit, up to a size of 2 GB. In the event of publishing such large messages, the client accomplishes this feat by storing the actual payload in a S3 bucket and by storing the reference of the stored object in the SQS queue. Similarly, the extended-client is also used for retrieving and dereferencing these references of message objects stored in S3.  Check out the docs for more details on how this works and some sample code to get you going. (#195)
@@ -730,6 +754,10 @@ You can populate observations into a datastore and make them available to your h
 **aws-external-package-security**
 
 [aws-external-package-security](https://aws-oss.beachgeek.co.uk/3g2) provides code to setup a solution that demonstrates how you can deploy AWS Code Services (e.g., AWS CodePipeline, AWS CodeBuild, Amazon CodeGuru Security, AWS CodeArtifact) to orchestrate secure access to external package repositories from an Amazon SageMaker data science environment configured with multi-layer security. The solution can also be expanded upon to account for general developer workflows, where developers use external package dependencies. (#180)
+
+**aws-lambda-mcp-cookbook**
+
+[aws-lambda-mcp-cookbook](https://aws-oss.beachgeek.co.uk/4fc) is a repository from **AWS Hero Ran Isenberg** that provides a working, deployable, open source-based, serverless MCP server blueprint with an AWS Lambda function and AWS CDK Python code with all the best practices and a complete CI/CD pipeline.  Checkout the README for details of how this is put together, and how to get started. (#211)
 
 **aws-lambda-java-profiler**
 
@@ -813,6 +841,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [csr-builder-for-kms](https://aws-oss.beachgeek.co.uk/40h) provides a Python library for creating and signing X.509 certificate signing requests (CSRs) with KMS Keys. (#201)
 
+**cdk-diff-action**
+
+[cdk-diff-action](https://aws-oss.beachgeek.co.uk/4f0) from **Cory Hall**, provides a GitHub Action to run "cdk diff" on your PRs to track infrastructure changes.(#211)
+
 **cdk-express-pipeline**
 
 [cdk-express-pipeline](https://aws-oss.beachgeek.co.uk/43g) is the latest project from AWS Hero Rehan van der Merwe (who's project I use to track usage metrics of this newsletter!) which provides an alternative to those of you who want to use some of the features of AWS CDK Pipelines, but perhaps need it less opinionated. CDK Express Pipelines is a library built on the AWS CDK, allowing you to define pipelines in a CDK-native method. It leverages the CDK CLI to compute and deploy the correct dependency graph between Waves, Stages, and Stacks using the .addDependency method, making it build-system agnostic and an alternative to AWS CDK Pipelines. Check out the clear documentation which will help you get started in no time.(#203)
@@ -820,6 +852,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 **cdk-notifier**
 
 [cdk-notifier](https://aws-oss.beachgeek.co.uk/3it) is a lightweight CLI tool to parse a CDK log file and post changes to pull request requests. Can be used to get more confidence on approving pull requests because reviewer will be aware of changes done to your environments. I am not sure whether this is an old tool, but I have only just found out about it thanks to the blog post from AWS Community Builder, Johannes Konings. He put together [Use cdk-notifier to compare changes in pull requests](https://aws-oss.beachgeek.co.uk/3iu) that explains in more details how this works and walks you through using it. (#183)
+
+**cdk-sops-secrets**
+
+[cdk-sops-secrets](https://aws-oss.beachgeek.co.uk/4ex) helps you create secret values in AWS with infrastructure-as-code easily by providing a CDK construct library that facilitate syncing SOPS-encrypted secrets to AWS Secrets Manager and SSM Parameter Store. It enables secure storage of secrets in Git repositories while allowing seamless synchronisation and usage within AWS. Even large sets of SSM Parameters can be created quickly from a single file. Detailed README with plenty of examples of how you can use this. Very nice.(#211)
 
 **cdk-vscode-server**
 
@@ -880,6 +916,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 **db-top-monitoring**
 
 [db-top-monitoring](https://aws-oss.beachgeek.co.uk/3ph)  is lightweight application to perform realtime monitoring for AWS Database Resources. Based on same simplicity concept of Unix top utility, provide quick and fast view of database performance, just all in one screen.  The README is very details and comprehensive, so if you are doing any sort of work with databases, and need to understand the performance characteristics, this is a project you should explore. (#191)
+
+**deploy-time-build**
+
+[deploy-time-build](https://aws-oss.beachgeek.co.uk/4ey) is an AWS CDK L3 construct that allows you to run a build job for specific purposes. Currently this library supports the following use cases: 1/ Build web frontend static files, 2/Build a container image, and 3/Build Seekable OCI (SOCI) indices for container images. Nice README with plenty of example code on how you can use against these use cases.(#211)
 
 **diagram-as-code**
 
@@ -1052,6 +1092,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [sparklepop](https://aws-oss.beachgeek.co.uk/3z2) is a simple Python package from Daniel B designed to check the free disk space of an AWS RDS instance. It leverages AWS CloudWatch to retrieve the necessary metrics. This package is intended for users who need a straightforward way to monitor disk space without setting up complex alerts. (#200)
 
+**strands-ts**
+
+[strands-ts](https://aws-oss.beachgeek.co.uk/4ed) is an experimental SDK for Strands for TypeScript developers from AWS Serverless Community Builder **Ryan Cormack**.  It is an AI generated migration of the Python SDK to TypeScript, using the same architecture and design principles. It is not a direct translation but rather a reimagining of the SDK in TypeScript, leveraging its features and idioms.(#211)
+
 **stree**
 
 [stree](https://aws-oss.beachgeek.co.uk/3o1) this project from Takafumi Miyanaga is a CLI tool designed to visualize the directory tree structure of an S3 bucket.
@@ -1068,6 +1112,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **tsynamo**
 
 [tsynamo](https://aws-oss.beachgeek.co.uk/3td) is a project from that Olli Warro that simplifies the DynamoDB API so that you don't have to write commands with raw expressions and hassle with the attribute names and values. Moreover, Tsynamo makes sure you use correct types in your DynamoDB expressions, and the queries are nicer to write with autocompletion. Olli was inspired by another project ([Kysely](https://aws-oss.beachgeek.co.uk/3tm)), and so built this project so that he could do similar using Amazon DynamoDB. (#195)
+
+**type-safe-cdk-env**
+
+[type-safe-cdk-env](https://aws-oss.beachgeek.co.uk/4f4) is from **AWS Community Builder Dakota Lewallen** and provides a TypeScript library that provides type-safe environment configuration for AWS CDK stacks using Zod for schema validation (Helper function to parse JSON files into environment variables within CDK stacks). Check out the README for example code and more details.(#211)
 
 **vscode-on-ec2-for-prototyping**
 
@@ -1171,6 +1219,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **chaos-machine**
 
 [chaos-machine](https://aws-oss.beachgeek.co.uk/4ao) is a complete chaos engineering workflow that enables customers to run controlled chaos experiments and test hypotheses related to system behaviour. Chaos Machine uses metric and alarm data from both Amazon CloudWatch and Prometheus as inputs to evaluate system behaviour before, during, and after the experiment. The Chaos Machine provides a simple, consistent way to organise and execute chaos experiments, and is appropriate to use for both building and conducting ad-hoc experiments or integrating into more sophisticated automation pipelines. Chaos Machine uses the AWS Fault Injection Service (FIS) to run controlled experiments, and AWS Step Functions and AWS Lambda for orchestration and execution.(#208)
+
+**cloudwatch-logs-analyzer**
+
+[cloudwatch-logs-analyzer](https://aws-oss.beachgeek.co.uk/4f2) is an interesting tool from **AWS Community Builder Hafiz Syed Ashir Hassan** that uses Amazon Agent Strands to analyse CloudWatch logs, identify errors, and provide solutions based on either its own knowledge or a connected knowledge base. He has put together a blog post to help you get started, [Automating CloudWatch Log Analysis with Amazon Strands Agent: Meet the CloudWatch Analyzer](https://aws-oss.beachgeek.co.uk/4f3). (#211)
 
 **cloudcatalog**
 
@@ -1349,6 +1401,10 @@ You can populate observations into a datastore and make them available to your h
 
 [aws-lint-iam-policies](https://aws-oss.beachgeek.co.uk/3pe)  runs IAM policy linting checks against either a single AWS account or all accounts of an AWS Organization. Reports on policies that violate security best practices or contain errors. Supports both identity-based and resource-based policies. Optionally dumps all policies analysed. The actual linting is performed by the AWS IAM Access Analyzer policy validation feature, which is mostly known for showing recommendations when manually editing IAM policies on the AWS Console UI. The repo provides additional blog posts to help you get started, as well as more details on how this works with supporting resources (#191)
 
+**aws-managed-kms-keys**
+
+[aws-managed-kms-keys](https://aws-oss.beachgeek.co.uk/4es) more goodness from the folks at **Fog Security**, this time providing a repo that provides a listing of AWS Managed KMS Keys and their associated policies in /reference_key_policies. There's a periodic scheduled job that will run and update the listings and data. The README does note that *"AWS managed keys are a legacy key type that are no longer being created for new AWS services as of 2021"* so you might not expect to see more AWS managed keys outside of the ones already listed (#211)
+
 **aws-mine**
 
 [aws-mine](https://aws-oss.beachgeek.co.uk/43k) is a project from Steven Smiley that should interest security folk. It provides a [honey](https://uk.norton.com/blog/iot/what-is-a-honeypot) token system for AWS, that allows you to create AWS access keys that can be placed in various places to tempt bad guys. If used, you will be notified within ~4 minutes. You can then investigate that asset to determine if it may have been compromised. (#203)
@@ -1397,6 +1453,10 @@ You can populate observations into a datastore and make them available to your h
 
 [awsviz](https://aws-oss.beachgeek.co.uk/3z1) is a super nice little tool from Bour Mohamed Abdelhadi, that helps you quickly visualy your IAM policies. You can check out the hosted version of [awsviz](https://aws-oss.beachgeek.co.uk/3z3) and there are some sample policies to show you what you can expect. Check out the[ use cases doc](https://aws-oss.beachgeek.co.uk/3z4) to see why you might want to try this tool out. (#200)
 
+**cdk-sops-secrets**
+
+[cdk-sops-secrets](https://aws-oss.beachgeek.co.uk/4ex) helps you create secret values in AWS with infrastructure-as-code easily by providing a CDK construct library that facilitate syncing SOPS-encrypted secrets to AWS Secrets Manager and SSM Parameter Store. It enables secure storage of secrets in Git repositories while allowing seamless synchronisation and usage within AWS. Even large sets of SSM Parameters can be created quickly from a single file. Detailed README with plenty of examples of how you can use this. Very nice.(#211)
+
 **cedar-access-control-for-k8s**
 
 [cedar-access-control-for-k8s](https://aws-oss.beachgeek.co.uk/47k) is a very very cool project from Micah Hausler, that extends Cedar to the Kubernetes control plane and allows you to implement fine grain policies in Cedar that allow you to have much greater control and flexibility of authorisation within your Kubernetes environments. If you are using Kubernetes, then reviewing this project is a must. Check out the video in the Videos section at the end for more info, where Micah walks you through how this works in more detail. (#206)
@@ -1441,9 +1501,22 @@ You can populate observations into a datastore and make them available to your h
 
 [duplicate-rule-detection-tool](https://aws-oss.beachgeek.co.uk/3oq) is a project to assess the current active AWS Config rules with potential duplicate scope in an AWS account. Our goal is to help customers can make informed decisions on how to streamline their AWS Config rules and reduce complexity. Plenty of examples and detailed breakdown of how this works in the README, so give it a look. (#190)
 
+**finders-keypers**
+
+[finders-keypers](https://aws-oss.beachgeek.co.uk/4et) is a command line tool that will explore your AWS account and kook for direct connections for KMS Keys and resources in your account. This tool supports both AWS Customer Managed KMS Keys and AWS Managed KMS Keys (with some additional details in the README that you should check out). Typical use cases where this tool is helpful includes security and audit for KMS Key and Resources, Data Protection with Encryption, discovering blast radius of a specific KMS Key, changing a KMS Key or rotating key material, checking Default Settings in AWS that create new resources with the KMS Key, and audit of your resources that a KMS Key may grant access to. README provide examples of how to run the cli against some of those use cases. Very nice tool indeed.(#211)
+
+
 **gen-ai-cve-patching**
 
 [gen-ai-cve-patching](https://aws-oss.beachgeek.co.uk/3vy) This repository introduces an innovative automated remediation pipeline, designed to effectively address vulnerabilities detected by AWS ECR Inspector. By leveraging Generative AI through Amazon Bedrock's in-context learning, this solution significantly enhances the security posture of application development workflows. The architecture integrates with CI/CD processes, offering a comprehensive and automated approach to vulnerability management. The architecture diagram provided illustrates the solution's key components and their interactions, ensuring a holistic vulnerability remediation strategy.(#197)
+
+**iam-collect**
+
+[iam-collect](https://aws-oss.beachgeek.co.uk/4ew) is a tool from **David Kerber** that helps you collect IAM information from all your AWS organization, accounts, and resources. This is built to run out of the box in simple use cases, and also work in terribly oppressive environments with a little more configuration. If you want to analyze IAM data at scale this is what you've been looking for.(#211)
+
+**iam-lens**
+
+[iam-lens](https://aws-oss.beachgeek.co.uk/4ev) is another tool from **David Kerber**, which builds upon iam-collect, and helps you evaluate your AWS IAM policies offline. It. helps you get visibility into the IAM permissions in your AWS Organizations and accounts. It will use your actual AWS IAM policies (downloaded via iam-collect) and evaluate the effective permissions. Hat tip to Eduard Agavriloae whose [social media](https://www.linkedin.com/posts/activity-7336269672012525569-C_Ao/) message tipped me off. (#211)
 
 **kye**
 
@@ -1461,6 +1534,10 @@ You can populate observations into a datastore and make them available to your h
 
 [pristup](https://aws-oss.beachgeek.co.uk/3se) is along similar lines to the previous project, except this project from my colleague Dark Mesaros, provides a way to generate temporary AWS Console sign-in URLs. The purpose of this is to enable your users that do not have AWS Console access, temporary access to it without the need for a username and password. As with all of Darko's projects, excellent documentation and examples abound in the README. (#194)
 
+**RunnaVault**
+
+[RunnaVault](https://aws-oss.beachgeek.co.uk/4eq) is a secure, serverless password management application built using AWS free-tier services and a React frontend. It enables users to create, manage, and share encrypted secrets (e.g., passwords) with individuals or groups, leveraging AWS Cognito for authentication, DynamoDB for storage, and KMS for encryption. Check out the repo for screenshots of what the app looks like as well as more technical implementation details (which you can deploy via OpenTofu/Terraform). I wish more READMEs would do this, but they also include some estimated costs of what it might cost to run this project in your AWS Account.(#211)
+
 **s3-prefix-level-kms-keys**
 
 [s3-prefix-level-kms-keys](https://aws-oss.beachgeek.co.uk/3os) is a demo of an approach to enforce Prefix level KMS keys on S3. At the moment, S3 supports default bucket keys that is used automatically to encrypt objects to that bucket. But no such feature exists for prefixes, (i.e) you might want to use different keys for different prefixes within the same bucket (rather than one key for the entire bucket). This project shows a potential solution on how to enforce prefix level KMS keys.(#190)
@@ -1472,6 +1549,10 @@ You can populate observations into a datastore and make them available to your h
 **sample-code-for-a-secure-vault-using-aws-nitro-enclaves**
 
 [sample-code-for-a-secure-vault-using-aws-nitro-enclaves](https://aws-oss.beachgeek.co.uk/43c) - This repository contains a sample secure vault solution built using AWS Nitro Enclaves, a feature available exclusively through the AWS Nitro System hypervisor on supported Amazon EC2 instances. A vault solution is useful when you need to ensure sensitive data (such as Protected Health Information (PHI)/Personally Identifiable Information (PII)) is properly secured at rest and can only be decrypted through approved channels. Check out more details about how cool Nitro Enclaves are by reading the supporting documentation for this project, [About the AWS Nitro Enclaves Vault](https://aws-oss.beachgeek.co.uk/43b).(#203)
+
+**secret**
+
+[secret](https://aws-oss.beachgeek.co.uk/4ez) is from **AWS Hero Matthew Bonig** and provides a CDK Construct to create Secrets Manager secrets without unexpectedly recreating them (avoiding the issue when you update the generateSecretString property, the secret gets recreated!). Detailed README including the design philosophy. (#211)
 
 **security-hardened-amis-for-eks**
 
@@ -1520,6 +1601,10 @@ You can populate observations into a datastore and make them available to your h
 **ww-project-eks-goat**
 
 [www-project-eks-goat](https://aws-oss.beachgeek.co.uk/4bp) this repo provides an immersive workshop on AWS ECR & EKS Security designed to take participants through real-world scenarios of attacking and defending Kubernetes clusters hosted on AWS EKS. This workshop provides a comprehensive approach, from understanding the anatomy of attacks on EKS clusters using AWS ECR to deploying robust defense mechanisms. Participants will learn how to backdoor AWS ECR image & exploit misconfigurations and vulnerabilities within AWS EKS, followed by the implementation of best security practices to safeguard the environment.This workshop is tailored for security professionals, cloud engineers, and DevOps teams looking to enhance their understanding of offensive and defensive Kubernetes security strategies. (#209)
+
+**yes3-scanner**
+
+[yes3-scanner](https://aws-oss.beachgeek.co.uk/4er) is the first in a series of projects from the folks at **Fog Security**, which scans an AWS Account for potential S3 security issues such as access issues such as Public Access, preventative S3 Security Settings, additional security such as encryption, and Ransomware Protection, Data Protection, and Recovery.(#211)
 
 ### Storage
 
@@ -2029,6 +2114,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **song-identification-on-aws**
 
 [song-identification-on-aws](https://aws-oss.beachgeek.co.uk/3qj) This repo contains sample code that demonstrates how you can "fingerprint" your songs, and then detect the presence of your songs in either stored audio files like MP3s, or within streaming media. The underlying idea is to convert audio data into a spectrogram, and then isolate important markers within the spectrogram that will allow us to identify music. Roughly 10000 to 25000 fingerprints will be created for an average length song. Each fingerprint is stored as a large integer. See the blog post for more details about how the system works. (#192)
+
+**strands-serverless**
+
+[strands-serverless](https://aws-oss.beachgeek.co.uk/4f1) is some sample code from my colleague **Didier Durand** that provides a serverless implementation of Strands Agents. This first experiment is the composition of Strands Agents with Chainlit (web-based interface) in one bundle. It delivers a complete AI agent in one Docker image running as an Amazon Lightsail virtual cloud server. (#211)
 
 **streamlit-bedrock-claude-sample**
 
