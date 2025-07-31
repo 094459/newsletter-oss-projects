@@ -12,6 +12,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [abc](https://aws-oss.beachgeek.co.uk/47t) is an AI bash tool that integrates with Amazon Bedrock as a foundation model provider. This tool will generate shell command(s) from natural language description using which ever LLM (generative AI) you configure, and place on the next shell prompt for editing and execution. Plenty of details in the README on how to configure and run this, so give it a go if you are looking for something that integrates with Amazon Bedrock.(#206)
 
+**agent-dev-toolkit**
+
+[agent-dev-toolkit](https://aws-oss.beachgeek.co.uk/4gx) or Agent Development Toolkit (ADT),  provides a single command-line interface that lets developers build, test, and iterate on Strands agents with ease during local development. The CLI unifies agent execution, observability, UI, and local containerisation into one cohesive developer experience, enabling developers to iterate and experiment faster with immediate feedback loops and streamlined workflows. Check out the detailed README file for more info on how to get started with this command line tool.(#212)
+
 **agent-evaluation**
 
 [agent-evaluation](https://aws-oss.beachgeek.co.uk/3vw)  is a generative AI-powered framework for testing virtual agents. Agent Evaluation implements an LLM agent (evaluator) that will orchestrate conversations with your own agent (target) and evaluate the responses during the conversation. The repo has links to detailed docs that provide example configurations and a reference guide to get you started. (#197)
@@ -86,6 +90,16 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 **bedrock-access-gateway**
 
 [bedrock-access-gateway](https://aws-oss.beachgeek.co.uk/3us) provides an OpenAI-compatible RESTful APIs for Amazon Bedrock. Amazon Bedrock offers a wide range of foundation models (such as Claude 3 Opus/Sonnet/Haiku, Llama 2/3, Mistral/Mixtral, etc.) and a broad set of capabilities for you to build generative AI applications. Check the Amazon Bedrock landing page for additional information. Sometimes, you might have applications developed using OpenAI APIs or SDKs, and you want to experiment with Amazon Bedrock without modifying your codebase. Or you may simply wish to evaluate the capabilities of these foundation models in tools like AutoGen etc. Well, this repository allows you to access Amazon Bedrock models seamlessly through OpenAI APIs and SDKs, enabling you to test these models without code changes.(#196)
+
+**bedrock-agentcore-sdk-python**
+
+[bedrock-agentcore-sdk-python](https://aws-oss.beachgeek.co.uk/4gt) is the public preview of the Bedrock AgentCore SDK. Amazon Bedrock AgentCore, a comprehensive set of enterprise-grade services that help developers quickly and securely deploy and operate AI agents at scale using any framework and model, hosted on Amazon Bedrock or elsewhere. Check out my colleague Danilo's blog post to find out more, [Introducing Amazon Bedrock AgentCore: Securely deploy and operate AI agents at any scale (preview)](https://aws-oss.beachgeek.co.uk/4gu) (#212)
+
+**bedrock-agentcore-starter-toolkit**
+
+[bedrock-agentcore-starter-toolkit](https://aws-oss.beachgeek.co.uk/4h3) provides a CLI toolkit for deploying AI agents to Amazon Bedrock AgentCore. Zero infrastructure management with built-in gateway and memory integrations. This is currently in public preview, so subject to breaking changes - so bear that in mind when you try this out. (#212)
+
+
 
 **bedrock-embed-web**
 
@@ -205,6 +219,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [guidance-for-natural-language-queries-of-relational-databases-on-aws](https://aws-oss.beachgeek.co.uk/337) this AWS Solution contains a demonstration of Generative AI, specifically, the use of Natural Language Query (NLQ) to ask questions of an Amazon RDS for PostgreSQL database. This solution offers three architectural options for Foundation Models: 1. Amazon SageMaker JumpStart, 2. Amazon Bedrock, and 3. OpenAI API. The demonstration's web-based application, running on Amazon ECS on AWS Fargate, uses a combination of LangChain, Streamlit, Chroma, and HuggingFace SentenceTransformers. The application accepts natural language questions from end-users and returns natural language answers, along with the associated SQL query and Pandas DataFrame-compatible result set.(#190)
 
+**langgraph-aws-deployment**
+
+[langgraph-aws-deployment](https://aws-oss.beachgeek.co.uk/4gj) this repo from **Ali mz** provides a script that simplifies deploying langgraph on yuor AWS environments. If you just want to kick the tires on an agent without managing EC2 or writing Terraform, this gets you from git clone to a public HTTPS endpoint in ~10 min. It’s opinionated (Fargate, ALB, Parameter Store) but easy to tweak. (#212)
+
 **llm-colosseum**
 
 [llm-colosseum](https://github.com/aws-banjo/llm-colosseum) is another repo that takes a more creative look at benchmarking your LLM's, this time using a classic video arcade fighting game.(#194)
@@ -266,6 +284,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **news-clustering-and-summarization**
 
 [news-clustering-and-summarization](https://aws-oss.beachgeek.co.uk/44l) this repository contains code for a near real-time news clustering and summarisation solution using AWS services like Lambda, Step Functions, Kinesis, and Bedrock. It demonstrates how to efficiently process, embed, cluster, and summarise large volumes of news articles to provide timely insights for financial services and other industries. This solution aims to launch a news Event feature that clusters related news stories into summaries, providing customers with near real-time updates on unfolding events. This augmented news consumption experience will enable users to easily follow evolving stories while maximising relevance and reducing the firehose of information for articles covering the same event. By tailoring news clusters around key events, this application can improve customer satisfaction and engagement. Detailed docs will help you get up and running in no time. (#204)
+
+**nova-prompt-optimizer**
+
+[nova-prompt-optimizer](https://aws-oss.beachgeek.co.uk/4h4) is a Python SDK for optimising prompts for Nova. Looks very comprehensive, so worth checking out the README. Again, public preview folks so bear this in mind.(#212)
 
 **observation-extractor**
 
@@ -527,6 +549,10 @@ You can populate observations into a datastore and make them available to your h
 
 [amazon-bedrock-synthetic-manufacturing-data-generator](https://aws-oss.beachgeek.co.uk/3ln) is a industry aligned synthetic data generation solution. Manufacturing processes generate large amounts of sensor data that can be used for analytics and machine learning models. However, this data may contain sensitive or proprietary information that cannot be shared openly. Synthetic data allows the distribution of realistic example datasets that preserve the statistical properties and relationships in the real data, without exposing confidential information. This enables more open research and benchmarking on representative data. Additionally, synthetic data can augment real datasets to provide more training examples for machine learning algorithms to generalize better. Data augmentation with synthetic manufacturing data can help improve model accuracy and robustness. Overall, synthetic data enables sharing, research, and expanded applications of AI in manufacturing while protecting data privacy and security.(#186)
 
+**amazon-datazone-mcp-server**
+
+[amazon-datazone-mcp-server](https://aws-oss.beachgeek.co.uk/4gz) repo provides a high-performance Model Context Protocol (MCP) server that provides seamless integration with Amazon DataZone services. This server enables AI assistants and applications to interact with Amazon DataZone APIs through a standardised interface.(#212)
+
 **amazon-kinesis-video-streams-dcep**
 
 [amazon-kinesis-video-streams-dcep](https://aws-oss.beachgeek.co.uk/4am) is the repo for the Data Channel Establishment Protocol (DCEP) library.  DCEP is a simple protocol for establishing symmetric data channels between WebRTC peers. It uses a two-way handshake and allows sending of user data without waiting for the handshake to complete. The peer that initiates opening a data channel selects a stream identifier for which the corresponding incoming and outgoing streams are unused and sends a DATA_CHANNEL_OPEN message on the outgoing stream. The peer responds with a DATA_CHANNEL_ACK message on its corresponding outgoing stream. Then the data channel is open. DCEP messages are sent on the same stream as the user messages belonging to the data channel. The demultiplexing is based on the SCTP Payload Protocol Identifier (PPID), since DCEP uses a specific PPID.(#208)
@@ -663,7 +689,14 @@ You can populate observations into a datastore and make them available to your h
 
 [sso-sync-to-amazon-rds](https://aws-oss.beachgeek.co.uk/3e2) This project sets up AWS Lambda functions, Amazon EventBridge rule, Amazon VPC Endpoint for AWS IAM Identity Center (successor to AWS Single Sign-On), the related Security Groups and permissions necessary to automatically provision database users to the Amazon Relational Database Service (Amazon RDS) cluster using AWS Cloud Development Kit (AWS CDK). When a new user is created in IAM Identity Center and the user belongs to the group specified in a IAM_IDC_GROUP_NAME variable, EventBridge rule will trigger the Lambda function. The Lambda function will create a new user in a specified Amazon RDS cluster. The user will then be able to login to the database using their SSO username and IAM credentials. Adding a user to the configured group will trigger the Lambda function as well. (#178)
 
+**terraform-provider-mongodb**
+
+[terraform-provider-mongodb](https://aws-oss.beachgeek.co.uk/4gh) is new repo from **AWS Community Builder Anuj Tyagi** that provides a new custom Terraform/OpenTofu provider for working with DocumentDB (as well as MongoDB). Anuj has also put together a nice post that looks at the motivation for building this and how you can get started, so check out [Automate DocumentDB Operations using custom Terraform provider](https://community.aws/content/2vhsRbjHTMTMrkchpr0QdHySsdC/automate-documentdb-operations-using-custom-terraform-provider) if this sounds like something useful to you. (#212)
+
+**tokenizing-db-data-tool**
+
 [tokenizing-db-data-tool](https://aws-oss.beachgeek.co.uk/3lp) provides a handy solution to help you address challenges around masking and keeping safe private or sensitive data (PII), as you need to move data from production to non production systems for activities like testing, debugging, load and integration tests, and more. (#186)
+
 
 **tsynamo**
 
@@ -734,6 +767,10 @@ You can populate observations into a datastore and make them available to your h
 **aws-advanced-python-wrapper**
 
 [aws-advanced-python-wrapper](https://aws-oss.beachgeek.co.uk/3xc) is complementary to and extends the functionality of an existing Python database driver to help an application take advantage of the features of clustered databases on AWS. It wraps the open-source Psycopg and the MySQL Connector/Python drivers and supports Python versions 3.8 or newer. You can install the aws-advanced-python-wrapper package using the pip command along with either the psycpg or mysql-connector-python open-source packages. The wrapper driver relies on monitoring database cluster status and being aware of the cluster topology to determine the new writer. This approach reduces switchover and failover times from tens of seconds to single digit seconds compared to the open-source drivers. Check the README for more details and example code on how to use this. (#199)
+
+**aws-appsync-events-swift**
+
+[aws-appsync-events-swift](https://aws-oss.beachgeek.co.uk/4h2) provides a Swift library to interact with AWS AppSync Events API in your Apple iOS, macOS and tvOS applications.(#212)
 
 **aws-cdk-imagebuilder-sample**
 
@@ -957,6 +994,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [git-remote-s3](https://aws-oss.beachgeek.co.uk/44s) is a neat tool that provides you with the ability to use Amazon S3 as a [Git Large File Storage (LFS)](https://git-lfs.com/) remote provider. It provides an implementation of a git remote helper to use S3 as a serverless Git server. The README provides good examples of how to set this up and example git commands that allow you to use this setup. This is pretty neat, and something I am going to try out for myself in future projects. (#204)
 
+**kiro-steering-docs**
+
+[kiro-steering-docs](https://aws-oss.beachgeek.co.uk/4gi) is a new repo from **AWS Hero Matthew Bonig** that shares Kiro steering files that are helpful for providing more concise and accurate responses when using AI Coding Assistants, in this case Kiro but they might work in other tools too. (#212)
+
 **lambda_helpers_metrics**
 
 [lambda_helpers_metrics](https://aws-oss.beachgeek.co.uk/40c) is a metrics helper library for AWS Lambda functions that provides the way to put metrics to the CloudWatch using the Embedded Metric Format ([EMF](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html)). Check out the supporting post, [AWS Lambda Rust EMF metrics helper](https://aws-oss.beachgeek.co.uk/40d). (#201)
@@ -1000,6 +1041,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 **mkdocs-mcp**
 
 [mkdocs-mcp](https://aws-oss.beachgeek.co.uk/4d2) is another project from **AWS Hero Michael Walmsley** that provides search functionality for any MkDocs powered site. This server relies on the existing MkDocs search implementation using the Lunr.Js search engine. (#210)
+
+**orbits**
+
+[orbits](https://aws-oss.beachgeek.co.uk/4gm) is an open-source framework for orchestrating long-lived resources and workflows involving long-running processes. It lets you manage your infrastructure templates from a single, unified place using native TypeScript code. By combining the flexibility of Node.js with a powerful workflow engine, Orbits helps you build modern, adaptable infrastructure operations. It’s ideal for automating processes that self-adapt to their environment and for exposing workflows as reusable, reliable building blocks. It also provides a solid foundation for building crash-resilient Node.js applications. **Louis Dussarps** provides you with a real use case of how you can use this tool in the blog post, [Solving cross-account resources for AWS CDK](https://aws-oss.beachgeek.co.uk/4gn) (#212)
 
 **outtasync**
 
@@ -1263,6 +1308,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **ha-aws-cost**
 
 [ha-aws-cost](https://aws-oss.beachgeek.co.uk/44i)  is a project from Diego Marques for folks who use [Home Assistant](https://www.home-assistant.io/) (a very popular open source home automation system), and provides custom component interacts with AWS to get the month to date cost and forecast cost and make it available on Home Assistant. It adds two new entities 1/Month to date cost: The current cost of your AWS account, and 2/Forecasted month costs: The forecasted cost based in your current consumption. Check out Diego's[ post on LinkedIn](https://www.linkedin.com/posts/diego7marques_aws-cost-my-first-home-assistant-integration-activity-7239741496013340672-cCSY/) that provides some more background to this project.(#204)
+
+**innovation-sandbox-on-aws**
+
+[innovation-sandbox-on-aws](https://aws-oss.beachgeek.co.uk/4g6) - The Innovation Sandbox on AWS solution allows cloud administrators to set up and recycle temporary sandbox environments by automating the implementation of security and governance policies, spend management mechanisms, and account recycling preferences through a web user interface (UI). Using the solution, customers can empower their teams to experiment, learn, and innovate with AWS services in production-isolated AWS accounts that are recycled after use.You can find out more, including a detailed implementation guide by checking out the homepage, [Innovation Sandbox on AWS](https://aws-oss.beachgeek.co.uk/4g7) (#212)
 
 **integrate-control-tower-with-ipam**
 
@@ -1566,6 +1615,10 @@ You can populate observations into a datastore and make them available to your h
 
 [sigv4a-signing-examples](https://aws-oss.beachgeek.co.uk/1jl) provides a useful set of examples that show examples of sigv4 implementations. Josh Hart, maintainer of this repo, has put together a companion repo that has a set of sigv4 examples in different frameworks and using the sdk or from scratch. Josh is also looking for community contributions in other frameworks, so if you are working on a framework and want to combine efforts, drop Josh a note.(#195)
 
+**sra-verify**
+
+[sra-verify](https://aws-oss.beachgeek.co.uk/4fl)  is a security assessment tool that automates the verification of AWS Security Reference Architecture (SRA) implementations across multiple AWS accounts and regions. It provides detailed findings and actionable remediation steps to ensure your AWS environment follows security best practices. The tool performs automated security checks across multiple AWS services including CloudTrail, GuardDuty, IAM Access Analyzer, AWS Config, Security Hub, and S3. It supports multi-account environments and can run checks specific to management, audit, and log archive accounts while providing detailed findings with remediation guidance. **Jeremy Schiefer, Justin Kontny, **and **Matt Nispel** have put together a blog post that provides more info about this project, so check out [Introducing SRA Verify – an AWS Security Reference Architecture assessment tool](https://aws-oss.beachgeek.co.uk/4fm) (#212)
+
 **sso-sync-to-amazon-rds**
 
 [sso-sync-to-amazon-rds](https://aws-oss.beachgeek.co.uk/3e2) This project sets up AWS Lambda functions, Amazon EventBridge rule, Amazon VPC Endpoint for AWS IAM Identity Center (successor to AWS Single Sign-On), the related Security Groups and permissions necessary to automatically provision database users to the Amazon Relational Database Service (Amazon RDS) cluster using AWS Cloud Development Kit (AWS CDK). When a new user is created in IAM Identity Center and the user belongs to the group specified in a IAM_IDC_GROUP_NAME variable, EventBridge rule will trigger the Lambda function. The Lambda function will create a new user in a specified Amazon RDS cluster. The user will then be able to login to the database using their SSO username and IAM credentials. Adding a user to the configured group will trigger the Lambda function as well. (#178)
@@ -1633,6 +1686,11 @@ You can populate observations into a datastore and make them available to your h
 
 [git-remote-s3](https://aws-oss.beachgeek.co.uk/44s) is a neat tool that provides you with the ability to use Amazon S3 as a [Git Large File Storage (LFS)](https://git-lfs.com/) remote provider. It provides an implementation of a git remote helper to use S3 as a serverless Git server. The README provides good examples of how to set this up and example git commands that allow you to use this setup. This is pretty neat, and something I am going to try out for myself in future projects. (#204)
 
+**robinzhon**
+
+[robinzhon](https://aws-oss.beachgeek.co.uk/4gk) is a high-performance Python library from **Robin Quintero** for fast, concurrent S3 object downloads. Check out the README for details on how to get started. Robin shared why he created this project:
+> Recently at work I have faced that we need to pull a lot of files from S3 but the existing solutions are slow so I was thinking in ways to solve this and that's why I decided to create robinzhon. The main purpose of robinzhon is to download high amounts of S3 Objects without having to do extensive manual work trying to achieve optimisations. I know that you can implement your own concurrent approach to try to improve your download speed but robinzhon can be 3 times faster even 4x if you start to increase the max_concurrent_downloads but you must be careful because AWS can start to fail due to the amount of requests. (#212)
+
 **s3-delta-download**
  
 [ s3-delta-download](https://aws-oss.beachgeek.co.uk/4af) is a new tool for interacting with your Amazon S3 buckets, that will help anyone who is encountering current limitations of the 's3 sync', specifically that it does not yet support using a non-directory key prefix. This means that it will only download those files it does not already have, skipping files that are not already in your local directory. The README provide a nice example of how this works, and also covers installation dependencies you need (it requires .NET SDK or later).(#208)
@@ -1667,6 +1725,20 @@ You can populate observations into a datastore and make them available to your h
 **s3-small-object-compaction**
 
 [s3-small-object-compaction](https://aws-oss.beachgeek.co.uk/3mk) This solution deploys a serverless application to combine ("compact") small objects stored in a given Amazon S3 prefix into a single larger file. Larger files enable cost effective use of S3 storage tiers that have a minimum billable object size (e.g. 128 KB). It can also improve performance when querying data directly with Amazon Athena. The sample code is written using the AWS Cloud Development Kit in Python.(#187)
+
+**s3-vectors-mcp**
+
+[s3-vectors-mcp](https://aws-oss.beachgeek.co.uk/4gl) hot off the announcement from the AWS Summit New York, **AWS Community Hero Kazuaki Morita** has put together this repo that provides tools for interacting with AWS S3 Vectors service. This server enables AI assistants to embed text using Amazon Bedrock models and store/query vector embeddings in S3 Vectors indexes. Check out the README for details of the specific features as well as how to configure this MCP Server.(#212)
+
+**s3grep**
+
+[s3grep](https://aws-oss.beachgeek.co.uk/4gw) is the latest essential tool from Damon Cortesi that provides a parallel CLI tool for searching logs and unstructured content in Amazon S3 buckets. It supports .gz decompression, progress bars, and robust error handling—making it ideal for cloud-native log analysis. (#212)
+
+
+**s3vectors-embed-cli**
+
+[s3vectors-embed-cli](https://aws-oss.beachgeek.co.uk/4gy) is a standalone command-line tool that simplifies the process of working with vector embeddings in S3 Vectors. You can create vector embeddings for your data using Amazon Bedrock and store and query them in your S3 vector index using single commands. This tool facilitates semantic similarity search on media in Amazon S3 via AWS Bedrock and Amazon S3 Vectors. Check out the README for the supported commands, installation and configuration details as well as some quick starts to help you understand how this all works. (#212)
+
 
 **shuk**
 
@@ -1873,6 +1945,11 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [2025-bootiful-aws-ai](https://aws-oss.beachgeek.co.uk/4aj) is just what you need if you are looking to explore the wonderful world of MCP in Java. James and Josh have put together this simple demo that uses the recently GAd Spring Boot AI libraries to make creating MCP clients and servers a breeze.(#208)
 
+**a2a-advisory-trading**
+
+[a2a-advisory-trading](https://aws-oss.beachgeek.co.uk/4gv) is a comprehensive demo of a serverless multi-agent trading advisory system built on AWS, leveraging Google's Agent2Agent Protocol using a2a SDK, Strands Agent, and built-in MCP tools from Strands SDK to deliver personalized investment analysis, risk assessment, and secure trade execution. This project serves as a reference implementation demonstrating how to design and deploy multi-agent systems using Google's Agent2Agent Protocol on AWS through a serverless architecture, powered by Strands Agent and Amazon Bedrock. It showcases patterns for building agent networks while leveraging cloud-native services. (#212)
+
+
 **ai-driven-sql-generation**
 
 [ai-driven-sql-generation](https://aws-oss.beachgeek.co.uk/3w0) this sample code from AWS Community Builder Hardik Singh Behl uses Amazon Bedrock with Spring AI to convert natural language queries to SQL queries, using Anthropic's Claude 3 Haiku model.(#197)
@@ -2063,6 +2140,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [newsletter-manager-template](https://aws-oss.beachgeek.co.uk/3sa) is a project from AWS Community Builder Matteo Depascale that provides backend service orchestrations for newsletter builders. (#194)
 
+**nova_virtual_stylist**
+
+[nova_virtual_stylist](https://aws-oss.beachgeek.co.uk/4gr) provides a super fun demo that showcases the power Amazon Nova Canvas and Nova Reel that allows you to upload your photo and clothing items (or generate them with AI), and then see how they look with virtual try-on, then create stunning fashion videos to showcase your style. I have seen this project in action, and its pretty cool so defo add this to your list of projects to try out. (#212)
+
 **public-file-browser-for-amazon-s3**
 
 [public-file-browser-for-amazon-s3](https://aws-oss.beachgeek.co.uk/3qk) allows customers to create a simple PUBLIC file repository using Amazon S3 and Amazon CloudFront. This sample code deploys a website and a public files S3 bucket which can be loaded with any files they wish to publish publicly online.(#192)
@@ -2091,6 +2172,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [sample-code-for-a-secure-vault-using-aws-nitro-enclaves](https://aws-oss.beachgeek.co.uk/43c) - This repository contains a sample secure vault solution built using AWS Nitro Enclaves, a feature available exclusively through the AWS Nitro System hypervisor on supported Amazon EC2 instances. A vault solution is useful when you need to ensure sensitive data (such as Protected Health Information (PHI)/Personally Identifiable Information (PII)) is properly secured at rest and can only be decrypted through approved channels. Check out more details about how cool Nitro Enclaves are by reading the supporting documentation for this project, [About the AWS Nitro Enclaves Vault](https://aws-oss.beachgeek.co.uk/43b).(#203)
 
+**sample-genai-underwriting-workbench-demo**
+
+[sample-genai-underwriting-workbench-demo](https://aws-oss.beachgeek.co.uk/4h1) a demonstration project showcasing the power of Amazon Bedrock and Claude 3.7 Sonnet in transforming life insurance underwriting workflows. This solution leverages intelligent document processing to streamline the underwriting process by automatically extracting, analyzing, and making accessible critical information from insurance applications and related documents. (#212)
+
 **Sample-Model-Context-Protocol-Demos**
 
 [Sample-Model-Context-Protocol-Demos](https://aws-oss.beachgeek.co.uk/4bt) - this repo provides a list of examples of how to use Model Context Protocol (MCP) with AWS. Keep an eye on this repo as it will grow as MCP is the new hotness at the moment.(#209)
@@ -2114,6 +2199,14 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **song-identification-on-aws**
 
 [song-identification-on-aws](https://aws-oss.beachgeek.co.uk/3qj) This repo contains sample code that demonstrates how you can "fingerprint" your songs, and then detect the presence of your songs in either stored audio files like MP3s, or within streaming media. The underlying idea is to convert audio data into a spectrogram, and then isolate important markers within the spectrogram that will allow us to identify music. Roughly 10000 to 25000 fingerprints will be created for an average length song. Each fingerprint is stored as a large integer. See the blog post for more details about how the system works. (#192)
+
+**strands-a2a-demo**
+
+[strands-a2a-demo](https://aws-oss.beachgeek.co.uk/4gq) this repo provides a demo that showcases multiple AI agents using the complete official A2A (agent-to-agent) Python SDK patterns from google-a2a/a2a-samples. The agents use the Strands Agents Python SDK for their LLM implementation, fully integrated with the official A2A SDK patterns. This project features a unified a2a-client with multiple modes of operation, including web-based UI, voice interaction capabilities, and comprehensive testing.(#212)
+
+**strands-agent-on-lambda**
+
+[strands-agent-on-lambda](https://aws-oss.beachgeek.co.uk/4gp) this repo contains a sample implementation of user-aware AI Agent and MCP Server running on AWS Lambda. The sample implements an AI-based Travel Agent for a fictitious corporation AcmeCorp.(#212)
 
 **strands-serverless**
 
