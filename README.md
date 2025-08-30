@@ -325,6 +325,10 @@ You can populate observations into a datastore and make them available to your h
 
 [python-bedrock-converse-generate-docs](https://aws-oss.beachgeek.co.uk/409) is a project from AWS Community Builder Alan Blockley that generates documentation for a given source code file using the Anthropic Bedrock Runtime API. The generated documentation is formatted in Markdown and stored in the specified output directory. Alan also put a blog together, [It’s not a chat bot: Writing Documentation](https://aws-oss.beachgeek.co.uk/40a), that shows you how it works and how to get started. The other cool thing about this project is that it is using the [Converse API](https://aws-oss.beachgeek.co.uk/40b) which you should check out if you have not already seen/used it. (#201)
 
+**QualityFlow**
+
+[QualityFlow](https://aws-oss.beachgeek.co.uk/4i2) is a super interesting repo from Amazon Science that demonstrates the research paper, [QualityFlow: An Agentic Workflow for Program Synthesis Controlled by LLM Quality Checks](https://aws-oss.beachgeek.co.uk/4i3). Given the English description of a programming problem and a set of unit tests, the model's goal is to synthesise the correct program that solves the problem and passes the tests. QualityFlow includes large language model (LLM) agents resembling a software development team, including code generation, testing, and self-debugging. We propose the LLM Quality Checker, which explicitly ``imagines'' whether the synthesised programs' execution would conform to the unit tests. The Quality Checks dynamically control the workflow, including actions to submit the final answer, clarify the problem statement, and revert previous workflow steps. Our experiments show that the Quality Checker can precisely accept any correct program, mitigate faulty synthesised tests, and prevent potential workflow deviation. QualityFlow establishes the state-of-the-art results on four program synthesis benchmarks: MBPP, HumanEval, and stricter evaluations from MBPP-EvalPlus and HumanEval-EvalPlus.(#213)
+
 **rag-with-amazon-bedrock-and-pgvector**
 
 [rag-with-amazon-bedrock-and-pgvector](https://aws-oss.beachgeek.co.uk/3lv) is an opinionated sample repo on how to configure and deploy RAG (Retrieval Augmented Retrieval) application. It uses a number of components including Amazon Bedrock for foundational models, Amazon RDS PostgreSQL with pgvector, LangChain, Streamlit, and a number of AWS services to bring it all together.(#186)
@@ -637,9 +641,17 @@ You can populate observations into a datastore and make them available to your h
 
 [glide-for-redis](https://aws-oss.beachgeek.co.uk/3l2) or General Language Independent Driver for the Enterprise (GLIDE) for Redis (mayeb GLIDER would have been cooler :-) is a new open source client for Redis that works with any Redis distribution that adheres to the Redis Serialization Protocol (RESP) specification. The client is optimised for security, performance, minimal downtime, and observability, and comes pre-configured with best practices learned from over a decade of operating Redis-compatible services used by hundreds of thousands of customers. (#185)
 
+**graphc**
+
+[graphc](https://aws-oss.beachgeek.co.uk/4hw) (stands for "graph console")  and is a really nice interactive text user interface from **Dhruv Thakur** that lets you query Neo4j/AWS Neptune databases via the command line.(#213)
+
 **guidance-for-natural-language-queries-of-relational-databases-on-aws**
 
 [guidance-for-natural-language-queries-of-relational-databases-on-aws](https://aws-oss.beachgeek.co.uk/337) this AWS Solution contains a demonstration of Generative AI, specifically, the use of Natural Language Query (NLQ) to ask questions of an Amazon RDS for PostgreSQL database. This solution offers three architectural options for Foundation Models: 1. Amazon SageMaker JumpStart, 2. Amazon Bedrock, and 3. OpenAI API. The demonstration's web-based application, running on Amazon ECS on AWS Fargate, uses a combination of LangChain, Streamlit, Chroma, and HuggingFace SentenceTransformers. The application accepts natural language questions from end-users and returns natural language answers, along with the associated SQL query and Pandas DataFrame-compatible result set.(#190)
+
+**iceberg_navigator**
+
+[iceberg_navigator](https://aws-oss.beachgeek.co.uk/4hu) is a command line tool from **AWS Community Builder Aki** to makes it easy to navigate and inspect Apache Iceberg snapshot histories. It uses PyIceberg with AWS Glue REST Catalog to list, show details, and visualise snapshot lineage graphs for Iceberg tables stored on S3. He has also put together a blog post, [Building a CLI Tool to Visualize AWS Iceberg Table Snapshot History](https://dev.to/aws-builders/building-a-cli-tool-to-visualize-aws-iceberg-table-snapshot-history-4cfp) that is a helpful walkthrough of the project and code. (#213)
 
 **kafka-client-metrics-to-cloudwatch-with-kip-714**
 
@@ -845,6 +857,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 **aws-signer-oci-artifacts**
 
 [aws-signer-oci-artifacts](https://aws-oss.beachgeek.co.uk/3km) this project is used to demonstrate how OCI artefacts can be signed and verified in a development pipeline. Zhuo-Wei Lee, Alontay Ellis, and Rajarshi Das have put together a blog post to help you get started, so if this project interests you, make sure you dive into [Signing and Validating OCI Artifacts with AWS Signer](https://aws-oss.beachgeek.co.uk/3kn).(#185)
+
+**aws-size**
+
+[aws-size](https://aws-oss.beachgeek.co.uk/4hv) is a great tool that **AWS Community Builder Jason Kao** that checks hard to find size limits and usage for AWS which can help provide advance warning to teams about resource limits in AWS before it's too late. Usage of these limits are not covered by AWS provided tooling such as Service Quotas and Trusted Advisor. Read the introduction blog post, [Introducing aws-size: A New Open Source Tool for Difficult Service Limit Visibility in AWS](https://www.fogsecurity.io/blog/aws-size-release) to find out more. (#213)
 
 **awsviz**
 
@@ -1081,6 +1097,11 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [python-bedrock-converse-generate-docs](https://aws-oss.beachgeek.co.uk/409) is a project from AWS Community Builder Alan Blockley that generates documentation for a given source code file using the Anthropic Bedrock Runtime API. The generated documentation is formatted in Markdown and stored in the specified output directory. Alan also put a blog together, [It’s not a chat bot: Writing Documentation](https://aws-oss.beachgeek.co.uk/40a), that shows you how it works and how to get started. The other cool thing about this project is that it is using the [Converse API](https://aws-oss.beachgeek.co.uk/40b) which you should check out if you have not already seen/used it. (#201)
 
+**q-view**
+
+[q-view](https://aws-oss.beachgeek.co.uk/4hx) is a handy tool from **AWS Community Builder Ryan Cormack** that lets you visualise and analyse Amazon Q Developer conversation history from Q CLI.(#213)
+
+
 **repository-migration-helper**
 
 [repository-migration-helper](https://aws-oss.beachgeek.co.uk/3vu) is a Python CLI Helper tool to migrate Amazon CodeCommit repositories across AWS Accounts and Regions. Migrating CodeCommit repositories between AWS Accounts is a simple but repetitive process that can be automated for large-scale migrations. In this artefact, we share a Python script that provides a user-friendly interface to automate the migration of repositories in bulk. Using profiles configured for the AWS CLI, this tool makes it easy to move hundreds CodeCommit repositories in one command. The tool can also be used to migrate repositories between regions in one account when using the same profile for source and destination. First the script fetches the full list of CodeCommit repositories in the source account. Then the user is asked to filter and/or validate the list of repositories to be migrated to the destination account. For each of the selected repositories, it clones the source repository locally (as a mirror including files and metadata). The script then creates the target repository on the destination account with matching name (with an optional custom prefix) and description. The local clone is then pushed to the destination remote and removed from the local disk.(#197)
@@ -1149,6 +1170,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **StsSamlDriver**
 
 [StsSamlDriver](https://aws-oss.beachgeek.co.uk/49d) is A Python-based SAML authentication handler for AWS STS that allows you to get temporary credentials using SAML to the AWS CLI, or an application written using an AWS SDK without the need to screen scrape or emulate a browser.(#207)
+
+**TerraTitan**
+
+[TerraTitan](https://aws-oss.beachgeek.co.uk/4hs) is an open source (GPL) LLM powered workflow that converts AWS CDK constructs to Terraform CDK (CDKTF). This tool is a major component used to generate and maintain the TerraConstructs library, providing reliable and trustworthy infrastructure components for everyone to use. There is also [a workshop](https://aws-oss.beachgeek.co.uk/4ht) that will help you get started if this looks interesting to you. (#213)
 
 **tokenizing-db-data-tool**
 
@@ -1261,6 +1286,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [awsesh](https://aws-oss.beachgeek.co.uk/4ad) is a command line tool for managing your AWS SSO sessions for those of you who are using AWS IAM Identity Centre (IdC). Whilst the repo provides pre built binaries for Mac, Linux, and Windows, you can also build from source too. There is a brief README with videos showing how this works - it is pretty simple to get up and running. If you are not using a vanity name for your IdC, then just use the prefix you see on the IdC dashboard when configuring this tool.(#208)
 
+**aws-size**
+
+[aws-size](https://aws-oss.beachgeek.co.uk/4hv) is a great tool that **AWS Community Builder Jason Kao** that checks hard to find size limits and usage for AWS which can help provide advance warning to teams about resource limits in AWS before it's too late. Usage of these limits are not covered by AWS provided tooling such as Service Quotas and Trusted Advisor. Read the introduction blog post, [Introducing aws-size: A New Open Source Tool for Difficult Service Limit Visibility in AWS](https://www.fogsecurity.io/blog/aws-size-release) to find out more. (#213)
+
 **chaos-machine**
 
 [chaos-machine](https://aws-oss.beachgeek.co.uk/4ao) is a complete chaos engineering workflow that enables customers to run controlled chaos experiments and test hypotheses related to system behaviour. Chaos Machine uses metric and alarm data from both Amazon CloudWatch and Prometheus as inputs to evaluate system behaviour before, during, and after the experiment. The Chaos Machine provides a simple, consistent way to organise and execute chaos experiments, and is appropriate to use for both building and conducting ad-hoc experiments or integrating into more sophisticated automation pipelines. Chaos Machine uses the AWS Fault Injection Service (FIS) to run controlled experiments, and AWS Step Functions and AWS Lambda for orchestration and execution.(#208)
@@ -1356,6 +1385,10 @@ You can populate observations into a datastore and make them available to your h
 **s3-restore-and-copy-progress-monitoring**
 
 [s3-restore-and-copy-progress-monitoring](https://aws-oss.beachgeek.co.uk/3o3) this is a very comprehensive and polished repo that provides an example of how you can restore data that you have stored in S3, providing you a single visualised dashboard to monitor the restore and copy progress within a defined scope.(#189)
+
+**sample-cost-per-transaction**
+
+[sample-cost-per-transaction](https://aws-oss.beachgeek.co.uk/4i1) - is a repo that provides a cost intelligence solution that correlates application performance traces with Infrastructure costs, providing unprecedented transaction-level visibility to drive strategic business decisions. (#213)
 
 **sample-service-quotas-replicator-for-aws**
 
@@ -2164,6 +2197,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [sample-agents-with-nova-act-and-mcp](https://aws-oss.beachgeek.co.uk/4bm) - This repository demonstrates how to build intelligent web automation agents using Amazon Nova Act integrated with MCP (Model Context Protocol). MCP provides a standardised way to connect AI models to different data sources and tools - think of it like a "USB-C port for AI applications." The repo provides requirements for running these demos as well as an overview of the different example use cases.(#209)
 
+**sample-ai-agent-accelerator**
+
+[sample-ai-agent-accelerator](https://aws-oss.beachgeek.co.uk/4hz) - if you wanted to get hands on with Amazon Bedrock AgentCore, then this repo is for you. This project is a sample reference implementation that showcases how to quickly build an AI agent using the Bedrock AgentCore building blocks. The implementation is fully serverless leveraging AgentCore Runtime, AgentCore Memory, AgentCore Observability, and Amazon S3 Vectors for Agentic RAG, eliminating the need to run databases. The agent is built using the Strands Agent Python library and hosted on the AgentCore Runtime. It uses Strand's built-in retrieve tool to perform semantic search using Bedrock Knowledge Bases, which ingests documents from an S3 bucket and stores the indexed vectors in S3 Vectors. User conversation state and history are fully managed by AgentCore Memory. Users interact with the agent via a web app that provides both a web GUI and an HTTP JSON API, hosted as a container on ECS Fargate behind an ALB. The web app is built using Python Flask and HTMX. (#213)
+
 **sample-aws-dax-go-v2**
 
 [sample-aws-dax-go-v2](https://aws-oss.beachgeek.co.uk/4an)  is the official AWS DAX SDK for the Go programming language. In addition to this, [sample-aws-dax-go-v2-sample](https://aws-oss.beachgeek.co.uk/4al)is some sample code / application showing how to use DynamoDB Accelerator (DAX) Go Language SDK Client.(#208)
@@ -2179,6 +2216,14 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **Sample-Model-Context-Protocol-Demos**
 
 [Sample-Model-Context-Protocol-Demos](https://aws-oss.beachgeek.co.uk/4bt) - this repo provides a list of examples of how to use Model Context Protocol (MCP) with AWS. Keep an eye on this repo as it will grow as MCP is the new hotness at the moment.(#209)
+
+**sample-on-demand-workflow-orchestrator**
+
+sample-on-demand-workflow-orchestrator - this repo lets you build a serverless, dynamic workflow orchestration engine that is built with Amazon DynamoDB and AWS Lambda that enables flexible, event-driven task execution with complex dependency patterns.(#213)
+
+**sample-sonic-java-playground**
+
+[sample-sonic-java-playground](https://aws-oss.beachgeek.co.uk/4i0) - is a full-stack playground application for experimenting with Amazon's NovaSonic API capabilities, built with React (v18.2.0) and Spring Boot (v3.2.0). The application supports invoking NovaSonic Speech to Speech model by configuring supported parameters.(#213)
 
 **serverless-genai-food-analyzer-app**
 
@@ -2207,6 +2252,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **strands-agent-on-lambda**
 
 [strands-agent-on-lambda](https://aws-oss.beachgeek.co.uk/4gp) this repo contains a sample implementation of user-aware AI Agent and MCP Server running on AWS Lambda. The sample implements an AI-based Travel Agent for a fictitious corporation AcmeCorp.(#212)
+
+**strands-mcp-inter-agent**
+
+[strands-mcp-inter-agent](https://aws-oss.beachgeek.co.uk/4i5) is some sample code from my colleague James Ward that shows you how MCP Agents can call other MCP Agents by exposing them as MCP Servers. his example uses a hierarchy of agents with where the outer agent calls (using MCP) an inner agent that does routing and prompt modification, which then calls another MCP server.(#213)
 
 **strands-serverless**
 
