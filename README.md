@@ -12,6 +12,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [abc](https://aws-oss.beachgeek.co.uk/47t) is an AI bash tool that integrates with Amazon Bedrock as a foundation model provider. This tool will generate shell command(s) from natural language description using which ever LLM (generative AI) you configure, and place on the next shell prompt for editing and execution. Plenty of details in the README on how to configure and run this, so give it a go if you are looking for something that integrates with Amazon Bedrock.(#206)
 
+**agentcore-memory-browser**
+
+[agentcore-memory-browser](https://aws-oss.beachgeek.co.uk/4j4) is another project from  **Danillo Poccia** (he is on fire at the moment!!)   that provides a web interface for browsing and exploring Amazon Bedrock AgentCore Memory resources. This application provides a user friendly way to interact with AgentCore Memory data through both control plane and data plane APIs. Check out the README for a short video of what this looks like and how it works - it is really very cool. (#214)
+
 **agent-dev-toolkit**
 
 [agent-dev-toolkit](https://aws-oss.beachgeek.co.uk/4gx) or Agent Development Toolkit (ADT),  provides a single command-line interface that lets developers build, test, and iterate on Strands agents with ease during local development. The CLI unifies agent execution, observability, UI, and local containerisation into one cohesive developer experience, enabling developers to iterate and experiment faster with immediate feedback loops and streamlined workflows. Check out the detailed README file for more info on how to get started with this command line tool.(#212)
@@ -285,6 +289,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [news-clustering-and-summarization](https://aws-oss.beachgeek.co.uk/44l) this repository contains code for a near real-time news clustering and summarisation solution using AWS services like Lambda, Step Functions, Kinesis, and Bedrock. It demonstrates how to efficiently process, embed, cluster, and summarise large volumes of news articles to provide timely insights for financial services and other industries. This solution aims to launch a news Event feature that clusters related news stories into summaries, providing customers with near real-time updates on unfolding events. This augmented news consumption experience will enable users to easily follow evolving stories while maximising relevance and reducing the firehose of information for articles covering the same event. By tailoring news clusters around key events, this application can improve customer satisfaction and engagement. Detailed docs will help you get up and running in no time. (#204)
 
+**nova-act-extension**
+
+[nova-act-extension](https://aws-oss.beachgeek.co.uk/4j0) is a very nice VSCode extension (Kiro, Cursor, VSCode) that provides a number of new commands that helps you tap into the power of [Amazon Nova Act](https://github.com/aws/nova-act), an early research preview of an SDK + model for building agents designed to reliably take actions in web browsers. The README covers some of the use cases that are supported and that you can try out with this plugin. If you have not looked at these tools yet, its worth just experimenting to get a feel of how they work and to start thinking about what use cases you might be able to come up with.(#214)
+
 **nova-prompt-optimizer**
 
 [nova-prompt-optimizer](https://aws-oss.beachgeek.co.uk/4h4) is a Python SDK for optimising prompts for Nova. Looks very comprehensive, so worth checking out the README. Again, public preview folks so bear this in mind.(#212)
@@ -388,6 +396,10 @@ You can populate observations into a datastore and make them available to your h
 **streamlit-bedrock-claude-sample**
 
 [streamlit-bedrock-claude-sample](https://aws-oss.beachgeek.co.uk/437) - I have featured Gary Stafford's open source projects and blog posts regularly in this newsletter. Gary has built a number of simple Streamlit applications to make it easy access the latest models and features of Amazon Web Services (AWS) Amazon Bedrock as part of several talks, workshops, and demonstrations he has done.  As part these, he has put together a simple Streamlit application that uses the Amazon Bedrock boto3 Python SDK to call the latest Anthropic Claude 3 family of multimodal foundation models. The application accepts a system and user prompt and generates a text-based response. The Streamlit app can be easily modified to incorporate new Bedrock features or as a starting point for your own applications. (#203)
+
+**ttok4bedrock**
+
+[ttok4bedrock](https://aws-oss.beachgeek.co.uk/4j3) is a very helpful tool from my colleague **Danillo Poccia** that helps developers understand token consumption when working with large language models through Amazon Bedrock. This is important as it can help manage costs and help you to stay within model limits. While the Bedrock console provides token counts after each API call, developers need a way to measure tokens before sending requests, especially when building applications that process large volumes of text or require precise truncation.(#214)
 
 **video-understanding-solution**
 
@@ -526,6 +538,10 @@ You can populate observations into a datastore and make them available to your h
 
 [kro](https://aws-oss.beachgeek.co.uk/468) This project aims to simplify the creation and management of complex custom resources for Kubernetes. Kube Resource Orchestrator (kro) provides a powerful abstraction layer that allows you to define complex multi-resource constructs as reusable components in your applications and systems. You define these using kro's fundamental custom resource, ResourceGroup. This resource serves as a blueprint for creating and managing collections of underlying Kubernetes resources. With kro, you define custom resources as your fundamental building blocks for Kubernetes. These building blocks can include other Kubernetes resources, either native or custom, and can specify the dependencies between them. This lets you define complex custom resources, and include default configurations for their use. The kro controller will determine the dependencies between resources, establish the correct order of operations to create and configure them, and then dynamically create and manage all of the underlying resources for you. kro is Kubernetes native and integrates seamlessly with existing tools to preserve familiar processes and interfaces. (#205)
 
+**lazy-ecs**
+
+[lazy-ecs](https://aws-oss.beachgeek.co.uk/4j5) is a tool from **Janne Sinivirta** that provides a new CLI tool for working with Amazon ECS, and specifically for navigating Amazon ECS Clusters. Check out the README to find out what you can do with this. (#214)
+
 **llrt**
 
 [llrt](https://aws-oss.beachgeek.co.uk/3mm) - Low Latency Runtime (LLRT) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications. LLRT offers up to over 10x faster startup and up to 2x overall lower cost compared to other JavaScript runtimes running on AWS Lambda. It's is built in Rust, utilising QuickJS as JavaScript engine, ensuring efficient memory usage and swift startup. (#188)
@@ -533,6 +549,10 @@ You can populate observations into a datastore and make them available to your h
 **serverless-lambda-cron-cdk**
 
 [serverless-lambda-cron-cdk](https://aws-oss.beachgeek.co.uk/3uf) This repository provides a starter kit for setting up cron jobs using AWS Lambda. It includes the necessary AWS Cloud Development Kit (CDK) deployment code, a CI/CD pipeline, as well as the source code for the Lambda function. The kit is designed to be easily configurable and deployable, allowing for quick setup and iteration. It's ideal for developers looking to automate tasks on a schedule using AWS Lambda. (#196)
+
+**skopeo**
+
+[skopeo](https://aws-oss.beachgeek.co.uk/4j7) is a super handy tool for those folks spending a lot of time managing container images. skopeo is a command line utility that performs various operations on container images and image repositories. It does not require root privileges for most of the operations (fantastic) and has lots of capabilities so dive into the README.(#214)
 
 ### Data, Big Data and Databases
 
@@ -751,6 +771,10 @@ You can populate observations into a datastore and make them available to your h
 **amazon-q-developer-cli-webui**
 
 [amazon-q-developer-cli-webui](https://aws-oss.beachgeek.co.uk/4f5) is a very nice project from **AWS Community Builder Gabriel Koo** that allows you to run Amazon Q CLI via a web ui. He put together a post that explains the itch he was trying to scratch, and I have to say that this is on my weekend list of projects to try out. Go read the post, [Why I Built a Web UI for Amazon Q Developer CLI (And How I Vibe-Coded It)](https://dev.to/aws-builders/why-i-built-a-web-ui-for-amazon-q-developer-cli-and-how-i-vibe-coded-it-54d6).(#211)
+
+**amazonq.nvim**
+
+[amazonq.nvim](https://aws-oss.beachgeek.co.uk/4j1) is perfect for neovim users, and allows you to integrate Amazon Q Developer, providing Chat functionality, Inline Code Suggestions, and other Amazon Q Developer capabilities. After installation, authenticate through IAM Identity Center or AWS Builder ID. You can use Amazon Q for free without an AWS account by authenticating with Builder ID. (#214)
 
 **amazon-q-vibes-memory-banking**
 
@@ -1022,6 +1046,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [language-server-runtimes](https://aws-oss.beachgeek.co.uk/3qe) is a JSON-RPC based protocol for interactions between servers and clients (typically embedded in development tools). The README covers details around specification support and features supported, that will help you tailor this to your needs.(#192)
 
+**lazy-ecs**
+
+[lazy-ecs](https://aws-oss.beachgeek.co.uk/4j5) is a tool from **Janne Sinivirta** that provides a new CLI tool for working with Amazon ECS, and specifically for navigating Amazon ECS Clusters. Check out the README to find out what you can do with this. (#214)
+
 **llm-test-mate**
 
 [llm-test-mate](https://aws-oss.beachgeek.co.uk/47v) is a project from my colleague Danilo Poccia that is a simple testing framework to evaluate and validate LLM-generated content using string similarity, semantic. Check out the README for a list of features currently supported, as well as examples of how to use it. The README really is a thing of beauty, and I wish more projects provided as clear and detailed info as this project.(#206)
@@ -1058,6 +1086,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [mkdocs-mcp](https://aws-oss.beachgeek.co.uk/4d2) is another project from **AWS Hero Michael Walmsley** that provides search functionality for any MkDocs powered site. This server relies on the existing MkDocs search implementation using the Lunr.Js search engine. (#210)
 
+**nova-act-extension**
+
+[nova-act-extension](https://aws-oss.beachgeek.co.uk/4j0) is a very nice VSCode extension (Kiro, Cursor, VSCode) that provides a number of new commands that helps you tap into the power of [Amazon Nova Act](https://github.com/aws/nova-act), an early research preview of an SDK + model for building agents designed to reliably take actions in web browsers. The README covers some of the use cases that are supported and that you can try out with this plugin. If you have not looked at these tools yet, its worth just experimenting to get a feel of how they work and to start thinking about what use cases you might be able to come up with.(#214)
+
 **orbits**
 
 [orbits](https://aws-oss.beachgeek.co.uk/4gm) is an open-source framework for orchestrating long-lived resources and workflows involving long-running processes. It lets you manage your infrastructure templates from a single, unified place using native TypeScript code. By combining the flexibility of Node.js with a powerful workflow engine, Orbits helps you build modern, adaptable infrastructure operations. It’s ideal for automating processes that self-adapt to their environment and for exposing workflows as reusable, reliable building blocks. It also provides a solid foundation for building crash-resilient Node.js applications. **Louis Dussarps** provides you with a real use case of how you can use this tool in the blog post, [Solving cross-account resources for AWS CDK](https://aws-oss.beachgeek.co.uk/4gn) (#212)
@@ -1092,6 +1124,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 * See a history of your prompt and easily go back to any previous prompt execution
 
 (#188)
+
+**pyssm-client**
+
+[pyssm-client](https://aws-oss.beachgeek.co.uk/4j2) is another project from **Damon Cortesi**, who will be no stranger to regular readers of this newsletter. What has Damon been cooking up this time? Well, to answer this, he has create a tool that provides an enhanced Python AWS SSM Session Manager client with interactive sessions, exec, and file transfer support. It speaks the same binary protocol as the official Go plugin and provides additional functionality like library imports and extended CLI commands. Check out the README for more highlights of why you should check this out. If you do any amount of work connecting to EC2 instances, you will find this useful. (#214)
 
 **python-bedrock-converse-generate-docs**
 
@@ -1153,6 +1189,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 **sfn-profiler**
 
 [sfn-profiler ](https://aws-oss.beachgeek.co.uk/4bn)is a nice project from James Sanders that provides a package of utilities for profiling AWS Step Function executions. This utility provides relevant performance metrics and information about particular Step Function executions and their child workflows (called 'contributor' workflows) in your local web browser. It displays information such as the largest contributors to the overall duration as well as a gantt chart representation of the workflow execution. Check out the README for more details, this really is an essential tool if you spend any time at all developing AWS Step Functions. (#209)
+
+**skopeo**
+
+[skopeo](https://aws-oss.beachgeek.co.uk/4j7) is a super handy tool for those folks spending a lot of time managing container images. skopeo is a command line utility that performs various operations on container images and image repositories. It does not require root privileges for most of the operations (fantastic) and has lots of capabilities so dive into the README.(#214)
 
 **sparklepop**
 
@@ -1898,6 +1938,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 # Open Source projects on AWS
 
+**amazonq.nvim**
+
+[amazonq.nvim](https://aws-oss.beachgeek.co.uk/4j1) is perfect for neovim users, and allows you to integrate Amazon Q Developer, providing Chat functionality, Inline Code Suggestions, and other Amazon Q Developer capabilities. After installation, authenticate through IAM Identity Center or AWS Builder ID. You can use Amazon Q for free without an AWS account by authenticating with Builder ID. (#214)
+
 **apeman**
 
 [apeman](https://aws-oss.beachgeek.co.uk/43n) is a new tool that helps security people to map and visualise AWS identity attack paths. The README provides detailed instructions on how to get up and running, but I also found the blog post, [ Project Apeman : A Comprehensive Guide To Graph-Based AWS Security Analysis](https://aws-oss.beachgeek.co.uk/43o) very helpful.(#203)
@@ -1982,6 +2026,9 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [a2a-advisory-trading](https://aws-oss.beachgeek.co.uk/4gv) is a comprehensive demo of a serverless multi-agent trading advisory system built on AWS, leveraging Google's Agent2Agent Protocol using a2a SDK, Strands Agent, and built-in MCP tools from Strands SDK to deliver personalized investment analysis, risk assessment, and secure trade execution. This project serves as a reference implementation demonstrating how to design and deploy multi-agent systems using Google's Agent2Agent Protocol on AWS through a serverless architecture, powered by Strands Agent and Amazon Bedrock. It showcases patterns for building agent networks while leveraging cloud-native services. (#212)
 
+**agentcore-multi-framework-examples**
+
+[agentcore-multi-framework-examples](https://aws-oss.beachgeek.co.uk/4j6) - yet more goodness from **Danillo Poccia** that contains sample implementations of AI agents using different frameworks (Strands, CrewAI, Pydantic AI, LlamaIndex, LangGraph, and MemoryMCP), all integrated with Amazon Bedrock AgentCore for production deployment and centralised memory management. Essential viewing. (#214)
 
 **ai-driven-sql-generation**
 
