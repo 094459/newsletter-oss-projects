@@ -161,6 +161,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [cloudysetup](https://github.com/mostlycloudysky/cloudysetup) is a CLI tool designed to streamline AWS resource management using AWS Cloud Control API. It leverages Amazon Bedrock fully managed service with Anthropic - Claude V2 Gen AI model to create, read, update, list, and delete AWS resources by generating configurations compatible with AWS Cloud Control API.(#201)
 
+**cognitive-memory** 
+
+[gnitive-memory](https://aws-oss.beachgeek.co.uk/4m2) is a project from **Peter Tilsen** that builds a production-ready cognitive memory system for AI agents with human-like learning and memory patterns. It is easy to install and get up and running, and the docs have everything you need. [cognitive-memory-agent](https://aws-oss.beachgeek.co.uk/4m1)  provides a demo that showcases the cognitive-memory package, allowing you to see how agents learn, remember, and get smarter with each interaction.
+
 **content-based-item-recommender**
 
 [content-based-item-recommender](https://github.com/aws-samples/content-based-item-recommender) provides some example code the helps you deploy a content-based recommender system. It is called "content-based" as it bases the recommendation based on the matching between the input's content and the items' content from your database. This uses prompt to large-language models (LLM) and vector search to perform the recommendation. (#204)
@@ -223,9 +227,17 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [graphrag-toolkit](https://github.com/awslabs/graphrag-toolkit) is a Python toolkit for building GraphRAG applications. It provides a framework for automating the construction of a graph from unstructured data, and composing question-answering strategies that query this graph when answering user questions. The toolkit uses low-level LlamaIndex components – data connectors, metadata extractors, and transforms – to implement much of the graph construction process. By default, the toolkit uses Amazon Neptune Analytics or Amazon Neptune Database for its graph store, and Neptune Analytics or Amazon OpenSearch Serverless for its vector store, but it also provides extensibility points for adding alternative graph stores and vector stores. The default backend for LLMs and embedding models is Amazon Bedrock; but, as with the stores, the toolkit can be configured for other LLM and embedding model backends using LlamaIndex abstractions. (#205)
 
+**greengrass-agent-context-pack**
+
+[greengrass-agent-context-pack](https://aws-oss.beachgeek.co.uk/4ll) - this repo provides structured knowledge and step-by-step guides for AI agents to quickly set up and experiment with AWS IoT Greengrass Nucleus. It follows the https://agents.md specification, and will help streamline development workflows. Developers can boost productivity by cloning the repository and integrating it with modern generative AI tools like Amazon Q to help accelerate cloud-connected edge application development while simplifying fleet-wide deployment and management.(#216)
+
 **guidance-for-natural-language-queries-of-relational-databases-on-aws**
 
 [guidance-for-natural-language-queries-of-relational-databases-on-aws](https://github.com/aws-solutions-library-samples/guidance-for-natural-language-queries-of-relational-databases-on-aws) this AWS Solution contains a demonstration of Generative AI, specifically, the use of Natural Language Query (NLQ) to ask questions of an Amazon RDS for PostgreSQL database. This solution offers three architectural options for Foundation Models: 1. Amazon SageMaker JumpStart, 2. Amazon Bedrock, and 3. OpenAI API. The demonstration's web-based application, running on Amazon ECS on AWS Fargate, uses a combination of LangChain, Streamlit, Chroma, and HuggingFace SentenceTransformers. The application accepts natural language questions from end-users and returns natural language answers, along with the associated SQL query and Pandas DataFrame-compatible result set.(#190)
+
+**jupyter-deploy**
+
+[jupyter-deploy](https://aws-oss.beachgeek.co.uk/4ln) is a new open source command line tool that simplifies deploying Jupyter applications to various cloud providers. Currently AWS is the only provider, but this will be added to over time.(#216)
 
 **langgraph-aws-deployment**
 
@@ -271,6 +283,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **mcp-oauth2-aws-cognito**
 
 [mcp-oauth2-aws-cognito](https://github.com/empires-security/mcp-oauth2-aws-cognito) this repository demonstrates how to secure a Model Context Protocol (MCP) server using OAuth 2.1 authorisation flows, implemented entirely with Node.js and Express.js. While this example uses AWS Cognito as the backing authorisation server, the implementation is provider-agnostic and can work with any OAuth 2.1 compliant authorisation server. Detailed README which will help you get it up and running - in fact, I did actually get this project running for the MCP Summit event in London, so I can confirm it worked for me. I used MCP Inspector to test it out. Let me know how you get on if you give it a go.(#215)
+
+**mcp-proxy-for-aws**
+
+[mcp-proxy-for-aws](https://aws-oss.beachgeek.co.uk/4md) - is a new project that provides two ways to connect AI applications to MCP servers on AWS. The first is using it as a proxy, it becomes a lightweight, client-side bridge between MCP clients (AI assistants like Claude Desktop, Amazon Q Developer CLI) and MCP servers on AWS. The second is as a library, allowing you to programmatically connect popular AI agent frameworks (LangChain, LlamaIndex, Strands Agents, etc.) to MCP servers on AWS. If you are doing any kind of MCP stuff on AWS, this project is essential so make sure you try it out. (#216)
 
 **mcp-server-aws**
 
@@ -533,6 +549,10 @@ You can populate observations into a datastore and make them available to your h
 
 [container-resiliency](https://github.com/aws-samples/container-resiliency) the primary goal of this repository is to provide a comprehensive guide and patterns for organisations to design, deploy, and operate highly resilient and fault-tolerant containerised applications on AWS. These patterns aims to provide the knowledge and practical guidance necessary to mitigate risks, minimise downtime, and ensure the continuous availability and resilience of containerised applications on AWS, ultimately enhancing their overall operational efficiency and customer experience.(#197)
 
+**credproxy**
+
+[credproxy](https://aws-oss.beachgeek.co.uk/4mb) is another awesome project from **John Preston**. credproxy provides a lightweight sidecar container that provides AWS credentials to applications using the same interface as ECS credential providers. Designed for local development and testing to strengthen applications that will later use AWS services like S3. The README provides a nice section on the problem that this project is trying to solve. What might that be I can hear you all saying? Applications often behave differently in local development vs production when using AWS SDKs, especially around credential management and AWS service integration. (#216)
+
 **e1s**
 
 [e1s](https://github.com/keidarcy/e1s)  is a terminal application from [Xing Yahao](https://twitter.com/keidarcy) to easily browse and manage AWS ECS resources, supports both Fargate and EC2 ECS launch types. Inspired by k9s. e1s uses the default aws-cli configuration. It does not store or send your access and secret key anywhere. The access and secret key are used only to securely connect to AWS API via AWS SDK. e1s is available on Linux, macOS and Windows platforms. (#197)
@@ -639,6 +659,10 @@ You can populate observations into a datastore and make them available to your h
 **apache-xtable-on-aws-samples**
 
 [apache-xtable-on-aws-samples](https://github.com/aws-samples/apache-xtable-on-aws-samples) provides sample code to build an Apache Airflow Operator that uses Apache XTable to make a single physical dataset readable in different formats by translating its metadata and avoiding reprocessing of actual data files. The repo will help you build and compile your custom jar file, which you can then use within your Airflow DAG. Check out the supporting blog post from Matthias Rudolph and Stephen Said, [Run Apache XTable on Amazon MWAA to translate open table formats](https://aws.amazon.com/blogs/big-data/run-apache-xtable-on-amazon-mwaa-to-translate-open-table-formats/).(#201)
+
+**athena_bridge**
+
+[athena_bridge](https://aws-oss.beachgeek.co.uk/4m7) is an open-source Python library that replicates the most common PySpark functions, allowing you to execute PySpark-like code directly on AWS Athena via automatically generated SQL. With this library, you can reuse your existing PySpark code without needing an EMR Cluster or Glue Interactive Session, leveraging Athena’s SQL backend with identical syntax to PySpark.(#216)
 
 **automated-datastore-discovery-with-aws-glue**
 
@@ -885,6 +909,10 @@ You can populate observations into a datastore and make them available to your h
 
 Getting started is simple - just attach the Lambda layer to your function. No code changes required. This new capability helps you optimise cost and performance, identify bottlenecks, and deliver better experiences to your customers. It's another example of how we're listening to our builders and delivering the tools they need to innovate faster. (#208)
 
+**aws-lambda-stubs**
+
+aws-lambda-stubs is a new project from **AWS Community Builder Ricardo Cino** that provides simple stubs for AWS Lambda services, allowing you to focus on writing and testing your Lambda functions without the overhead of continuously writing the same boilerplate stubs. Gone are the days you need to write stubs to unit test your AWS Lambda functions locally. This project was inspired by @types/aws-lambda that already provides the type definitions for AWS Lambda events and context. There is support for all the typed AWS Lambda events defined in @types/aws-lambda and the project will be continuously updated as new event types are added. (#216)
+
 **aws-lint-iam-policies**
 
 [aws-lint-iam-policies](https://github.com/welldone-cloud/aws-lint-iam-policies)  runs IAM policy linting checks against either a single AWS account or all accounts of an AWS Organization. Reports on policies that violate security best practices or contain errors. Supports both identity-based and resource-based policies. Optionally dumps all policies analysed. The actual linting is performed by the AWS IAM Access Analyzer policy validation feature, which is mostly known for showing recommendations when manually editing IAM policies on the AWS Console UI. The repo provides additional blog posts to help you get started, as well as more details on how this works with supporting resources (#191)
@@ -1009,6 +1037,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [cloudcatalog](https://github.com/boyney123/cloudcatalog) colleague David Boyne has put together another project, that is a fork of one his earlier projects ([EventCatalog](https://dev.to/aws/aws-open-source-news-and-updates-96-ig8)) that provides a similar capability, but this time helping you to document your AWS architecture. Check out the README for more details, including an example architecture that was documented. (#187)
 
+**cloudformation-deployment-portal**
+
+[cloudformation-deployment-portal](https://aws-oss.beachgeek.co.uk/4m9) comes from **AWS Hero Richard Fan**, and is a new project that provides a web portal that allows administrators to deploy multiple CloudFormation stacks and provides public access to individual stack outputs using unique access codes. It allows Admins to deploy CloudFormation stacks through a web interface, with each deployment getting a unique UUID access code. Users can view their stack outputs by entering their UUID access code, whilst no authentication required for viewing outputs.(#216)
+
 **cloudfront-hosting-toolkit**
 
 [cloudfront-hosting-toolkit](https://github.com/awslabs/cloudfront-hosting-toolkit) is a new an open source command line tool to help developers deploy fast and secure frontends in the cloud. This project offers the convenience of a managed frontend hosting service while retaining full control over the hosting and deployment infrastructure to make it your own. The CLI simplifies AWS platform interaction for deploying static websites. It walks you through configuring a new repository, executing the deployment process, and provides the domain name upon completion. By following these steps, you effortlessly link your GitHub repository and deploy the necessary infrastructure, simplifying the deployment process. This enables you to focus on developing website content without dealing with the intricacies of infrastructure management. A few of my colleagues have tried this out and they are loving it. You can also find out more by reading the blog post, [Introducing CloudFront Hosting Toolkit](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-cloudfront-hosting-toolkit/) where Achraf Souk, Corneliu Croitoru, and Cristian Graziano help you get started with a hands on guide to this project. (#199)
@@ -1028,6 +1060,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 **codecatalyst-runner-cli**
 
 [codecatalyst-runner-cli](https://github.com/aws/codecatalyst-runner-cli) This repository contains a command line tool that will allow you to run Amazon CodeCatalyst workflows locally. The README provides the instructions for quickly installing and getting started, so if  you have been using Amazon CodeCatalyst and looking for this, look no more.(#196)
+
+**credproxy**
+
+[credproxy](https://aws-oss.beachgeek.co.uk/4mb) is another awesome project from **John Preston**. credproxy provides a lightweight sidecar container that provides AWS credentials to applications using the same interface as ECS credential providers. Designed for local development and testing to strengthen applications that will later use AWS services like S3. The README provides a nice section on the problem that this project is trying to solve. What might that be I can hear you all saying? Applications often behave differently in local development vs production when using AWS SDKs, especially around credential management and AWS service integration. (#216)
 
 **cumuli-aws-console-chat**
 
@@ -1085,6 +1121,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 
 [lambda_helpers_metrics](https://github.com/szymon-szym/lambda_helpers_metrics) is a metrics helper library for AWS Lambda functions that provides the way to put metrics to the CloudWatch using the Embedded Metric Format ([EMF](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html)). Check out the supporting post, [AWS Lambda Rust EMF metrics helper](https://dev.to/aws-builders/aws-lambda-rust-emf-metrics-helper-4glp). (#201)
 
+**lambda-live-debugger**
+
+[lambda-live-debugger](https://aws-oss.beachgeek.co.uk/4lw) is an indispensable tool for debugging AWS Lambda functions from your computer, even though they are deployed in the cloud. The code runs with the same IAM permissions as in the cloud environment, and there's no need to redeploy when you make code changes. It supports Lambdas written in JavaScript or TypeScript. It requires almost no configuration. It supports a number of frameworks, so checkout this project for more details and how to get started.(#216)
+
 **language-server-runtimes**
 
 [language-server-runtimes](https://github.com/aws/language-server-runtimes) is a JSON-RPC based protocol for interactions between servers and clients (typically embedded in development tools). The README covers details around specification support and features supported, that will help you tailor this to your needs.(#192)
@@ -1116,6 +1156,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 **mcp**
 
 [mcp](https://github.com/awslabs/mcp) is a comprehensive repo that provides a suite of specialised Model Context Protocol (MCP) servers that help you get the most out of AWS, wherever you use MCP. This list is growing, so check out the list (currently contains MCP servers that will help you with AWS documentation, AWS Cost Analysis, using AWS CDK, and more). (#209)
+
+**mcp-proxy-for-aws**
+
+[mcp-proxy-for-aws](https://aws-oss.beachgeek.co.uk/4md) - is a new project that provides two ways to connect AI applications to MCP servers on AWS. The first is using it as a proxy, it becomes a lightweight, client-side bridge between MCP clients (AI assistants like Claude Desktop, Amazon Q Developer CLI) and MCP servers on AWS. The second is as a library, allowing you to programmatically connect popular AI agent frameworks (LangChain, LlamaIndex, Strands Agents, etc.) to MCP servers on AWS. If you are doing any kind of MCP stuff on AWS, this project is essential so make sure you try it out. (#216)
 
 **MCP2Lambda**
 
@@ -1244,6 +1288,10 @@ Getting started is simple - just attach the Lambda layer to your function. No co
 **sparklepop**
 
 [sparklepop](https://github.com/danielbeach/sparklepop) is a simple Python package from Daniel B designed to check the free disk space of an AWS RDS instance. It leverages AWS CloudWatch to retrieve the necessary metrics. This package is intended for users who need a straightforward way to monitor disk space without setting up complex alerts. (#200)
+
+**stelvio**
+
+[stelvio](https://aws-oss.beachgeek.co.uk/4ma) - is a Python framework that simplifies AWS cloud infrastructure management and deployment. It lets you define your cloud infrastructure using pure Python, with smart defaults that handle complex configuration automatically. (#216)
 
 **strands-ts**
 
@@ -1377,6 +1425,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [aws-size](https://github.com/FogSecurity/aws-size) is a great tool that **AWS Community Builder Jason Kao** that checks hard to find size limits and usage for AWS which can help provide advance warning to teams about resource limits in AWS before it's too late. Usage of these limits are not covered by AWS provided tooling such as Service Quotas and Trusted Advisor. Read the introduction blog post, [Introducing aws-size: A New Open Source Tool for Difficult Service Limit Visibility in AWS](https://www.fogsecurity.io/blog/aws-size-release) to find out more. (#213)
 
+**CDOps-Cloud-Zombie-Hunter**
+
+[CDOps-Cloud-Zombie-Hunter](https://aws-oss.beachgeek.co.uk/4mc) is an open-source command-line utility that scans your AWS environment for unused resources—what we call "zombies"—that are quietly draining your budget. Check out the README for the list and kinds of resources within its cross hair, and before you panic, the tool is READ ONLY, so you still have to do some work finishing off those zombies. (#216)
+
 **chaos-machine**
 
 [chaos-machine](https://github.com/awslabs/chaos-machine) is a complete chaos engineering workflow that enables customers to run controlled chaos experiments and test hypotheses related to system behaviour. Chaos Machine uses metric and alarm data from both Amazon CloudWatch and Prometheus as inputs to evaluate system behaviour before, during, and after the experiment. The Chaos Machine provides a simple, consistent way to organise and execute chaos experiments, and is appropriate to use for both building and conducting ad-hoc experiments or integrating into more sophisticated automation pipelines. Chaos Machine uses the AWS Fault Injection Service (FIS) to run controlled experiments, and AWS Step Functions and AWS Lambda for orchestration and execution.(#208)
@@ -1396,6 +1448,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **cloudysetup**
 
 [cloudysetup](https://github.com/mostlycloudysky/cloudysetup) is a CLI tool designed to streamline AWS resource management using AWS Cloud Control API. It leverages Amazon Bedrock fully managed service with Anthropic - Claude V2 Gen AI model to create, read, update, list, and delete AWS resources by generating configurations compatible with AWS Cloud Control API.(#201)
+
+**cloud_shark**
+
+cloud_shark is an open source project that helps you to keep track of your AWS spending trends. It sends cost summaries straight to your inbox, and runs entirely on AWS (Lambda + SNS + Cost Explorer). Check out the README, one potential gotcha is that you will need to have Pulumi CLI installed, but that is pretty straightforward. (#216)
 
 **containers-cost-allocation-dashboard**
 
@@ -1674,6 +1730,10 @@ You can populate observations into a datastore and make them available to your h
 
 [cloud-snitch](https://github.com/ccbrown/cloud-snitch/) - is an essential learning tool for anyone using AWS that helps you better understand  your AWS account activity. Inspired by the MacOS tool "Little Snitch", this will visually show you your AWS activity, allow you to share and collaborate with others, summarise your AWS activity through a number of different lenses and help you uncover suspicious behaviour. You have to check out the README to get a look at some of the screenshots of this tool in use, looks super interesting.(#209)
 
+**credproxy**
+
+[credproxy](https://aws-oss.beachgeek.co.uk/4mb) is another awesome project from **John Preston**. credproxy provides a lightweight sidecar container that provides AWS credentials to applications using the same interface as ECS credential providers. Designed for local development and testing to strengthen applications that will later use AWS services like S3. The README provides a nice section on the problem that this project is trying to solve. What might that be I can hear you all saying? Applications often behave differently in local development vs production when using AWS SDKs, especially around credential management and AWS service integration. (#216)
+
 **csr-builder-for-kms**
 
 [csr-builder-for-kms](https://github.com/aws-samples/csr-builder-for-kms) provides a Python library for creating and signing X.509 certificate signing requests (CSRs) with KMS Keys. (#201)
@@ -1706,6 +1766,10 @@ You can populate observations into a datastore and make them available to your h
 **kye**
 
 [kye](https://github.com/zoph-io/kye), also known as "Know Your Enemy", is a tool that analyses IAM Role trust policies and S3 bucket policies in your AWS account to identify third-party vendors with access to your resources. It compares the AWS account IDs found in these policies against a reference list of known AWS accounts from fwd:cloudsec to identify the vendors behind these accounts. Simple to install, the README provides example configurations and instructions on how to get started. (#209)
+
+**mcp-proxy-for-aws**
+
+[mcp-proxy-for-aws](https://aws-oss.beachgeek.co.uk/4md) - is a new project that provides two ways to connect AI applications to MCP servers on AWS. The first is using it as a proxy, it becomes a lightweight, client-side bridge between MCP clients (AI assistants like Claude Desktop, Amazon Q Developer CLI) and MCP servers on AWS. The second is as a library, allowing you to programmatically connect popular AI agent frameworks (LangChain, LlamaIndex, Strands Agents, etc.) to MCP servers on AWS. If you are doing any kind of MCP stuff on AWS, this project is essential so make sure you try it out. (#216)
 
 **OpenSecOps-Org**
 
@@ -2017,6 +2081,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [apeman](https://github.com/hotnops/apeman) is a new tool that helps security people to map and visualise AWS identity attack paths. The README provides detailed instructions on how to get up and running, but I also found the blog post, [ Project Apeman : A Comprehensive Guide To Graph-Based AWS Security Analysis](https://kalilinuxtutorials.com/project-apeman/) very helpful.(#203)
 
+**aws-cdk-self-hosted-n8n-infra**
+ 
+[aws-cdk-self-hosted-n8n-infra](https://aws-oss.beachgeek.co.uk/4m4) this project provides a self-hosted N8N workflow automation platform deployment using AWS CDK. The architecture utilises N8N in queue mode to create a highly performant and scalable infrastructure. (#216)
+
 **bedrock-litellm**
 
 [bedrock-litellm](https://github.com/aws-samples/bedrock-litellm) is an awesome project that provides a way of proxying requests in the OpenAI format, so that they will work with Amazon Bedrock. OpenAI is often one of the default options for integrating various generative AI tools and libraries, and now you have a way of being able to point those to use foundational models managed by Amazon Bedrock. It uses [litellm](https://www.litellm.ai/) to do this, and is deployed in a Kubernetes cluster.(#203)
@@ -2258,6 +2326,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [golang-url-shortener](https://github.com/Furkan-Gulsen/golang-url-shortener) is a project that you can build from Furkan Gulsen that deploys a URL shortener service, built with Go and Hexagonal Architecture, leverages a serverless approach for efficient scalability and performance. It uses a variety of AWS services to provide a robust, maintainable, and highly available URL shortening service. Are URL Shortners the new todo app? Not sure but I really like the quality of the documentation of this project, and like I did last year with implementing a serverless web analytics solution, I am going to check this project out and see if it would be a good replacement for the tool I currently use, YOURLS. Check out the discussion on reddit [here](https://www.reddit.com/r/aws/comments/18nnfix/url_shortener_hexagonal_serverless_architecture/).(#183)
 
+**guidance-for-deploying-model-context-protocol-servers-on-aws**
+
+[guidance-for-deploying-model-context-protocol-servers-on-aws](https://aws-oss.beachgeek.co.uk/4m3) aside from being a contender for longest project name in this months round up, provides examples of how to securely run Model Context Protocol (MCP) servers on the AWS Cloud using containerised architecture. It helps organisations implement industry-standard OAuth 2.0 authentication while protecting server deployments with multiple security layers, including content delivery networks and web application firewalls.(#216)
+
 **hackernews-converse-api-demo**
 
 [hackernews-converse-api-demo](https://github.com/094459/hackernews-converse-api-demo) this repo provides some sample code on how you can use the Amazon Bedrock Converse API, using an example of summarising comments from a Hacker News thread. It is a simple example, but shows you how easy it is to incorporate generative AI in your own applications. You can check out the supporting blog post too, [Save time reading Hacker News comments using Converse API](https://community.aws/content/2jhDpOY0CI1KEhKkk1GFDEYUWHd/save-time-reading-hacker-news-comments-using-converse-api) (#202)
@@ -2281,6 +2353,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **makit-llm-lambda**
 
 [makit-llm-lambda ](https://github.com/makit/makit-llm-lambda)this repo from Martyn Kilbryde is an example of how you can run a Large Language Model (LLM) inside an AWS Lambda Function.  Whilst the code will help you deploy to AWS Lambda, it can be ran locally inside Docker for testing as well. The function contains the full LLM model and the code to use the model, allowing basic text generation from a HTTP call into it. (#177)
+
+**multi-cloud-data-platform**
+
+[multi-cloud-data-platform](https://aws-oss.beachgeek.co.uk/4m0) **Alireza Davoudi** has put together this repository contains an end-to-end data platform "playground" simulating a e-commerce marketplace. It's designed for data engineers to quickly experiment with various data engineering use cases in a semi-realistic environment. The architecture combines a local stack (Kafka, Debezium, MySQL) with cloud services. The primary goal is to provide a complete, replicable infrastructure setup for different cloud providers (starting with AWS). (#216)
 
 **multi-tenant-chatbot-using-rag-with-amazon-bedrock**
 
@@ -2306,6 +2382,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **quarkus-bedrock-demo**
 
 [quarkus-bedrock-demo](https://github.com/build-on-aws/amazon-bedrock-java-examples/tree/main/demos/quarkus-bedrock-demo) This is a sample project from my colleague Denis Traub, based on [work from Vini](https://github.com/vsenger/quarkus-bedrock)  , that demonstrates how to access Amazon Bedrock from a Quarkus application deployed on AWS Lambda. (#177)
+
+**react-native-multi-tv-app-sample**
+
+[react-native-multi-tv-app-sample](https://aws-oss.beachgeek.co.uk/4m6) **Giovanni Laquidara** has shared this amazing repo which I have on my todo list to try out. Have you ever fancied trying to build an application you could host on your FireOS powered TV? I know I have, and so the news that Gio has put together a production ready TV application template built with React Native, that supports Android TV, Apple TV, Fire TV (with Fire OS), Fire TV (with Vega OS) and Web TV platforms is just what I wanted to hear. This monorepo showcases best practices for building cross-platform TV applications with shared UI components, efficient focus management, and platform-specific optimisations. (#216)
 
 **real-time-social-media-analytics-with-generative-ai**
 
@@ -2374,6 +2454,10 @@ sample-on-demand-workflow-orchestrator - this repo lets you build a serverless, 
 **strands-a2a-demo**
 
 [strands-a2a-demo](https://github.com/danilop/strands-a2a-demo) this repo provides a demo that showcases multiple AI agents using the complete official A2A (agent-to-agent) Python SDK patterns from google-a2a/a2a-samples. The agents use the Strands Agents Python SDK for their LLM implementation, fully integrated with the official A2A SDK patterns. This project features a unified a2a-client with multiple modes of operation, including web-based UI, voice interaction capabilities, and comprehensive testing.(#212)
+
+**strands-agents-semantic-summarizing-conversation-manager**
+
+[strands-agents-semantic-summarizing-conversation-manager](https://aws-oss.beachgeek.co.uk/4mf) this repo from my good friend **Danilo Poccia** provides a demonstration of a conversation management system for Strands Agents that combines summarisation with exact message recall using semantic search. As a prototype, this system demonstrates the core concepts but would benefit from additional hardening, testing, and optimization before production use. (#216)
 
 **strands-agent-on-lambda**
 
