@@ -12,9 +12,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [abc](https://github.com/alestic/abc) is an AI bash tool that integrates with Amazon Bedrock as a foundation model provider. This tool will generate shell command(s) from natural language description using which ever LLM (generative AI) you configure, and place on the next shell prompt for editing and execution. Plenty of details in the README on how to configure and run this, so give it a go if you are looking for something that integrates with Amazon Bedrock.(#206)
 
-**agentcore-memory-browser**
+**agent-sop**
 
-[agentcore-memory-browser](https://github.com/danilop/agentcore-memory-browser) is another project from  **Danillo Poccia** (he is on fire at the moment!!)   that provides a web interface for browsing and exploring Amazon Bedrock AgentCore Memory resources. This application provides a user friendly way to interact with AgentCore Memory data through both control plane and data plane APIs. Check out the README for a short video of what this looks like and how it works - it is really very cool. (#214)
+[agent-sop](https://aws-oss.beachgeek.co.uk/4nk) this repo provides a collection of workflows that enable AI agents to perform complex, multi-step tasks with consistency and reliability. Agent SOPs (Standard Operating Procedures) are markdown-based instruction sets that guide AI agents through sophisticated workflows using natural language, parameterised inputs, and constraint-based execution. They transform complex processes into reusable, shareable workflows that work across different AI systems and teams.
+There are currently several SOPs available: code base summary, prompt driven development (pdd), code task generator, Test Driven Development code implementation, and an agentic evaluation framework.(#217)
 
 **agent-dev-toolkit**
 
@@ -23,6 +24,10 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 **agent-evaluation**
 
 [agent-evaluation](https://github.com/awslabs/agent-evaluation)  is a generative AI-powered framework for testing virtual agents. Agent Evaluation implements an LLM agent (evaluator) that will orchestrate conversations with your own agent (target) and evaluate the responses during the conversation. The repo has links to detailed docs that provide example configurations and a reference guide to get you started. (#197)
+
+**agentcore-memory-browser**
+
+[agentcore-memory-browser](https://github.com/danilop/agentcore-memory-browser) is another project from  **Danillo Poccia** (he is on fire at the moment!!)   that provides a web interface for browsing and exploring Amazon Bedrock AgentCore Memory resources. This application provides a user friendly way to interact with AgentCore Memory data through both control plane and data plane APIs. Check out the README for a short video of what this looks like and how it works - it is really very cool. (#214)
 
 **ai-on-eks**
 
@@ -99,11 +104,21 @@ If you want your projects featured, please get in touch with ricsue at amazon do
 
 [bedrock-agentcore-sdk-python](https://github.com/aws/bedrock-agentcore-sdk-python) is the public preview of the Bedrock AgentCore SDK. Amazon Bedrock AgentCore, a comprehensive set of enterprise-grade services that help developers quickly and securely deploy and operate AI agents at scale using any framework and model, hosted on Amazon Bedrock or elsewhere. Check out my colleague Danilo's blog post to find out more, [Introducing Amazon Bedrock AgentCore: Securely deploy and operate AI agents at any scale (preview)](https://aws.amazon.com/blogs/aws/introducing-amazon-bedrock-agentcore-securely-deploy-and-operate-ai-agents-at-any-scale/?trk=fd6bb27a-13b0-4286-8269-c7b1cfaa29f0&sc_channel=el) (#212)
 
+**bedrock-agentcore-sdk-typescript**
+
+[bedrock-agentcore-sdk-typescript](https://aws-oss.beachgeek.co.uk/4nd) is the official repo for the Amazon Bedrock AgentCore SDK in TypeScript. Amazon Bedrock AgentCore enables you to deploy and operate highly effective agents securely, at scale using any framework and model. With Amazon Bedrock AgentCore, developers can accelerate AI agents into production with the scale, reliability, and security, critical to real-world deployment. AgentCore provides tools and capabilities to make agents more effective and capable, purpose-built infrastructure to securely scale agents, and controls to operate trustworthy agents. Amazon Bedrock AgentCore services are composable and work with popular open-source frameworks and any model, so you don’t have to choose between open-source flexibility and enterprise-grade security and reliability. (#217)
+
 **bedrock-agentcore-starter-toolkit**
 
 [bedrock-agentcore-starter-toolkit](https://github.com/aws/bedrock-agentcore-starter-toolkit) provides a CLI toolkit for deploying AI agents to Amazon Bedrock AgentCore. Zero infrastructure management with built-in gateway and memory integrations. This is currently in public preview, so subject to breaking changes - so bear that in mind when you try this out. (#212)
 
+**bedrock-mantle**
 
+[bedrock-mantle](https://aws-oss.beachgeek.co.uk/4nl) is a new repo from my good friend **Danilo Poccia** that helps you explore the Amazon Bedrock OpenAI-compatible APIs from the command line. This was one of the announcements from re:Invent that perhaps slipped under everyones attention, so Danilo has put together this project and a blog post to help you explore this. Go read [Exploring the OpenAI-Compatible APIs in Amazon Bedrock: A CLI Journey Through Project Mantle](https://dev.to/aws/exploring-the-openai-compatible-apis-in-amazon-bedrock-a-cli-journey-through-project-mantle-2114) and then try this project out.(#217)
+
+**bedrock-usage-analyzer**
+
+[bedrock-usage-analyzer](https://aws-oss.beachgeek.co.uk/4n8) this CLI tool visualises foundation model (FM) usage in Amazon Bedrock. It calculates the tokens-per-minute/TPM and requests-per-minute/RPM. It also aggregates the FM usage across Bedrock application inference profiles and provides visibility on current usage gap towards the service quotas. While Amazon CloudWatch already provides metrics for the FMs used in Bedrock, it might not be straightforward to calculate TPM & RPM, to aggregate token usage across application inference profiles, and see how each profile contributes to usage. Also, the quota lookup needs to be done separately via AWS service quotas. With this tool, you can specify the region and model to analyse and it will fetch the usage across last 1 hour, 1 day, 7 days, 14 days, and 30 days, each with aggregated data across the application inference profiles. It will generate HTML report containing the statistics table and time series data. (#217)
 
 **bedrock-embed-web**
 
@@ -303,6 +318,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 **mkdocs-mcp**
 
 [mkdocs-mcp](https://github.com/serverless-dna/mkdocs-mcp) is another project from **AWS Hero Michael Walmsley** that provides search functionality for any MkDocs powered site. This server relies on the existing MkDocs search implementation using the Lunr.Js search engine. (#210)
+
+**ml-container-creator**
+
+[ml-container-creator](https://aws-oss.beachgeek.co.uk/4n6) is a new project that helps reduce the complexity of creating your own container images that you can deploy on Amazon SageMaker using the Bring Your Own Container (BYOC) approach. This gives you full control over your model's runtime environment while leveraging SageMaker's managed infrastructure for hosting and scaling. Every generated project includes: SageMaker-compatible container with health checks and invocation endpoints, local testing suite to validate before deployment, sample model and training code to illustrate the deployment, AWS deployment scripts for ECR and SageMaker, and multi-framework support (sklearn, XGBoost, TensorFlow, vLLM, SGLang). The documentation is top class, so if this sounds interesting, go check out the [Getting Started Guide](https://awslabs.github.io/ml-container-creator/getting-started/). (#217)
 
 **multi-agent-orchestrator**
 
@@ -517,6 +536,10 @@ You can populate observations into a datastore and make them available to your h
 
 [apigw-multi-region-failover](https://github.com/aws-samples/apigw-multi-region-failover) provides demo code that demonstrates an Amazon API Gateway multi-region active-passive public API that proxies two independent multi-region active-passive service APIs. The primary and secondary regions can be configured independently for the external API and each service. This allows you to fail over the external API and each service independently as needed for disaster recovery. (#193)
 
+**arch-navigator**
+
+[arch-navigator](https://aws-oss.beachgeek.co.uk/4n5) is an open source desktop application that helps cloud builders navigate and understand their infrastructure. It provides a simple tree view of AWS resources and their relationships using existing APIs. Browse, inspect, and understand relationships between resources across AWS and other cloud providers.The repo provides details of how to get this project up and running, as well as the resources currently supported. Go check it out and let them know what you think. Project is at an early stage, so take that into consideration when exploring.(#217)
+
 **aws-cdk-imagebuilder-sample**
 
 [aws-cdk-imagebuilder-sample](https://github.com/aws-samples/aws-cdk-imagebuilder-sample) this repo uses AWS CDK (TypeScript) that demonstrates how to create a fully functional ImageBuilder pipeline that builds an Amazon Linux 2023 container image, installing git, docker and nodejs, all the way to pushing the resulting image to an ECR repository.(#189)
@@ -600,6 +623,14 @@ You can populate observations into a datastore and make them available to your h
 **llrt**
 
 [llrt](https://github.com/awslabs/llrt) - Low Latency Runtime (LLRT) is a lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications. LLRT offers up to over 10x faster startup and up to 2x overall lower cost compared to other JavaScript runtimes running on AWS Lambda. It's is built in Rust, utilising QuickJS as JavaScript engine, ensuring efficient memory usage and swift startup. (#188)
+
+**migration-accelerator-graviton**
+
+[migration-accelerator-graviton](https://aws-oss.beachgeek.co.uk/4n7) is a super handy tool for those of you looking to move your workloads to AWS Graviton based instances. It will automatically analyse SBOM files and dependency manifests for Java, Node.js, Python, .NET, and Ruby applications to determine AWS Graviton (ARM64) compatibility and accelerate your migration to Graviton instances. (#217)
+
+**ml-container-creator**
+
+[ml-container-creator](https://aws-oss.beachgeek.co.uk/4n6) is a new project that helps reduce the complexity of creating your own container images that you can deploy on Amazon SageMaker using the Bring Your Own Container (BYOC) approach. This gives you full control over your model's runtime environment while leveraging SageMaker's managed infrastructure for hosting and scaling. Every generated project includes: SageMaker-compatible container with health checks and invocation endpoints, local testing suite to validate before deployment, sample model and training code to illustrate the deployment, AWS deployment scripts for ECR and SageMaker, and multi-framework support (sklearn, XGBoost, TensorFlow, vLLM, SGLang). The documentation is top class, so if this sounds interesting, go check out the [Getting Started Guide](https://awslabs.github.io/ml-container-creator/getting-started/). (#217)
 
 **runbox-cloud**
 
@@ -728,6 +759,10 @@ You can populate observations into a datastore and make them available to your h
 
 [glide-for-redis](https://github.com/aws/glide-for-redis) or General Language Independent Driver for the Enterprise (GLIDE) for Redis (mayeb GLIDER would have been cooler :-) is a new open source client for Redis that works with any Redis distribution that adheres to the Redis Serialization Protocol (RESP) specification. The client is optimised for security, performance, minimal downtime, and observability, and comes pre-configured with best practices learned from over a decade of operating Redis-compatible services used by hundreds of thousands of customers. (#185)
 
+**grafq**
+
+[grafq](https://aws-oss.beachgeek.co.uk/4nj) is a project from **Dhruv Thakur** that lets you query Neo4j/AWS Neptune databases via an interactive console. The inspiration for this project came from needing a terminal based solution.(#217)
+
 **graphc**
 
 [graphc](https://github.com/dhth/graphc) (stands for "graph console")  and is a really nice interactive text user interface from **Dhruv Thakur** that lets you query Neo4j/AWS Neptune databases via the command line.(#213)
@@ -822,6 +857,15 @@ You can populate observations into a datastore and make them available to your h
 **abc**
 
 [abc](https://github.com/alestic/abc) is an AI bash tool that integrates with Amazon Bedrock as a foundation model provider. This tool will generate shell command(s) from natural language description using which ever LLM (generative AI) you configure, and place on the next shell prompt for editing and execution. Plenty of details in the README on how to configure and run this, so give it a go if you are looking for something that integrates with Amazon Bedrock.(#206)
+
+**agent-sop**
+
+[agent-sop](https://aws-oss.beachgeek.co.uk/4nk) this repo provides a collection of workflows that enable AI agents to perform complex, multi-step tasks with consistency and reliability. Agent SOPs (Standard Operating Procedures) are markdown-based instruction sets that guide AI agents through sophisticated workflows using natural language, parameterised inputs, and constraint-based execution. They transform complex processes into reusable, shareable workflows that work across different AI systems and teams.
+There are currently several SOPs available: code base summary, prompt driven development (pdd), code task generator, Test Driven Development code implementation, and an agentic evaluation framework.(#217)
+
+**aidlc-workflows**
+
+[aidlc-workflows](https://aws-oss.beachgeek.co.uk/4n4) is an interesting new framework for intelligent software development workflow that adapts to your needs, maintains quality standards, and keeps you in control of the process. You can use to re-imagine your software development life cycle, taking a step back and providing you with an extensible and customisable framework. I spent a couple of weeks with this back in October, and found it both flexible and powerful enough to produce very good results on a number of example use cases. Check out the supporting blog post, [Open-Sourcing Adaptive Workflows for AI-Driven Development Life Cycle (AI-DLC)](https://aws-oss.beachgeek.co.uk/4n1) and [Building with AI-DLC using Amazon Q Developer](https://aws-oss.beachgeek.co.uk/4n2) for more details. (#217)
 
 **alarm-context-tool**
 
@@ -1093,6 +1137,10 @@ aws-lambda-stubs is a new project from **AWS Community Builder Ricardo Cino** th
 
 [e1s](https://github.com/keidarcy/e1s)  is a terminal application from [Xing Yahao](https://twitter.com/keidarcy) to easily browse and manage AWS ECS resources, supports both Fargate and EC2 ECS launch types. Inspired by k9s. e1s uses the default aws-cli configuration. It does not store or send your access and secret key anywhere. The access and secret key are used only to securely connect to AWS API via AWS SDK. e1s is available on Linux, macOS and Windows platforms. (#197)
 
+**ec2ssh**
+
+[ec2ssh](https://aws-oss.beachgeek.co.uk/4ng) is a tool you might want to try out if you are not using Amazon EC2 Session Manager to connect to your EC2 instances. This tool describes itself as the Swiss Army knife for EC2 instance access. SSH, SCP, SFTP, and SSM - one tool, zero configuration. Comprehensive docs which covers everything you need to know.(#217)
+
 **eks-saas-gitops**
 
 [eks-saas-gitops](https://github.com/aws-samples/eks-saas-gitops) This repository offers a sample pattern to manage multi-tenancy in a Kubernetes cluster using GitOps with Flux. The provided CloudFormation template automates the deployment of necessary AWS resources and sets up an environment ready for GitOps practices. (#184)
@@ -1112,6 +1160,10 @@ aws-lambda-stubs is a new project from **AWS Community Builder Ricardo Cino** th
 **git-remote-s3**
 
 [git-remote-s3](https://github.com/awslabs/git-remote-s3) is a neat tool that provides you with the ability to use Amazon S3 as a [Git Large File Storage (LFS)](https://git-lfs.com/) remote provider. It provides an implementation of a git remote helper to use S3 as a serverless Git server. The README provides good examples of how to set this up and example git commands that allow you to use this setup. This is pretty neat, and something I am going to try out for myself in future projects. (#204)
+
+**grafq**
+
+[grafq](https://aws-oss.beachgeek.co.uk/4nj) is a project from **Dhruv Thakur** that lets you query Neo4j/AWS Neptune databases via an interactive console. The inspiration for this project came from needing a terminal based solution.(#217)
 
 **kiro-steering-docs**
 
@@ -1152,6 +1204,10 @@ aws-lambda-stubs is a new project from **AWS Community Builder Ricardo Cino** th
 **Log-Analyzer-with-MCP**
 
 [Log-Analyzer-with-MCP](https://github.com/awslabs/Log-Analyzer-with-MCP) - this repo provides a Model Context Protocol (MCP) server that provides AI assistants access to AWS CloudWatch Logs for analysis, searching, and correlation. The README provides everything you need to get started, as well as providing links that dive deeper into how this works. (#209)
+
+**LogCost**
+
+[LogCost](https://aws-oss.beachgeek.co.uk/4ne) is a new tool that helps you find expensive log statements by tracking and aggregating logs at the source code level. Drop-in instrumentation (just import logcost) that pinpoints which lines generate the most data, helping you cut cloud logging costs by 40-60% without guessing. Instead of wondering where your logging costs go, LogCost shows the exact file:line, bytes logged, cost, and call count. Fix the top offenders and save hundreds monthly. Check out the README for some great examples of the output and how you can integrate this with your workloads. Really nice. (#217)
 
 **mcp**
 
@@ -1356,6 +1412,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [appfabric-data-analytics](https://github.com/aws-samples/appfabric-data-analytics) this project enables you to maintain logs from various SaaS applications and provides the ability to search and display log data. This solution leverages AWS AppFabric to create a data repository that you can query with Amazon Athena. While customers can obtain normalized and enriched SaaS audit log data (OCSF) from AppFabric, many prefer not only to forward these logs to a security tool. Some have the requirement to preserve logs for post-incident analysis, while others need to utilize the logs for tracking SaaS subscription and license usage. Additionally, some customers aim to analyze user activity to discover patterns. This project establishes a data pipeline that empowers customers to construct dashboards on top of it. (#184)
 
+**arch-navigator**
+
+[arch-navigator](https://aws-oss.beachgeek.co.uk/4n5) is an open source desktop application that helps cloud builders navigate and understand their infrastructure. It provides a simple tree view of AWS resources and their relationships using existing APIs. Browse, inspect, and understand relationships between resources across AWS and other cloud providers.The repo provides details of how to get this project up and running, as well as the resources currently supported. Go check it out and let them know what you think. Project is at an early stage, so take that into consideration when exploring.(#217)
+
 **automated-datastore-discovery-with-aws-glue**
 
 [automated-datastore-discovery-with-aws-glue](https://github.com/aws-samples/automated-datastore-discovery-with-aws-glue) This sample shows you how to automate the discovery of various types of data sources in your AWS estate. Examples include - S3 Buckets, RDS databases, or DynamoDB tables. All the information is curated using AWS Glue - specifically in its Data Catalog. It also attempts to detect potential PII fields in the data sources via the Sensitive Data Detection transform in AWS Glue. This framework is useful to get a sense of all data sources in an organisation's AWS estate - from a compliance standpoint. An example of that could be GDPR Article 30. Check out the README for detailed architecture diagrams and a break down of each component as to how it works. (#198)
@@ -1425,6 +1485,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [aws-size](https://github.com/FogSecurity/aws-size) is a great tool that **AWS Community Builder Jason Kao** that checks hard to find size limits and usage for AWS which can help provide advance warning to teams about resource limits in AWS before it's too late. Usage of these limits are not covered by AWS provided tooling such as Service Quotas and Trusted Advisor. Read the introduction blog post, [Introducing aws-size: A New Open Source Tool for Difficult Service Limit Visibility in AWS](https://www.fogsecurity.io/blog/aws-size-release) to find out more. (#213)
 
+**bedrock-usage-analyzer**
+
+[bedrock-usage-analyzer](https://aws-oss.beachgeek.co.uk/4n8) this CLI tool visualises foundation model (FM) usage in Amazon Bedrock. It calculates the tokens-per-minute/TPM and requests-per-minute/RPM. It also aggregates the FM usage across Bedrock application inference profiles and provides visibility on current usage gap towards the service quotas. While Amazon CloudWatch already provides metrics for the FMs used in Bedrock, it might not be straightforward to calculate TPM & RPM, to aggregate token usage across application inference profiles, and see how each profile contributes to usage. Also, the quota lookup needs to be done separately via AWS service quotas. With this tool, you can specify the region and model to analyse and it will fetch the usage across last 1 hour, 1 day, 7 days, 14 days, and 30 days, each with aggregated data across the application inference profiles. It will generate HTML report containing the statistics table and time series data. (#217)
+
 **CDOps-Cloud-Zombie-Hunter**
 
 [CDOps-Cloud-Zombie-Hunter](https://aws-oss.beachgeek.co.uk/4mc) is an open-source command-line utility that scans your AWS environment for unused resources—what we call "zombies"—that are quietly draining your budget. Check out the README for the list and kinds of resources within its cross hair, and before you panic, the tool is READ ONLY, so you still have to do some work finishing off those zombies. (#216)
@@ -1452,6 +1516,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 **cloud_shark**
 
 cloud_shark is an open source project that helps you to keep track of your AWS spending trends. It sends cost summaries straight to your inbox, and runs entirely on AWS (Lambda + SNS + Cost Explorer). Check out the README, one potential gotcha is that you will need to have Pulumi CLI installed, but that is pretty straightforward. (#216)
+
+**cloudwatcher-aws-cloudformation**
+
+[cloudwatcher-aws-cloudformation](https://aws-oss.beachgeek.co.uk/4nf) is a repo that contains CloudFormation templates for monitoring AWS Organizations with CloudWatch alarms and automated email notifications. Cloudwatcher is an AWS security monitoring solution that automatically detects and alerts on suspicious activities in your AWS Organization. It monitors CloudTrail logs for security-relevant events and sends formatted email notifications when alarms are triggered.(#217)
 
 **containers-cost-allocation-dashboard**
 
@@ -1493,6 +1561,10 @@ cloud_shark is an open source project that helps you to keep track of your AWS s
 
 [integrate-control-tower-with-ipam](https://github.com/aws-samples/integrate-control-tower-with-ipam) This project implements a solution which integrates Amazon IP Address Management (IPAM) within AWS Control Tower through the use of Lifecycle Events. It presents the architecture view and shows how this solution extends your AWS Control Tower environment with Amazon IPAM to allow teams to access IPAM pools for their workload accounts.(#202)
 
+**LogCost**
+
+[LogCost](https://aws-oss.beachgeek.co.uk/4ne) is a new tool that helps you find expensive log statements by tracking and aggregating logs at the source code level. Drop-in instrumentation (just import logcost) that pinpoints which lines generate the most data, helping you cut cloud logging costs by 40-60% without guessing. Instead of wondering where your logging costs go, LogCost shows the exact file:line, bytes logged, cost, and call count. Fix the top offenders and save hundreds monthly. Check out the README for some great examples of the output and how you can integrate this with your workloads. Really nice. (#217)
+
 **my-steampipe-arsenal**
 
 [my-steampipe-arsenal](https://github.com/gabrielsoltz/my-steampipe-arsenal/blob/main/check-route53-inactive-alias.sql) Sometimes GitHub Gists or snippets are super useful, and Gabriel Soltz shares one such useful snippet in his repo of Steampipe queries that allows you to check for inactive Route53 alias'. Check out some of the other ones he shares too. (#203)
@@ -1529,6 +1601,10 @@ You can populate observations into a datastore and make them available to your h
 
 [rds-extended-support-cost-estimator](https://github.com/aws-samples/rds-extended-support-cost-estimator) provides scripts can be used to help estimate the cost of RDS Extended Support for RDS instances & clusters in your AWS account and organisation. In September 2023, we announced Amazon RDS Extended Support, which allows you to continue running your database on a major engine version past its RDS end of standard support date on Amazon Aurora or Amazon RDS at an additional cost. These scripts should be run from the payer account of your organisation to identify the RDS clusters in your organisation that will be impacted by the extended support and the estimated additional cost. Check the README for additional details as to which database engines it will scan and provide estimations for. (#193)
 
+**relia_oss**
+
+[relia_oss](https://aws-oss.beachgeek.co.uk/4nh) is a new project from **David Ahmann** which views itself as the "ESLint" for Cloud Costs", and the aim of this project is to help prevent cloud waste before it ships to production. Relia sits in your Pull Request. It parses your Terraform changes, estimates the monthly cost impact, and blocks the merge if you blow your budget. Check out the README for details on the workflow and how it works.(#217)
+
 **s3-restore-and-copy-progress-monitoring**
 
 [s3-restore-and-copy-progress-monitoring](https://github.com/aws-samples/s3-restore-and-copy-progress-monitoring) this is a very comprehensive and polished repo that provides an example of how you can restore data that you have stored in S3, providing you a single visualised dashboard to monitor the restore and copy progress within a defined scope.(#189)
@@ -1536,6 +1612,10 @@ You can populate observations into a datastore and make them available to your h
 **sample-cost-per-transaction**
 
 [sample-cost-per-transaction](https://github.com/aws-samples/sample-cost-per-transaction) - is a repo that provides a cost intelligence solution that correlates application performance traces with Infrastructure costs, providing unprecedented transaction-level visibility to drive strategic business decisions. (#213)
+
+**sample-inventory-monitor-fim**
+
+[sample-inventory-monitor-fim](https://aws-oss.beachgeek.co.uk/4nc) this sample demonstrates how to use AWS Systems Manager (SSM) Inventory to monitor file changes on Amazon EC2 instances, forward findings to AWS Security Hub, and store them in Amazon Security Lake for centralised analysis and visualisation.(#217)
 
 **sample-service-quotas-replicator-for-aws**
 
@@ -1746,6 +1826,10 @@ You can populate observations into a datastore and make them available to your h
 
 [duplicate-rule-detection-tool](https://github.com/aws-samples/duplicate-rule-detection-tool) is a project to assess the current active AWS Config rules with potential duplicate scope in an AWS account. Our goal is to help customers can make informed decisions on how to streamline their AWS Config rules and reduce complexity. Plenty of examples and detailed breakdown of how this works in the README, so give it a look. (#190)
 
+**ec2ssh**
+
+[ec2ssh](https://aws-oss.beachgeek.co.uk/4ng) is a tool you might want to try out if you are not using Amazon EC2 Session Manager to connect to your EC2 instances. This tool describes itself as the Swiss Army knife for EC2 instance access. SSH, SCP, SFTP, and SSM - one tool, zero configuration. Comprehensive docs which covers everything you need to know.(#217)
+
 **finders-keypers**
 
 [finders-keypers](https://github.com/FogSecurity/finders-keypers) is a command line tool that will explore your AWS account and kook for direct connections for KMS Keys and resources in your account. This tool supports both AWS Customer Managed KMS Keys and AWS Managed KMS Keys (with some additional details in the README that you should check out). Typical use cases where this tool is helpful includes security and audit for KMS Key and Resources, Data Protection with Encryption, discovering blast radius of a specific KMS Key, changing a KMS Key or rotating key material, checking Default Settings in AWS that create new resources with the KMS Key, and audit of your resources that a KMS Key may grant access to. README provide examples of how to run the cli against some of those use cases. Very nice tool indeed.(#211)
@@ -1794,6 +1878,10 @@ You can populate observations into a datastore and make them available to your h
 **s3-presignedurl-staticips-endpoint-with-cdk**
 
 [s3-presignedurl-staticips-endpoint-with-cdk](https://github.com/aws-samples/s3-presignedurl-staticips-endpoint-with-cdk) this solution simplifies access to Amazon S3 by creating secure, custom presigned URLs for object downloads through a single endpoint with a unique domain and static IPs. The use case involves users following an IP and domain Allowlist firewall policy, limiting API access to specific domains and IPs. The architecture employs key AWS services, including AWS Global Accelerator, Amazon API Gateway, AWS Lambda, Application Load Balancer(ALB), VPC Endpoint, and Amazon S3. This design centralizes the API for generating presigned URLs and the S3 endpoint under a single domain, linked to an AWS Global Accelerator with two static IPs. Consequently, users can effortlessly request presigned URLs and download S3 objects through a unified domain endpoint with static IPs. This architecture is especially beneficial for customers with strict policies or compliance requirements, such as those in the public, medical, and finance sectors. (#184)
+
+**sample-agentic-attack-tree-generator**
+
+[sample-agentic-attack-tree-generator](https://aws-oss.beachgeek.co.uk/4na) is an AI-powered threat modeling platform built on Strands Framework. It automatically generates comprehensive attack trees from your project documentation and threat models, mapping them to MITRE ATT&CK techniques with actionable mitigation strategies.(#217)
 
 **sample-code-for-a-secure-vault-using-aws-nitro-enclaves**
 
@@ -2263,6 +2351,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [deploy-langfuse-on-ecs-with-fargate](https://github.com/aws-samples/deploy-langfuse-on-ecs-with-fargate) This repository contains the AWS CDK Python code for deploying the Langfuse application using Amazon Elastic Container Registry (ECR) and Amazon Elastic Container Service (ECS). If you are not familiar with Langfuse, it is is an open-source LLM engineering platform that helps teams collaboratively debug, analyze, and iterate on their LLM applications.(#203)
 
+**devtoagent**
+
+[devtoagent](https://aws-oss.beachgeek.co.uk/4nm) is the first of two projects by **Giovanni Laquidara** featured in this month's edition. If you use the dev.to platform, then this project is something you should be checking out. It helps you simplify the process of creating blog posts on this platform, using agentic AI to automate some of the tasks around the initial writing, structure, illustration and publishing (in draft). As someone who uses dev.to a lot, I am going to try this out and see how it can make me more productive. Very nice work Gio.(#217)
+
 **distill-cli**
 
 [distill-cli](https://github.com/awslabs/distill-cli) is a new project from Amazon CTO Dr Werner Vogels, which uses Amazon Transcribe and Amazon Bedrock to create summaries of your audio recordings (e.g., meetings, podcasts, etc.) directly from the command line. Distill CLI takes a dependency on Amazon Transcribe, and as such, supports the following media formats: AMR, FLAC, M4A, MP3, MP4, Ogg, WebM, WAV. It is great to feature this latest project, with the previous one being featured in [#197](https://community.aws/content/2gPNtsdSfQRIpmbUrNyPrjUg54D/aws-open-source-newsletter-197). To go with this repo, there is a post too, [Introducing Distill CLI: An efficient, Rust-powered tool for media summarization](https://www.allthingsdistributed.com/2024/06/introducing-distill-cli.html) where Werner shares his experience building this tool in Rust, and provides some closing thoughts too. (#200)
@@ -2321,6 +2413,9 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [get-the-news-rss-atom-feed-summary](https://github.com/build-on-aws/get-the-news-rss-atom-feed-summary) is a fantastic demo that demonstrates some of the capabilities that using large language models can help you introduce into your applications. The demo code provides a summary of the most recent news from an RSS or Atom feed using Amazon Bedrock. (#185)
 
+**gio-comic**
+
+[gio-comic](https://aws-oss.beachgeek.co.uk/4nn) is a project from **Giovanni Laquidara** that will help you generate professional quality comics from natural language descriptions using Google's state-of-the-art image generation model and the Strands Agents framework. Check out the image below, which was generated using this framework.(#217)
 
 **golang-url-shortener**
 
@@ -2403,6 +2498,10 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [sample-ai-agent-accelerator](https://github.com/aws-samples/sample-ai-agent-accelerator) - if you wanted to get hands on with Amazon Bedrock AgentCore, then this repo is for you. This project is a sample reference implementation that showcases how to quickly build an AI agent using the Bedrock AgentCore building blocks. The implementation is fully serverless leveraging AgentCore Runtime, AgentCore Memory, AgentCore Observability, and Amazon S3 Vectors for Agentic RAG, eliminating the need to run databases. The agent is built using the Strands Agent Python library and hosted on the AgentCore Runtime. It uses Strand's built-in retrieve tool to perform semantic search using Bedrock Knowledge Bases, which ingests documents from an S3 bucket and stores the indexed vectors in S3 Vectors. User conversation state and history are fully managed by AgentCore Memory. Users interact with the agent via a web app that provides both a web GUI and an HTTP JSON API, hosted as a container on ECS Fargate behind an ALB. The web app is built using Python Flask and HTMX. (#213)
 
+**sample-agentic-arcade-game-starter**
+
+[sample-agentic-arcade-game-starter](https://aws-oss.beachgeek.co.uk/4nb) is a fun project to check out over the holidays, providing an AI assisted game development specifications for building browser based arcade games using Kiro and Phaser 3. This repository provides complete specifications that enable Kiro to generate fully functional games from simple natural language prompts.(#217)
+
 **sample-ai-powered-sdlc-patterns-with-aws**
 
 [sample-ai-powered-sdlc-patterns-with-aws](https://github.com/aws-samples/sample-ai-powered-sdlc-patterns-with-aws) is a repo repo contains AI-powered software development patterns showing how to integrate generative AI in different stages of software development lifecycle using Amazon Q Developer, Amazon Q Business and Amazon Bedrock. This collection of patterns demonstrates practical approaches for leveraging AWS's generative AI capabilities across the software development lifecycle (SDLC). The patterns are designed to help development teams enhance productivity, improve quality, and accelerate delivery through AI-powered development. (#215)
@@ -2430,6 +2529,10 @@ sample-on-demand-workflow-orchestrator - this repo lets you build a serverless, 
 **sample-sonic-java-playground**
 
 [sample-sonic-java-playground](https://github.com/aws-samples/sample-sonic-java-playground) - is a full-stack playground application for experimenting with Amazon's NovaSonic API capabilities, built with React (v18.2.0) and Spring Boot (v3.2.0). The application supports invoking NovaSonic Speech to Speech model by configuring supported parameters.(#213)
+
+**sample-sonic-sip-server-js**
+
+[sample-sonic-sip-server-js](https://aws-oss.beachgeek.co.uk/4n9) provides sample code to implement an AI-powered conversation server that handles incoming phone calls using Amazon Nova Sonic in Amazon Bedrock. The server can access a customised Amazon Bedrock knowledge base for company-specific information. A flexible solution for businesses that need AI-powered phone conversation handling.(#217)
 
 **serverless-genai-food-analyzer-app**
 
@@ -2482,6 +2585,10 @@ sample-on-demand-workflow-orchestrator - this repo lets you build a serverless, 
 **swift-chat**
 
 [swift-chat](https://github.com/aws-samples/swift-chat)  is a fast and responsive AI chat application developed with React Native and powered by Amazon Bedrock. With its minimalist design philosophy and robust privacy protection, it delivers real-time streaming conversations and AI image generation capabilities across Android, iOS, and macOS platforms. Check out the README for plenty of in depth details including sample screenshots from mobile simulators. Essential for any Swift developer (#206)
+
+**terraform-aws-secure-static-site**
+
+[terraform-aws-secure-static-site](https://aws-oss.beachgeek.co.uk/4ni) this project from **Damien Burks** was the result of some [inspired Kiro spec driven development](https://www.linkedin.com/posts/damienjburks_github-damienjburksterraform-aws-secure-static-site-activity-7404920638131306496-48YB/), that provides a secure, production ready Terraform module for hosting static websites on AWS with multi-region failover, comprehensive security hardening, and automated deployment.(#217)
 
 **terraform-f1-telemetry-infra**
 
