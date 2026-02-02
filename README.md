@@ -258,6 +258,10 @@ Evaluating large language models (LLM) is challenging due to their broad capabil
 
 [langgraph-aws-deployment](https://github.com/al-mz/langgraph-aws-deployment) this repo from **Ali mz** provides a script that simplifies deploying langgraph on yuor AWS environments. If you just want to kick the tires on an agent without managing EC2 or writing Terraform, this gets you from git clone to a public HTTPS endpoint in ~10 min. It’s opinionated (Fargate, ALB, Parameter Store) but easy to tweak. (#212)
 
+**LEAP Stacks**
+
+[LEAP Stacks](https://github.com/basilfateen/leap-stacks) simplifies deploying AI applications on AWS by providing prebuilt CloudFormation templates that get production ready chatbots, RAG systems, and AI agents running in minutes. This allows developers to focus on their AI logic while the platform handles deployment, monitoring, and cost controls automatically. It bridges the notorious "Production Valley of Despair" where AI prototypes fail to scale by delivering complete, observable systems rather than just code snippets or local demos. This repo represents v2 of this project, and having spent some time with it, it is defo one to check out folks - great work Basil Fateen.(#218)
+
 **llm-colosseum**
 
 [llm-colosseum](https://github.com/aws-banjo/llm-colosseum) is another repo that takes a more creative look at benchmarking your LLM's, this time using a classic video arcade fighting game.(#194)
@@ -415,6 +419,10 @@ You can populate observations into a datastore and make them available to your h
 
 [sagemaker-mlflow](https://github.com/aws/sagemaker-mlflow)  This plugin generates Signature V4 headers in each outgoing request to the Amazon SageMaker with MLflow capability, determines the URL of capability to connect to tracking servers, and registers models to the SageMaker Model Registry. It generates a token with the SigV4 Algorithm that the service will use to conduct Authentication and Authorization using AWS IAM.(#200)
 
+**sample-capacity-finder-for-ec2-capacity-block-and-sagemaker-training-plan**
+
+[sample-capacity-finder-for-ec2-capacity-block-and-sagemaker-training-plan](https://github.com/aws-samples/sample-capacity-finder-for-ec2-capacity-block-and-sagemaker-training-plan) is a neat tool (streamlit app) that makes it easy to explore available AWS EC2 Capacity Blocks and SageMaker Training Plans across regions and instance types.(#218)
+
 **sample-convert-codebase-to-graphrag**
 
 [sample-convert-codebase-to-graphrag](https://github.com/aws-samples/sample-convert-codebase-to-graphrag) is a demo to show how to leverages AI to analyze, index, and query code repositories. It creates a searchable graph representation of code structures, enabling developers to explore and understand complex codebases efficiently. This project combines several AWS services, including Lambda, Neptune, OpenSearch, and Bedrock, to process code repositories, generate metadata, and provide powerful search capabilities. The system is designed to handle large-scale code analysis tasks and offer semantic code search functionality. It uses CDK to simplify how to deploy this in your own AWS environments. (#208)
@@ -479,6 +487,10 @@ You can populate observations into a datastore and make them available to your h
 **ziya**
 
 [ziya](https://github.com/ziya-ai/ziya) is a code assist tool for Amazon Bedrock models that can read your entire codebase and answer questions. The tool currently operates in Read only mode, but doing more that this is on the road map.(#204)
+
+**strands-agent-template**
+
+[strands-agent-template](https://github.com/dhheberling/strands-agent-template) is a starter project from AWS Hero Danielle Heberling that will provide you with everything you need to get started with Strands Agents on Amazon Bedrock AgentCore. To help you get started he has helpfully put together a blog post, A Strands Agent Template (For the Impatient)(#218)
 
 ### Application integration and middleware
 
@@ -551,6 +563,10 @@ You can populate observations into a datastore and make them available to your h
 **aws-signer-oci-artifacts**
 
 [aws-signer-oci-artifacts](https://github.com/aws-samples/aws-signer-oci-artifacts) this project is used to demonstrate how OCI artefacts can be signed and verified in a development pipeline. Zhuo-Wei Lee, Alontay Ellis, and Rajarshi Das have put together a blog post to help you get started, so if this project interests you, make sure you dive into [Signing and Validating OCI Artifacts with AWS Signer](https://aws.amazon.com/blogs/containers/signing-and-validating-oci-artifacts-with-aws-signer/).(#185)
+
+**AWS Serverless Webhooks**
+
+[AWS Serverless Webhooks](https://github.com/aws-samples/aws-serverless-webhooks) is a self-hosted, production-ready webhook-as-a-service platform that runs entirely on your AWS infrastructure using CDK. It eliminates vendor lock-in while providing reliable webhook delivery through AWS Durable Functions with automatic retries and comprehensive tracking. Developers can integrate it seamlessly with existing EventBridge events and manage everything through both programmatic APIs and a visual React interface. It's essentially your own Svix alternative that leverages serverless technologies on AWS.(#218)
 
 **beta9**
 
@@ -647,6 +663,10 @@ You can populate observations into a datastore and make them available to your h
 **skopeo**
 
 [skopeo](https://github.com/containers/skopeo) is a super handy tool for those folks spending a lot of time managing container images. skopeo is a command line utility that performs various operations on container images and image repositories. It does not require root privileges for most of the operations (fantastic) and has lots of capabilities so dive into the README.(#214)
+
+**Instancepedia**
+
+[Instancepedia](https://github.com/Cyclenerd/aws-pricing) Instancepedia is a Python powered EC2 instance browser that brings AWS's instance types directly to your terminal. It provides both an interactive TUI for exploration and a scriptable CLI for automation, delivering realtime pricing across all AWS models (on-demand, spot, reserved, savings plans) with advanced filtering and comparison capabilities. Developers and DevOps engineers can quickly find the optimal instance type for their workloads while analysing cost implications and performance trade-offs. The tool uses only free AWS APIs, making it a zero-cost solution for infrastructure decision-making.(#218)
 
 ### Data, Big Data and Databases
 
@@ -847,6 +867,18 @@ You can populate observations into a datastore and make them available to your h
 **valkey-finch**
 
 [valkey-finch](https://github.com/094459/valkey-finch) is a quick recipe on how to run Valkey in a container using Finch. It did not work out of the box for me, and I had to figure out how to get it working. Now you can save yourself the trouble and check out this configuration. I also put a short blog on this, so check out [Getting started with Valkey and Finch](https://community.aws/content/2jPNz5C31N4dQpeLiDycNNlReCy/getting-started-with-valkey-and-finch) (#202)
+
+**BetterDB for Valkey**
+
+[BetterDB for Valkey](https://github.com/betterdb/betterdb-valkey) provides a nice VSCode extension for those of you working with Valkey. Check out the README for the current capabilities. The project is looking for contributions/collaborations, so if you love Valkey and use VSCode, why not give this a look.(#218)
+
+**pydynox**
+
+[pydynox](https://github.com/pydynox/pydynox) is a high performance DynamoDB ORM for Python that combines the simplicity of Python with the speed of Rust for database operations. It provides a class based interface similar to PynamoDB but delivers significantly faster serialisation and batch processing through its Rust core. Developers get comprehensive DynamoDB functionality including transactions, queries, and advanced features like encryption and compression, all wrapped in a modern Python API. It's designed for teams building AWS applications who need both developer productivity and enterprise-grade performance. The repo also includes a .ai directory that provides guidance if you are using AI coding assistants (or want to use them) to contribute to this project. I am increasingly seeing this appear in the repos that I explore.(#218)
+
+**dynamo-lens**
+
+[dynamo-lens](https://github.com/gurgelio/dynamo-lens) is a project from Gurgen that provides you with a desktop companion for Amazon DynamoDB built with Go + Wails. You can use it to explore tables, inspect and mutate items, and manage multiple environments from a single native app.(#218)
 
 ### Developer Tools & DevOps
 
@@ -1398,6 +1430,38 @@ By inputting an S3 bucket/prefix and utilizing various flags to customize your r
 
 [ziya](https://github.com/ziya-ai/ziya) is a code assist tool for Amazon Bedrock models that can read your entire codebase and answer questions. The tool currently operates in Read only mode, but doing more that this is on the road map.(#204)
 
+**AWS Amplify Gen 2 Kiro Power**
+
+[AWS Amplify Gen 2 Kiro Power](https://github.com/kiro-powers/amplify-gen2-kiro-power) provides a Kiro POWER that provides a starter template for creating applications using React+Vite and AWS Amplify, with a focus on easy setup for authentication, API, AI, and database capabilities. This template equips you with a foundational React application integrated with AWS Amplify, optimized for scalability and performance. It is perfect for developers aiming to kickstart their projects with pre-configured AWS services like Cognito, AppSync, Bedrock, and DynamoDB.(#218)
+
+**AWS-Brief**
+
+[AWS-Brief](https://github.com/mehmetayberk/aws-brief) is an AI powered automation tool from AWS Community Builder Mehmet Ayberk that solves the information overload problem for cloud teams by intelligently monitoring 36+ official AWS RSS feeds and filtering out noise to deliver only relevant updates. It uses AI models to analyse AWS announcements, security bulletins, and service updates, then sends curated summaries and real-time alerts through your preferred communication channels. Instead of manually sifting through hundreds of AWS updates weekly, developers and DevOps teams get actionable intelligence with impact assessments delivered directly to Slack, Teams, Discord, or email. This ensures teams stay current with critical AWS developments without drowning in irrelevant notifications. Check out the README, but lots of deployment options (including local models if you use Ollama).(#218)
+
+**cdk-terrain**
+
+[cdk-terrain](https://github.com/cdk-terrain/cdk-terrain) is a community fork of the Cloud Development Kit for Terraform (CDKTF). CDKTF/CDKTN allows you to use familiar programming languages to define cloud infrastructure and provision it through HashiCorp Terraform or OpenTofu. This gives you access to the entire Terraform/OpenTofu ecosystem without learning HashiCorp Configuration Language (HCL) and lets you leverage the power of your existing toolchain for testing, dependency management, etc. The project currently support TypeScript, Python and Go, as is a work in progress. If you were using cdktf before, then you probably want to check this out.(#218)
+
+**Fast CloudFormation Validation for VS Code**
+
+[WA2 VS Code Extension](https://github.com/wa2/wa2-vscode) WA2 is a high-performance VS Code extension that provides lightning-fast CloudFormation template validation, built with Rust and designed to be 9× faster than existing tools. It validates AWS CloudFormation templates in real-time, checking syntax, structure, and resource properties against official AWS schemas to catch errors early in development. The extension supports 1000+ AWS resource types and all intrinsic functions, delivering sub-second validation with precise error locations. For DevOps engineers and cloud architects working with Infrastructure as Code, WA2 offers a modern, performance focused alternative to slow existing validation tools. Very cool indeed.(#218)
+
+**git-kiro-powers**
+
+[kiro-powers](https://github.com/kiro-powers/git-kiro-powers) This project appears to be an experimental repository that provides some sample Kiro Git Powers. The description of the Power says "Complete guide for Git version control with workflows, conventional commits, pre-commit hooks, and best practices for professional development". From the repo, check out the .git directory which reveals the POWER.md and support assets.(#218)
+
+**run-mcp**
+
+[run-mcp](https://github.com/michaelwalmsley/run-mcp) comes from the fair hands of AWS Hero Michael Walmsley and provides a security focused wrapper that solves a critical vulnerability in MCP (Model Context Protocol) servers by running them in isolated containers instead of with full user permissions. It's a drop-in replacement that requires only changing uvx or npx to run-mcp in your configuration, instantly sandboxing third-party MCP servers from sensitive data like SSH keys and AWS credentials. The tool abstracts away container complexity while providing explicit permission controls, making it safe to run untrusted MCP servers with AI assistants like Kiro and others. Check out his supporting blog post, Run Any MCP Server Securely Without Changing Its Config.(#218)
+
+**stakpak**
+
+[stakpak](https://github.com/stakpak/stakpak) is an open source DevOps agent from AWS Community Builder Noureldin Ehab that helps teams ship faster by helping them secure, deploy, and maintain production infrastructure from their terminal. Works with any LLM (Claude, GPT, Gemini), handles secrets securely, and uses customisable rulebooks to guide operational workflows from generating Terraform and Kubernetes configs to dockerizing apps and troubleshooting CI/CD. Check out the README and the docs to help you get started.(#218)
+
+**taws**
+
+[taws](https://github.com/hbabel/taws) taws is a cool project from Hüseyin Babal that provides a terminal based interface for managing AWS resources, that is built in Rust for speed and reliability. It transforms the AWS Console experience into a keyboard-driven terminal application, allowing developers and DevOps engineers to browse, monitor, and manage their entire AWS infrastructure without leaving the command line. With support for 94+ resource types across 60+ AWS services, it provides a unified dashboard that eliminates the need to constantly switch between the web console and CLI tools.(#218)
+
 ### Governance & Risk
 
 **aft-account-suspend-close-solution**
@@ -1638,6 +1702,22 @@ You can populate observations into a datastore and make them available to your h
 
 [tokenex](https://github.com/riptideslabs/tokenex) this library provides a unified interface for obtaining and refreshing credentials from various cloud providers and authentication systems. It is designed to facilitate secure access to cloud resources by exchanging identity tokens for temporary credentials. (#215)
 
+**AWS WasteFinder**
+
+[AWS WasteFinder](https://github.com/awslabs/aws-wastefinder) is a Python CLI tool that helps you reign in your AWS bills by automatically scanning all regions for unused and underutilised resources. It identifies seven types of wasteful resources, from unattached EBS volumes to idle load balancers, and calculates exactly how much money you're wasting monthly and yearly. The tool takes a safety first approach by being completely read-only and generating AWS CLI commands for you to review before taking any action.(#218)
+
+**CleanCloud**
+
+[CleanCloud](https://github.com/cleancloud/cleancloud) is a cloud hygiene tool that helps SRE teams identify cost draining orphaned and inactive resources across their AWS environments without any risk of accidental deletion. Unlike automated cleanup tools, it operates in strictly read-only mode using only safe API operations, making it perfect for regulated environments where security approval is critical. The tool provides visibility into cloud waste through configurable scans and audit-friendly reporting, enabling teams to optimise costs through informed decision-making rather than risky automation. Make sure you dive into the README which provides a lot of detail on what you can do with this tool.(#218)
+
+**CloudSlash**
+
+[CloudSlash](https://github.com/cloudslash/cloudslash) CloudSlash is a local-first AWS forensic engine that automatically identifies and safely remediates cloud waste through dependency graph analysis and mathematical optimisation. Unlike passive monitoring tools, it actively finds unused resources, calculates optimal configurations using linear programming, and provides safe cleanup with rollback capabilities through its "Lazarus Protocol." The tool combines Git/Terraform provenance tracking with sophisticated algorithms to deliver 15-25% cost reductions while maintaining zero-trust security principles. Make sure you check out the README that goes into a lot of detail on the specifics. Well worth reading.(#218)
+
+**pathfinding.cloud**
+
+[pathfinding.cloud](https://github.com/pathfinding-cloud/pathfinding-cloud) is a comprehensive, community-maintained library create by AWS Community Builder Seth Art that documents AWS IAM privilege escalation paths. This project builds upon foundational research by Spencer Gietzen at Rhino Security Labs and subsequent contributions from many other security researchers. The website provides detailed documentation of each privilege escalation path - go check out the README to get a glimpse. (Hat tip to AWS Community Builder Nick Jones for making me aware of this project).(#218)
+
 ### Java, Kotlin, Scala, OpenJDK
 
 **java-on-aws**
@@ -1703,6 +1783,14 @@ You can populate observations into a datastore and make them available to your h
 **s3-restore-and-copy-progress-monitoring**
 
 [s3-restore-and-copy-progress-monitoring](https://github.com/aws-samples/s3-restore-and-copy-progress-monitoring) this is a very comprehensive and polished repo that provides an example of how you can restore data that you have stored in S3, providing you a single visualised dashboard to monitor the restore and copy progress within a defined scope.(#189)
+
+**AWS Loggy**
+
+[AWS Loggy](https://github.com/awslabs/aws-loggy) is a fast native desktop application that transforms how developers interact with AWS CloudWatch logs. Instead of wrestling with the slow, browser-based AWS Console, developers get a responsive desktop app with real-time log streaming, advanced filtering, and virtualised rendering that can handle 50,000+ log entries without breaking a sweat. Built with Tauri and TypeScript, it provides the performance of a native app with modern web UI capabilities, making CloudWatch log analysis actually enjoyable.(#218)
+
+**cloudfront_log_parser**
+
+[cloudfront_log_parser](https://github.com/simonhanmer/cloudfront_log_parser) is a new project from AWS Community Builder Simon Hanmer that is perfect for those of you running Hugo static sites on Amazon S3. Using Kiro CLI to build this tool, cloudfront_log_parser helps you extract your site analytics (and other useful KPIs) from the CloudFront logs. Checkout the REAMDE to see how to configure and run this to get the insights you want.(#218)
 
 ### Security
 
@@ -1859,6 +1947,10 @@ You can populate observations into a datastore and make them available to your h
 
 [OpenSecOps-Org](https://github.com/OpenSecOps-Org) is the repo that holds the various sub projects that are part of [opensecops.org](https://www.opensecops.org/), that provide open source tools and solutions that help you seamlessly integrate into your operations, providing robust security frameworks and operational excellence. I have not actually looked at this in detail, but just skimming it looks very comprehensive. Split across Foundation that helps you setup your AWS against industry standard good practices, and Soar that looks more at continuous monitoring, automated incident handling and remediation of security issues.(#209)
 
+**pathfinding.cloud**
+
+[pathfinding.cloud](https://github.com/pathfinding-cloud/pathfinding-cloud) is a comprehensive, community-maintained library create by AWS Community Builder Seth Art that documents AWS IAM privilege escalation paths. This project builds upon foundational research by Spencer Gietzen at Rhino Security Labs and subsequent contributions from many other security researchers. The website provides detailed documentation of each privilege escalation path - go check out the README to get a glimpse. (Hat tip to AWS Community Builder Nick Jones for making me aware of this project).(#218)
+
 **powerpipe**
 
 [powerpipe](https://github.com/turbot/powerpipe) is dashboards and benchmarks as code. Use it to visualise any data source, and run compliance benchmarks and controls, for effective decision-making and ongoing compliance monitoring. As with all the Turbot open source projects, excellent documentation, and they have included a video that provides a demo of this at work. (#192)
@@ -1951,6 +2043,10 @@ You can populate observations into a datastore and make them available to your h
 
 [yes3-scanner](https://github.com/FogSecurity/yes3-scanner) is the first in a series of projects from the folks at **Fog Security**, which scans an AWS Account for potential S3 security issues such as access issues such as Public Access, preventative S3 Security Settings, additional security such as encryption, and Ransomware Protection, Data Protection, and Recovery.(#211)
 
+**s3sh**
+
+[s3sh](https://github.com/dacort/s3sh) is another great project from regular open source contributor Damon Cortesi. s3sh transforms S3 bucket exploration by providing a familiar Unix-like shell interface for cloud storage navigation. Built in Rust, it allows developers to use standard commands like ls, cd, and cat to browse S3-compatible storage systems as if they were local filesystems. The tool's killer feature is the ability to cd directly into compressed archives and parquet files stored in S3 without downloading them, using efficient range requests for streaming access. This makes it invaluable for data engineers, DevOps teams, and anyone who prefers command-line interfaces over web consoles for S3 exploration.(#218)
+
 ### Storage
 
 **amazon-s3-glacier-archive-data-delete**
@@ -2030,6 +2126,9 @@ You can populate observations into a datastore and make them available to your h
 
 [s3grep](https://github.com/dacort/s3grep) is the latest essential tool from Damon Cortesi that provides a parallel CLI tool for searching logs and unstructured content in Amazon S3 buckets. It supports .gz decompression, progress bars, and robust error handling—making it ideal for cloud-native log analysis. (#212)
 
+**s3sh**
+
+[s3sh](https://github.com/dacort/s3sh) is another great project from regular open source contributor Damon Cortesi. s3sh transforms S3 bucket exploration by providing a familiar Unix-like shell interface for cloud storage navigation. Built in Rust, it allows developers to use standard commands like ls, cd, and cat to browse S3-compatible storage systems as if they were local filesystems. The tool's killer feature is the ability to cd directly into compressed archives and parquet files stored in S3 without downloading them, using efficient range requests for streaming access. This makes it invaluable for data engineers, DevOps teams, and anyone who prefers command-line interfaces over web consoles for S3 exploration.(#218)
 
 **s3vectors-embed-cli**
 
